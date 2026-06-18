@@ -4,17 +4,20 @@ Value Detection Engine.
 Compares our Elo model probabilities against SportyBet's implied
 probabilities to identify positive expected value (EV) opportunities.
 
-Core formula:
-    EV = (Model Probability * Decimal Odds) - 1
-    Edge = Model Probability - Implied Probability
-
-Only flag bets where EV > threshold AND Edge > threshold.
+Pipeline:
+1. Fetch live odds from SportyBet
+2. Filter to World Cup matches only
+3. Generate Elo base prediction
+4. Apply Manager Intelligence adjustments
+5. Compare adjusted probabilities vs bookmaker
+6. Flag value bets above threshold
 """
 
 import json
 import os
 from datetime import datetime
 from src.models.elo_model import EloModel
+from src.models.manager_intelligence import ManagerIntelligence
 from src.collectors.sportybet_scraper import fetch_sportybet_odds, parse_matches
 
 # Minimum thresholds to flag a value bet
@@ -61,9 +64,9 @@ def get_value_rating(edge, ev):
         return "★ MARGINAL"
 
 
-def detect_value(sportybet_match, elo_prediction):
+def detect_value(sportybet_match, prediction):
     """
-    Compare SportyBet odds vs Elo model for a single match.
+    Compare SportyBet odds vs model prediction for a single match.
     Returns list of value bets found.
     """
     value_bets = []
@@ -72,7 +75,7 @@ def detect_value(sportybet_match, elo_prediction):
         return value_bets
 
     odds = sportybet_match["odds"]
-    model_probs = elo_prediction["model_probability"]
+    model_probs = prediction["model_probability"]
 
     outcomes = [
         {
@@ -125,8 +128,8 @@ def run_value_detection():
     """
     Full pipeline:
     1. Fetch SportyBet odds
-    2. Filter to valid competitions only
-    3. Generate Elo predictions for each match
+    2. Filter to World Cup only
+    3. Generate Elo + Manager Intelligence predictions
     4. Compare and flag value bets
     """
     print(f"\n{'='*65}")
@@ -143,7 +146,7 @@ def run_value_detection():
         print("[ERROR] No matches fetched from SportyBet")
         return []
 
-    # Step 2: Filter to valid competitions only
+    # Step 2: Filter to World Cup matches only
     matches_with_odds = [
         m for m in all_matches
         if m["has_odds"] and m.get("competition", "") in VALID_COMPETITIONS
@@ -162,11 +165,12 @@ def run_value_detection():
         print("[ERROR] No World Cup matches found")
         return []
 
-    # Step 3: Generate Elo predictions
-    print("[2/3] Generating Elo model predictions...")
-    model = EloModel()
+    # Step 3: Initialise models
+    print("[2/3] Generating Elo + Manager Intelligence predictions...")
+    elo_model = EloModel()
+    manager_intel = ManagerIntelligence()
 
-    # Step 4: Compare and detect value
+    # Step 4: Analyse each match
     print("[3/3] Running value detection...\n")
 
     all_value_bets = []
@@ -175,21 +179,35 @@ def run_value_detection():
     for match in matches_with_odds:
         home = match["home_team"]
         away = match["away_team"]
+        competition = match.get("competition", "")
+        kick_off = match.get("kick_off", "")
 
-        # World Cup = neutral venue always
-        prediction = model.predict_match(home, away, neutral_venue=True)
+        # Base Elo prediction (neutral venue for World Cup)
+        prediction = elo_model.predict_match(
+            home, away, neutral_venue=True
+        )
+
+        # Apply Manager Intelligence adjustments
+        prediction = manager_intel.apply_manager_adjustments(
+            prediction, home, away
+        )
+
+        # Detect value bets
         value_bets = detect_value(match, prediction)
 
+        # Build full match analysis record
         match_analysis = {
             "home_team": home,
             "away_team": away,
-            "competition": match.get("competition", ""),
-            "kick_off": match.get("kick_off", ""),
+            "competition": competition,
+            "kick_off": kick_off,
             "sportybet_odds": match["odds"],
             "sportybet_implied": match["implied_probability"],
             "model_probability": prediction["model_probability"],
             "home_elo": prediction["home_rating"],
             "away_elo": prediction["away_rating"],
+            "manager_intelligence": prediction.get("manager_intelligence", {}),
+            "tactical_narrative": manager_intel.get_match_narrative(home, away),
             "value_bets": value_bets,
             "has_value": len(value_bets) > 0
         }
@@ -197,16 +215,15 @@ def run_value_detection():
         match_analyses.append(match_analysis)
         all_value_bets.extend(value_bets)
 
-    # Display results
+    # Display and save results
     display_results(match_analyses)
-
-    # Save
     save_results(match_analyses)
 
     return all_value_bets
 
 
 def display_results(match_analyses):
+    """Print full analysis to terminal."""
     value_matches = [m for m in match_analyses if m["has_value"]]
     no_value = [m for m in match_analyses if not m["has_value"]]
 
@@ -217,10 +234,28 @@ def display_results(match_analyses):
 
     if value_matches:
         print(f"\n  *** VALUE OPPORTUNITIES ***\n")
+
         for match in value_matches:
-            print(f"  {match['home_team']} vs {match['away_team']}")
-            print(f"  Kick-off: {match['kick_off']}")
-            print(f"  Elo:      {match['home_elo']} vs {match['away_elo']}")
+            home = match["home_team"]
+            away = match["away_team"]
+            mgr = match.get("manager_intelligence", {})
+
+            print(f"  {home} vs {away}")
+            print(f"  Kick-off:  {match['kick_off']}")
+            print(f"  Elo:       {match['home_elo']} vs {match['away_elo']}")
+
+            # Manager context
+            if mgr:
+                print(f"  Managers:  {mgr.get('home_manager', '?')} "
+                      f"({mgr.get('home_formation', '?')}, "
+                      f"{mgr.get('home_style', '?')}) vs "
+                      f"{mgr.get('away_manager', '?')} "
+                      f"({mgr.get('away_formation', '?')}, "
+                      f"{mgr.get('away_style', '?')})")
+                print(f"  Matchup:   {mgr.get('tactical_matchup', '?')}")
+                print(
+                    f"  Confidence: {mgr.get('combined_confidence', 1.0):.0%}")
+
             print(f"")
             print(f"  {'Outcome':<12} {'Odds':>6} {'Bookie%':>9} "
                   f"{'Model%':>8} {'Edge':>7} {'EV':>7}  Rating")
@@ -249,27 +284,39 @@ def display_results(match_analyses):
                             rating = vb["rating"]
                 print(f"  {name:<12} {odd:>6.2f} {bk:>8.2f}% {md:>7.2f}% "
                       f"{edge:>+6.2f}% {ev:>+6.3f}  {rating}{flag}")
+
+            # Tactical narrative
+            narrative = match.get("tactical_narrative", "")
+            if narrative:
+                print(f"\n  Tactical context:")
+                for line in narrative.split("\n  "):
+                    print(f"  {line}")
             print()
 
     else:
         print(f"\n  No value bets found in current matches.")
-        print(f"  This is normal — value opportunities are rare.")
-        print(f"  The model is working correctly.\n")
+        print(f"  This is normal — value opportunities are rare.\n")
 
+    # Summary table of all matches
     print(f"\n  ALL WORLD CUP MATCHES ANALYSED:\n")
-    print(f"  {'Home':<22} {'Away':<22} {'H%':>5} {'D%':>5} {'A%':>5}  Value")
-    print(f"  {'-'*65}")
+    print(f"  {'Home':<22} {'Away':<22} {'H%':>5} {'D%':>5} "
+          f"{'A%':>5}  {'Matchup':<20} Value")
+    print(f"  {'-'*80}")
+
     for match in match_analyses:
         model = match["model_probability"]
-        flag = "  *** VALUE" if match["has_value"] else ""
+        mgr = match.get("manager_intelligence", {})
+        matchup = mgr.get("tactical_matchup", "unknown")[:20]
+        flag = "  ★ VALUE" if match["has_value"] else ""
         print(f"  {match['home_team']:<22} {match['away_team']:<22} "
               f"{model['home']:>5.1f} {model['draw']:>5.1f} "
-              f"{model['away']:>5.1f}{flag}")
+              f"{model['away']:>5.1f}  {matchup:<20}{flag}")
 
     print(f"\n{'='*65}\n")
 
 
 def save_results(match_analyses):
+    """Save full analysis to JSON."""
     os.makedirs("data", exist_ok=True)
     output = {
         "generated_at": datetime.now().isoformat(),

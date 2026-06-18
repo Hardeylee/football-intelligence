@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T23:50:56.971687",
+  "generated_at": "2026-06-19T00:19:25.613720",
   "total_matches": 45,
   "value_matches": 21,
   "analyses": [
@@ -25,6 +25,28 @@
       },
       "home_elo": 1820,
       "away_elo": 1770,
+      "manager_intelligence": {
+        "home_manager": "Javier Aguirre",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 34,
+        "home_confidence": 1.0,
+        "away_manager": "Hong Myung-bo",
+        "away_style": "counter",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 40,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 42.78,
+          "draw": 25.14,
+          "away": 32.08
+        }
+      },
+      "tactical_narrative": "Mexico (Javier Aguirre, 4-3-3, counter style) vs Korea Republic (Hong Myung-bo, 4-2-3-1, counter style)\n  Tactical matchup: counter vs counter\n  Mexico: Second spell. Pragmatic, defensive-minded. Prioritises organisation over possession.\n  Korea Republic: Former national team captain. Transition period after Klinsmann dismissal.",
       "value_bets": [],
       "has_value": false
     },
@@ -50,6 +72,28 @@
       },
       "home_elo": 1800,
       "away_elo": 1740,
+      "manager_intelligence": {
+        "home_manager": "Mauricio Pochettino",
+        "home_style": "pressing",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 30,
+        "home_confidence": 1.0,
+        "away_manager": "Tony Popovic",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 20,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 44.04,
+          "draw": 24.78,
+          "away": 31.18
+        }
+      },
+      "tactical_narrative": "USA (Mauricio Pochettino, 4-3-3, pressing style) vs Australia (Tony Popovic, 4-3-3, counter style)\n  Tactical matchup: pressing vs counter\n  USA: High-profile appointment. Pressing system, demands high energy. Tactical upgrade.\n  Australia: Relatively new. Replaced Graham Arnold. Building his own identity.",
       "value_bets": [
         {
           "outcome": "Away Win",
@@ -86,6 +130,28 @@
       },
       "home_elo": 1770,
       "away_elo": 1830,
+      "manager_intelligence": {
+        "home_manager": "Steve Clarke",
+        "home_style": "counter",
+        "home_formation": "3-4-3",
+        "home_tenure_months": 85,
+        "home_confidence": 1.0,
+        "away_manager": "Walid Regragui",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 46,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 31.18,
+          "draw": 24.78,
+          "away": 44.04
+        }
+      },
+      "tactical_narrative": "Scotland (Steve Clarke, 3-4-3, counter style) vs Morocco (Walid Regragui, 4-3-3, counter style)\n  Tactical matchup: counter vs counter\n  Scotland: Long tenure \u2014 excellent stability. Consistent performer. Hard to beat defensively.\n  Morocco: World Cup 2022 semifinalist. Excellent defensive organisation. Counter-attacking threat.",
       "value_bets": [
         {
           "outcome": "Home Win",
@@ -116,12 +182,34 @@
         "away": 3.84
       },
       "model_probability": {
-        "home": 78.77,
+        "home": 78.76,
         "draw": 14.61,
         "away": 6.63
       },
       "home_elo": 2050,
       "away_elo": 1620,
+      "manager_intelligence": {
+        "home_manager": "Dorival Junior",
+        "home_style": "possession",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 29,
+        "home_confidence": 1.0,
+        "away_manager": "Marc Collat",
+        "away_style": "defensive",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 78.77,
+          "draw": 14.61,
+          "away": 6.63
+        }
+      },
+      "tactical_narrative": "Brazil (Dorival Junior, 4-2-3-1, possession style) vs Haiti (Marc Collat, 4-4-2, defensive style)\n  Tactical matchup: possession vs defensive\n  Brazil: Restored stability after turbulent period. More pragmatic than previous coaches.\n  Haiti: Underdog. Will park the bus against top teams.",
       "value_bets": [],
       "has_value": false
     },
@@ -141,12 +229,34 @@
         "away": 25.13
       },
       "model_probability": {
-        "home": 47.79,
+        "home": 45.79,
         "draw": 23.74,
-        "away": 28.47
+        "away": 30.47
       },
       "home_elo": 1810,
       "away_elo": 1720,
+      "manager_intelligence": {
+        "home_manager": "Vincenzo Montella",
+        "home_style": "possession",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 34,
+        "home_confidence": 1.0,
+        "away_manager": "Daniel Garnero",
+        "away_style": "counter",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 39,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs counter",
+        "home_tactical_adj": -0.02,
+        "away_tactical_adj": 0.02,
+        "base_probability": {
+          "home": 47.79,
+          "draw": 23.74,
+          "away": 28.47
+        }
+      },
+      "tactical_narrative": "Turkiye (Vincenzo Montella, 4-2-3-1, possession style) vs Paraguay (Daniel Garnero, 4-4-2, counter style)\n  Paraguay will absorb pressure and look to exploit space behind Turkiye's high line.\n  Turkiye: Excellent Euros 2024 campaign. Italian tactical discipline. Technically strong setup.\n  Paraguay: Solid CONMEBOL qualifying campaign.",
       "value_bets": [],
       "has_value": false
     },
@@ -156,22 +266,44 @@
       "competition": "World Cup",
       "kick_off": "20 Jun 2026 18:00",
       "sportybet_odds": {
-        "home": 1.77,
-        "draw": 3.95,
-        "away": 4.98
+        "home": 1.8,
+        "draw": 3.91,
+        "away": 4.8
       },
       "sportybet_implied": {
-        "home": 56.5,
-        "draw": 25.32,
-        "away": 20.08
+        "home": 55.56,
+        "draw": 25.58,
+        "away": 20.83
       },
       "model_probability": {
-        "home": 50.25,
+        "home": 48.25,
         "draw": 23.07,
-        "away": 26.68
+        "away": 28.68
       },
       "home_elo": 1950,
       "away_elo": 1840,
+      "manager_intelligence": {
+        "home_manager": "Ronald Koeman",
+        "home_style": "possession",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 35,
+        "home_confidence": 1.0,
+        "away_manager": "Jon Dahl Tomasson",
+        "away_style": "counter",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 48,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs counter",
+        "home_tactical_adj": -0.02,
+        "away_tactical_adj": 0.02,
+        "base_probability": {
+          "home": 50.25,
+          "draw": 23.07,
+          "away": 26.68
+        }
+      },
+      "tactical_narrative": "Netherlands (Ronald Koeman, 4-3-3, possession style) vs Sweden (Jon Dahl Tomasson, 4-4-2, counter style)\n  Sweden will absorb pressure and look to exploit space behind Netherlands's high line.\n  Netherlands: Euro 2024 finalist. Dutch total football principles. Quality throughout.\n  Sweden: Swedish pragmatism. Hard to break down. Strong set pieces.",
       "value_bets": [],
       "has_value": false
     },
@@ -191,12 +323,34 @@
         "away": 16.78
       },
       "model_probability": {
-        "home": 65.56,
-        "draw": 18.89,
-        "away": 15.55
+        "home": 66.56,
+        "draw": 18.34,
+        "away": 15.1
       },
       "home_elo": 1980,
       "away_elo": 1730,
+      "manager_intelligence": {
+        "home_manager": "Julian Nagelsmann",
+        "home_style": "pressing",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 33,
+        "home_confidence": 1.0,
+        "away_manager": "Emerse Fa\u00e9",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 29,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs possession",
+        "home_tactical_adj": 0.03,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 65.56,
+          "draw": 18.89,
+          "away": 15.55
+        }
+      },
+      "tactical_narrative": "Germany (Julian Nagelsmann, 4-2-3-1, pressing style) vs Ivory Coast (Emerse Fa\u00e9, 4-3-3, possession style)\n  Germany's high press will look to disrupt Ivory Coast's build-up play.\n  Germany: Excellent Euros 2024 host. High pressing, vertical football. Germany rejuvenated.\n  Ivory Coast: AFCON 2024 winner. Hero appointment after Peseiro sacking mid-tournament.",
       "value_bets": [],
       "has_value": false
     },
@@ -216,21 +370,43 @@
         "away": 3.59
       },
       "model_probability": {
-        "home": 53.84,
-        "draw": 22.11,
-        "away": 24.05
+        "home": 55.62,
+        "draw": 21.26,
+        "away": 23.12
       },
       "home_elo": 1780,
       "away_elo": 1640,
+      "manager_intelligence": {
+        "home_manager": "Sebasti\u00e1n Beccacece",
+        "home_style": "pressing",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 30,
+        "home_confidence": 1.0,
+        "away_manager": "Fr\u00e9d\u00e9ric N\u00e9e",
+        "away_style": "defensive",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 53,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs defensive",
+        "home_tactical_adj": 0.04,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 53.84,
+          "draw": 22.11,
+          "away": 24.05
+        }
+      },
+      "tactical_narrative": "Ecuador (Sebasti\u00e1n Beccacece, 4-4-2, pressing style) vs Curacao (Fr\u00e9d\u00e9ric N\u00e9e, 4-4-2, defensive style)\n  Ecuador's intensity should create chances but Curacao's deep block may frustrate.\n  Ecuador: Aggressive pressing system. Physical, direct.\n  Curacao: First World Cup. Will be extremely defensive against Germany and Ecuador.",
       "value_bets": [
         {
           "outcome": "Draw",
           "selection": "Draw",
           "decimal_odds": 10.48,
-          "model_probability": 22.11,
+          "model_probability": 21.26,
           "implied_probability": 9.542,
-          "edge": 12.57,
-          "expected_value": 1.3171,
+          "edge": 11.72,
+          "expected_value": 1.228,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -252,21 +428,43 @@
         "away": 63.69
       },
       "model_probability": {
-        "home": 29.37,
-        "draw": 24.08,
-        "away": 46.55
+        "home": 28.24,
+        "draw": 23.15,
+        "away": 48.61
       },
       "home_elo": 1720,
       "away_elo": 1800,
+      "manager_intelligence": {
+        "home_manager": "Jalel Kadri",
+        "home_style": "defensive",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 54,
+        "home_confidence": 1.0,
+        "away_manager": "Hajime Moriyasu",
+        "away_style": "pressing",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 95,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.04,
+        "base_probability": {
+          "home": 29.37,
+          "draw": 24.08,
+          "away": 46.55
+        }
+      },
+      "tactical_narrative": "Tunisia (Jalel Kadri, 4-3-3, defensive style) vs Japan (Hajime Moriyasu, 4-2-3-1, pressing style)\n  Japan's press vs Tunisia's defensive structure \u2014 expect a physical battle.\n  Tunisia: Disciplined. Will look to frustrate bigger sides.\n  Japan: Long tenure \u2014 outstanding World Cup 2022. High energy pressing. Famous for giant-killing.",
       "value_bets": [
         {
           "outcome": "Home Win",
           "selection": "Tunisia",
           "decimal_odds": 6.77,
-          "model_probability": 29.37,
+          "model_probability": 28.24,
           "implied_probability": 14.771,
-          "edge": 14.6,
-          "expected_value": 0.9883,
+          "edge": 13.47,
+          "expected_value": 0.9118,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -288,25 +486,36 @@
         "away": 3.32
       },
       "model_probability": {
-        "home": 69.97,
-        "draw": 17.59,
-        "away": 12.44
+        "home": 67.93,
+        "draw": 17.08,
+        "away": 14.99
       },
       "home_elo": 1990,
       "away_elo": 1690,
-      "value_bets": [
-        {
-          "outcome": "Draw",
-          "selection": "Draw",
-          "decimal_odds": 10.76,
-          "model_probability": 17.59,
-          "implied_probability": 9.2937,
-          "edge": 8.3,
-          "expected_value": 0.8927,
-          "rating": "\u2605 MARGINAL"
+      "manager_intelligence": {
+        "home_manager": "Luis de la Fuente",
+        "home_style": "possession",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Herve Renard",
+        "away_style": "pressing",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 34,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.03,
+        "base_probability": {
+          "home": 69.97,
+          "draw": 17.59,
+          "away": 12.44
         }
-      ],
-      "has_value": true
+      },
+      "tactical_narrative": "Spain (Luis de la Fuente, 4-3-3, possession style) vs Saudi Arabia (Herve Renard, 4-3-3, pressing style)\n  Tactical matchup: possession vs pressing\n  Spain: Euro 2024 winner. Young, dynamic squad. Tiki-taka evolved. Heavy favourites.\n  Saudi Arabia: Famous for beating Argentina in 2022. High line, high press. Tactically brave.",
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Belgium",
@@ -330,6 +539,28 @@
       },
       "home_elo": 1920,
       "away_elo": 1750,
+      "manager_intelligence": {
+        "home_manager": "Domenico Tedesco",
+        "home_style": "possession",
+        "home_formation": "3-4-3",
+        "home_tenure_months": 40,
+        "home_confidence": 1.0,
+        "away_manager": "Amir Ghalenoei",
+        "away_style": "defensive",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 36,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 57.29,
+          "draw": 21.18,
+          "away": 21.53
+        }
+      },
+      "tactical_narrative": "Belgium (Domenico Tedesco, 3-4-3, possession style) vs IR Iran (Amir Ghalenoei, 4-3-3, defensive style)\n  Tactical matchup: possession vs defensive\n  Belgium: Last chance for golden generation. Tactically flexible with quality players.\n  IR Iran: Pragmatic. Physical. Difficult to beat. Strong team spirit.",
       "value_bets": [
         {
           "outcome": "Away Win",
@@ -366,6 +597,28 @@
       },
       "home_elo": 1870,
       "away_elo": 1680,
+      "manager_intelligence": {
+        "home_manager": "Marcelo Bielsa",
+        "home_style": "pressing",
+        "home_formation": "3-3-1-3",
+        "home_tenure_months": 36,
+        "home_confidence": 1.0,
+        "away_manager": "Bubista",
+        "away_style": "counter",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 77,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 59.49,
+          "draw": 20.58,
+          "away": 19.93
+        }
+      },
+      "tactical_narrative": "Uruguay (Marcelo Bielsa, 3-3-1-3, pressing style) vs Cape Verde (Bubista, 4-4-2, counter style)\n  Tactical matchup: pressing vs counter\n  Uruguay: El Loco. Most distinctive tactical identity in football. Extreme high press. Unpredictable.\n  Cape Verde: Long tenure. Excellent AFCON campaigns. Will be dangerous on counter.",
       "value_bets": [],
       "has_value": false
     },
@@ -385,21 +638,43 @@
         "away": 60.24
       },
       "model_probability": {
-        "home": 28.47,
-        "draw": 23.74,
-        "away": 47.79
+        "home": 29.18,
+        "draw": 23.5,
+        "away": 47.32
       },
       "home_elo": 1650,
       "away_elo": 1740,
+      "manager_intelligence": {
+        "home_manager": "Darren Bazeley",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Hossam Hassan",
+        "away_style": "counter",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 32,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs counter",
+        "home_tactical_adj": 0.01,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 28.47,
+          "draw": 23.74,
+          "away": 47.79
+        }
+      },
+      "tactical_narrative": "New Zealand (Darren Bazeley, 4-4-2, defensive style) vs Egypt (Hossam Hassan, 4-2-3-1, counter style)\n  Tactical matchup: defensive vs counter\n  New Zealand: Will be extremely defensive. Physical. Set piece threat.\n  Egypt: Salah-dependent. Will look to exploit wide areas.",
       "value_bets": [
         {
           "outcome": "Home Win",
           "selection": "New Zealand",
           "decimal_odds": 5.86,
-          "model_probability": 28.47,
+          "model_probability": 29.18,
           "implied_probability": 17.0648,
-          "edge": 11.41,
-          "expected_value": 0.6683,
+          "edge": 12.12,
+          "expected_value": 0.7099,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -427,6 +702,28 @@
       },
       "home_elo": 2080,
       "away_elo": 1810,
+      "manager_intelligence": {
+        "home_manager": "Lionel Scaloni",
+        "home_style": "counter",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 94,
+        "home_confidence": 1.0,
+        "away_manager": "Ralf Rangnick",
+        "away_style": "pressing",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 47,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 67.4,
+          "draw": 18.36,
+          "away": 14.24
+        }
+      },
+      "tactical_narrative": "Argentina (Lionel Scaloni, 4-4-2, counter style) vs Austria (Ralf Rangnick, 4-2-3-1, pressing style)\n  Tactical matchup: counter vs pressing\n  Argentina: World Cup 2022 winner. Copa America winner. Tactically brilliant. Messi's last dance.\n  Austria: Godfather of gegenpressing. Transformed Austria. Excellent Euros 2024.",
       "value_bets": [],
       "has_value": false
     },
@@ -446,12 +743,34 @@
         "away": 2.96
       },
       "model_probability": {
-        "home": 74.48,
-        "draw": 16.14,
-        "away": 9.38
+        "home": 73.74,
+        "draw": 15.98,
+        "away": 10.28
       },
       "home_elo": 2020,
       "away_elo": 1660,
+      "manager_intelligence": {
+        "home_manager": "Didier Deschamps",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 167,
+        "home_confidence": 1.0,
+        "away_manager": "Jesus Casas",
+        "away_style": "defensive",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.01,
+        "base_probability": {
+          "home": 74.48,
+          "draw": 16.14,
+          "away": 9.38
+        }
+      },
+      "tactical_narrative": "France (Didier Deschamps, 4-3-3, counter style) vs Iraq (Jesus Casas, 4-2-3-1, defensive style)\n  Tactical matchup: counter vs defensive\n  France: Longest serving elite manager. Ultra pragmatic. Won 2018 WC. Finals machine.\n  Iraq: Will be defensive. First World Cup in decades. Punching above weight.",
       "value_bets": [],
       "has_value": false
     },
@@ -473,10 +792,32 @@
       "model_probability": {
         "home": 37.75,
         "draw": 26.62,
-        "away": 35.64
+        "away": 35.63
       },
       "home_elo": 1810,
       "away_elo": 1800,
+      "manager_intelligence": {
+        "home_manager": "Stale Solbakken",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 53,
+        "home_confidence": 1.0,
+        "away_manager": "Aliou Ciss\u00e9",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 135,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 37.75,
+          "draw": 26.62,
+          "away": 35.64
+        }
+      },
+      "tactical_narrative": "Norway (Stale Solbakken, 4-3-3, counter style) vs Senegal (Aliou Ciss\u00e9, 4-3-3, counter style)\n  Tactical matchup: counter vs counter\n  Norway: Haaland-dependent. Direct, physical, dangerous on transition.\n  Senegal: AFCON winner 2022. Long tenure = excellent cohesion. Physical, direct, dangerous.",
       "value_bets": [],
       "has_value": false
     },
@@ -502,6 +843,28 @@
       },
       "home_elo": 1620,
       "away_elo": 1740,
+      "manager_intelligence": {
+        "home_manager": "Hussein Ammouta",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Vladimir Petkovic",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs possession",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 25.79,
+          "draw": 22.75,
+          "away": 51.46
+        }
+      },
+      "tactical_narrative": "Jordan (Hussein Ammouta, 4-4-2, defensive style) vs Algeria (Vladimir Petkovic, 4-3-3, possession style)\n  Tactical matchup: defensive vs possession\n  Jordan: Will be defensive. AFCON final 2024 was overachievement. Organised.\n  Algeria: Experienced. Former Switzerland manager. Rebuilding Algeria after AFCON disappointments.",
       "value_bets": [
         {
           "outcome": "Home Win",
@@ -532,12 +895,34 @@
         "away": 6.68
       },
       "model_probability": {
-        "home": 71.56,
+        "home": 71.57,
         "draw": 17.09,
         "away": 11.34
       },
       "home_elo": 1960,
       "away_elo": 1640,
+      "manager_intelligence": {
+        "home_manager": "Roberto Martinez",
+        "home_style": "possession",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Srecko Katanec",
+        "away_style": "defensive",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 53,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 71.56,
+          "draw": 17.09,
+          "away": 11.34
+        }
+      },
+      "tactical_narrative": "Portugal (Roberto Martinez, 4-3-3, possession style) vs Uzbekistan (Srecko Katanec, 4-2-3-1, defensive style)\n  Tactical matchup: possession vs defensive\n  Portugal: Former Belgium manager. Excellent squad depth. Post-Ronaldo transition ongoing.\n  Uzbekistan: First World Cup. Will be pragmatic and hard to break down.",
       "value_bets": [],
       "has_value": false
     },
@@ -563,6 +948,28 @@
       },
       "home_elo": 1970,
       "away_elo": 1700,
+      "manager_intelligence": {
+        "home_manager": "Thomas Tuchel",
+        "home_style": "pressing",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 20,
+        "home_confidence": 1.0,
+        "away_manager": "Otto Addo",
+        "away_style": "counter",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 21,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 67.4,
+          "draw": 18.36,
+          "away": 14.24
+        }
+      },
+      "tactical_narrative": "England (Thomas Tuchel, 4-2-3-1, pressing style) vs Ghana (Otto Addo, 4-2-3-1, counter style)\n  Tactical matchup: pressing vs counter\n  England: NEW MANAGER \u2014 replaced Southgate. German pressing philosophy. Tactical upgrade expected.\n  Ghana: Second spell. Physical, direct. Building young squad.",
       "value_bets": [],
       "has_value": false
     },
@@ -588,6 +995,28 @@
       },
       "home_elo": 1680,
       "away_elo": 1880,
+      "manager_intelligence": {
+        "home_manager": "Thomas Christiansen",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 53,
+        "home_confidence": 1.0,
+        "away_manager": "Zlatko Dalic",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 104,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs possession",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 19.15,
+          "draw": 20.29,
+          "away": 60.56
+        }
+      },
+      "tactical_narrative": "Panama (Thomas Christiansen, 4-4-2, defensive style) vs Croatia (Zlatko Dalic, 4-3-3, possession style)\n  Tactical matchup: defensive vs possession\n  Panama: Will be extremely defensive vs England and Croatia. Set piece oriented.\n  Croatia: Long tenure. WC 2018 finalist, WC 2022 third place. Experienced. Modric era ending.",
       "value_bets": [],
       "has_value": false
     },
@@ -607,21 +1036,43 @@
         "away": 13.51
       },
       "model_probability": {
-        "home": 53.84,
+        "home": 51.84,
         "draw": 22.11,
-        "away": 24.05
+        "away": 26.05
       },
       "home_elo": 1830,
       "away_elo": 1690,
+      "manager_intelligence": {
+        "home_manager": "Nestor Lorenzo",
+        "home_style": "possession",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 47,
+        "home_confidence": 1.0,
+        "away_manager": "S\u00e9bastien Desabre",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs counter",
+        "home_tactical_adj": -0.02,
+        "away_tactical_adj": 0.02,
+        "base_probability": {
+          "home": 53.84,
+          "draw": 22.11,
+          "away": 24.05
+        }
+      },
+      "tactical_narrative": "Colombia (Nestor Lorenzo, 4-2-3-1, possession style) vs Congo DR (S\u00e9bastien Desabre, 4-3-3, counter style)\n  Congo DR will absorb pressure and look to exploit space behind Colombia's high line.\n  Colombia: Copa America 2024 finalists. Excellent qualifying campaign. Dangerous side.\n  Congo DR: Athletic, physical. AFCON semifinalists. Dangerous on the break.",
       "value_bets": [
         {
           "outcome": "Away Win",
           "selection": "Congo DR",
           "decimal_odds": 7.4,
-          "model_probability": 24.05,
+          "model_probability": 26.05,
           "implied_probability": 13.5135,
-          "edge": 10.54,
-          "expected_value": 0.7797,
+          "edge": 12.54,
+          "expected_value": 0.9277,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -643,21 +1094,43 @@
         "away": 16.47
       },
       "model_probability": {
-        "home": 47.79,
+        "home": 49.79,
         "draw": 23.74,
-        "away": 28.47
+        "away": 26.47
       },
       "home_elo": 1730,
       "away_elo": 1640,
+      "manager_intelligence": {
+        "home_manager": "Sergej Barbarez",
+        "home_style": "counter",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Marquez Lopez",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 36,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs possession",
+        "home_tactical_adj": 0.02,
+        "away_tactical_adj": -0.02,
+        "base_probability": {
+          "home": 47.79,
+          "draw": 23.74,
+          "away": 28.47
+        }
+      },
+      "tactical_narrative": "Bosnia & Herzegovina (Sergej Barbarez, 4-2-3-1, counter style) vs Qatar (Marquez Lopez, 4-3-3, possession style)\n  Bosnia & Herzegovina will sit deep and look to hit Qatar on the break.\n  Bosnia & Herzegovina: Former national team striker. First major coaching role at senior international level.\n  Qatar: Spanish influence. Qatar investing heavily in football infrastructure.",
       "value_bets": [
         {
           "outcome": "Away Win",
           "selection": "Qatar",
           "decimal_odds": 6.07,
-          "model_probability": 28.47,
+          "model_probability": 26.47,
           "implied_probability": 16.4745,
-          "edge": 12.0,
-          "expected_value": 0.7281,
+          "edge": 10.0,
+          "expected_value": 0.6067,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -679,22 +1152,44 @@
         "away": 28.49
       },
       "model_probability": {
-        "home": 55.01,
-        "draw": 21.79,
-        "away": 23.2
+        "home": 53.41,
+        "draw": 21.16,
+        "away": 25.43
       },
       "home_elo": 1900,
       "away_elo": 1750,
+      "manager_intelligence": {
+        "home_manager": "Murat Yakin",
+        "home_style": "possession",
+        "home_formation": "3-4-3",
+        "home_tenure_months": 58,
+        "home_confidence": 1.0,
+        "away_manager": "Jesse Marsch",
+        "away_style": "pressing",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 30,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.03,
+        "base_probability": {
+          "home": 55.01,
+          "draw": 21.79,
+          "away": 23.2
+        }
+      },
+      "tactical_narrative": "Switzerland (Murat Yakin, 3-4-3, possession style) vs Canada (Jesse Marsch, 4-3-3, pressing style)\n  Tactical matchup: possession vs pressing\n  Switzerland: Solid continuity. Led Switzerland to excellent Euros 2024 campaign. Tactically flexible.\n  Canada: High energy pressing system. Former RB Leipzig coach. Brings European intensity.",
       "value_bets": [
         {
           "outcome": "Home Win",
           "selection": "Switzerland",
           "decimal_odds": 2.26,
-          "model_probability": 55.01,
+          "model_probability": 53.41,
           "implied_probability": 44.2478,
-          "edge": 10.76,
-          "expected_value": 0.2432,
-          "rating": "\u2605\u2605 GOOD"
+          "edge": 9.16,
+          "expected_value": 0.2071,
+          "rating": "\u2605 MARGINAL"
         }
       ],
       "has_value": true
@@ -715,21 +1210,43 @@
         "away": 9.23
       },
       "model_probability": {
-        "home": 61.61,
-        "draw": 20.0,
-        "away": 18.39
+        "home": 61.0,
+        "draw": 19.8,
+        "away": 19.2
       },
       "home_elo": 1830,
       "away_elo": 1620,
+      "manager_intelligence": {
+        "home_manager": "Walid Regragui",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 46,
+        "home_confidence": 1.0,
+        "away_manager": "Marc Collat",
+        "away_style": "defensive",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.01,
+        "base_probability": {
+          "home": 61.61,
+          "draw": 20.0,
+          "away": 18.39
+        }
+      },
+      "tactical_narrative": "Morocco (Walid Regragui, 4-3-3, counter style) vs Haiti (Marc Collat, 4-4-2, defensive style)\n  Tactical matchup: counter vs defensive\n  Morocco: World Cup 2022 semifinalist. Excellent defensive organisation. Counter-attacking threat.\n  Haiti: Underdog. Will park the bus against top teams.",
       "value_bets": [
         {
           "outcome": "Away Win",
           "selection": "Haiti",
           "decimal_odds": 10.84,
-          "model_probability": 18.39,
+          "model_probability": 19.2,
           "implied_probability": 9.2251,
-          "edge": 9.16,
-          "expected_value": 0.9935,
+          "edge": 9.97,
+          "expected_value": 1.0813,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -751,12 +1268,34 @@
         "away": 68.97
       },
       "model_probability": {
-        "home": 13.62,
+        "home": 15.62,
         "draw": 18.1,
-        "away": 68.28
+        "away": 66.28
       },
       "home_elo": 1770,
       "away_elo": 2050,
+      "manager_intelligence": {
+        "home_manager": "Steve Clarke",
+        "home_style": "counter",
+        "home_formation": "3-4-3",
+        "home_tenure_months": 85,
+        "home_confidence": 1.0,
+        "away_manager": "Dorival Junior",
+        "away_style": "possession",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 29,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs possession",
+        "home_tactical_adj": 0.02,
+        "away_tactical_adj": -0.02,
+        "base_probability": {
+          "home": 13.62,
+          "draw": 18.1,
+          "away": 68.28
+        }
+      },
+      "tactical_narrative": "Scotland (Steve Clarke, 3-4-3, counter style) vs Brazil (Dorival Junior, 4-2-3-1, possession style)\n  Scotland will sit deep and look to hit Brazil on the break.\n  Scotland: Long tenure \u2014 excellent stability. Consistent performer. Hard to beat defensively.\n  Brazil: Restored stability after turbulent period. More pragmatic than previous coaches.",
       "value_bets": [],
       "has_value": false
     },
@@ -776,21 +1315,43 @@
         "away": 54.64
       },
       "model_probability": {
-        "home": 33.87,
+        "home": 31.87,
         "draw": 25.87,
-        "away": 40.26
+        "away": 42.26
       },
       "home_elo": 1790,
       "away_elo": 1820,
+      "manager_intelligence": {
+        "home_manager": "Ivan Hasek",
+        "home_style": "possession",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 31,
+        "home_confidence": 1.0,
+        "away_manager": "Javier Aguirre",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 34,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs counter",
+        "home_tactical_adj": -0.02,
+        "away_tactical_adj": 0.02,
+        "base_probability": {
+          "home": 33.87,
+          "draw": 25.87,
+          "away": 40.26
+        }
+      },
+      "tactical_narrative": "Czechia (Ivan Hasek, 4-2-3-1, possession style) vs Mexico (Javier Aguirre, 4-3-3, counter style)\n  Mexico will absorb pressure and look to exploit space behind Czechia's high line.\n  Czechia: Relatively new appointment. Czech style \u2014 technical, structured.\n  Mexico: Second spell. Pragmatic, defensive-minded. Prioritises organisation over possession.",
       "value_bets": [
         {
           "outcome": "Home Win",
           "selection": "Czechia",
           "decimal_odds": 4.89,
-          "model_probability": 33.87,
+          "model_probability": 31.87,
           "implied_probability": 20.4499,
-          "edge": 13.42,
-          "expected_value": 0.6562,
+          "edge": 11.42,
+          "expected_value": 0.5584,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -812,21 +1373,43 @@
         "away": 59.88
       },
       "model_probability": {
-        "home": 26.68,
-        "draw": 23.07,
-        "away": 50.25
+        "home": 27.41,
+        "draw": 22.84,
+        "away": 49.75
       },
       "home_elo": 1660,
       "away_elo": 1770,
+      "manager_intelligence": {
+        "home_manager": "Hugo Broos",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 61,
+        "home_confidence": 1.0,
+        "away_manager": "Hong Myung-bo",
+        "away_style": "counter",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 40,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs counter",
+        "home_tactical_adj": 0.01,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 26.68,
+          "draw": 23.07,
+          "away": 50.25
+        }
+      },
+      "tactical_narrative": "South Africa (Hugo Broos, 4-4-2, defensive style) vs Korea Republic (Hong Myung-bo, 4-2-3-1, counter style)\n  Tactical matchup: defensive vs counter\n  South Africa: Experienced. Built Bafana Bafana into AFCON qualifiers. Disciplined structure.\n  Korea Republic: Former national team captain. Transition period after Klinsmann dismissal.",
       "value_bets": [
         {
           "outcome": "Home Win",
           "selection": "South Africa",
           "decimal_odds": 5.73,
-          "model_probability": 26.68,
+          "model_probability": 27.41,
           "implied_probability": 17.452,
-          "edge": 9.23,
-          "expected_value": 0.5288,
+          "edge": 9.96,
+          "expected_value": 0.5706,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -854,6 +1437,28 @@
       },
       "home_elo": 1640,
       "away_elo": 1730,
+      "manager_intelligence": {
+        "home_manager": "Fr\u00e9d\u00e9ric N\u00e9e",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 53,
+        "home_confidence": 1.0,
+        "away_manager": "Emerse Fa\u00e9",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 29,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs possession",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 28.47,
+          "draw": 23.74,
+          "away": 47.79
+        }
+      },
+      "tactical_narrative": "Curacao (Fr\u00e9d\u00e9ric N\u00e9e, 4-4-2, defensive style) vs Ivory Coast (Emerse Fa\u00e9, 4-3-3, possession style)\n  Tactical matchup: defensive vs possession\n  Curacao: First World Cup. Will be extremely defensive against Germany and Ecuador.\n  Ivory Coast: AFCON 2024 winner. Hero appointment after Peseiro sacking mid-tournament.",
       "value_bets": [
         {
           "outcome": "Draw",
@@ -890,6 +1495,28 @@
       },
       "home_elo": 1780,
       "away_elo": 1980,
+      "manager_intelligence": {
+        "home_manager": "Sebasti\u00e1n Beccacece",
+        "home_style": "pressing",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 30,
+        "home_confidence": 1.0,
+        "away_manager": "Julian Nagelsmann",
+        "away_style": "pressing",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 33,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 19.15,
+          "draw": 20.29,
+          "away": 60.56
+        }
+      },
+      "tactical_narrative": "Ecuador (Sebasti\u00e1n Beccacece, 4-4-2, pressing style) vs Germany (Julian Nagelsmann, 4-2-3-1, pressing style)\n  Tactical matchup: pressing vs pressing\n  Ecuador: Aggressive pressing system. Physical, direct.\n  Germany: Excellent Euros 2024 host. High pressing, vertical football. Germany rejuvenated.",
       "value_bets": [],
       "has_value": false
     },
@@ -915,6 +1542,28 @@
       },
       "home_elo": 1800,
       "away_elo": 1840,
+      "manager_intelligence": {
+        "home_manager": "Hajime Moriyasu",
+        "home_style": "pressing",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 95,
+        "home_confidence": 1.0,
+        "away_manager": "Jon Dahl Tomasson",
+        "away_style": "counter",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 48,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 32.98,
+          "draw": 25.5,
+          "away": 41.52
+        }
+      },
+      "tactical_narrative": "Japan (Hajime Moriyasu, 4-2-3-1, pressing style) vs Sweden (Jon Dahl Tomasson, 4-4-2, counter style)\n  Tactical matchup: pressing vs counter\n  Japan: Long tenure \u2014 outstanding World Cup 2022. High energy pressing. Famous for giant-killing.\n  Sweden: Swedish pragmatism. Hard to break down. Strong set pieces.",
       "value_bets": [
         {
           "outcome": "Away Win",
@@ -951,6 +1600,28 @@
       },
       "home_elo": 1720,
       "away_elo": 1950,
+      "manager_intelligence": {
+        "home_manager": "Jalel Kadri",
+        "home_style": "defensive",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 54,
+        "home_confidence": 1.0,
+        "away_manager": "Ronald Koeman",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 35,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs possession",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 16.93,
+          "draw": 19.44,
+          "away": 63.63
+        }
+      },
+      "tactical_narrative": "Tunisia (Jalel Kadri, 4-3-3, defensive style) vs Netherlands (Ronald Koeman, 4-3-3, possession style)\n  Tactical matchup: defensive vs possession\n  Tunisia: Disciplined. Will look to frustrate bigger sides.\n  Netherlands: Euro 2024 finalist. Dutch total football principles. Quality throughout.",
       "value_bets": [],
       "has_value": false
     },
@@ -976,6 +1647,28 @@
       },
       "home_elo": 1720,
       "away_elo": 1740,
+      "manager_intelligence": {
+        "home_manager": "Daniel Garnero",
+        "home_style": "counter",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 39,
+        "home_confidence": 1.0,
+        "away_manager": "Tony Popovic",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 20,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 34.76,
+          "draw": 26.24,
+          "away": 39.0
+        }
+      },
+      "tactical_narrative": "Paraguay (Daniel Garnero, 4-4-2, counter style) vs Australia (Tony Popovic, 4-3-3, counter style)\n  Tactical matchup: counter vs counter\n  Paraguay: Solid CONMEBOL qualifying campaign.\n  Australia: Relatively new. Replaced Graham Arnold. Building his own identity.",
       "value_bets": [
         {
           "outcome": "Away Win",
@@ -1006,12 +1699,34 @@
         "away": 40.16
       },
       "model_probability": {
-        "home": 37.75,
-        "draw": 26.62,
-        "away": 35.64
+        "home": 36.65,
+        "draw": 25.84,
+        "away": 37.51
       },
       "home_elo": 1810,
       "away_elo": 1800,
+      "manager_intelligence": {
+        "home_manager": "Vincenzo Montella",
+        "home_style": "possession",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 34,
+        "home_confidence": 1.0,
+        "away_manager": "Mauricio Pochettino",
+        "away_style": "pressing",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 30,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.03,
+        "base_probability": {
+          "home": 37.75,
+          "draw": 26.62,
+          "away": 35.64
+        }
+      },
+      "tactical_narrative": "Turkiye (Vincenzo Montella, 4-2-3-1, possession style) vs USA (Mauricio Pochettino, 4-3-3, pressing style)\n  Tactical matchup: possession vs pressing\n  Turkiye: Excellent Euros 2024 campaign. Italian tactical discipline. Technically strong setup.\n  USA: High-profile appointment. Pressing system, demands high energy. Tactical upgrade.",
       "value_bets": [],
       "has_value": false
     },
@@ -1037,6 +1752,28 @@
       },
       "home_elo": 1810,
       "away_elo": 2020,
+      "manager_intelligence": {
+        "home_manager": "Stale Solbakken",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 53,
+        "home_confidence": 1.0,
+        "away_manager": "Didier Deschamps",
+        "away_style": "counter",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 167,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs counter",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 18.39,
+          "draw": 20.0,
+          "away": 61.61
+        }
+      },
+      "tactical_narrative": "Norway (Stale Solbakken, 4-3-3, counter style) vs France (Didier Deschamps, 4-3-3, counter style)\n  Tactical matchup: counter vs counter\n  Norway: Haaland-dependent. Direct, physical, dangerous on transition.\n  France: Longest serving elite manager. Ultra pragmatic. Won 2018 WC. Finals machine.",
       "value_bets": [
         {
           "outcome": "Away Win",
@@ -1067,21 +1804,43 @@
         "away": 8.96
       },
       "model_probability": {
-        "home": 53.84,
-        "draw": 22.11,
-        "away": 24.05
+        "home": 53.31,
+        "draw": 21.89,
+        "away": 24.8
       },
       "home_elo": 1800,
       "away_elo": 1660,
+      "manager_intelligence": {
+        "home_manager": "Aliou Ciss\u00e9",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 135,
+        "home_confidence": 1.0,
+        "away_manager": "Jesus Casas",
+        "away_style": "defensive",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.01,
+        "base_probability": {
+          "home": 53.84,
+          "draw": 22.11,
+          "away": 24.05
+        }
+      },
+      "tactical_narrative": "Senegal (Aliou Ciss\u00e9, 4-3-3, counter style) vs Iraq (Jesus Casas, 4-2-3-1, defensive style)\n  Tactical matchup: counter vs defensive\n  Senegal: AFCON winner 2022. Long tenure = excellent cohesion. Physical, direct, dangerous.\n  Iraq: Will be defensive. First World Cup in decades. Punching above weight.",
       "value_bets": [
         {
           "outcome": "Away Win",
           "selection": "Iraq",
           "decimal_odds": 11.16,
-          "model_probability": 24.05,
+          "model_probability": 24.8,
           "implied_probability": 8.9606,
-          "edge": 15.09,
-          "expected_value": 1.684,
+          "edge": 15.84,
+          "expected_value": 1.7677,
           "rating": "\u2605\u2605\u2605 STRONG"
         }
       ],
@@ -1105,10 +1864,32 @@
       "model_probability": {
         "home": 35.64,
         "draw": 26.62,
-        "away": 37.75
+        "away": 37.74
       },
       "home_elo": 1680,
       "away_elo": 1690,
+      "manager_intelligence": {
+        "home_manager": "Bubista",
+        "home_style": "counter",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 77,
+        "home_confidence": 1.0,
+        "away_manager": "Herve Renard",
+        "away_style": "pressing",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 34,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 35.64,
+          "draw": 26.62,
+          "away": 37.75
+        }
+      },
+      "tactical_narrative": "Cape Verde (Bubista, 4-4-2, counter style) vs Saudi Arabia (Herve Renard, 4-3-3, pressing style)\n  Tactical matchup: counter vs pressing\n  Cape Verde: Long tenure. Excellent AFCON campaigns. Will be dangerous on counter.\n  Saudi Arabia: Famous for beating Argentina in 2022. High line, high press. Tactically brave.",
       "value_bets": [],
       "has_value": false
     },
@@ -1128,22 +1909,44 @@
         "away": 63.69
       },
       "model_probability": {
-        "home": 25.79,
-        "draw": 22.75,
-        "away": 51.46
+        "home": 27.95,
+        "draw": 22.09,
+        "away": 49.96
       },
       "home_elo": 1870,
       "away_elo": 1990,
+      "manager_intelligence": {
+        "home_manager": "Marcelo Bielsa",
+        "home_style": "pressing",
+        "home_formation": "3-3-1-3",
+        "home_tenure_months": 36,
+        "home_confidence": 1.0,
+        "away_manager": "Luis de la Fuente",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "pressing vs possession",
+        "home_tactical_adj": 0.03,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 25.79,
+          "draw": 22.75,
+          "away": 51.46
+        }
+      },
+      "tactical_narrative": "Uruguay (Marcelo Bielsa, 3-3-1-3, pressing style) vs Spain (Luis de la Fuente, 4-3-3, possession style)\n  Uruguay's high press will look to disrupt Spain's build-up play.\n  Uruguay: El Loco. Most distinctive tactical identity in football. Extreme high press. Unpredictable.\n  Spain: Euro 2024 winner. Young, dynamic squad. Tiki-taka evolved. Heavy favourites.",
       "value_bets": [
         {
           "outcome": "Home Win",
           "selection": "Uruguay",
           "decimal_odds": 6.33,
-          "model_probability": 25.79,
+          "model_probability": 27.95,
           "implied_probability": 15.7978,
-          "edge": 9.99,
-          "expected_value": 0.6325,
-          "rating": "\u2605 MARGINAL"
+          "edge": 12.15,
+          "expected_value": 0.7692,
+          "rating": "\u2605\u2605 GOOD"
         }
       ],
       "has_value": true
@@ -1164,21 +1967,43 @@
         "away": 24.45
       },
       "model_probability": {
-        "home": 35.64,
-        "draw": 26.62,
-        "away": 37.75
+        "home": 35.28,
+        "draw": 26.35,
+        "away": 38.37
       },
       "home_elo": 1740,
       "away_elo": 1750,
+      "manager_intelligence": {
+        "home_manager": "Hossam Hassan",
+        "home_style": "counter",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 32,
+        "home_confidence": 1.0,
+        "away_manager": "Amir Ghalenoei",
+        "away_style": "defensive",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 36,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.01,
+        "base_probability": {
+          "home": 35.64,
+          "draw": 26.62,
+          "away": 37.75
+        }
+      },
+      "tactical_narrative": "Egypt (Hossam Hassan, 4-2-3-1, counter style) vs IR Iran (Amir Ghalenoei, 4-3-3, defensive style)\n  Tactical matchup: counter vs defensive\n  Egypt: Salah-dependent. Will look to exploit wide areas.\n  IR Iran: Pragmatic. Physical. Difficult to beat. Strong team spirit.",
       "value_bets": [
         {
           "outcome": "Away Win",
           "selection": "IR Iran",
           "decimal_odds": 4.09,
-          "model_probability": 37.75,
+          "model_probability": 38.37,
           "implied_probability": 24.4499,
-          "edge": 13.3,
-          "expected_value": 0.544,
+          "edge": 13.92,
+          "expected_value": 0.5693,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1206,6 +2031,28 @@
       },
       "home_elo": 1650,
       "away_elo": 1920,
+      "manager_intelligence": {
+        "home_manager": "Darren Bazeley",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Domenico Tedesco",
+        "away_style": "possession",
+        "away_formation": "3-4-3",
+        "away_tenure_months": 40,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs possession",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 14.24,
+          "draw": 18.36,
+          "away": 67.4
+        }
+      },
+      "tactical_narrative": "New Zealand (Darren Bazeley, 4-4-2, defensive style) vs Belgium (Domenico Tedesco, 3-4-3, possession style)\n  Tactical matchup: defensive vs possession\n  New Zealand: Will be extremely defensive. Physical. Set piece threat.\n  Belgium: Last chance for golden generation. Tactically flexible with quality players.",
       "value_bets": [],
       "has_value": false
     },
@@ -1225,12 +2072,34 @@
         "away": 16.18
       },
       "model_probability": {
-        "home": 58.4,
+        "home": 56.4,
         "draw": 20.88,
-        "away": 20.72
+        "away": 22.72
       },
       "home_elo": 1880,
       "away_elo": 1700,
+      "manager_intelligence": {
+        "home_manager": "Zlatko Dalic",
+        "home_style": "possession",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 104,
+        "home_confidence": 1.0,
+        "away_manager": "Otto Addo",
+        "away_style": "counter",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 21,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs counter",
+        "home_tactical_adj": -0.02,
+        "away_tactical_adj": 0.02,
+        "base_probability": {
+          "home": 58.4,
+          "draw": 20.88,
+          "away": 20.72
+        }
+      },
+      "tactical_narrative": "Croatia (Zlatko Dalic, 4-3-3, possession style) vs Ghana (Otto Addo, 4-2-3-1, counter style)\n  Ghana will absorb pressure and look to exploit space behind Croatia's high line.\n  Croatia: Long tenure. WC 2018 finalist, WC 2022 third place. Experienced. Modric era ending.\n  Ghana: Second spell. Physical, direct. Building young squad.",
       "value_bets": [],
       "has_value": false
     },
@@ -1250,12 +2119,34 @@
         "away": 77.52
       },
       "model_probability": {
-        "home": 13.02,
-        "draw": 17.84,
-        "away": 69.14
+        "home": 12.52,
+        "draw": 17.15,
+        "away": 70.33
       },
       "home_elo": 1680,
       "away_elo": 1970,
+      "manager_intelligence": {
+        "home_manager": "Thomas Christiansen",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 53,
+        "home_confidence": 1.0,
+        "away_manager": "Thomas Tuchel",
+        "away_style": "pressing",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 20,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.04,
+        "base_probability": {
+          "home": 13.02,
+          "draw": 17.84,
+          "away": 69.14
+        }
+      },
+      "tactical_narrative": "Panama (Thomas Christiansen, 4-4-2, defensive style) vs England (Thomas Tuchel, 4-2-3-1, pressing style)\n  England's press vs Panama's defensive structure \u2014 expect a physical battle.\n  Panama: Will be extremely defensive vs England and Croatia. Set piece oriented.\n  England: NEW MANAGER \u2014 replaced Southgate. German pressing philosophy. Tactical upgrade expected.",
       "value_bets": [],
       "has_value": false
     },
@@ -1281,6 +2172,28 @@
       },
       "home_elo": 1830,
       "away_elo": 1960,
+      "manager_intelligence": {
+        "home_manager": "Nestor Lorenzo",
+        "home_style": "possession",
+        "home_formation": "4-2-3-1",
+        "home_tenure_months": 47,
+        "home_confidence": 1.0,
+        "away_manager": "Roberto Martinez",
+        "away_style": "possession",
+        "away_formation": "4-3-3",
+        "away_tenure_months": 41,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs possession",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 24.92,
+          "draw": 22.42,
+          "away": 52.66
+        }
+      },
+      "tactical_narrative": "Colombia (Nestor Lorenzo, 4-2-3-1, possession style) vs Portugal (Roberto Martinez, 4-3-3, possession style)\n  Tactical matchup: possession vs possession\n  Colombia: Copa America 2024 finalists. Excellent qualifying campaign. Dangerous side.\n  Portugal: Former Belgium manager. Excellent squad depth. Post-Ronaldo transition ongoing.",
       "value_bets": [],
       "has_value": false
     },
@@ -1300,12 +2213,34 @@
         "away": 28.01
       },
       "model_probability": {
-        "home": 42.78,
-        "draw": 25.14,
-        "away": 32.08
+        "home": 42.36,
+        "draw": 24.89,
+        "away": 32.75
       },
       "home_elo": 1690,
       "away_elo": 1640,
+      "manager_intelligence": {
+        "home_manager": "S\u00e9bastien Desabre",
+        "home_style": "counter",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Srecko Katanec",
+        "away_style": "defensive",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 53,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "counter vs defensive",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.01,
+        "base_probability": {
+          "home": 42.78,
+          "draw": 25.14,
+          "away": 32.08
+        }
+      },
+      "tactical_narrative": "Congo DR (S\u00e9bastien Desabre, 4-3-3, counter style) vs Uzbekistan (Srecko Katanec, 4-2-3-1, defensive style)\n  Tactical matchup: counter vs defensive\n  Congo DR: Athletic, physical. AFCON semifinalists. Dangerous on the break.\n  Uzbekistan: First World Cup. Will be pragmatic and hard to break down.",
       "value_bets": [],
       "has_value": false
     },
@@ -1325,14 +2260,47 @@
         "away": 38.31
       },
       "model_probability": {
-        "home": 30.27,
-        "draw": 24.43,
-        "away": 45.3
+        "home": 29.39,
+        "draw": 23.72,
+        "away": 46.89
       },
       "home_elo": 1740,
       "away_elo": 1810,
-      "value_bets": [],
-      "has_value": false
+      "manager_intelligence": {
+        "home_manager": "Vladimir Petkovic",
+        "home_style": "possession",
+        "home_formation": "4-3-3",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Ralf Rangnick",
+        "away_style": "pressing",
+        "away_formation": "4-2-3-1",
+        "away_tenure_months": 47,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "possession vs pressing",
+        "home_tactical_adj": 0.0,
+        "away_tactical_adj": 0.03,
+        "base_probability": {
+          "home": 30.27,
+          "draw": 24.43,
+          "away": 45.3
+        }
+      },
+      "tactical_narrative": "Algeria (Vladimir Petkovic, 4-3-3, possession style) vs Austria (Ralf Rangnick, 4-2-3-1, pressing style)\n  Tactical matchup: possession vs pressing\n  Algeria: Experienced. Former Switzerland manager. Rebuilding Algeria after AFCON disappointments.\n  Austria: Godfather of gegenpressing. Transformed Austria. Excellent Euros 2024.",
+      "value_bets": [
+        {
+          "outcome": "Away Win",
+          "selection": "Austria",
+          "decimal_odds": 2.61,
+          "model_probability": 46.89,
+          "implied_probability": 38.3142,
+          "edge": 8.58,
+          "expected_value": 0.2238,
+          "rating": "\u2605 MARGINAL"
+        }
+      ],
+      "has_value": true
     },
     {
       "home_team": "Jordan",
@@ -1350,12 +2318,34 @@
         "away": 81.3
       },
       "model_probability": {
-        "home": 5.69,
-        "draw": 13.99,
-        "away": 80.32
+        "home": 6.62,
+        "draw": 13.85,
+        "away": 79.53
       },
       "home_elo": 1620,
       "away_elo": 2080,
+      "manager_intelligence": {
+        "home_manager": "Hussein Ammouta",
+        "home_style": "defensive",
+        "home_formation": "4-4-2",
+        "home_tenure_months": 41,
+        "home_confidence": 1.0,
+        "away_manager": "Lionel Scaloni",
+        "away_style": "counter",
+        "away_formation": "4-4-2",
+        "away_tenure_months": 94,
+        "away_confidence": 1.0,
+        "combined_confidence": 1.0,
+        "tactical_matchup": "defensive vs counter",
+        "home_tactical_adj": 0.01,
+        "away_tactical_adj": 0.0,
+        "base_probability": {
+          "home": 5.69,
+          "draw": 13.99,
+          "away": 80.32
+        }
+      },
+      "tactical_narrative": "Jordan (Hussein Ammouta, 4-4-2, defensive style) vs Argentina (Lionel Scaloni, 4-4-2, counter style)\n  Tactical matchup: defensive vs counter\n  Jordan: Will be defensive. AFCON final 2024 was overachievement. Organised.\n  Argentina: World Cup 2022 winner. Copa America winner. Tactically brilliant. Messi's last dance.",
       "value_bets": [],
       "has_value": false
     }
