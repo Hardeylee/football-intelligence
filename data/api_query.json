@@ -1,0 +1,12 @@
+{
+  "bizCode": 10000,
+  "data": [
+    {
+      "appId": "service-realSportsGame",
+      "configKey": "cashout_anywin_allow",
+      "configValue": "true",
+      "namespace": "application"
+    }
+  ],
+  "message": "Success"
+}

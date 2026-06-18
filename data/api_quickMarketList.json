@@ -1,0 +1,84 @@
+{
+  "bizCode": 10000,
+  "message": "0#0",
+  "data": [
+    {
+      "marketId": "1",
+      "displayName": "1X2",
+      "title": "1,X,2",
+      "hasSpecifier": false
+    },
+    {
+      "marketId": "18",
+      "displayName": "O/U",
+      "title": "Over,Under",
+      "hasSpecifier": true,
+      "specifierName": "Goals"
+    },
+    {
+      "marketId": "10",
+      "displayName": "DC",
+      "title": "1X,12,X2",
+      "hasSpecifier": false
+    },
+    {
+      "marketId": "19",
+      "displayName": "Home O/U",
+      "title": "Over,Under",
+      "hasSpecifier": true,
+      "specifierName": "Goals"
+    },
+    {
+      "marketId": "20",
+      "displayName": "Away O/U",
+      "title": "Over,Under",
+      "hasSpecifier": true,
+      "specifierName": "Goals"
+    },
+    {
+      "marketId": "68",
+      "displayName": "1st Half O/U",
+      "title": "Over,Under",
+      "hasSpecifier": true,
+      "specifierName": "Goals"
+    },
+    {
+      "marketId": "166",
+      "displayName": "Corners O/U",
+      "title": "Over,Under",
+      "hasSpecifier": true,
+      "specifierName": "Corners"
+    },
+    {
+      "marketId": "29",
+      "displayName": "GG/NG",
+      "title": "GG,NG",
+      "hasSpecifier": false
+    },
+    {
+      "marketId": "14",
+      "displayName": "Handicap",
+      "title": "1,X,2",
+      "hasSpecifier": true,
+      "specifierName": "HC"
+    },
+    {
+      "marketId": "60",
+      "displayName": "1st Half 1X2",
+      "title": "1,X,2",
+      "hasSpecifier": false
+    },
+    {
+      "marketId": "60010",
+      "displayName": "2+ Goals Streak",
+      "title": "Yes,No",
+      "hasSpecifier": false
+    },
+    {
+      "marketId": "60020",
+      "displayName": "3+ Goals Streak",
+      "title": "Yes,No",
+      "hasSpecifier": false
+    }
+  ]
+}

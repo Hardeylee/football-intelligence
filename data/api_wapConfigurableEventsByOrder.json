@@ -1,0 +1,17 @@
+{
+  "bizCode": 10000,
+  "message": "0#0",
+  "data": {
+    "moreEvents": false,
+    "tournaments": [
+      {
+        "id": "sr:tournament:16",
+        "name": "World Cup",
+        "eventSize": 0,
+        "categoryName": "International",
+        "categoryId": "sr:category:4",
+        "tournamentIcon": "https://s.sporty.net/ng/main/res/109a36ad6fe7905905a553ff299fa4cd.webp"
+      }
+    ]
+  }
+}

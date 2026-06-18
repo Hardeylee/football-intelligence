@@ -1,0 +1,1157 @@
+{
+  "scraped_at": "2026-06-18T01:18:43.464110",
+  "total": 50,
+  "with_odds": 50,
+  "matches": [
+    {
+      "event_id": "sr:match:66457032",
+      "game_id": "44491",
+      "competition": "World Cup",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "kick_off": "18 Jun 2026 03:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.337251",
+      "odds": {
+        "home": 9.14,
+        "draw": 4.92,
+        "away": 1.41
+      },
+      "implied_probability": {
+        "home": 10.94,
+        "draw": 20.33,
+        "away": 70.92
+      },
+      "bookmaker_margin": 102.19,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456910",
+      "game_id": "16466",
+      "competition": "World Cup",
+      "home_team": "Czechia",
+      "away_team": "South Africa",
+      "kick_off": "18 Jun 2026 17:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.337434",
+      "odds": {
+        "home": 1.84,
+        "draw": 3.79,
+        "away": 4.72
+      },
+      "implied_probability": {
+        "home": 54.35,
+        "draw": 26.39,
+        "away": 21.19
+      },
+      "bookmaker_margin": 101.93,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456922",
+      "game_id": "30099",
+      "competition": "World Cup",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia & Herzegovina",
+      "kick_off": "18 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.337600",
+      "odds": {
+        "home": 1.58,
+        "draw": 4.3,
+        "away": 6.48
+      },
+      "implied_probability": {
+        "home": 63.29,
+        "draw": 23.26,
+        "away": 15.43
+      },
+      "bookmaker_margin": 101.98,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456920",
+      "game_id": "27279",
+      "competition": "World Cup",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "kick_off": "18 Jun 2026 23:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.337761",
+      "odds": {
+        "home": 1.3,
+        "draw": 6.14,
+        "away": 11.59
+      },
+      "implied_probability": {
+        "home": 76.92,
+        "draw": 16.29,
+        "away": 8.63
+      },
+      "bookmaker_margin": 101.84,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456908",
+      "game_id": "25432",
+      "competition": "World Cup",
+      "home_team": "Mexico",
+      "away_team": "Korea Republic",
+      "kick_off": "19 Jun 2026 02:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.337921",
+      "odds": {
+        "home": 2.08,
+        "draw": 3.37,
+        "away": 4.13
+      },
+      "implied_probability": {
+        "home": 48.08,
+        "draw": 29.67,
+        "away": 24.21
+      },
+      "bookmaker_margin": 101.96,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456944",
+      "game_id": "30102",
+      "competition": "World Cup",
+      "home_team": "USA",
+      "away_team": "Australia",
+      "kick_off": "19 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.338081",
+      "odds": {
+        "home": 1.65,
+        "draw": 4.26,
+        "away": 5.54
+      },
+      "implied_probability": {
+        "home": 60.61,
+        "draw": 23.47,
+        "away": 18.05
+      },
+      "bookmaker_margin": 102.13,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456934",
+      "game_id": "30419",
+      "competition": "World Cup",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "kick_off": "19 Jun 2026 23:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.338238",
+      "odds": {
+        "home": 5.21,
+        "draw": 3.73,
+        "away": 1.79
+      },
+      "implied_probability": {
+        "home": 19.19,
+        "draw": 26.81,
+        "away": 55.87
+      },
+      "bookmaker_margin": 101.87,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456932",
+      "game_id": "17859",
+      "competition": "World Cup",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "kick_off": "20 Jun 2026 01:30",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.338396",
+      "odds": {
+        "home": 1.13,
+        "draw": 10.94,
+        "away": 24.49
+      },
+      "implied_probability": {
+        "home": 88.5,
+        "draw": 9.14,
+        "away": 4.08
+      },
+      "bookmaker_margin": 101.72,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456946",
+      "game_id": "31426",
+      "competition": "World Cup",
+      "home_team": "Turkiye",
+      "away_team": "Paraguay",
+      "kick_off": "20 Jun 2026 04:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.338552",
+      "odds": {
+        "home": 2.06,
+        "draw": 3.44,
+        "away": 4.11
+      },
+      "implied_probability": {
+        "home": 48.54,
+        "draw": 29.07,
+        "away": 24.33
+      },
+      "bookmaker_margin": 101.94,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456972",
+      "game_id": "31704",
+      "competition": "World Cup",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "kick_off": "20 Jun 2026 18:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.338719",
+      "odds": {
+        "home": 1.74,
+        "draw": 4.01,
+        "away": 5.12
+      },
+      "implied_probability": {
+        "home": 57.47,
+        "draw": 24.94,
+        "away": 19.53
+      },
+      "bookmaker_margin": 101.94,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457074",
+      "game_id": "31946",
+      "competition": "World Cup",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "kick_off": "20 Jun 2026 21:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.338877",
+      "odds": {
+        "home": 1.59,
+        "draw": 4.56,
+        "away": 5.76
+      },
+      "implied_probability": {
+        "home": 62.89,
+        "draw": 21.93,
+        "away": 17.36
+      },
+      "bookmaker_margin": 102.18,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457076",
+      "game_id": "32426",
+      "competition": "World Cup",
+      "home_team": "Ecuador",
+      "away_team": "Curacao",
+      "kick_off": "21 Jun 2026 01:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339035",
+      "odds": {
+        "home": 1.11,
+        "draw": 11.16,
+        "away": 30.86
+      },
+      "implied_probability": {
+        "home": 90.09,
+        "draw": 8.96,
+        "away": 3.24
+      },
+      "bookmaker_margin": 102.29,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456974",
+      "game_id": "33783",
+      "competition": "World Cup",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "kick_off": "21 Jun 2026 05:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339191",
+      "odds": {
+        "home": 6.77,
+        "draw": 4.22,
+        "away": 1.57
+      },
+      "implied_probability": {
+        "home": 14.77,
+        "draw": 23.7,
+        "away": 63.69
+      },
+      "bookmaker_margin": 102.16,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456998",
+      "game_id": "36157",
+      "competition": "World Cup",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "kick_off": "21 Jun 2026 17:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339347",
+      "odds": {
+        "home": 1.12,
+        "draw": 10.63,
+        "away": 28.85
+      },
+      "implied_probability": {
+        "home": 89.29,
+        "draw": 9.41,
+        "away": 3.47
+      },
+      "bookmaker_margin": 102.17,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456986",
+      "game_id": "12559",
+      "competition": "World Cup",
+      "home_team": "Belgium",
+      "away_team": "IR Iran",
+      "kick_off": "21 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339504",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.87,
+        "away": 7.95
+      },
+      "implied_probability": {
+        "home": 68.97,
+        "draw": 20.53,
+        "away": 12.58
+      },
+      "bookmaker_margin": 102.08,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457000",
+      "game_id": "42024",
+      "competition": "World Cup",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde",
+      "kick_off": "21 Jun 2026 23:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339660",
+      "odds": {
+        "home": 1.51,
+        "draw": 4.32,
+        "away": 7.99
+      },
+      "implied_probability": {
+        "home": 66.23,
+        "draw": 23.15,
+        "away": 12.52
+      },
+      "bookmaker_margin": 101.9,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456988",
+      "game_id": "36940",
+      "competition": "World Cup",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "kick_off": "22 Jun 2026 02:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339817",
+      "odds": {
+        "home": 5.86,
+        "draw": 4.07,
+        "away": 1.66
+      },
+      "implied_probability": {
+        "home": 17.06,
+        "draw": 24.57,
+        "away": 60.24
+      },
+      "bookmaker_margin": 101.87,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457022",
+      "game_id": "36950",
+      "competition": "World Cup",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "kick_off": "22 Jun 2026 18:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.339958",
+      "odds": {
+        "home": 1.61,
+        "draw": 4.2,
+        "away": 6.16
+      },
+      "implied_probability": {
+        "home": 62.11,
+        "draw": 23.81,
+        "away": 16.23
+      },
+      "bookmaker_margin": 102.15,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457010",
+      "game_id": "39963",
+      "competition": "World Cup",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "kick_off": "22 Jun 2026 22:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.340098",
+      "odds": {
+        "home": 1.1,
+        "draw": 12.17,
+        "away": 35.44
+      },
+      "implied_probability": {
+        "home": 90.91,
+        "draw": 8.22,
+        "away": 2.82
+      },
+      "bookmaker_margin": 101.95,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457012",
+      "game_id": "44080",
+      "competition": "World Cup",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "kick_off": "23 Jun 2026 01:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.340240",
+      "odds": {
+        "home": 2.44,
+        "draw": 3.52,
+        "away": 3.06
+      },
+      "implied_probability": {
+        "home": 40.98,
+        "draw": 28.41,
+        "away": 32.68
+      },
+      "bookmaker_margin": 102.07,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457024",
+      "game_id": "44081",
+      "competition": "World Cup",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "kick_off": "23 Jun 2026 04:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.340377",
+      "odds": {
+        "home": 5.89,
+        "draw": 4.21,
+        "away": 1.63
+      },
+      "implied_probability": {
+        "home": 16.98,
+        "draw": 23.75,
+        "away": 61.35
+      },
+      "bookmaker_margin": 102.08,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457034",
+      "game_id": "44119",
+      "competition": "World Cup",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "kick_off": "23 Jun 2026 18:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.340516",
+      "odds": {
+        "home": 1.23,
+        "draw": 7.14,
+        "away": 14.34
+      },
+      "implied_probability": {
+        "home": 81.3,
+        "draw": 14.01,
+        "away": 6.97
+      },
+      "bookmaker_margin": 102.28,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457046",
+      "game_id": "44121",
+      "competition": "World Cup",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "kick_off": "23 Jun 2026 21:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.340653",
+      "odds": {
+        "home": 1.29,
+        "draw": 6.15,
+        "away": 12.36
+      },
+      "implied_probability": {
+        "home": 77.52,
+        "draw": 16.26,
+        "away": 8.09
+      },
+      "bookmaker_margin": 101.87,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457048",
+      "game_id": "44122",
+      "competition": "World Cup",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "kick_off": "24 Jun 2026 00:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.341114",
+      "odds": {
+        "home": 6.83,
+        "draw": 4.29,
+        "away": 1.56
+      },
+      "implied_probability": {
+        "home": 14.64,
+        "draw": 23.31,
+        "away": 64.1
+      },
+      "bookmaker_margin": 102.05,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457036",
+      "game_id": "33403",
+      "competition": "World Cup",
+      "home_team": "Colombia",
+      "away_team": "Congo DR",
+      "kick_off": "24 Jun 2026 03:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.341397",
+      "odds": {
+        "home": 1.49,
+        "draw": 4.5,
+        "away": 7.99
+      },
+      "implied_probability": {
+        "home": 67.11,
+        "draw": 22.22,
+        "away": 12.52
+      },
+      "bookmaker_margin": 101.85,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456926",
+      "game_id": "27955",
+      "competition": "World Cup",
+      "home_team": "Bosnia & Herzegovina",
+      "away_team": "Qatar",
+      "kick_off": "24 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.341654",
+      "odds": {
+        "home": 1.62,
+        "draw": 4.15,
+        "away": 6.24
+      },
+      "implied_probability": {
+        "home": 61.73,
+        "draw": 24.1,
+        "away": 16.03
+      },
+      "bookmaker_margin": 101.86,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456924",
+      "game_id": "36621",
+      "competition": "World Cup",
+      "home_team": "Switzerland",
+      "away_team": "Canada",
+      "kick_off": "24 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.341920",
+      "odds": {
+        "home": 2.18,
+        "draw": 3.47,
+        "away": 3.65
+      },
+      "implied_probability": {
+        "home": 45.87,
+        "draw": 28.82,
+        "away": 27.4
+      },
+      "bookmaker_margin": 102.09,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456938",
+      "game_id": "40126",
+      "competition": "World Cup",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "kick_off": "24 Jun 2026 23:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.342838",
+      "odds": {
+        "home": 1.32,
+        "draw": 6.02,
+        "away": 10.44
+      },
+      "implied_probability": {
+        "home": 75.76,
+        "draw": 16.61,
+        "away": 9.58
+      },
+      "bookmaker_margin": 101.95,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456936",
+      "game_id": "17987",
+      "competition": "World Cup",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "kick_off": "24 Jun 2026 23:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.343333",
+      "odds": {
+        "home": 7.43,
+        "draw": 4.92,
+        "away": 1.47
+      },
+      "implied_probability": {
+        "home": 13.46,
+        "draw": 20.33,
+        "away": 68.03
+      },
+      "bookmaker_margin": 101.82,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456912",
+      "game_id": "36412",
+      "competition": "World Cup",
+      "home_team": "Czechia",
+      "away_team": "Mexico",
+      "kick_off": "25 Jun 2026 02:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.343631",
+      "odds": {
+        "home": 4.73,
+        "draw": 3.65,
+        "away": 1.87
+      },
+      "implied_probability": {
+        "home": 21.14,
+        "draw": 27.4,
+        "away": 53.48
+      },
+      "bookmaker_margin": 102.02,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456914",
+      "game_id": "37365",
+      "competition": "World Cup",
+      "home_team": "South Africa",
+      "away_team": "Korea Republic",
+      "kick_off": "25 Jun 2026 02:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.343982",
+      "odds": {
+        "home": 5.91,
+        "draw": 4.11,
+        "away": 1.65
+      },
+      "implied_probability": {
+        "home": 16.92,
+        "draw": 24.33,
+        "away": 60.61
+      },
+      "bookmaker_margin": 101.86,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457080",
+      "game_id": "37909",
+      "competition": "World Cup",
+      "home_team": "Curacao",
+      "away_team": "Ivory Coast",
+      "kick_off": "25 Jun 2026 21:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.344281",
+      "odds": {
+        "home": 22.34,
+        "draw": 9.53,
+        "away": 1.15
+      },
+      "implied_probability": {
+        "home": 4.48,
+        "draw": 10.49,
+        "away": 86.96
+      },
+      "bookmaker_margin": 101.93,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457078",
+      "game_id": "37728",
+      "competition": "World Cup",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "kick_off": "25 Jun 2026 21:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.344539",
+      "odds": {
+        "home": 5.11,
+        "draw": 3.91,
+        "away": 1.76
+      },
+      "implied_probability": {
+        "home": 19.57,
+        "draw": 25.58,
+        "away": 56.82
+      },
+      "bookmaker_margin": 101.97,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456978",
+      "game_id": "38654",
+      "competition": "World Cup",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "kick_off": "26 Jun 2026 00:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.345276",
+      "odds": {
+        "home": 2.16,
+        "draw": 3.55,
+        "away": 3.62
+      },
+      "implied_probability": {
+        "home": 46.3,
+        "draw": 28.17,
+        "away": 27.62
+      },
+      "bookmaker_margin": 102.09,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456976",
+      "game_id": "38038",
+      "competition": "World Cup",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "kick_off": "26 Jun 2026 00:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.345706",
+      "odds": {
+        "home": 9.5,
+        "draw": 5.61,
+        "away": 1.36
+      },
+      "implied_probability": {
+        "home": 10.53,
+        "draw": 17.83,
+        "away": 73.53
+      },
+      "bookmaker_margin": 101.89,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456950",
+      "game_id": "40127",
+      "competition": "World Cup",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "kick_off": "26 Jun 2026 03:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.346134",
+      "odds": {
+        "home": 2.24,
+        "draw": 3.38,
+        "away": 3.61
+      },
+      "implied_probability": {
+        "home": 44.64,
+        "draw": 29.59,
+        "away": 27.7
+      },
+      "bookmaker_margin": 101.93,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456948",
+      "game_id": "38656",
+      "competition": "World Cup",
+      "home_team": "Turkiye",
+      "away_team": "USA",
+      "kick_off": "26 Jun 2026 03:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.346464",
+      "odds": {
+        "home": 2.89,
+        "draw": 3.67,
+        "away": 2.49
+      },
+      "implied_probability": {
+        "home": 34.6,
+        "draw": 27.25,
+        "away": 40.16
+      },
+      "bookmaker_margin": 102.01,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457014",
+      "game_id": "38657",
+      "competition": "World Cup",
+      "home_team": "Norway",
+      "away_team": "France",
+      "kick_off": "26 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.346991",
+      "odds": {
+        "home": 4.44,
+        "draw": 3.86,
+        "away": 1.87
+      },
+      "implied_probability": {
+        "home": 22.52,
+        "draw": 25.91,
+        "away": 53.48
+      },
+      "bookmaker_margin": 101.91,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457016",
+      "game_id": "38187",
+      "competition": "World Cup",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "kick_off": "26 Jun 2026 20:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.347537",
+      "odds": {
+        "home": 1.34,
+        "draw": 5.5,
+        "away": 10.74
+      },
+      "implied_probability": {
+        "home": 74.63,
+        "draw": 18.18,
+        "away": 9.31
+      },
+      "bookmaker_margin": 102.12,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457004",
+      "game_id": "40140",
+      "competition": "World Cup",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "kick_off": "27 Jun 2026 01:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.347963",
+      "odds": {
+        "home": 2.89,
+        "draw": 3.66,
+        "away": 2.49
+      },
+      "implied_probability": {
+        "home": 34.6,
+        "draw": 27.32,
+        "away": 40.16
+      },
+      "bookmaker_margin": 102.08,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457002",
+      "game_id": "40128",
+      "competition": "World Cup",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "kick_off": "27 Jun 2026 01:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.349442",
+      "odds": {
+        "home": 6.1,
+        "draw": 4.44,
+        "away": 1.58
+      },
+      "implied_probability": {
+        "home": 16.39,
+        "draw": 22.52,
+        "away": 63.29
+      },
+      "bookmaker_margin": 102.2,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456992",
+      "game_id": "40141",
+      "competition": "World Cup",
+      "home_team": "Egypt",
+      "away_team": "IR Iran",
+      "kick_off": "27 Jun 2026 04:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.349750",
+      "odds": {
+        "home": 2.15,
+        "draw": 3.23,
+        "away": 4.09
+      },
+      "implied_probability": {
+        "home": 46.51,
+        "draw": 30.96,
+        "away": 24.45
+      },
+      "bookmaker_margin": 101.92,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66456990",
+      "game_id": "38625",
+      "competition": "World Cup",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "kick_off": "27 Jun 2026 04:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.350145",
+      "odds": {
+        "home": 14.17,
+        "draw": 6.91,
+        "away": 1.24
+      },
+      "implied_probability": {
+        "home": 7.06,
+        "draw": 14.47,
+        "away": 80.65
+      },
+      "bookmaker_margin": 102.18,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457052",
+      "game_id": "38914",
+      "competition": "World Cup",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "kick_off": "27 Jun 2026 22:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.350481",
+      "odds": {
+        "home": 1.68,
+        "draw": 3.98,
+        "away": 5.78
+      },
+      "implied_probability": {
+        "home": 59.52,
+        "draw": 25.13,
+        "away": 17.3
+      },
+      "bookmaker_margin": 101.95,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457050",
+      "game_id": "38673",
+      "competition": "World Cup",
+      "home_team": "Panama",
+      "away_team": "England",
+      "kick_off": "27 Jun 2026 22:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.350807",
+      "odds": {
+        "home": 10.31,
+        "draw": 6.26,
+        "away": 1.31
+      },
+      "implied_probability": {
+        "home": 9.7,
+        "draw": 15.97,
+        "away": 76.34
+      },
+      "bookmaker_margin": 102.01,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457038",
+      "game_id": "42510",
+      "competition": "World Cup",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "kick_off": "28 Jun 2026 00:30",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.351245",
+      "odds": {
+        "home": 3.54,
+        "draw": 3.46,
+        "away": 2.23
+      },
+      "implied_probability": {
+        "home": 28.25,
+        "draw": 28.9,
+        "away": 44.84
+      },
+      "bookmaker_margin": 101.99,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457040",
+      "game_id": "38968",
+      "competition": "World Cup",
+      "home_team": "Congo DR",
+      "away_team": "Uzbekistan",
+      "kick_off": "28 Jun 2026 00:30",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.351660",
+      "odds": {
+        "home": 2.21,
+        "draw": 3.62,
+        "away": 3.43
+      },
+      "implied_probability": {
+        "home": 45.25,
+        "draw": 27.62,
+        "away": 29.15
+      },
+      "bookmaker_margin": 102.02,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457028",
+      "game_id": "39767",
+      "competition": "World Cup",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "kick_off": "28 Jun 2026 03:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.351893",
+      "odds": {
+        "home": 3.08,
+        "draw": 3.2,
+        "away": 2.61
+      },
+      "implied_probability": {
+        "home": 32.47,
+        "draw": 31.25,
+        "away": 38.31
+      },
+      "bookmaker_margin": 102.03,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:66457026",
+      "game_id": "40144",
+      "competition": "World Cup",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "kick_off": "28 Jun 2026 03:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.352735",
+      "odds": {
+        "home": 14.27,
+        "draw": 7.22,
+        "away": 1.23
+      },
+      "implied_probability": {
+        "home": 7.01,
+        "draw": 13.85,
+        "away": 81.3
+      },
+      "bookmaker_margin": 102.16,
+      "has_odds": true
+    },
+    {
+      "event_id": "sr:match:72176800",
+      "game_id": "37075",
+      "competition": "UEFA Champions League",
+      "home_team": "AGF Aarhus",
+      "away_team": "KKS Lech Poznan",
+      "kick_off": "21 Jul 2026 14:00",
+      "status": "Not start",
+      "source": "SportyBet Nigeria",
+      "scraped_at": "2026-06-18T01:18:43.353332",
+      "odds": {
+        "home": 2.29,
+        "draw": 3.29,
+        "away": 3.14
+      },
+      "implied_probability": {
+        "home": 43.67,
+        "draw": 30.4,
+        "away": 31.85
+      },
+      "bookmaker_margin": 105.92,
+      "has_odds": true
+    }
+  ]
+}

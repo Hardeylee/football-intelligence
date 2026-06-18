@@ -1,0 +1,58 @@
+{
+  "bizCode": 10000,
+  "message": "0#0",
+  "data": [
+    {
+      "sportId": "sr:sport:1",
+      "eventSize": 35
+    },
+    {
+      "sportId": "sr:sport:12",
+      "eventSize": 10
+    },
+    {
+      "sportId": "sr:sport:21",
+      "eventSize": 12
+    },
+    {
+      "sportId": "sr:sport:4",
+      "eventSize": 11
+    },
+    {
+      "sportId": "sr:sport:5",
+      "eventSize": 13
+    },
+    {
+      "sportId": "sr:sport:2",
+      "eventSize": 9
+    },
+    {
+      "sportId": "sr:sport:3",
+      "eventSize": 4
+    },
+    {
+      "sportId": "sr:sport:22",
+      "eventSize": 3
+    },
+    {
+      "sportId": "sr:sport:16",
+      "eventSize": 5
+    },
+    {
+      "sportId": "sr:sport:23",
+      "eventSize": 1
+    },
+    {
+      "sportId": "sr:sport:19",
+      "eventSize": 3
+    },
+    {
+      "sportId": "sr:sport:109",
+      "eventSize": 1
+    },
+    {
+      "sportId": "sr:sport:110",
+      "eventSize": 1
+    }
+  ]
+}

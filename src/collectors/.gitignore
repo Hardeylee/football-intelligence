@@ -1,0 +1,19 @@
+# Environment variables - NEVER commit these
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# Data files - too large for git
+data/
+logs/
+
+# VSCode
+.vscode/
+
+# Playwright browsers
+playwright-browsers/

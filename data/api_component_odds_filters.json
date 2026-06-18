@@ -1,0 +1,90 @@
+{
+  "keys": {
+    "odds_range": {
+      "key": "odds_range",
+      "value": "Odds Range",
+      "type": "TEXT"
+    },
+    "max": {
+      "key": "max",
+      "value": "Max",
+      "type": "TEXT"
+    },
+    "clear": {
+      "key": "clear",
+      "value": "Clear",
+      "type": "TEXT"
+    },
+    "apply": {
+      "key": "apply",
+      "value": "Apply",
+      "type": "TEXT"
+    },
+    "odds_filter": {
+      "key": "odds_filter",
+      "value": "Odds Filter",
+      "type": "TEXT"
+    },
+    "clear_all": {
+      "key": "clear_all",
+      "value": "Clear all",
+      "type": "TEXT"
+    },
+    "all": {
+      "key": "all",
+      "value": "All",
+      "type": "TEXT"
+    },
+    "odds": {
+      "key": "odds",
+      "value": "Odds",
+      "type": "TEXT"
+    },
+    "custom": {
+      "key": "custom",
+      "value": "Custom",
+      "type": "TEXT"
+    },
+    "iv_odds_filter_title": {
+      "key": "iv_odds_filter_title",
+      "value": "Today I feel like...",
+      "type": "TEXT"
+    },
+    "iv_odds_filter_title_simple_wording": {
+      "key": "iv_odds_filter_title_simple_wording",
+      "value": "Something Simple \u270c\ufe0f",
+      "type": "TEXT"
+    },
+    "iv_odds_filter_title_risky_wording": {
+      "key": "iv_odds_filter_title_risky_wording",
+      "value": "Something Risky \ud83d\udcaa",
+      "type": "TEXT"
+    },
+    "clear_all_hypercase": {
+      "key": "clear_all_hypercase",
+      "value": "Clear All",
+      "type": "TEXT"
+    },
+    "risky": {
+      "key": "risky",
+      "value": "Risky",
+      "type": "TEXT"
+    },
+    "simple": {
+      "key": "simple",
+      "value": "Simple",
+      "type": "TEXT"
+    },
+    "all_odds": {
+      "key": "all_odds",
+      "value": "All Odds",
+      "type": "TEXT"
+    },
+    "boosted_odds": {
+      "key": "boosted_odds",
+      "value": "Boosted odds",
+      "type": "TEXT"
+    }
+  },
+  "version": "1779898839000"
+}

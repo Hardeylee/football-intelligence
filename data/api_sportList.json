@@ -1,0 +1,61 @@
+{
+  "bizCode": 10000,
+  "message": "0#0",
+  "data": [
+    {
+      "id": "sr:sport:1",
+      "name": "Football",
+      "eventSize": 2
+    },
+    {
+      "id": "sr:sport:2",
+      "name": "Basketball",
+      "eventSize": 4
+    },
+    {
+      "id": "sr:sport:5",
+      "name": "Tennis",
+      "eventSize": 17
+    },
+    {
+      "id": "sr:sport:20",
+      "name": "Table Tennis",
+      "eventSize": 19
+    },
+    {
+      "id": "sr:sport:23",
+      "name": "Volleyball",
+      "eventSize": 1
+    },
+    {
+      "id": "sr:sport:21",
+      "name": "Cricket",
+      "eventSize": 2
+    },
+    {
+      "id": "sr:sport:31",
+      "name": "Badminton",
+      "eventSize": 4
+    },
+    {
+      "id": "sr:sport:137",
+      "name": "eFootball",
+      "eventSize": 12
+    },
+    {
+      "id": "sr:sport:202120001",
+      "name": "vFootball",
+      "eventSize": 52
+    },
+    {
+      "id": "sr:sport:153",
+      "name": "eBasketball",
+      "eventSize": 8
+    },
+    {
+      "id": "sr:sport:111",
+      "name": "ESport Dota",
+      "eventSize": 1
+    }
+  ]
+}

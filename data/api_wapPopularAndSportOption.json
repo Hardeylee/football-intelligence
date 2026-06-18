@@ -1,0 +1,1137 @@
+{
+  "bizCode": 10000,
+  "message": "0#0",
+  "data": {
+    "sportList": [
+      {
+        "id": "sr:sport:1",
+        "name": "Football",
+        "eventSize": 507,
+        "categories": [
+          {
+            "id": "sr:category:48",
+            "name": "Argentina",
+            "eventSize": 38,
+            "tournaments": [
+              {
+                "id": "sr:tournament:1024",
+                "name": "Copa Argentina 2026",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:703",
+                "name": "Primera Nacional",
+                "eventSize": 19
+              },
+              {
+                "id": "sr:tournament:36945",
+                "name": "Primera LPF, Reserves",
+                "eventSize": 17
+              },
+              {
+                "id": "sr:tournament:1347",
+                "name": "Primera B",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:34",
+            "name": "Australia",
+            "eventSize": 39,
+            "tournaments": [
+              {
+                "id": "sr:tournament:18270",
+                "name": "Queensland NPL, Women",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:1268",
+                "name": "Queensland NPL",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:32341",
+                "name": "Queensland Premier League 1",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:45533",
+                "name": "U23 Queensland NPL",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:18340",
+                "name": "South Australia NPL, Women",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:16904",
+                "name": "Victoria NPL, Women",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:1275",
+                "name": "Victoria, NPL",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:1260",
+                "name": "Capital NPL 1",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:1638",
+                "name": "Northern NSW NPL",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:1274",
+                "name": "NSW NPL 1",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:1258",
+                "name": "South Australia NPL",
+                "eventSize": 4
+              },
+              {
+                "id": "sr:tournament:32367",
+                "name": "Victoria Premier League 1",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:32357",
+                "name": "NSW League Two",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:49940",
+                "name": "Northern Territory Premier League",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:45547",
+                "name": "Queensland Premier League 1, Women",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:45525",
+                "name": "Queensland Premier League 3 Metro",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:49908",
+                "name": "U23 Capital NPL",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:45535",
+                "name": "U23 Queensland Premier League 1",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:1760",
+                "name": "Victoria Premier League 2",
+                "eventSize": 4
+              }
+            ]
+          },
+          {
+            "id": "sr:category:91",
+            "name": "Belarus",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:169",
+                "name": "Vysshaya Liga",
+                "eventSize": 6
+              },
+              {
+                "id": "sr:tournament:578",
+                "name": "Belarus Cup",
+                "eventSize": 3
+              }
+            ]
+          },
+          {
+            "id": "sr:category:13",
+            "name": "Brazil",
+            "eventSize": 55,
+            "tournaments": [
+              {
+                "id": "sr:tournament:390",
+                "name": "Brasileiro Serie B",
+                "eventSize": 10
+              },
+              {
+                "id": "sr:tournament:373",
+                "name": "Copa do Brasil",
+                "eventSize": 9
+              },
+              {
+                "id": "sr:tournament:325",
+                "name": "Brasileiro Serie A",
+                "eventSize": 11,
+                "categoryName": "Brazil",
+                "categoryId": "sr:category:13"
+              },
+              {
+                "id": "sr:tournament:13685",
+                "name": "U20 Brasileiro Serie A",
+                "eventSize": 7
+              },
+              {
+                "id": "sr:tournament:46211",
+                "name": "U20 Brasileiro Serie B",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:35793",
+                "name": "Copa FGF",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:36661",
+                "name": "Mineiro, Modulo II",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:39343",
+                "name": "Catarinense, Serie B",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:46811",
+                "name": "Copa Espirito Santo",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:40061",
+                "name": "Copa Rio",
+                "eventSize": 7
+              }
+            ]
+          },
+          {
+            "id": "sr:category:49",
+            "name": "Chile",
+            "eventSize": 2,
+            "tournaments": [
+              {
+                "id": "sr:tournament:27665",
+                "name": "Primera Division",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:99",
+            "name": "China",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:649",
+                "name": "Chinese Super League",
+                "eventSize": 9,
+                "categoryName": "China",
+                "categoryId": "sr:category:99"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:8",
+            "name": "Denmark",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:39",
+                "name": "Superliga 26/27",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:165",
+            "name": "Ecuador",
+            "eventSize": 5,
+            "tournaments": [
+              {
+                "id": "sr:tournament:240",
+                "name": "LigaPro Primera A",
+                "eventSize": 5
+              }
+            ]
+          },
+          {
+            "id": "sr:category:1",
+            "name": "England",
+            "eventSize": 4,
+            "tournaments": [
+              {
+                "id": "sr:tournament:17",
+                "name": "Premier League 26/27",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:18",
+                "name": "Championship 26/27",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:25",
+                "name": "League Two 26/27",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:346",
+                "name": "Community Shield",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:92",
+            "name": "Estonia",
+            "eventSize": 10,
+            "tournaments": [
+              {
+                "id": "sr:tournament:178",
+                "name": "Premium Liiga",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:678",
+                "name": "Esiliiga",
+                "eventSize": 5
+              },
+              {
+                "id": "sr:tournament:18294",
+                "name": "Meistriliiga Women",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:35797",
+                "name": "Esiliiga B",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:201",
+            "name": "Faroe Islands",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:674",
+                "name": "1st deild",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:19",
+            "name": "Finland",
+            "eventSize": 28,
+            "tournaments": [
+              {
+                "id": "sr:tournament:41",
+                "name": "Veikkausliiga",
+                "eventSize": 13
+              },
+              {
+                "id": "sr:tournament:46671",
+                "name": "Kolmonen",
+                "eventSize": 15
+              }
+            ]
+          },
+          {
+            "id": "sr:category:957",
+            "name": "Gambia",
+            "eventSize": 3,
+            "tournaments": [
+              {
+                "id": "sr:tournament:51174",
+                "name": "Division One",
+                "eventSize": 3
+              }
+            ]
+          },
+          {
+            "id": "sr:category:270",
+            "name": "Georgia",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:704",
+                "name": "Erovnuli Liga",
+                "eventSize": 4
+              },
+              {
+                "id": "sr:tournament:726",
+                "name": "Erovnuli Liga 2",
+                "eventSize": 5
+              }
+            ]
+          },
+          {
+            "id": "sr:category:30",
+            "name": "Germany",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:35",
+                "name": "Bundesliga 26/27",
+                "eventSize": 1,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:217",
+                "name": "DFB Pokal",
+                "eventSize": 6,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:44",
+                "name": "2. Bundesliga 26/27",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:799",
+                "name": "Super Cup",
+                "eventSize": 1,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:67",
+            "name": "Greece",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:476",
+                "name": "Super Cup",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:10",
+            "name": "Iceland",
+            "eventSize": 15,
+            "tournaments": [
+              {
+                "id": "sr:tournament:188",
+                "name": "Besta deild",
+                "eventSize": 6
+              },
+              {
+                "id": "sr:tournament:675",
+                "name": "1. deild",
+                "eventSize": 7
+              },
+              {
+                "id": "sr:tournament:19276",
+                "name": "Cup, Women",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:4",
+            "name": "International",
+            "eventSize": 54,
+            "tournaments": [
+              {
+                "id": "sr:tournament:23755",
+                "name": "UEFA Nations League 26/27",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:16",
+                "name": "World Cup",
+                "eventSize": 53,
+                "categoryName": "International",
+                "categoryId": "sr:category:4"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:393",
+            "name": "International Clubs",
+            "eventSize": 23,
+            "tournaments": [
+              {
+                "id": "sr:tournament:384",
+                "name": "CONMEBOL Libertadores",
+                "eventSize": 9,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:480",
+                "name": "CONMEBOL Sudamericana",
+                "eventSize": 9,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League 26/27",
+                "eventSize": 1,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:465",
+                "name": "UEFA Super Cup",
+                "eventSize": 2,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:853",
+                "name": "Club Friendly Games",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:51",
+            "name": "Ireland",
+            "eventSize": 14,
+            "tournaments": [
+              {
+                "id": "sr:tournament:192",
+                "name": "Premier Division",
+                "eventSize": 8
+              },
+              {
+                "id": "sr:tournament:193",
+                "name": "First Division",
+                "eventSize": 5
+              },
+              {
+                "id": "sr:simple_tournament:11843",
+                "name": "Leinster Senior League, Senior Division",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:31",
+            "name": "Italy",
+            "eventSize": 11,
+            "tournaments": [
+              {
+                "id": "sr:tournament:23",
+                "name": "Serie A",
+                "eventSize": 11,
+                "categoryName": "Italy",
+                "categoryId": "sr:category:31"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:278",
+            "name": "Kazakhstan",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:682",
+                "name": "Premier League",
+                "eventSize": 9
+              }
+            ]
+          },
+          {
+            "id": "sr:category:331",
+            "name": "Kuwait",
+            "eventSize": 2,
+            "tournaments": [
+              {
+                "id": "sr:tournament:1002",
+                "name": "Premier League",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:163",
+            "name": "Latvia",
+            "eventSize": 4,
+            "tournaments": [
+              {
+                "id": "sr:tournament:197",
+                "name": "Virsliga",
+                "eventSize": 4
+              }
+            ]
+          },
+          {
+            "id": "sr:category:160",
+            "name": "Lithuania",
+            "eventSize": 3,
+            "tournaments": [
+              {
+                "id": "sr:tournament:198",
+                "name": "A Lyga",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:676",
+                "name": "1 Lyga",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:1042",
+            "name": "Mongolia",
+            "eventSize": 2,
+            "tournaments": [
+              {
+                "id": "sr:tournament:28623",
+                "name": "Premier League",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:303",
+            "name": "Morocco",
+            "eventSize": 8,
+            "tournaments": [
+              {
+                "id": "sr:tournament:937",
+                "name": "Botola Pro D1",
+                "eventSize": 8
+              }
+            ]
+          },
+          {
+            "id": "sr:category:806",
+            "name": "Mozambique",
+            "eventSize": 4,
+            "tournaments": [
+              {
+                "id": "sr:tournament:20576",
+                "name": "Mocambola",
+                "eventSize": 4
+              }
+            ]
+          },
+          {
+            "id": "sr:category:5",
+            "name": "Norway",
+            "eventSize": 13,
+            "tournaments": [
+              {
+                "id": "sr:tournament:20",
+                "name": "Eliteserien",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:22",
+                "name": "1st Division",
+                "eventSize": 9
+              },
+              {
+                "id": "sr:tournament:1062",
+                "name": "NM Cup Women",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:20",
+            "name": "Peru",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:406",
+                "name": "Liga 1 2026",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:291",
+            "name": "Republic of Korea",
+            "eventSize": 4,
+            "tournaments": [
+              {
+                "id": "sr:tournament:1772",
+                "name": "WK-League",
+                "eventSize": 4
+              }
+            ]
+          },
+          {
+            "id": "sr:category:77",
+            "name": "Romania",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:698",
+                "name": "Super Cup",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:21",
+            "name": "Russia",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:40305",
+                "name": "2. Liga, Division A",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:22",
+            "name": "Scotland",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:36",
+                "name": "Premiership 26/27",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:2123",
+            "name": "Simulated Reality League",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:36215",
+                "name": "SRL Club Friendlies",
+                "eventSize": 5
+              },
+              {
+                "id": "sr:tournament:38785",
+                "name": "World Cup SRL",
+                "eventSize": 4
+              }
+            ]
+          },
+          {
+            "id": "sr:category:32",
+            "name": "Spain",
+            "eventSize": 3,
+            "tournaments": [
+              {
+                "id": "sr:tournament:54",
+                "name": "LALIGA HYPERMOTION",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:34834",
+                "name": "Primera Federacion",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:9",
+            "name": "Sweden",
+            "eventSize": 70,
+            "tournaments": [
+              {
+                "id": "sr:tournament:20782",
+                "name": "Division 2",
+                "eventSize": 32
+              },
+              {
+                "id": "sr:tournament:27412",
+                "name": "Ettan",
+                "eventSize": 12
+              },
+              {
+                "id": "sr:tournament:214",
+                "name": "Damallsvenskan",
+                "eventSize": 8
+              },
+              {
+                "id": "sr:tournament:40",
+                "name": "Allsvenskan",
+                "eventSize": 9
+              },
+              {
+                "id": "sr:tournament:46",
+                "name": "Superettan",
+                "eventSize": 8
+              },
+              {
+                "id": "sr:tournament:80",
+                "name": "Svenska Cup",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:155",
+            "name": "Sweden Amateur",
+            "eventSize": 4,
+            "tournaments": [
+              {
+                "id": "sr:tournament:38941",
+                "name": "Elitettan, Women",
+                "eventSize": 4
+              }
+            ]
+          },
+          {
+            "id": "sr:category:803",
+            "name": "Tanzania",
+            "eventSize": 1,
+            "tournaments": [
+              {
+                "id": "sr:tournament:2436",
+                "name": "Premier League",
+                "eventSize": 1
+              }
+            ]
+          },
+          {
+            "id": "sr:category:26",
+            "name": "USA",
+            "eventSize": 27,
+            "tournaments": [
+              {
+                "id": "sr:tournament:28163",
+                "name": "USL Championship",
+                "eventSize": 7
+              },
+              {
+                "id": "sr:tournament:28743",
+                "name": "USL League Two",
+                "eventSize": 9
+              },
+              {
+                "id": "sr:tournament:37169",
+                "name": "USL W League",
+                "eventSize": 2
+              },
+              {
+                "id": "sr:tournament:28424",
+                "name": "National Premier Soccer League",
+                "eventSize": 4
+              },
+              {
+                "id": "sr:tournament:242",
+                "name": "MLS 2026",
+                "eventSize": 1,
+                "categoryName": "USA",
+                "categoryId": "sr:category:26"
+              },
+              {
+                "id": "sr:tournament:36479",
+                "name": "MLS Next Pro",
+                "eventSize": 3
+              },
+              {
+                "id": "sr:tournament:28165",
+                "name": "USL League One",
+                "eventSize": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "popularEvents": [
+      {
+        "id": "sr:sport:1",
+        "name": "Football",
+        "eventSize": 221,
+        "categories": [
+          {
+            "id": "sr:category:top",
+            "name": "Top Leagues",
+            "eventSize": 117,
+            "tournaments": [
+              {
+                "id": "sr:tournament:16",
+                "name": "World Cup",
+                "eventSize": 53,
+                "categoryName": "International",
+                "categoryId": "sr:category:4"
+              },
+              {
+                "id": "sr:tournament:346",
+                "name": "Community Shield",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:17",
+                "name": "Premier League 26/27",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:23",
+                "name": "Serie A",
+                "eventSize": 11,
+                "categoryName": "Italy",
+                "categoryId": "sr:category:31"
+              },
+              {
+                "id": "sr:tournament:35",
+                "name": "Bundesliga 26/27",
+                "eventSize": 1,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:217",
+                "name": "DFB Pokal",
+                "eventSize": 6,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:799",
+                "name": "Super Cup",
+                "eventSize": 1,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:18",
+                "name": "Championship 26/27",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:465",
+                "name": "UEFA Super Cup",
+                "eventSize": 2,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:242",
+                "name": "MLS 2026",
+                "eventSize": 1,
+                "categoryName": "USA",
+                "categoryId": "sr:category:26"
+              },
+              {
+                "id": "sr:tournament:325",
+                "name": "Brasileiro Serie A",
+                "eventSize": 11,
+                "categoryName": "Brazil",
+                "categoryId": "sr:category:13"
+              },
+              {
+                "id": "sr:tournament:649",
+                "name": "Chinese Super League",
+                "eventSize": 9,
+                "categoryName": "China",
+                "categoryId": "sr:category:99"
+              },
+              {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League 26/27",
+                "eventSize": 1,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:384",
+                "name": "CONMEBOL Libertadores",
+                "eventSize": 9,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:480",
+                "name": "CONMEBOL Sudamericana",
+                "eventSize": 9,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:4",
+            "name": "International",
+            "eventSize": 54,
+            "tournaments": [
+              {
+                "id": "sr:tournament:23755",
+                "name": "UEFA Nations League 26/27",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:16",
+                "name": "World Cup",
+                "eventSize": 53,
+                "categoryName": "International",
+                "categoryId": "sr:category:4"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:393",
+            "name": "International Clubs",
+            "eventSize": 23,
+            "tournaments": [
+              {
+                "id": "sr:tournament:384",
+                "name": "CONMEBOL Libertadores",
+                "eventSize": 9,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:480",
+                "name": "CONMEBOL Sudamericana",
+                "eventSize": 9,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League 26/27",
+                "eventSize": 1,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:465",
+                "name": "UEFA Super Cup",
+                "eventSize": 2,
+                "categoryName": "International Clubs",
+                "categoryId": "sr:category:393"
+              },
+              {
+                "id": "sr:tournament:853",
+                "name": "Club Friendly Games",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:1",
+            "name": "England",
+            "eventSize": 4,
+            "tournaments": [
+              {
+                "id": "sr:tournament:17",
+                "name": "Premier League 26/27",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:18",
+                "name": "Championship 26/27",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              },
+              {
+                "id": "sr:tournament:25",
+                "name": "League Two 26/27",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:346",
+                "name": "Community Shield",
+                "eventSize": 1,
+                "categoryName": "England",
+                "categoryId": "sr:category:1"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:32",
+            "name": "Spain",
+            "eventSize": 3,
+            "tournaments": [
+              {
+                "id": "sr:tournament:54",
+                "name": "LALIGA HYPERMOTION",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:34834",
+                "name": "Primera Federacion",
+                "eventSize": 2
+              }
+            ]
+          },
+          {
+            "id": "sr:category:30",
+            "name": "Germany",
+            "eventSize": 9,
+            "tournaments": [
+              {
+                "id": "sr:tournament:35",
+                "name": "Bundesliga 26/27",
+                "eventSize": 1,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:217",
+                "name": "DFB Pokal",
+                "eventSize": 6,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              },
+              {
+                "id": "sr:tournament:44",
+                "name": "2. Bundesliga 26/27",
+                "eventSize": 1
+              },
+              {
+                "id": "sr:tournament:799",
+                "name": "Super Cup",
+                "eventSize": 1,
+                "categoryName": "Germany",
+                "categoryId": "sr:category:30"
+              }
+            ]
+          },
+          {
+            "id": "sr:category:31",
+            "name": "Italy",
+            "eventSize": 11,
+            "tournaments": [
+              {
+                "id": "sr:tournament:23",
+                "name": "Serie A",
+                "eventSize": 11,
+                "categoryName": "Italy",
+                "categoryId": "sr:category:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

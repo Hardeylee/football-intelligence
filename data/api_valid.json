@@ -1,0 +1,604 @@
+{
+  "bizCode": 10000,
+  "message": "Success",
+  "data": {
+    "totalNum": 1,
+    "entityList": [
+      {
+        "planId": "2023110615555994294",
+        "planName": "MBB_1699286159923",
+        "superposePolicy": 1,
+        "qualifyingOddsLimit": 12000,
+        "factor": 10000,
+        "bonusRatios": [
+          {
+            "qualifyingSelections": 2,
+            "min": 0,
+            "max": 300
+          },
+          {
+            "qualifyingSelections": 3,
+            "min": 0,
+            "max": 500
+          },
+          {
+            "qualifyingSelections": 4,
+            "min": 500,
+            "max": 900
+          },
+          {
+            "qualifyingSelections": 5,
+            "min": 500,
+            "max": 1500
+          },
+          {
+            "qualifyingSelections": 6,
+            "min": 700,
+            "max": 2000
+          },
+          {
+            "qualifyingSelections": 7,
+            "min": 700,
+            "max": 2500
+          },
+          {
+            "qualifyingSelections": 8,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "qualifyingSelections": 9,
+            "min": 1000,
+            "max": 3500
+          },
+          {
+            "qualifyingSelections": 10,
+            "min": 1000,
+            "max": 4000
+          },
+          {
+            "qualifyingSelections": 11,
+            "min": 1500,
+            "max": 4500
+          },
+          {
+            "qualifyingSelections": 12,
+            "min": 1500,
+            "max": 5000
+          },
+          {
+            "qualifyingSelections": 13,
+            "min": 1500,
+            "max": 5500
+          },
+          {
+            "qualifyingSelections": 14,
+            "min": 1500,
+            "max": 6000
+          },
+          {
+            "qualifyingSelections": 15,
+            "min": 1500,
+            "max": 6500
+          },
+          {
+            "qualifyingSelections": 16,
+            "min": 2500,
+            "max": 7000
+          },
+          {
+            "qualifyingSelections": 17,
+            "min": 2500,
+            "max": 8000
+          },
+          {
+            "qualifyingSelections": 18,
+            "min": 3000,
+            "max": 9000
+          },
+          {
+            "qualifyingSelections": 19,
+            "min": 3000,
+            "max": 10000
+          },
+          {
+            "qualifyingSelections": 20,
+            "min": 3000,
+            "max": 11000
+          },
+          {
+            "qualifyingSelections": 21,
+            "min": 3500,
+            "max": 12000
+          },
+          {
+            "qualifyingSelections": 22,
+            "min": 3500,
+            "max": 13000
+          },
+          {
+            "qualifyingSelections": 23,
+            "min": 3500,
+            "max": 14000
+          },
+          {
+            "qualifyingSelections": 24,
+            "min": 4000,
+            "max": 15000
+          },
+          {
+            "qualifyingSelections": 25,
+            "min": 4000,
+            "max": 16000
+          },
+          {
+            "qualifyingSelections": 26,
+            "min": 4000,
+            "max": 17000
+          },
+          {
+            "qualifyingSelections": 27,
+            "min": 4500,
+            "max": 18000
+          },
+          {
+            "qualifyingSelections": 28,
+            "min": 4500,
+            "max": 19000
+          },
+          {
+            "qualifyingSelections": 29,
+            "min": 5000,
+            "max": 20000
+          },
+          {
+            "qualifyingSelections": 30,
+            "min": 5000,
+            "max": 22000
+          },
+          {
+            "qualifyingSelections": 31,
+            "min": 5000,
+            "max": 24000
+          },
+          {
+            "qualifyingSelections": 32,
+            "min": 5500,
+            "max": 26000
+          },
+          {
+            "qualifyingSelections": 33,
+            "min": 5500,
+            "max": 28000
+          },
+          {
+            "qualifyingSelections": 34,
+            "min": 6000,
+            "max": 30000
+          },
+          {
+            "qualifyingSelections": 35,
+            "min": 6000,
+            "max": 32000
+          },
+          {
+            "qualifyingSelections": 36,
+            "min": 6000,
+            "max": 34000
+          },
+          {
+            "qualifyingSelections": 37,
+            "min": 6500,
+            "max": 36000
+          },
+          {
+            "qualifyingSelections": 38,
+            "min": 6500,
+            "max": 40000
+          },
+          {
+            "qualifyingSelections": 39,
+            "min": 7000,
+            "max": 50000
+          },
+          {
+            "qualifyingSelections": 40,
+            "min": 7000,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 41,
+            "min": 7000,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 42,
+            "min": 7500,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 43,
+            "min": 7500,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 44,
+            "min": 8000,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 45,
+            "min": 8000,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 46,
+            "min": 8500,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 47,
+            "min": 8500,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 48,
+            "min": 9000,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 49,
+            "min": 9000,
+            "max": 70000
+          },
+          {
+            "qualifyingSelections": 50,
+            "min": 10000,
+            "max": 100000
+          }
+        ],
+        "bonusPlanType": 2
+      }
+    ],
+    "bonusFactorVOList": [
+      {
+        "id": "20240229133028681factor09948",
+        "type": 0,
+        "sportName": "Football",
+        "sportId": "sr:sport:1",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028689factor06246",
+        "type": 0,
+        "sportName": "BasketBall",
+        "sportId": "sr:sport:2",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028697factor01621",
+        "type": 0,
+        "sportName": "Tennis",
+        "sportId": "sr:sport:5",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028705factor08404",
+        "type": 0,
+        "sportName": "Rugby",
+        "sportId": "sr:sport:12",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028718factor01927",
+        "type": 0,
+        "sportName": "American Football",
+        "sportId": "sr:sport:16",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028726factor09342",
+        "type": 0,
+        "sportName": "Cricket",
+        "sportId": "sr:sport:21",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028733factor04205",
+        "type": 0,
+        "sportName": "Handball",
+        "sportId": "sr:sport:6",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028741factor07418",
+        "type": 0,
+        "sportName": "Ice Hockey",
+        "sportId": "sr:sport:4",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028756factor09937",
+        "type": 0,
+        "sportName": "Volleyball",
+        "sportId": "sr:sport:23",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028763factor01916",
+        "type": 0,
+        "sportName": "Beach Volley",
+        "sportId": "sr:sport:34",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028771factor02319",
+        "type": 0,
+        "sportName": "Darts",
+        "sportId": "sr:sport:22",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028782factor07674",
+        "type": 0,
+        "sportName": "Badminton",
+        "sportId": "sr:sport:31",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028790factor09686",
+        "type": 0,
+        "sportName": "Table Tennis",
+        "sportId": "sr:sport:20",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 10000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028798factor05936",
+        "type": 0,
+        "sportName": "Baseball",
+        "sportId": "sr:sport:3",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028807factor06277",
+        "type": 0,
+        "sportName": "CS GO",
+        "sportId": "sr:sport:109",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028815factor04305",
+        "type": 0,
+        "sportName": "LoL",
+        "sportId": "sr:sport:110",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028824factor03577",
+        "type": 0,
+        "sportName": "Dota2",
+        "sportId": "sr:sport:111",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028832factor00334",
+        "type": 0,
+        "sportName": "MMA",
+        "sportId": "sr:sport:117",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028841factor01907",
+        "type": 0,
+        "sportName": "Futsal",
+        "sportId": "sr:sport:29",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028849factor07570",
+        "type": 0,
+        "sportName": "eSoccer",
+        "sportId": "sr:sport:137",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028858factor08511",
+        "type": 0,
+        "sportName": "eBasketball",
+        "sportId": "sr:sport:153",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028867factor08272",
+        "type": 0,
+        "sportName": "eIce Hockey",
+        "sportId": "sr:sport:195",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028875factor05017",
+        "type": 0,
+        "sportName": "Boxing",
+        "sportId": "sr:sport:10",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028886factor01020",
+        "type": 0,
+        "sportName": "Snooker",
+        "sportId": "sr:sport:19",
+        "tournamentName": "",
+        "tournamentId": "",
+        "bonusFactor": 7500,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028894factor02160",
+        "type": 0,
+        "sportName": "",
+        "sportId": "sr:sport:1",
+        "tournamentName": "Premier League",
+        "tournamentId": "sr:tournament:2112",
+        "bonusFactor": 5000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      },
+      {
+        "id": "20240229133028934factor06532",
+        "type": 0,
+        "sportName": "",
+        "sportId": "sr:sport:1",
+        "tournamentName": "Premier League",
+        "tournamentId": "sr:tournament:1191",
+        "bonusFactor": 5000,
+        "createTime": 1709213428000,
+        "isEnabled": true,
+        "isDel": false,
+        "planId": 1709213428681
+      }
+    ]
+  }
+}

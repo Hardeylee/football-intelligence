@@ -1,0 +1,136 @@
+{
+  "bizCode": 10000,
+  "message": "0#0",
+  "data": [
+    {
+      "id": "sr:sport:1",
+      "name": "Football",
+      "eventSize": 2
+    },
+    {
+      "id": "sr:sport:202120001",
+      "name": "vFootball",
+      "eventSize": 52
+    },
+    {
+      "id": "sr:sport:2",
+      "name": "Basketball",
+      "eventSize": 4
+    },
+    {
+      "id": "sr:sport:5",
+      "name": "Tennis",
+      "eventSize": 17
+    },
+    {
+      "id": "sr:sport:137",
+      "name": "eFootball",
+      "eventSize": 12
+    },
+    {
+      "id": "sr:sport:20",
+      "name": "Table Tennis",
+      "eventSize": 18
+    },
+    {
+      "id": "sr:sport:153",
+      "name": "eBasketball",
+      "eventSize": 8
+    },
+    {
+      "id": "sr:sport:4",
+      "name": "Ice Hockey",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:6",
+      "name": "Handball",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:23",
+      "name": "Volleyball",
+      "eventSize": 1
+    },
+    {
+      "id": "sr:sport:3",
+      "name": "Baseball",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:16",
+      "name": "American Football",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:21",
+      "name": "Cricket",
+      "eventSize": 2
+    },
+    {
+      "id": "sr:sport:22",
+      "name": "Darts",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:117",
+      "name": "MMA",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:10",
+      "name": "Boxing",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:31",
+      "name": "Badminton",
+      "eventSize": 4
+    },
+    {
+      "id": "sr:sport:34",
+      "name": "Beach Volleyball",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:29",
+      "name": "Futsal",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:12",
+      "name": "Rugby",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:19",
+      "name": "Snooker",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:155",
+      "name": "Basketball 3x3",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:109",
+      "name": "Counter-Strike",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:111",
+      "name": "Dota 2",
+      "eventSize": 1
+    },
+    {
+      "id": "sr:sport:110",
+      "name": "League of Legends",
+      "eventSize": 0
+    },
+    {
+      "id": "sr:sport:195",
+      "name": "eIce Hockey",
+      "eventSize": 0
+    }
+  ]
+}

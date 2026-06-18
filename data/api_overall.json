@@ -1,0 +1,323 @@
+{
+  "active": true,
+  "minStake": "100000",
+  "maxStake": "15000000000",
+  "maxPayout": "300000000000",
+  "sports": [
+    {
+      "sportId": "sr:sport:1",
+      "name": "Football",
+      "supportMarkets": [
+        "1",
+        "18",
+        "29",
+        "14",
+        "30",
+        "8",
+        "9",
+        "19",
+        "20",
+        "60",
+        "68",
+        "62",
+        "83",
+        "90",
+        "84",
+        "37",
+        "35",
+        "60200",
+        "60100"
+      ],
+      "liveMarkets": [
+        "1",
+        "18",
+        "29",
+        "14",
+        "30",
+        "19",
+        "20",
+        "60",
+        "68",
+        "83",
+        "90",
+        "37",
+        "35",
+        "60200",
+        "60100"
+      ]
+    }
+  ],
+  "multiBetBonus": {
+    "enable": true,
+    "factor": 10000,
+    "qualifyingOddsLimit": 12000,
+    "bonusRatios": [
+      {
+        "selections": 1,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "selections": 10,
+        "min": 0,
+        "max": 4000
+      },
+      {
+        "selections": 11,
+        "min": 0,
+        "max": 5000
+      },
+      {
+        "selections": 12,
+        "min": 0,
+        "max": 6000
+      },
+      {
+        "selections": 13,
+        "min": 0,
+        "max": 6500
+      },
+      {
+        "selections": 14,
+        "min": 0,
+        "max": 7000
+      },
+      {
+        "selections": 15,
+        "min": 0,
+        "max": 7500
+      },
+      {
+        "selections": 16,
+        "min": 0,
+        "max": 8000
+      },
+      {
+        "selections": 17,
+        "min": 0,
+        "max": 9000
+      },
+      {
+        "selections": 18,
+        "min": 0,
+        "max": 10000
+      },
+      {
+        "selections": 19,
+        "min": 0,
+        "max": 11000
+      },
+      {
+        "selections": 2,
+        "min": 0,
+        "max": 300
+      },
+      {
+        "selections": 20,
+        "min": 0,
+        "max": 12500
+      },
+      {
+        "selections": 21,
+        "min": 0,
+        "max": 14000
+      },
+      {
+        "selections": 22,
+        "min": 0,
+        "max": 16000
+      },
+      {
+        "selections": 23,
+        "min": 0,
+        "max": 18000
+      },
+      {
+        "selections": 24,
+        "min": 0,
+        "max": 20000
+      },
+      {
+        "selections": 25,
+        "min": 0,
+        "max": 22500
+      },
+      {
+        "selections": 26,
+        "min": 0,
+        "max": 23000
+      },
+      {
+        "selections": 27,
+        "min": 0,
+        "max": 24000
+      },
+      {
+        "selections": 28,
+        "min": 0,
+        "max": 26000
+      },
+      {
+        "selections": 29,
+        "min": 0,
+        "max": 27500
+      },
+      {
+        "selections": 3,
+        "min": 0,
+        "max": 500
+      },
+      {
+        "selections": 30,
+        "min": 0,
+        "max": 30000
+      },
+      {
+        "selections": 31,
+        "min": 0,
+        "max": 32500
+      },
+      {
+        "selections": 32,
+        "min": 0,
+        "max": 35000
+      },
+      {
+        "selections": 33,
+        "min": 0,
+        "max": 37500
+      },
+      {
+        "selections": 34,
+        "min": 0,
+        "max": 38000
+      },
+      {
+        "selections": 35,
+        "min": 0,
+        "max": 40000
+      },
+      {
+        "selections": 36,
+        "min": 0,
+        "max": 42500
+      },
+      {
+        "selections": 37,
+        "min": 0,
+        "max": 45000
+      },
+      {
+        "selections": 38,
+        "min": 0,
+        "max": 50000
+      },
+      {
+        "selections": 39,
+        "min": 0,
+        "max": 60000
+      },
+      {
+        "selections": 4,
+        "min": 0,
+        "max": 900
+      },
+      {
+        "selections": 40,
+        "min": 0,
+        "max": 70000
+      },
+      {
+        "selections": 41,
+        "min": 0,
+        "max": 71000
+      },
+      {
+        "selections": 42,
+        "min": 0,
+        "max": 72000
+      },
+      {
+        "selections": 43,
+        "min": 0,
+        "max": 73000
+      },
+      {
+        "selections": 44,
+        "min": 0,
+        "max": 74000
+      },
+      {
+        "selections": 45,
+        "min": 0,
+        "max": 75000
+      },
+      {
+        "selections": 46,
+        "min": 0,
+        "max": 76000
+      },
+      {
+        "selections": 47,
+        "min": 0,
+        "max": 77000
+      },
+      {
+        "selections": 48,
+        "min": 0,
+        "max": 78000
+      },
+      {
+        "selections": 49,
+        "min": 0,
+        "max": 80000
+      },
+      {
+        "selections": 5,
+        "min": 0,
+        "max": 1500
+      },
+      {
+        "selections": 50,
+        "min": 0,
+        "max": 100000
+      },
+      {
+        "selections": 6,
+        "min": 0,
+        "max": 2000
+      },
+      {
+        "selections": 7,
+        "min": 0,
+        "max": 2500
+      },
+      {
+        "selections": 8,
+        "min": 0,
+        "max": 3000
+      },
+      {
+        "selections": 9,
+        "min": 0,
+        "max": 3500
+      }
+    ]
+  },
+  "maxSelection": 50,
+  "autoBet": {
+    "enable": true,
+    "times": {
+      "limit": 10
+    }
+  },
+  "speedControllerConfig": {
+    "enable": true
+  },
+  "gift": {
+    "enable": false
+  },
+  "addToStake": {
+    "enable": true
+  }
+}

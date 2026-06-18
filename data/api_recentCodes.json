@@ -1,0 +1,8 @@
+{
+  "bizCode": 10000,
+  "isAvailable": true,
+  "message": "Success",
+  "data": {
+    "featureEnabled": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "bizCode": 10000,
+  "isAvailable": true,
+  "message": "Success",
+  "data": {
+    "myPinInfo": [],
+    "events": []
+  }
+}

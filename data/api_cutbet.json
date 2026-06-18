@@ -1,0 +1,11 @@
+{
+  "bizCode": 10000,
+  "isAvailable": true,
+  "message": "Success",
+  "data": {
+    "status": 0,
+    "sliderEnabled": true,
+    "minOneCutStakePct": 0.01,
+    "maxOneCutStakePct": 0.99
+  }
+}
