@@ -32,7 +32,7 @@
                 }
               }
             },
-            "totalMarketSize": 1040,
+            "totalMarketSize": 1041,
             "markets": [
               {
                 "id": "1",
@@ -48,24 +48,24 @@
                 "outcomes": [
                   {
                     "id": "1",
-                    "odds": "9.14",
-                    "probability": "0.1052680000",
+                    "odds": "8.78",
+                    "probability": "0.1096420000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home"
                   },
                   {
                     "id": "2",
-                    "odds": "4.92",
-                    "probability": "0.1963230000",
+                    "odds": "4.90",
+                    "probability": "0.1973100000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw"
                   },
                   {
                     "id": "3",
-                    "odds": "1.41",
-                    "probability": "0.6984000000",
+                    "odds": "1.42",
+                    "probability": "0.6930390000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away"
@@ -87,7 +87,7 @@
                   }
                 ],
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -130,8 +130,8 @@
                 "outcomes": [
                   {
                     "id": "1",
-                    "odds": "3.54",
-                    "probability": "0.2479088431",
+                    "odds": "3.47",
+                    "probability": "0.2534742104",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -139,8 +139,8 @@
                   },
                   {
                     "id": "2",
-                    "odds": "4.92",
-                    "probability": "0.1963230000",
+                    "odds": "4.90",
+                    "probability": "0.1973100000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw"
@@ -148,7 +148,7 @@
                   {
                     "id": "3",
                     "odds": "1.23",
-                    "probability": "0.7804880465",
+                    "probability": "0.7765396381",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -171,7 +171,7 @@
                   }
                 ],
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -214,8 +214,8 @@
                 "outcomes": [
                   {
                     "id": "1",
-                    "odds": "8.12",
-                    "probability": "0.1173904201",
+                    "odds": "7.85",
+                    "probability": "0.1213676782",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -223,16 +223,16 @@
                   },
                   {
                     "id": "2",
-                    "odds": "4.92",
-                    "probability": "0.1963230000",
+                    "odds": "4.90",
+                    "probability": "0.1973100000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw"
                   },
                   {
                     "id": "3",
-                    "odds": "1.39",
-                    "probability": "0.7039344410",
+                    "odds": "1.40",
+                    "probability": "0.6982251533",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -255,7 +255,7 @@
                   }
                 ],
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -298,8 +298,8 @@
                 "outcomes": [
                   {
                     "id": "1",
-                    "odds": "9.49",
-                    "probability": "0.0922706453",
+                    "odds": "9.21",
+                    "probability": "0.0953005505",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -307,16 +307,16 @@
                   },
                   {
                     "id": "2",
-                    "odds": "4.92",
-                    "probability": "0.1963230000",
+                    "odds": "4.90",
+                    "probability": "0.1973100000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw"
                   },
                   {
                     "id": "3",
-                    "odds": "1.53",
-                    "probability": "0.6248498488",
+                    "odds": "1.54",
+                    "probability": "0.6183659782",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -325,7 +325,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -370,7 +370,7 @@
                   {
                     "id": "12",
                     "odds": "1.08",
-                    "probability": "0.9108147981",
+                    "probability": "0.9110530000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1"
@@ -378,7 +378,7 @@
                   {
                     "id": "13",
                     "odds": "9.00",
-                    "probability": "0.0891898684",
+                    "probability": "0.0889471000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 1"
@@ -386,7 +386,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -405,7 +405,7 @@
                   {
                     "id": "12",
                     "odds": "1.47",
-                    "probability": "0.6596320000",
+                    "probability": "0.6593770000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2"
@@ -413,7 +413,7 @@
                   {
                     "id": "13",
                     "odds": "2.75",
-                    "probability": "0.3403680000",
+                    "probability": "0.3406230000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 2"
@@ -421,7 +421,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -440,7 +440,7 @@
                   {
                     "id": "12",
                     "odds": "2.65",
-                    "probability": "0.3562640000",
+                    "probability": "0.3559380000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 3"
@@ -448,7 +448,7 @@
                   {
                     "id": "13",
                     "odds": "1.51",
-                    "probability": "0.6437360000",
+                    "probability": "0.6440620000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 3"
@@ -456,7 +456,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -475,7 +475,7 @@
                   {
                     "id": "12",
                     "odds": "5.70",
-                    "probability": "0.1546471601",
+                    "probability": "0.1545380000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 4"
@@ -483,7 +483,7 @@
                   {
                     "id": "13",
                     "odds": "1.16",
-                    "probability": "0.8453528430",
+                    "probability": "0.8454620000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 4"
@@ -491,7 +491,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -510,7 +510,7 @@
                   {
                     "id": "12",
                     "odds": "1.06",
-                    "probability": "0.9267929511",
+                    "probability": "0.9275729223",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 0.5"
@@ -518,7 +518,7 @@
                   {
                     "id": "13",
                     "odds": "10.50",
-                    "probability": "0.0732070516",
+                    "probability": "0.0724272810",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 0.5"
@@ -526,7 +526,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -545,7 +545,7 @@
                   {
                     "id": "12",
                     "odds": "12.00",
-                    "probability": "0.0587049927",
+                    "probability": "0.0586495000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 5"
@@ -553,7 +553,7 @@
                   {
                     "id": "13",
                     "odds": "1.04",
-                    "probability": "0.9412950891",
+                    "probability": "0.9413510000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 5"
@@ -561,7 +561,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -580,7 +580,7 @@
                   {
                     "id": "12",
                     "odds": "1.31",
-                    "probability": "0.7437190000",
+                    "probability": "0.7433189036",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1.5"
@@ -588,7 +588,7 @@
                   {
                     "id": "13",
                     "odds": "3.60",
-                    "probability": "0.2562810000",
+                    "probability": "0.2566813369",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 1.5"
@@ -596,7 +596,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -625,7 +625,7 @@
                   {
                     "id": "12",
                     "odds": "1.94",
-                    "probability": "0.4966720000",
+                    "probability": "0.4966810000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2.5"
@@ -633,7 +633,7 @@
                   {
                     "id": "13",
                     "odds": "1.91",
-                    "probability": "0.5033280000",
+                    "probability": "0.5033190000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 2.5"
@@ -641,7 +641,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -670,7 +670,7 @@
                   {
                     "id": "12",
                     "odds": "3.33",
-                    "probability": "0.2785570000",
+                    "probability": "0.2781570000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 3.5"
@@ -678,7 +678,7 @@
                   {
                     "id": "13",
                     "odds": "1.35",
-                    "probability": "0.7214430000",
+                    "probability": "0.7218430000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 3.5"
@@ -686,7 +686,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -715,7 +715,7 @@
                   {
                     "id": "12",
                     "odds": "6.50",
-                    "probability": "0.1318953743",
+                    "probability": "0.1318196160",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 4.5"
@@ -723,7 +723,7 @@
                   {
                     "id": "13",
                     "odds": "1.13",
-                    "probability": "0.8681046652",
+                    "probability": "0.8681804238",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 4.5"
@@ -731,7 +731,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -750,7 +750,7 @@
                   {
                     "id": "12",
                     "odds": "13.00",
-                    "probability": "0.0544814619",
+                    "probability": "0.0544339183",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 5.5"
@@ -758,7 +758,7 @@
                   {
                     "id": "13",
                     "odds": "1.04",
-                    "probability": "0.9455190560",
+                    "probability": "0.9455664020",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 5.5"
@@ -766,7 +766,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -785,7 +785,7 @@
                   {
                     "id": "12",
                     "odds": "1.28",
-                    "probability": "0.7624983578",
+                    "probability": "0.7620914005",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1.5"
@@ -793,7 +793,7 @@
                   {
                     "id": "13",
                     "odds": "3.60",
-                    "probability": "0.2562810000",
+                    "probability": "0.2566813369",
                     "voidProbability": "0E-10",
                     "isActive": 0,
                     "desc": "Under 1.5"
@@ -801,7 +801,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -830,7 +830,7 @@
                   {
                     "id": "12",
                     "odds": "1.86",
-                    "probability": "0.5190252597",
+                    "probability": "0.5190310559",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2.5"
@@ -838,7 +838,7 @@
                   {
                     "id": "13",
                     "odds": "1.91",
-                    "probability": "0.5033280000",
+                    "probability": "0.5033190000",
                     "voidProbability": "0E-10",
                     "isActive": 0,
                     "desc": "Under 2.5"
@@ -846,7 +846,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -875,7 +875,7 @@
                   {
                     "id": "12",
                     "odds": "3.03",
-                    "probability": "0.3059307730",
+                    "probability": "0.3055329286",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 3.5"
@@ -883,7 +883,7 @@
                   {
                     "id": "13",
                     "odds": "1.35",
-                    "probability": "0.7214430000",
+                    "probability": "0.7218430000",
                     "voidProbability": "0E-10",
                     "isActive": 0,
                     "desc": "Under 3.5"
@@ -891,7 +891,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -918,24 +918,24 @@
                 "outcomes": [
                   {
                     "id": "9",
-                    "odds": "2.80",
-                    "probability": "0.3035033133",
+                    "odds": "2.75",
+                    "probability": "0.3090893374",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home or Draw"
                   },
                   {
                     "id": "10",
-                    "odds": "1.19",
-                    "probability": "0.8013306675",
+                    "odds": "1.20",
+                    "probability": "0.8003386488",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home or Away"
                   },
                   {
                     "id": "11",
-                    "odds": "1.09",
-                    "probability": "0.8951670226",
+                    "odds": "1.10",
+                    "probability": "0.8905720161",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw or Away"
@@ -943,7 +943,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "double_chance_one_up",
@@ -970,8 +970,8 @@
                 "outcomes": [
                   {
                     "id": "9",
-                    "odds": "2.26",
-                    "probability": "0.3751415523",
+                    "odds": "2.23",
+                    "probability": "0.3816259157",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -979,16 +979,16 @@
                   },
                   {
                     "id": "10",
-                    "odds": "1.19",
-                    "probability": "0.8013306675",
+                    "odds": "1.20",
+                    "probability": "0.8003386488",
                     "voidProbability": "0E-10",
                     "isActive": 0,
                     "desc": "Home or Away"
                   },
                   {
                     "id": "11",
-                    "odds": "1.07",
-                    "probability": "0.9077207558",
+                    "odds": "1.08",
+                    "probability": "0.9046913434",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "cashOutIsActive": 1,
@@ -997,7 +997,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "earlyPayoutMarkets": [
                   {
                     "name": "double_chance_one_up",
@@ -1025,16 +1025,16 @@
                 "outcomes": [
                   {
                     "id": "1711",
-                    "odds": "29.00",
-                    "probability": "0.0259302082",
+                    "odds": "27.00",
+                    "probability": "0.0274603000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (0:1)"
                   },
                   {
                     "id": "1712",
-                    "odds": "9.60",
-                    "probability": "0.0792349312",
+                    "odds": "9.30",
+                    "probability": "0.0818801000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (0:1)"
@@ -1042,7 +1042,7 @@
                   {
                     "id": "1713",
                     "odds": "1.09",
-                    "probability": "0.8948382299",
+                    "probability": "0.8906600000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (0:1)"
@@ -1050,7 +1050,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1068,8 +1068,8 @@
                 "outcomes": [
                   {
                     "id": "1711",
-                    "odds": "75.00",
-                    "probability": "0.0049515506",
+                    "odds": "74.00",
+                    "probability": "0.0050524826",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (0:2)"
@@ -1077,7 +1077,7 @@
                   {
                     "id": "1712",
                     "odds": "17.50",
-                    "probability": "0.0218772045",
+                    "probability": "0.0218081743",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (0:2)"
@@ -1085,7 +1085,7 @@
                   {
                     "id": "1713",
                     "odds": "1.01",
-                    "probability": "0.9731722020",
+                    "probability": "0.9731405432",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (0:2)"
@@ -1093,7 +1093,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1111,8 +1111,8 @@
                 "outcomes": [
                   {
                     "id": "1711",
-                    "odds": "3.10",
-                    "probability": "0.3035330000",
+                    "odds": "3.00",
+                    "probability": "0.3088800000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (1:0)"
@@ -1120,7 +1120,7 @@
                   {
                     "id": "1712",
                     "odds": "3.70",
-                    "probability": "0.2518910000",
+                    "probability": "0.2529250000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (1:0)"
@@ -1128,7 +1128,7 @@
                   {
                     "id": "1713",
                     "odds": "2.15",
-                    "probability": "0.4445760000",
+                    "probability": "0.4381950000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (1:0)"
@@ -1136,7 +1136,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1154,8 +1154,8 @@
                 "outcomes": [
                   {
                     "id": "1711",
-                    "odds": "1.72",
-                    "probability": "0.5554240000",
+                    "odds": "1.71",
+                    "probability": "0.5618050000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (2:0)"
@@ -1163,15 +1163,15 @@
                   {
                     "id": "1712",
                     "odds": "4.30",
-                    "probability": "0.2140860000",
+                    "probability": "0.2127160000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (2:0)"
                   },
                   {
                     "id": "1713",
-                    "odds": "4.00",
-                    "probability": "0.2304910000",
+                    "odds": "4.10",
+                    "probability": "0.2254790000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (2:0)"
@@ -1179,7 +1179,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1197,24 +1197,24 @@
                 "outcomes": [
                   {
                     "id": "1711",
-                    "odds": "1.26",
-                    "probability": "0.7695090000",
+                    "odds": "1.25",
+                    "probability": "0.7743098826",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (3:0)"
                   },
                   {
                     "id": "1712",
-                    "odds": "6.60",
-                    "probability": "0.1317140000",
+                    "odds": "6.75",
+                    "probability": "0.1297376516",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (3:0)"
                   },
                   {
                     "id": "1713",
-                    "odds": "8.80",
-                    "probability": "0.0987770000",
+                    "odds": "9.00",
+                    "probability": "0.0959543810",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (3:0)"
@@ -1222,7 +1222,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1241,7 +1241,7 @@
                   {
                     "id": "1711",
                     "odds": "1.08",
-                    "probability": "0.9010945048",
+                    "probability": "0.9041330000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (4:0)"
@@ -1249,7 +1249,7 @@
                   {
                     "id": "1712",
                     "odds": "12.00",
-                    "probability": "0.0631209963",
+                    "probability": "0.0614635000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (4:0)"
@@ -1257,7 +1257,7 @@
                   {
                     "id": "1713",
                     "odds": "21.00",
-                    "probability": "0.0357872527",
+                    "probability": "0.0344033000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (4:0)"
@@ -1265,7 +1265,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1284,7 +1284,7 @@
                   {
                     "id": "1711",
                     "odds": "1.02",
-                    "probability": "0.9650429438",
+                    "probability": "0.9651483978",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home (5:0)"
@@ -1292,7 +1292,7 @@
                   {
                     "id": "1712",
                     "odds": "19.00",
-                    "probability": "0.0240725241",
+                    "probability": "0.0240852774",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw (5:0)"
@@ -1300,7 +1300,7 @@
                   {
                     "id": "1713",
                     "odds": "41.00",
-                    "probability": "0.0108845392",
+                    "probability": "0.0107663323",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away (5:0)"
@@ -1308,7 +1308,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1326,16 +1326,16 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "2.00",
-                    "probability": "0.4714620000",
+                    "odds": "1.99",
+                    "probability": "0.4785160000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 0.5"
                   },
                   {
                     "id": "13",
-                    "odds": "1.81",
-                    "probability": "0.5285380000",
+                    "odds": "1.83",
+                    "probability": "0.5214840000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 0.5"
@@ -1343,7 +1343,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1361,8 +1361,8 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "6.20",
-                    "probability": "0.1348349314",
+                    "odds": "6.00",
+                    "probability": "0.1392970000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1.5"
@@ -1370,7 +1370,7 @@
                   {
                     "id": "13",
                     "odds": "1.13",
-                    "probability": "0.8651650970",
+                    "probability": "0.8607030000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 1.5"
@@ -1378,7 +1378,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1397,7 +1397,7 @@
                   {
                     "id": "12",
                     "odds": "16.00",
-                    "probability": "0.0270102000",
+                    "probability": "0.0287627860",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2.5"
@@ -1405,7 +1405,7 @@
                   {
                     "id": "13",
                     "odds": "1.01",
-                    "probability": "0.9729900000",
+                    "probability": "0.9712372636",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 2.5"
@@ -1413,7 +1413,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1432,15 +1432,15 @@
                   {
                     "id": "12",
                     "odds": "1.13",
-                    "probability": "0.8657937242",
+                    "probability": "0.8640869486",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 0.5"
                   },
                   {
                     "id": "13",
-                    "odds": "6.20",
-                    "probability": "0.1342063063",
+                    "odds": "6.10",
+                    "probability": "0.1359130766",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 0.5"
@@ -1448,7 +1448,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1466,8 +1466,8 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.60",
-                    "probability": "0.5993700000",
+                    "odds": "1.61",
+                    "probability": "0.5957660000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1.5"
@@ -1475,7 +1475,7 @@
                   {
                     "id": "13",
                     "odds": "2.35",
-                    "probability": "0.4006300000",
+                    "probability": "0.4042340000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 1.5"
@@ -1483,7 +1483,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1501,16 +1501,16 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "2.80",
-                    "probability": "0.3300860000",
+                    "odds": "2.85",
+                    "probability": "0.3260395942",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2.5"
                   },
                   {
                     "id": "13",
-                    "odds": "1.44",
-                    "probability": "0.6699140000",
+                    "odds": "1.43",
+                    "probability": "0.6739604172",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 2.5"
@@ -1518,7 +1518,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1536,8 +1536,8 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "5.70",
-                    "probability": "0.1481472121",
+                    "odds": "5.80",
+                    "probability": "0.1451230000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 3.5"
@@ -1545,7 +1545,7 @@
                   {
                     "id": "13",
                     "odds": "1.14",
-                    "probability": "0.8518527943",
+                    "probability": "0.8548770000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 3.5"
@@ -1553,7 +1553,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1572,7 +1572,7 @@
                   {
                     "id": "12",
                     "odds": "12.00",
-                    "probability": "0.0549279854",
+                    "probability": "0.0536801935",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 4.5"
@@ -1580,7 +1580,7 @@
                   {
                     "id": "13",
                     "odds": "1.04",
-                    "probability": "0.9450722111",
+                    "probability": "0.9463200688",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 4.5"
@@ -1588,7 +1588,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1605,16 +1605,16 @@
                 "outcomes": [
                   {
                     "id": "74",
-                    "odds": "2.30",
-                    "probability": "0.4101690000",
+                    "odds": "2.25",
+                    "probability": "0.4150350000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Yes"
                   },
                   {
                     "id": "76",
-                    "odds": "1.63",
-                    "probability": "0.5898310000",
+                    "odds": "1.64",
+                    "probability": "0.5849650000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "No"
@@ -1622,7 +1622,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1640,15 +1640,15 @@
                   {
                     "id": "74",
                     "odds": "1.61",
-                    "probability": "0.5974809037",
+                    "probability": "0.5953815733",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Yes"
                   },
                   {
                     "id": "76",
-                    "odds": "2.34",
-                    "probability": "0.4025190962",
+                    "odds": "2.33",
+                    "probability": "0.4046184266",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "No"
@@ -1656,7 +1656,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1673,16 +1673,16 @@
                 "outcomes": [
                   {
                     "id": "74",
-                    "odds": "3.32",
-                    "probability": "0.2755953728",
+                    "odds": "3.36",
+                    "probability": "0.2721806999",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Yes"
                   },
                   {
                     "id": "76",
-                    "odds": "1.34",
-                    "probability": "0.7244046271",
+                    "odds": "1.33",
+                    "probability": "0.7278193000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "No"
@@ -1690,7 +1690,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1707,8 +1707,8 @@
                 "outcomes": [
                   {
                     "id": "1",
-                    "odds": "8.30",
-                    "probability": "0.1102870000",
+                    "odds": "8.10",
+                    "probability": "0.1134580000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Home"
@@ -1716,15 +1716,15 @@
                   {
                     "id": "2",
                     "odds": "2.50",
-                    "probability": "0.3774340000",
+                    "probability": "0.3797750000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Draw"
                   },
                   {
                     "id": "3",
-                    "odds": "1.86",
-                    "probability": "0.5122780000",
+                    "odds": "1.88",
+                    "probability": "0.5067670000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Away"
@@ -1732,7 +1732,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1750,8 +1750,8 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.79",
-                    "probability": "0.5374220000",
+                    "odds": "1.80",
+                    "probability": "0.5359000000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1"
@@ -1759,7 +1759,7 @@
                   {
                     "id": "13",
                     "odds": "2.05",
-                    "probability": "0.4625780000",
+                    "probability": "0.4641000000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 1"
@@ -1767,7 +1767,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1785,8 +1785,8 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "5.60",
-                    "probability": "0.1564636514",
+                    "odds": "5.70",
+                    "probability": "0.1557170243",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2"
@@ -1794,7 +1794,7 @@
                   {
                     "id": "13",
                     "odds": "1.16",
-                    "probability": "0.8435363511",
+                    "probability": "0.8442829784",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 2"
@@ -1802,7 +1802,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1821,7 +1821,7 @@
                   {
                     "id": "12",
                     "odds": "16.00",
-                    "probability": "0.0380529817",
+                    "probability": "0.0380225128",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 3"
@@ -1829,7 +1829,7 @@
                   {
                     "id": "13",
                     "odds": "1.02",
-                    "probability": "0.9619564441",
+                    "probability": "0.9619869782",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 3"
@@ -1837,7 +1837,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1856,7 +1856,7 @@
                   {
                     "id": "12",
                     "odds": "1.38",
-                    "probability": "0.7061090577",
+                    "probability": "0.7049740000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 0.5"
@@ -1864,7 +1864,7 @@
                   {
                     "id": "13",
                     "odds": "3.20",
-                    "probability": "0.2938909863",
+                    "probability": "0.2950260000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 0.5"
@@ -1872,7 +1872,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1891,7 +1891,7 @@
                   {
                     "id": "12",
                     "odds": "2.75",
-                    "probability": "0.3415600000",
+                    "probability": "0.3407801136",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 1.5"
@@ -1899,7 +1899,7 @@
                   {
                     "id": "13",
                     "odds": "1.47",
-                    "probability": "0.6584400000",
+                    "probability": "0.6592198928",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 1.5"
@@ -1907,7 +1907,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -1926,7 +1926,7 @@
                   {
                     "id": "12",
                     "odds": "7.00",
-                    "probability": "0.1221307077",
+                    "probability": "0.1217980000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Over 2.5"
@@ -1934,7 +1934,7 @@
                   {
                     "id": "13",
                     "odds": "1.12",
-                    "probability": "0.8778694097",
+                    "probability": "0.8782020000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
                     "desc": "Under 2.5"
@@ -1942,7 +1942,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741563385,
+                "lastOddsChangeTime": 1781742943496,
                 "banned": false
               },
               {
@@ -2953,7 +2953,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741768997,
+                "lastOddsChangeTime": 1781742845347,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -2998,7 +2998,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741768997,
+                "lastOddsChangeTime": 1781742845347,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -3043,7 +3043,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781741768997,
+                "lastOddsChangeTime": 1781742845347,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -14657,7 +14657,7 @@
                   }
                 ],
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -14741,7 +14741,7 @@
                   }
                 ],
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -14825,7 +14825,7 @@
                   }
                 ],
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -14895,7 +14895,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "1UP",
@@ -14939,7 +14939,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.13",
+                    "odds": "1.14",
                     "probability": "0.8579260000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -14947,7 +14947,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "5.90",
+                    "odds": "6.10",
                     "probability": "0.1420740000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -14956,7 +14956,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -14974,7 +14974,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.51",
+                    "odds": "1.52",
                     "probability": "0.6385888255",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -14991,7 +14991,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15017,7 +15017,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.57",
+                    "odds": "1.58",
                     "probability": "0.6132520000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15026,7 +15026,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15044,7 +15044,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "4.50",
+                    "odds": "4.60",
                     "probability": "0.1975500000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15052,7 +15052,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.21",
+                    "odds": "1.22",
                     "probability": "0.8024500000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15061,7 +15061,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15087,7 +15087,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "16.50",
+                    "odds": "19.00",
                     "probability": "0.0260001000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15096,7 +15096,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15114,7 +15114,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "8.50",
+                    "odds": "9.00",
                     "probability": "0.0891574408",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15122,7 +15122,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.07",
+                    "odds": "1.08",
                     "probability": "0.9108472425",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15131,7 +15131,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15157,7 +15157,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "6.90",
+                    "odds": "7.10",
                     "probability": "0.1184788869",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15166,7 +15166,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -15194,7 +15194,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.35",
+                    "odds": "1.36",
                     "probability": "0.7146434275",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15202,7 +15202,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "3.20",
+                    "odds": "3.25",
                     "probability": "0.2853566367",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15211,7 +15211,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -15239,7 +15239,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.89",
+                    "odds": "1.91",
                     "probability": "0.5047775063",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15247,7 +15247,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.92",
+                    "odds": "1.94",
                     "probability": "0.4952224939",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15256,7 +15256,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -15284,7 +15284,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "2.95",
+                    "odds": "3.00",
                     "probability": "0.3123760000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15292,7 +15292,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.40",
+                    "odds": "1.41",
                     "probability": "0.6876240000",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15301,7 +15301,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15319,7 +15319,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "5.10",
+                    "odds": "5.25",
                     "probability": "0.1694351570",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15327,7 +15327,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.17",
+                    "odds": "1.18",
                     "probability": "0.8305648436",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15336,7 +15336,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15397,7 +15397,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "6.90",
+                    "odds": "7.10",
                     "probability": "0.1184788869",
                     "voidProbability": "0E-10",
                     "isActive": 0,
@@ -15406,7 +15406,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741893031,
+                "lastOddsChangeTime": 1781743099206,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -15434,7 +15434,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.32",
+                    "odds": "1.33",
                     "probability": "0.7301542623",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15442,7 +15442,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "3.20",
+                    "odds": "3.25",
                     "probability": "0.2853566367",
                     "voidProbability": "0E-10",
                     "isActive": 0,
@@ -15451,7 +15451,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741893031,
+                "lastOddsChangeTime": 1781743099206,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -15479,7 +15479,7 @@
                 "outcomes": [
                   {
                     "id": "12",
-                    "odds": "1.80",
+                    "odds": "1.82",
                     "probability": "0.5310605447",
                     "voidProbability": "0E-10",
                     "isActive": 1,
@@ -15487,7 +15487,7 @@
                   },
                   {
                     "id": "13",
-                    "odds": "1.92",
+                    "odds": "1.94",
                     "probability": "0.4952224939",
                     "voidProbability": "0E-10",
                     "isActive": 0,
@@ -15496,7 +15496,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741893031,
+                "lastOddsChangeTime": 1781743099206,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -15548,7 +15548,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "double_chance_one_up",
@@ -15566,7 +15566,6 @@
                 "product": 3,
                 "desc": "Double Chance - 1UP",
                 "status": 0,
-                "cashOutStatus": 1,
                 "group": "Main",
                 "groupId": "171121135724MGI11262166",
                 "marketGuide": "1UP pays your Double Chance bets immediately, if Home (for 1X bets) or Away (for X2 bets) team leads at any moment.\u2028Once settled, the final result no longer matters! If the 1UP condition is not met, your selection is treated as a normal Double Chance bet.",
@@ -15603,7 +15602,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "earlyPayoutMarkets": [
                   {
                     "name": "double_chance_one_up",
@@ -15656,7 +15655,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15699,7 +15698,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15742,7 +15741,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15785,7 +15784,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15828,7 +15827,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15871,7 +15870,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15957,7 +15956,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -15992,7 +15991,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16027,7 +16026,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16062,7 +16061,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16097,7 +16096,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16132,7 +16131,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16167,7 +16166,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16202,7 +16201,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16236,7 +16235,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16270,7 +16269,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16304,7 +16303,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16346,7 +16345,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680658000,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16381,7 +16380,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16416,7 +16415,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16451,7 +16450,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16486,7 +16485,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16521,7 +16520,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16556,7 +16555,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781680657713,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16591,7 +16590,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781721994431,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16626,7 +16625,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781721994431,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -16661,7 +16660,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781721994431,
+                "lastOddsChangeTime": 1781742721516,
                 "banned": false
               },
               {
@@ -17532,7 +17531,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741191881,
+                "lastOddsChangeTime": 1781742500109,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -17577,7 +17576,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741191881,
+                "lastOddsChangeTime": 1781742500109,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -17622,7 +17621,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741191881,
+                "lastOddsChangeTime": 1781742500109,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -21619,7 +21618,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781738975063,
+                "lastOddsChangeTime": 1781742964644,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -21664,7 +21663,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781738975063,
+                "lastOddsChangeTime": 1781742964644,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -21709,7 +21708,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781738975063,
+                "lastOddsChangeTime": 1781742964644,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -23736,7 +23735,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741749606,
+                "lastOddsChangeTime": 1781742841879,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -23781,7 +23780,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741749606,
+                "lastOddsChangeTime": 1781742841879,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -23826,7 +23825,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781741749606,
+                "lastOddsChangeTime": 1781742841879,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -25127,7 +25126,7 @@
                 }
               }
             },
-            "totalMarketSize": 861,
+            "totalMarketSize": 862,
             "markets": [
               {
                 "id": "1",
@@ -27900,7 +27899,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781739827524,
+                "lastOddsChangeTime": 1781742030953,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -27945,7 +27944,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781739827524,
+                "lastOddsChangeTime": 1781742030953,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -27990,7 +27989,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781739827524,
+                "lastOddsChangeTime": 1781742030953,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -37909,8 +37908,8 @@
                   }
                 ],
                 "farNearOdds": -1,
-                "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781738081573,
+                "sourceType": "BET_GENIUS",
+                "lastOddsChangeTime": 1781742500939,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -37954,8 +37953,8 @@
                   }
                 ],
                 "farNearOdds": 0,
-                "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781738081573,
+                "sourceType": "BET_GENIUS",
+                "lastOddsChangeTime": 1781742500939,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -37999,8 +37998,8 @@
                   }
                 ],
                 "farNearOdds": 1,
-                "sourceType": "BET_RADAR",
-                "lastOddsChangeTime": 1781738081573,
+                "sourceType": "BET_GENIUS",
+                "lastOddsChangeTime": 1781742500939,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -43255,7 +43254,7 @@
                 }
               }
             },
-            "totalMarketSize": 296,
+            "totalMarketSize": 310,
             "markets": [
               {
                 "id": "1",
@@ -52050,7 +52049,7 @@
                 ],
                 "farNearOdds": 0,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781737547484,
+                "lastOddsChangeTime": 1781742168521,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -52095,7 +52094,7 @@
                 ],
                 "farNearOdds": 1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781737547484,
+                "lastOddsChangeTime": 1781742168521,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -52140,7 +52139,7 @@
                 ],
                 "farNearOdds": -1,
                 "sourceType": "BET_GENIUS",
-                "lastOddsChangeTime": 1781737547484,
+                "lastOddsChangeTime": 1781742168521,
                 "earlyPayoutMarkets": [
                   {
                     "name": "over_under",
@@ -57177,7 +57176,7 @@
                 }
               }
             },
-            "totalMarketSize": 325,
+            "totalMarketSize": 338,
             "markets": [
               {
                 "id": "1",
