@@ -18,10 +18,13 @@ from src.models.elo_model import EloModel
 from src.collectors.sportybet_scraper import fetch_sportybet_odds, parse_matches
 
 # Minimum thresholds to flag a value bet
-MIN_EDGE = 8.0          # Minimum edge % over bookmaker
-MIN_EV = 0.10           # Minimum expected value (5% return per unit)
-MIN_ODDS = 1.30         # Ignore very short odds — too risky
-MAX_ODDS = 15.0         # Ignore very long odds — too uncertain
+MIN_EDGE = 8.0
+MIN_EV = 0.10
+MIN_ODDS = 1.30
+MAX_ODDS = 15.0
+
+# Only analyse these competitions with national team Elo model
+VALID_COMPETITIONS = ["World Cup"]
 
 OUTPUT_FILE = "data/value_bets.json"
 
@@ -36,19 +39,32 @@ def implied_probability(decimal_odds):
 def expected_value(model_prob_pct, decimal_odds):
     """
     Calculate expected value of a bet.
-
     EV > 0 means profitable long-term.
-    EV = -1 means you lose your entire stake.
     EV = +0.10 means 10% return per unit staked.
     """
     model_prob = model_prob_pct / 100
     return round((model_prob * decimal_odds) - 1, 4)
 
 
+def get_value_rating(edge, ev):
+    """
+    Simple value rating system.
+    ★★★ = Strong value
+    ★★  = Good value
+    ★   = Marginal value
+    """
+    if edge >= 15 and ev >= 0.15:
+        return "★★★ STRONG"
+    elif edge >= 10 and ev >= 0.10:
+        return "★★ GOOD"
+    else:
+        return "★ MARGINAL"
+
+
 def detect_value(sportybet_match, elo_prediction):
     """
     Compare SportyBet odds vs Elo model for a single match.
-    Returns list of value bets found (can be 0, 1, 2, or 3).
+    Returns list of value bets found.
     """
     value_bets = []
 
@@ -83,7 +99,6 @@ def detect_value(sportybet_match, elo_prediction):
         dec_odds = outcome["decimal_odds"]
         model_prob = outcome["model_prob"]
 
-        # Skip odds outside our range
         if dec_odds < MIN_ODDS or dec_odds > MAX_ODDS:
             continue
 
@@ -106,28 +121,13 @@ def detect_value(sportybet_match, elo_prediction):
     return value_bets
 
 
-def get_value_rating(edge, ev):
-    """
-    Simple value rating system.
-
-    ★★★  = Strong value
-    ★★   = Good value  
-    ★    = Marginal value
-    """
-    if edge >= 15 and ev >= 0.15:
-        return "★★★ STRONG"
-    elif edge >= 10 and ev >= 0.10:
-        return "★★ GOOD"
-    else:
-        return "★ MARGINAL"
-
-
 def run_value_detection():
     """
     Full pipeline:
     1. Fetch SportyBet odds
-    2. Generate Elo predictions for each match
-    3. Compare and flag value bets
+    2. Filter to valid competitions only
+    3. Generate Elo predictions for each match
+    4. Compare and flag value bets
     """
     print(f"\n{'='*65}")
     print(f"  FOOTBALL INTELLIGENCE — VALUE DETECTION ENGINE")
@@ -137,20 +137,36 @@ def run_value_detection():
     # Step 1: Fetch live odds
     print("[1/3] Fetching SportyBet odds...")
     raw_data = fetch_sportybet_odds(page_size=50)
-    sportybet_matches = parse_matches(raw_data)
+    all_matches = parse_matches(raw_data)
 
-    if not sportybet_matches:
+    if not all_matches:
         print("[ERROR] No matches fetched from SportyBet")
         return []
 
-    matches_with_odds = [m for m in sportybet_matches if m["has_odds"]]
-    print(f"[OK] {len(matches_with_odds)} matches with odds\n")
+    # Step 2: Filter to valid competitions only
+    matches_with_odds = [
+        m for m in all_matches
+        if m["has_odds"] and m.get("competition", "") in VALID_COMPETITIONS
+    ]
 
-    # Step 2: Generate Elo predictions
+    total_fetched = len(all_matches)
+    total_filtered = len(matches_with_odds)
+    total_skipped = total_fetched - total_filtered
+
+    print(f"[OK] Fetched: {total_fetched} matches total")
+    print(f"[OK] World Cup matches with odds: {total_filtered}")
+    if total_skipped > 0:
+        print(f"[--] Skipped {total_skipped} non-World Cup matches\n")
+
+    if not matches_with_odds:
+        print("[ERROR] No World Cup matches found")
+        return []
+
+    # Step 3: Generate Elo predictions
     print("[2/3] Generating Elo model predictions...")
     model = EloModel()
 
-    # Step 3: Compare and detect value
+    # Step 4: Compare and detect value
     print("[3/3] Running value detection...\n")
 
     all_value_bets = []
@@ -160,7 +176,7 @@ def run_value_detection():
         home = match["home_team"]
         away = match["away_team"]
 
-        # World Cup = neutral venue
+        # World Cup = neutral venue always
         prediction = model.predict_match(home, away, neutral_venue=True)
         value_bets = detect_value(match, prediction)
 
@@ -206,36 +222,33 @@ def display_results(match_analyses):
             print(f"  Kick-off: {match['kick_off']}")
             print(f"  Elo:      {match['home_elo']} vs {match['away_elo']}")
             print(f"")
-            print(
-                f"  {'Outcome':<12} {'Odds':>6} {'Bookie%':>9} {'Model%':>8} {'Edge':>7} {'EV':>7} {'Rating'}")
+            print(f"  {'Outcome':<12} {'Odds':>6} {'Bookie%':>9} "
+                  f"{'Model%':>8} {'Edge':>7} {'EV':>7}  Rating")
             print(f"  {'-'*65}")
 
-            # Show all outcomes for context
             odds = match["sportybet_odds"]
             bookie = match["sportybet_implied"]
             model = match["model_probability"]
+            value_outcomes = {vb["outcome"] for vb in match["value_bets"]}
 
             outcomes = [
                 ("Home Win", odds["home"], bookie["home"], model["home"]),
-                ("Draw", odds["draw"], bookie["draw"], model["draw"]),
+                ("Draw",     odds["draw"], bookie["draw"], model["draw"]),
                 ("Away Win", odds["away"], bookie["away"], model["away"]),
             ]
-
-            value_outcomes = {vb["outcome"] for vb in match["value_bets"]}
 
             for name, odd, bk, md in outcomes:
                 edge = round(md - bk, 2)
                 ev = expected_value(md, odd)
-                flag = " ← VALUE" if name in value_outcomes else ""
+                is_value = name in value_outcomes
+                flag = " ← VALUE" if is_value else ""
                 rating = ""
-                if name in value_outcomes:
+                if is_value:
                     for vb in match["value_bets"]:
                         if vb["outcome"] == name:
                             rating = vb["rating"]
-
                 print(f"  {name:<12} {odd:>6.2f} {bk:>8.2f}% {md:>7.2f}% "
                       f"{edge:>+6.2f}% {ev:>+6.3f}  {rating}{flag}")
-
             print()
 
     else:
@@ -243,20 +256,17 @@ def display_results(match_analyses):
         print(f"  This is normal — value opportunities are rare.")
         print(f"  The model is working correctly.\n")
 
-    print(f"\n  ALL MATCHES ANALYZED:\n")
+    print(f"\n  ALL WORLD CUP MATCHES ANALYSED:\n")
+    print(f"  {'Home':<22} {'Away':<22} {'H%':>5} {'D%':>5} {'A%':>5}  Value")
+    print(f"  {'-'*65}")
     for match in match_analyses:
         model = match["model_probability"]
-        bookie = match["sportybet_implied"]
-        print(f"  {match['home_team']:<22} vs {match['away_team']:<22}")
-        print(
-            f"  Model:  {model['home']:>5.1f}% / {model['draw']:>5.1f}% / {model['away']:>5.1f}%")
-        print(
-            f"  Bookie: {bookie['home']:>5.1f}% / {bookie['draw']:>5.1f}% / {bookie['away']:>5.1f}%")
-        if match["has_value"]:
-            print(f"  *** VALUE DETECTED ***")
-        print()
+        flag = "  *** VALUE" if match["has_value"] else ""
+        print(f"  {match['home_team']:<22} {match['away_team']:<22} "
+              f"{model['home']:>5.1f} {model['draw']:>5.1f} "
+              f"{model['away']:>5.1f}{flag}")
 
-    print(f"{'='*65}\n")
+    print(f"\n{'='*65}\n")
 
 
 def save_results(match_analyses):

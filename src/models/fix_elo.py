@@ -1,0 +1,5 @@
+code = open("src/models/elo_model.py").read()
+print("EloModel in file:", "EloModel" in code)
+print("File length:", len(code))
+print("\nLast 500 chars:")
+print(code[-500:])

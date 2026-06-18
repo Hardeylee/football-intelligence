@@ -1,186 +1,32 @@
 {
-  "generated_at": "2026-06-18T01:38:32.305197",
-  "total_matches": 50,
-  "value_matches": 36,
+  "generated_at": "2026-06-18T23:50:56.971687",
+  "total_matches": 45,
+  "value_matches": 21,
   "analyses": [
-    {
-      "home_team": "Uzbekistan",
-      "away_team": "Colombia",
-      "competition": "World Cup",
-      "kick_off": "18 Jun 2026 03:00",
-      "sportybet_odds": {
-        "home": 8.78,
-        "draw": 4.9,
-        "away": 1.42
-      },
-      "sportybet_implied": {
-        "home": 11.39,
-        "draw": 20.41,
-        "away": 70.42
-      },
-      "model_probability": {
-        "home": 20.14,
-        "draw": 19.71,
-        "away": 60.15
-      },
-      "home_elo": 1640,
-      "away_elo": 1830,
-      "value_bets": [
-        {
-          "outcome": "Home Win",
-          "selection": "Uzbekistan",
-          "decimal_odds": 8.78,
-          "model_probability": 20.14,
-          "implied_probability": 11.3895,
-          "edge": 8.75,
-          "expected_value": 0.7683,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
-    },
-    {
-      "home_team": "Czechia",
-      "away_team": "South Africa",
-      "competition": "World Cup",
-      "kick_off": "18 Jun 2026 17:00",
-      "sportybet_odds": {
-        "home": 1.84,
-        "draw": 3.79,
-        "away": 4.72
-      },
-      "sportybet_implied": {
-        "home": 54.35,
-        "draw": 26.39,
-        "away": 21.19
-      },
-      "model_probability": {
-        "home": 53.46,
-        "draw": 21.25,
-        "away": 25.29
-      },
-      "home_elo": 1790,
-      "away_elo": 1660,
-      "value_bets": [],
-      "has_value": false
-    },
-    {
-      "home_team": "Switzerland",
-      "away_team": "Bosnia & Herzegovina",
-      "competition": "World Cup",
-      "kick_off": "18 Jun 2026 20:00",
-      "sportybet_odds": {
-        "home": 1.58,
-        "draw": 4.3,
-        "away": 6.48
-      },
-      "sportybet_implied": {
-        "home": 63.29,
-        "draw": 23.26,
-        "away": 15.43
-      },
-      "model_probability": {
-        "home": 57.99,
-        "draw": 20.21,
-        "away": 21.8
-      },
-      "home_elo": 1900,
-      "away_elo": 1730,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Bosnia & Herzegovina",
-          "decimal_odds": 6.48,
-          "model_probability": 21.8,
-          "implied_probability": 15.4321,
-          "edge": 6.37,
-          "expected_value": 0.4126,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
-    },
-    {
-      "home_team": "Canada",
-      "away_team": "Qatar",
-      "competition": "World Cup",
-      "kick_off": "18 Jun 2026 23:00",
-      "sportybet_odds": {
-        "home": 1.3,
-        "draw": 6.14,
-        "away": 11.59
-      },
-      "sportybet_implied": {
-        "home": 76.92,
-        "draw": 16.29,
-        "away": 8.63
-      },
-      "model_probability": {
-        "home": 51.09,
-        "draw": 21.79,
-        "away": 27.12
-      },
-      "home_elo": 1750,
-      "away_elo": 1640,
-      "value_bets": [
-        {
-          "outcome": "Draw",
-          "selection": "Draw",
-          "decimal_odds": 6.14,
-          "model_probability": 21.79,
-          "implied_probability": 16.2866,
-          "edge": 5.5,
-          "expected_value": 0.3379,
-          "rating": "\u2605 MARGINAL"
-        },
-        {
-          "outcome": "Away Win",
-          "selection": "Qatar",
-          "decimal_odds": 11.59,
-          "model_probability": 27.12,
-          "implied_probability": 8.6281,
-          "edge": 18.49,
-          "expected_value": 2.1432,
-          "rating": "\u2605\u2605\u2605 STRONG"
-        }
-      ],
-      "has_value": true
-    },
     {
       "home_team": "Mexico",
       "away_team": "Korea Republic",
       "competition": "World Cup",
       "kick_off": "19 Jun 2026 02:00",
       "sportybet_odds": {
-        "home": 2.08,
-        "draw": 3.37,
-        "away": 4.13
+        "home": 2.11,
+        "draw": 3.39,
+        "away": 4.0
       },
       "sportybet_implied": {
-        "home": 48.08,
-        "draw": 29.67,
-        "away": 24.21
+        "home": 47.39,
+        "draw": 29.5,
+        "away": 25.0
       },
       "model_probability": {
-        "home": 43.73,
-        "draw": 23.49,
-        "away": 32.78
+        "home": 42.78,
+        "draw": 25.14,
+        "away": 32.08
       },
       "home_elo": 1820,
       "away_elo": 1770,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Korea Republic",
-          "decimal_odds": 4.13,
-          "model_probability": 32.78,
-          "implied_probability": 24.2131,
-          "edge": 8.57,
-          "expected_value": 0.3538,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "USA",
@@ -189,18 +35,18 @@
       "kick_off": "19 Jun 2026 20:00",
       "sportybet_odds": {
         "home": 1.65,
-        "draw": 4.26,
+        "draw": 4.3,
         "away": 5.54
       },
       "sportybet_implied": {
         "home": 60.61,
-        "draw": 23.47,
+        "draw": 23.26,
         "away": 18.05
       },
       "model_probability": {
-        "home": 44.97,
-        "draw": 23.19,
-        "away": 31.84
+        "home": 44.04,
+        "draw": 24.78,
+        "away": 31.18
       },
       "home_elo": 1800,
       "away_elo": 1740,
@@ -209,10 +55,10 @@
           "outcome": "Away Win",
           "selection": "Australia",
           "decimal_odds": 5.54,
-          "model_probability": 31.84,
+          "model_probability": 31.18,
           "implied_probability": 18.0505,
-          "edge": 13.79,
-          "expected_value": 0.7639,
+          "edge": 13.13,
+          "expected_value": 0.7274,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -224,19 +70,19 @@
       "competition": "World Cup",
       "kick_off": "19 Jun 2026 23:00",
       "sportybet_odds": {
-        "home": 5.21,
-        "draw": 3.73,
-        "away": 1.79
+        "home": 5.4,
+        "draw": 3.71,
+        "away": 1.77
       },
       "sportybet_implied": {
-        "home": 19.19,
-        "draw": 26.81,
-        "away": 55.87
+        "home": 18.52,
+        "draw": 26.95,
+        "away": 56.5
       },
       "model_probability": {
-        "home": 31.84,
-        "draw": 23.19,
-        "away": 44.97
+        "home": 31.18,
+        "draw": 24.78,
+        "away": 44.04
       },
       "home_elo": 1770,
       "away_elo": 1830,
@@ -244,11 +90,11 @@
         {
           "outcome": "Home Win",
           "selection": "Scotland",
-          "decimal_odds": 5.21,
-          "model_probability": 31.84,
-          "implied_probability": 19.1939,
-          "edge": 12.65,
-          "expected_value": 0.6589,
+          "decimal_odds": 5.4,
+          "model_probability": 31.18,
+          "implied_probability": 18.5185,
+          "edge": 12.66,
+          "expected_value": 0.6837,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -260,35 +106,24 @@
       "competition": "World Cup",
       "kick_off": "20 Jun 2026 01:30",
       "sportybet_odds": {
-        "home": 1.13,
-        "draw": 10.94,
-        "away": 24.49
+        "home": 1.12,
+        "draw": 11.7,
+        "away": 26.02
       },
       "sportybet_implied": {
-        "home": 88.5,
-        "draw": 9.14,
-        "away": 4.08
+        "home": 89.29,
+        "draw": 8.55,
+        "away": 3.84
       },
       "model_probability": {
-        "home": 77.12,
-        "draw": 15.16,
-        "away": 7.72
+        "home": 78.77,
+        "draw": 14.61,
+        "away": 6.63
       },
       "home_elo": 2050,
-      "away_elo": 1650,
-      "value_bets": [
-        {
-          "outcome": "Draw",
-          "selection": "Draw",
-          "decimal_odds": 10.94,
-          "model_probability": 15.16,
-          "implied_probability": 9.1408,
-          "edge": 6.02,
-          "expected_value": 0.6585,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "away_elo": 1620,
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Turkiye",
@@ -296,35 +131,24 @@
       "competition": "World Cup",
       "kick_off": "20 Jun 2026 04:00",
       "sportybet_odds": {
-        "home": 2.06,
-        "draw": 3.44,
-        "away": 4.11
+        "home": 2.08,
+        "draw": 3.48,
+        "away": 3.98
       },
       "sportybet_implied": {
-        "home": 48.54,
-        "draw": 29.07,
-        "away": 24.33
+        "home": 48.08,
+        "draw": 28.74,
+        "away": 25.13
       },
       "model_probability": {
-        "home": 30.88,
-        "draw": 22.91,
-        "away": 46.21
+        "home": 47.79,
+        "draw": 23.74,
+        "away": 28.47
       },
-      "home_elo": 1650,
+      "home_elo": 1810,
       "away_elo": 1720,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Paraguay",
-          "decimal_odds": 4.11,
-          "model_probability": 46.21,
-          "implied_probability": 24.3309,
-          "edge": 21.88,
-          "expected_value": 0.8992,
-          "rating": "\u2605\u2605\u2605 STRONG"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Netherlands",
@@ -332,35 +156,24 @@
       "competition": "World Cup",
       "kick_off": "20 Jun 2026 18:00",
       "sportybet_odds": {
-        "home": 1.74,
-        "draw": 4.01,
-        "away": 5.12
+        "home": 1.77,
+        "draw": 3.95,
+        "away": 4.98
       },
       "sportybet_implied": {
-        "home": 57.47,
-        "draw": 24.94,
-        "away": 19.53
+        "home": 56.5,
+        "draw": 25.32,
+        "away": 20.08
       },
       "model_probability": {
-        "home": 51.09,
-        "draw": 21.79,
-        "away": 27.12
+        "home": 50.25,
+        "draw": 23.07,
+        "away": 26.68
       },
       "home_elo": 1950,
       "away_elo": 1840,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Sweden",
-          "decimal_odds": 5.12,
-          "model_probability": 27.12,
-          "implied_probability": 19.5312,
-          "edge": 7.59,
-          "expected_value": 0.3885,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Germany",
@@ -368,19 +181,19 @@
       "competition": "World Cup",
       "kick_off": "20 Jun 2026 21:00",
       "sportybet_odds": {
-        "home": 1.59,
-        "draw": 4.56,
-        "away": 5.76
+        "home": 1.57,
+        "draw": 4.65,
+        "away": 5.96
       },
       "sportybet_implied": {
-        "home": 62.89,
-        "draw": 21.93,
-        "away": 17.36
+        "home": 63.69,
+        "draw": 21.51,
+        "away": 16.78
       },
       "model_probability": {
-        "home": 66.05,
-        "draw": 18.29,
-        "away": 15.66
+        "home": 65.56,
+        "draw": 18.89,
+        "away": 15.55
       },
       "home_elo": 1980,
       "away_elo": 1730,
@@ -393,31 +206,31 @@
       "competition": "World Cup",
       "kick_off": "21 Jun 2026 01:00",
       "sportybet_odds": {
-        "home": 1.11,
-        "draw": 11.16,
-        "away": 30.86
+        "home": 1.13,
+        "draw": 10.48,
+        "away": 27.84
       },
       "sportybet_implied": {
-        "home": 90.09,
-        "draw": 8.96,
-        "away": 3.24
+        "home": 88.5,
+        "draw": 9.54,
+        "away": 3.59
       },
       "model_probability": {
-        "home": 53.46,
-        "draw": 21.25,
-        "away": 25.29
+        "home": 53.84,
+        "draw": 22.11,
+        "away": 24.05
       },
       "home_elo": 1780,
-      "away_elo": 1650,
+      "away_elo": 1640,
       "value_bets": [
         {
           "outcome": "Draw",
           "selection": "Draw",
-          "decimal_odds": 11.16,
-          "model_probability": 21.25,
-          "implied_probability": 8.9606,
-          "edge": 12.29,
-          "expected_value": 1.3715,
+          "decimal_odds": 10.48,
+          "model_probability": 22.11,
+          "implied_probability": 9.542,
+          "edge": 12.57,
+          "expected_value": 1.3171,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -439,9 +252,9 @@
         "away": 63.69
       },
       "model_probability": {
-        "home": 29.94,
-        "draw": 22.62,
-        "away": 47.44
+        "home": 29.37,
+        "draw": 24.08,
+        "away": 46.55
       },
       "home_elo": 1720,
       "away_elo": 1800,
@@ -450,11 +263,11 @@
           "outcome": "Home Win",
           "selection": "Tunisia",
           "decimal_odds": 6.77,
-          "model_probability": 29.94,
+          "model_probability": 29.37,
           "implied_probability": 14.771,
-          "edge": 15.17,
-          "expected_value": 1.0269,
-          "rating": "\u2605\u2605\u2605 STRONG"
+          "edge": 14.6,
+          "expected_value": 0.9883,
+          "rating": "\u2605\u2605 GOOD"
         }
       ],
       "has_value": true
@@ -466,18 +279,18 @@
       "kick_off": "21 Jun 2026 17:00",
       "sportybet_odds": {
         "home": 1.12,
-        "draw": 10.63,
-        "away": 28.85
+        "draw": 10.76,
+        "away": 30.14
       },
       "sportybet_implied": {
         "home": 89.29,
-        "draw": 9.41,
-        "away": 3.47
+        "draw": 9.29,
+        "away": 3.32
       },
       "model_probability": {
-        "home": 70.31,
-        "draw": 17.18,
-        "away": 12.51
+        "home": 69.97,
+        "draw": 17.59,
+        "away": 12.44
       },
       "home_elo": 1990,
       "away_elo": 1690,
@@ -485,11 +298,11 @@
         {
           "outcome": "Draw",
           "selection": "Draw",
-          "decimal_odds": 10.63,
-          "model_probability": 17.18,
-          "implied_probability": 9.4073,
-          "edge": 7.77,
-          "expected_value": 0.8262,
+          "decimal_odds": 10.76,
+          "model_probability": 17.59,
+          "implied_probability": 9.2937,
+          "edge": 8.3,
+          "expected_value": 0.8927,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -511,14 +324,25 @@
         "away": 12.58
       },
       "model_probability": {
-        "home": 67.83,
-        "draw": 17.84,
-        "away": 14.33
+        "home": 57.29,
+        "draw": 21.18,
+        "away": 21.53
       },
       "home_elo": 1920,
-      "away_elo": 1650,
-      "value_bets": [],
-      "has_value": false
+      "away_elo": 1750,
+      "value_bets": [
+        {
+          "outcome": "Away Win",
+          "selection": "IR Iran",
+          "decimal_odds": 7.95,
+          "model_probability": 21.53,
+          "implied_probability": 12.5786,
+          "edge": 8.95,
+          "expected_value": 0.7116,
+          "rating": "\u2605 MARGINAL"
+        }
+      ],
+      "has_value": true
     },
     {
       "home_team": "Uruguay",
@@ -536,25 +360,14 @@
         "away": 12.52
       },
       "model_probability": {
-        "home": 63.2,
-        "draw": 18.99,
-        "away": 17.81
+        "home": 59.49,
+        "draw": 20.58,
+        "away": 19.93
       },
       "home_elo": 1870,
-      "away_elo": 1650,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Cape Verde",
-          "decimal_odds": 7.99,
-          "model_probability": 17.81,
-          "implied_probability": 12.5156,
-          "edge": 5.29,
-          "expected_value": 0.423,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "away_elo": 1680,
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "New Zealand",
@@ -572,9 +385,9 @@
         "away": 60.24
       },
       "model_probability": {
-        "home": 28.99,
-        "draw": 22.34,
-        "away": 48.67
+        "home": 28.47,
+        "draw": 23.74,
+        "away": 47.79
       },
       "home_elo": 1650,
       "away_elo": 1740,
@@ -583,10 +396,10 @@
           "outcome": "Home Win",
           "selection": "New Zealand",
           "decimal_odds": 5.86,
-          "model_probability": 28.99,
+          "model_probability": 28.47,
           "implied_probability": 17.0648,
-          "edge": 11.93,
-          "expected_value": 0.6988,
+          "edge": 11.41,
+          "expected_value": 0.6683,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -598,35 +411,24 @@
       "competition": "World Cup",
       "kick_off": "22 Jun 2026 18:00",
       "sportybet_odds": {
-        "home": 1.61,
-        "draw": 4.2,
-        "away": 6.16
+        "home": 1.64,
+        "draw": 4.11,
+        "away": 5.99
       },
       "sportybet_implied": {
-        "home": 62.11,
-        "draw": 23.81,
-        "away": 16.23
+        "home": 60.98,
+        "draw": 24.33,
+        "away": 16.69
       },
       "model_probability": {
-        "home": 67.83,
-        "draw": 17.84,
-        "away": 14.33
+        "home": 67.4,
+        "draw": 18.36,
+        "away": 14.24
       },
       "home_elo": 2080,
       "away_elo": 1810,
-      "value_bets": [
-        {
-          "outcome": "Home Win",
-          "selection": "Argentina",
-          "decimal_odds": 1.61,
-          "model_probability": 67.83,
-          "implied_probability": 62.1118,
-          "edge": 5.72,
-          "expected_value": 0.0921,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "France",
@@ -635,34 +437,23 @@
       "kick_off": "22 Jun 2026 22:00",
       "sportybet_odds": {
         "home": 1.1,
-        "draw": 12.17,
-        "away": 35.44
+        "draw": 12.01,
+        "away": 33.81
       },
       "sportybet_implied": {
         "home": 90.91,
-        "draw": 8.22,
-        "away": 2.82
+        "draw": 8.33,
+        "away": 2.96
       },
       "model_probability": {
-        "home": 74.66,
-        "draw": 15.94,
-        "away": 9.4
+        "home": 74.48,
+        "draw": 16.14,
+        "away": 9.38
       },
       "home_elo": 2020,
       "away_elo": 1660,
-      "value_bets": [
-        {
-          "outcome": "Draw",
-          "selection": "Draw",
-          "decimal_odds": 12.17,
-          "model_probability": 15.94,
-          "implied_probability": 8.2169,
-          "edge": 7.72,
-          "expected_value": 0.9399,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Norway",
@@ -670,19 +461,19 @@
       "competition": "World Cup",
       "kick_off": "23 Jun 2026 01:00",
       "sportybet_odds": {
-        "home": 2.44,
-        "draw": 3.52,
-        "away": 3.06
+        "home": 2.39,
+        "draw": 3.55,
+        "away": 3.14
       },
       "sportybet_implied": {
-        "home": 40.98,
-        "draw": 28.41,
-        "away": 32.68
+        "home": 41.84,
+        "draw": 28.17,
+        "away": 31.85
       },
       "model_probability": {
-        "home": 38.74,
-        "draw": 24.69,
-        "away": 36.57
+        "home": 37.75,
+        "draw": 26.62,
+        "away": 35.64
       },
       "home_elo": 1810,
       "away_elo": 1800,
@@ -705,9 +496,9 @@
         "away": 61.35
       },
       "model_probability": {
-        "home": 26.2,
-        "draw": 21.52,
-        "away": 52.28
+        "home": 25.79,
+        "draw": 22.75,
+        "away": 51.46
       },
       "home_elo": 1620,
       "away_elo": 1740,
@@ -716,10 +507,10 @@
           "outcome": "Home Win",
           "selection": "Jordan",
           "decimal_odds": 5.89,
-          "model_probability": 26.2,
+          "model_probability": 25.79,
           "implied_probability": 16.9779,
-          "edge": 9.22,
-          "expected_value": 0.5432,
+          "edge": 8.81,
+          "expected_value": 0.519,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -732,18 +523,18 @@
       "kick_off": "23 Jun 2026 18:00",
       "sportybet_odds": {
         "home": 1.23,
-        "draw": 7.14,
-        "away": 14.34
+        "draw": 7.26,
+        "away": 14.96
       },
       "sportybet_implied": {
         "home": 81.3,
-        "draw": 14.01,
-        "away": 6.97
+        "draw": 13.77,
+        "away": 6.68
       },
       "model_probability": {
-        "home": 71.85,
-        "draw": 16.76,
-        "away": 11.39
+        "home": 71.56,
+        "draw": 17.09,
+        "away": 11.34
       },
       "home_elo": 1960,
       "away_elo": 1640,
@@ -756,35 +547,24 @@
       "competition": "World Cup",
       "kick_off": "23 Jun 2026 21:00",
       "sportybet_odds": {
-        "home": 1.29,
-        "draw": 6.15,
-        "away": 12.36
+        "home": 1.24,
+        "draw": 6.91,
+        "away": 14.96
       },
       "sportybet_implied": {
-        "home": 77.52,
-        "draw": 16.26,
-        "away": 8.09
+        "home": 80.65,
+        "draw": 14.47,
+        "away": 6.68
       },
       "model_probability": {
-        "home": 67.83,
-        "draw": 17.84,
-        "away": 14.33
+        "home": 67.4,
+        "draw": 18.36,
+        "away": 14.24
       },
       "home_elo": 1970,
       "away_elo": 1700,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Ghana",
-          "decimal_odds": 12.36,
-          "model_probability": 14.33,
-          "implied_probability": 8.0906,
-          "edge": 6.24,
-          "expected_value": 0.7712,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Panama",
@@ -792,19 +572,19 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 00:00",
       "sportybet_odds": {
-        "home": 6.83,
-        "draw": 4.29,
-        "away": 1.56
+        "home": 6.62,
+        "draw": 4.28,
+        "away": 1.57
       },
       "sportybet_implied": {
-        "home": 14.64,
-        "draw": 23.31,
-        "away": 64.1
+        "home": 15.11,
+        "draw": 23.36,
+        "away": 63.69
       },
       "model_probability": {
-        "home": 19.35,
-        "draw": 19.47,
-        "away": 61.18
+        "home": 19.15,
+        "draw": 20.29,
+        "away": 60.56
       },
       "home_elo": 1680,
       "away_elo": 1880,
@@ -817,19 +597,19 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 03:00",
       "sportybet_odds": {
-        "home": 1.49,
-        "draw": 4.5,
-        "away": 7.99
+        "home": 1.53,
+        "draw": 4.35,
+        "away": 7.4
       },
       "sportybet_implied": {
-        "home": 67.11,
-        "draw": 22.22,
-        "away": 12.52
+        "home": 65.36,
+        "draw": 22.99,
+        "away": 13.51
       },
       "model_probability": {
-        "home": 54.62,
-        "draw": 20.99,
-        "away": 24.39
+        "home": 53.84,
+        "draw": 22.11,
+        "away": 24.05
       },
       "home_elo": 1830,
       "away_elo": 1690,
@@ -837,11 +617,11 @@
         {
           "outcome": "Away Win",
           "selection": "Congo DR",
-          "decimal_odds": 7.99,
-          "model_probability": 24.39,
-          "implied_probability": 12.5156,
-          "edge": 11.87,
-          "expected_value": 0.9488,
+          "decimal_odds": 7.4,
+          "model_probability": 24.05,
+          "implied_probability": 13.5135,
+          "edge": 10.54,
+          "expected_value": 0.7797,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -854,18 +634,18 @@
       "kick_off": "24 Jun 2026 20:00",
       "sportybet_odds": {
         "home": 1.62,
-        "draw": 4.15,
-        "away": 6.24
+        "draw": 4.18,
+        "away": 6.07
       },
       "sportybet_implied": {
         "home": 61.73,
-        "draw": 24.1,
-        "away": 16.03
+        "draw": 23.92,
+        "away": 16.47
       },
       "model_probability": {
-        "home": 48.67,
-        "draw": 22.34,
-        "away": 28.99
+        "home": 47.79,
+        "draw": 23.74,
+        "away": 28.47
       },
       "home_elo": 1730,
       "away_elo": 1640,
@@ -873,11 +653,11 @@
         {
           "outcome": "Away Win",
           "selection": "Qatar",
-          "decimal_odds": 6.24,
-          "model_probability": 28.99,
-          "implied_probability": 16.0256,
-          "edge": 12.96,
-          "expected_value": 0.809,
+          "decimal_odds": 6.07,
+          "model_probability": 28.47,
+          "implied_probability": 16.4745,
+          "edge": 12.0,
+          "expected_value": 0.7281,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -889,19 +669,19 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 20:00",
       "sportybet_odds": {
-        "home": 2.18,
-        "draw": 3.47,
-        "away": 3.65
+        "home": 2.26,
+        "draw": 3.42,
+        "away": 3.51
       },
       "sportybet_implied": {
-        "home": 45.87,
-        "draw": 28.82,
-        "away": 27.4
+        "home": 44.25,
+        "draw": 29.24,
+        "away": 28.49
       },
       "model_probability": {
-        "home": 55.76,
-        "draw": 20.73,
-        "away": 23.51
+        "home": 55.01,
+        "draw": 21.79,
+        "away": 23.2
       },
       "home_elo": 1900,
       "away_elo": 1750,
@@ -909,12 +689,12 @@
         {
           "outcome": "Home Win",
           "selection": "Switzerland",
-          "decimal_odds": 2.18,
-          "model_probability": 55.76,
-          "implied_probability": 45.8716,
-          "edge": 9.89,
-          "expected_value": 0.2156,
-          "rating": "\u2605 MARGINAL"
+          "decimal_odds": 2.26,
+          "model_probability": 55.01,
+          "implied_probability": 44.2478,
+          "edge": 10.76,
+          "expected_value": 0.2432,
+          "rating": "\u2605\u2605 GOOD"
         }
       ],
       "has_value": true
@@ -925,32 +705,32 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 23:00",
       "sportybet_odds": {
-        "home": 1.32,
-        "draw": 6.02,
-        "away": 10.44
+        "home": 1.31,
+        "draw": 6.1,
+        "away": 10.84
       },
       "sportybet_implied": {
-        "home": 75.76,
-        "draw": 16.61,
-        "away": 9.58
+        "home": 76.34,
+        "draw": 16.39,
+        "away": 9.23
       },
       "model_probability": {
-        "home": 59.08,
-        "draw": 19.96,
-        "away": 20.96
+        "home": 61.61,
+        "draw": 20.0,
+        "away": 18.39
       },
       "home_elo": 1830,
-      "away_elo": 1650,
+      "away_elo": 1620,
       "value_bets": [
         {
           "outcome": "Away Win",
           "selection": "Haiti",
-          "decimal_odds": 10.44,
-          "model_probability": 20.96,
-          "implied_probability": 9.5785,
-          "edge": 11.38,
-          "expected_value": 1.1882,
-          "rating": "\u2605\u2605 GOOD"
+          "decimal_odds": 10.84,
+          "model_probability": 18.39,
+          "implied_probability": 9.2251,
+          "edge": 9.16,
+          "expected_value": 0.9935,
+          "rating": "\u2605 MARGINAL"
         }
       ],
       "has_value": true
@@ -961,19 +741,19 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 23:00",
       "sportybet_odds": {
-        "home": 7.43,
-        "draw": 4.92,
-        "away": 1.47
+        "home": 7.73,
+        "draw": 4.99,
+        "away": 1.45
       },
       "sportybet_implied": {
-        "home": 13.46,
-        "draw": 20.33,
-        "away": 68.03
+        "home": 12.94,
+        "draw": 20.04,
+        "away": 68.97
       },
       "model_probability": {
-        "home": 13.7,
-        "draw": 17.62,
-        "away": 68.68
+        "home": 13.62,
+        "draw": 18.1,
+        "away": 68.28
       },
       "home_elo": 1770,
       "away_elo": 2050,
@@ -986,19 +766,19 @@
       "competition": "World Cup",
       "kick_off": "25 Jun 2026 02:00",
       "sportybet_odds": {
-        "home": 4.73,
-        "draw": 3.65,
-        "away": 1.87
+        "home": 4.89,
+        "draw": 3.72,
+        "away": 1.83
       },
       "sportybet_implied": {
-        "home": 21.14,
-        "draw": 27.4,
-        "away": 53.48
+        "home": 20.45,
+        "draw": 26.88,
+        "away": 54.64
       },
       "model_probability": {
-        "home": 34.69,
-        "draw": 24.08,
-        "away": 41.23
+        "home": 33.87,
+        "draw": 25.87,
+        "away": 40.26
       },
       "home_elo": 1790,
       "away_elo": 1820,
@@ -1006,11 +786,11 @@
         {
           "outcome": "Home Win",
           "selection": "Czechia",
-          "decimal_odds": 4.73,
-          "model_probability": 34.69,
-          "implied_probability": 21.1416,
-          "edge": 13.55,
-          "expected_value": 0.6408,
+          "decimal_odds": 4.89,
+          "model_probability": 33.87,
+          "implied_probability": 20.4499,
+          "edge": 13.42,
+          "expected_value": 0.6562,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1022,19 +802,19 @@
       "competition": "World Cup",
       "kick_off": "25 Jun 2026 02:00",
       "sportybet_odds": {
-        "home": 5.91,
-        "draw": 4.11,
-        "away": 1.65
+        "home": 5.73,
+        "draw": 4.06,
+        "away": 1.67
       },
       "sportybet_implied": {
-        "home": 16.92,
-        "draw": 24.33,
-        "away": 60.61
+        "home": 17.45,
+        "draw": 24.63,
+        "away": 59.88
       },
       "model_probability": {
-        "home": 27.12,
-        "draw": 21.79,
-        "away": 51.09
+        "home": 26.68,
+        "draw": 23.07,
+        "away": 50.25
       },
       "home_elo": 1660,
       "away_elo": 1770,
@@ -1042,12 +822,12 @@
         {
           "outcome": "Home Win",
           "selection": "South Africa",
-          "decimal_odds": 5.91,
-          "model_probability": 27.12,
-          "implied_probability": 16.9205,
-          "edge": 10.2,
-          "expected_value": 0.6028,
-          "rating": "\u2605\u2605 GOOD"
+          "decimal_odds": 5.73,
+          "model_probability": 26.68,
+          "implied_probability": 17.452,
+          "edge": 9.23,
+          "expected_value": 0.5288,
+          "rating": "\u2605 MARGINAL"
         }
       ],
       "has_value": true
@@ -1068,21 +848,21 @@
         "away": 86.96
       },
       "model_probability": {
-        "home": 29.94,
-        "draw": 22.62,
-        "away": 47.44
+        "home": 28.47,
+        "draw": 23.74,
+        "away": 47.79
       },
-      "home_elo": 1650,
+      "home_elo": 1640,
       "away_elo": 1730,
       "value_bets": [
         {
           "outcome": "Draw",
           "selection": "Draw",
           "decimal_odds": 9.53,
-          "model_probability": 22.62,
+          "model_probability": 23.74,
           "implied_probability": 10.4932,
-          "edge": 12.13,
-          "expected_value": 1.1557,
+          "edge": 13.25,
+          "expected_value": 1.2624,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1094,19 +874,19 @@
       "competition": "World Cup",
       "kick_off": "25 Jun 2026 21:00",
       "sportybet_odds": {
-        "home": 5.11,
-        "draw": 3.91,
-        "away": 1.76
+        "home": 5.29,
+        "draw": 3.97,
+        "away": 1.73
       },
       "sportybet_implied": {
-        "home": 19.57,
-        "draw": 25.58,
-        "away": 56.82
+        "home": 18.9,
+        "draw": 25.19,
+        "away": 57.8
       },
       "model_probability": {
-        "home": 19.35,
-        "draw": 19.47,
-        "away": 61.18
+        "home": 19.15,
+        "draw": 20.29,
+        "away": 60.56
       },
       "home_elo": 1780,
       "away_elo": 1980,
@@ -1119,19 +899,19 @@
       "competition": "World Cup",
       "kick_off": "26 Jun 2026 00:00",
       "sportybet_odds": {
-        "home": 2.16,
-        "draw": 3.55,
-        "away": 3.62
+        "home": 2.21,
+        "draw": 3.52,
+        "away": 3.52
       },
       "sportybet_implied": {
-        "home": 46.3,
-        "draw": 28.17,
-        "away": 27.62
+        "home": 45.25,
+        "draw": 28.41,
+        "away": 28.41
       },
       "model_probability": {
-        "home": 33.74,
-        "draw": 23.78,
-        "away": 42.48
+        "home": 32.98,
+        "draw": 25.5,
+        "away": 41.52
       },
       "home_elo": 1800,
       "away_elo": 1840,
@@ -1139,11 +919,11 @@
         {
           "outcome": "Away Win",
           "selection": "Sweden",
-          "decimal_odds": 3.62,
-          "model_probability": 42.48,
-          "implied_probability": 27.6243,
-          "edge": 14.86,
-          "expected_value": 0.5378,
+          "decimal_odds": 3.52,
+          "model_probability": 41.52,
+          "implied_probability": 28.4091,
+          "edge": 13.11,
+          "expected_value": 0.4615,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1155,35 +935,24 @@
       "competition": "World Cup",
       "kick_off": "26 Jun 2026 00:00",
       "sportybet_odds": {
-        "home": 9.5,
-        "draw": 5.61,
-        "away": 1.36
+        "home": 9.89,
+        "draw": 5.71,
+        "away": 1.34
       },
       "sportybet_implied": {
-        "home": 10.53,
-        "draw": 17.83,
-        "away": 73.53
+        "home": 10.11,
+        "draw": 17.51,
+        "away": 74.63
       },
       "model_probability": {
-        "home": 17.07,
-        "draw": 18.75,
-        "away": 64.18
+        "home": 16.93,
+        "draw": 19.44,
+        "away": 63.63
       },
       "home_elo": 1720,
       "away_elo": 1950,
-      "value_bets": [
-        {
-          "outcome": "Home Win",
-          "selection": "Tunisia",
-          "decimal_odds": 9.5,
-          "model_probability": 17.07,
-          "implied_probability": 10.5263,
-          "edge": 6.54,
-          "expected_value": 0.6216,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Paraguay",
@@ -1201,9 +970,9 @@
         "away": 27.7
       },
       "model_probability": {
-        "home": 35.63,
-        "draw": 24.38,
-        "away": 39.99
+        "home": 34.76,
+        "draw": 26.24,
+        "away": 39.0
       },
       "home_elo": 1720,
       "away_elo": 1740,
@@ -1212,10 +981,10 @@
           "outcome": "Away Win",
           "selection": "Australia",
           "decimal_odds": 3.61,
-          "model_probability": 39.99,
+          "model_probability": 39.0,
           "implied_probability": 27.7008,
-          "edge": 12.29,
-          "expected_value": 0.4436,
+          "edge": 11.3,
+          "expected_value": 0.4079,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1237,25 +1006,14 @@
         "away": 40.16
       },
       "model_probability": {
-        "home": 23.51,
-        "draw": 20.73,
-        "away": 55.76
+        "home": 37.75,
+        "draw": 26.62,
+        "away": 35.64
       },
-      "home_elo": 1650,
+      "home_elo": 1810,
       "away_elo": 1800,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "USA",
-          "decimal_odds": 2.49,
-          "model_probability": 55.76,
-          "implied_probability": 40.1606,
-          "edge": 15.6,
-          "expected_value": 0.3884,
-          "rating": "\u2605\u2605\u2605 STRONG"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Norway",
@@ -1273,9 +1031,9 @@
         "away": 53.48
       },
       "model_probability": {
-        "home": 18.57,
-        "draw": 19.23,
-        "away": 62.2
+        "home": 18.39,
+        "draw": 20.0,
+        "away": 61.61
       },
       "home_elo": 1810,
       "away_elo": 2020,
@@ -1284,10 +1042,10 @@
           "outcome": "Away Win",
           "selection": "France",
           "decimal_odds": 1.87,
-          "model_probability": 62.2,
+          "model_probability": 61.61,
           "implied_probability": 53.4759,
-          "edge": 8.72,
-          "expected_value": 0.1631,
+          "edge": 8.13,
+          "expected_value": 0.1521,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -1299,19 +1057,19 @@
       "competition": "World Cup",
       "kick_off": "26 Jun 2026 20:00",
       "sportybet_odds": {
-        "home": 1.34,
-        "draw": 5.5,
-        "away": 10.74
+        "home": 1.33,
+        "draw": 5.63,
+        "away": 11.16
       },
       "sportybet_implied": {
-        "home": 74.63,
-        "draw": 18.18,
-        "away": 9.31
+        "home": 75.19,
+        "draw": 17.76,
+        "away": 8.96
       },
       "model_probability": {
-        "home": 54.62,
-        "draw": 20.99,
-        "away": 24.39
+        "home": 53.84,
+        "draw": 22.11,
+        "away": 24.05
       },
       "home_elo": 1800,
       "away_elo": 1660,
@@ -1319,11 +1077,11 @@
         {
           "outcome": "Away Win",
           "selection": "Iraq",
-          "decimal_odds": 10.74,
-          "model_probability": 24.39,
-          "implied_probability": 9.311,
-          "edge": 15.08,
-          "expected_value": 1.6195,
+          "decimal_odds": 11.16,
+          "model_probability": 24.05,
+          "implied_probability": 8.9606,
+          "edge": 15.09,
+          "expected_value": 1.684,
           "rating": "\u2605\u2605\u2605 STRONG"
         }
       ],
@@ -1345,11 +1103,11 @@
         "away": 40.16
       },
       "model_probability": {
-        "home": 33.74,
-        "draw": 23.78,
-        "away": 42.48
+        "home": 35.64,
+        "draw": 26.62,
+        "away": 37.75
       },
-      "home_elo": 1650,
+      "home_elo": 1680,
       "away_elo": 1690,
       "value_bets": [],
       "has_value": false
@@ -1360,19 +1118,19 @@
       "competition": "World Cup",
       "kick_off": "27 Jun 2026 01:00",
       "sportybet_odds": {
-        "home": 6.1,
-        "draw": 4.44,
-        "away": 1.58
+        "home": 6.33,
+        "draw": 4.47,
+        "away": 1.57
       },
       "sportybet_implied": {
-        "home": 16.39,
-        "draw": 22.52,
-        "away": 63.29
+        "home": 15.8,
+        "draw": 22.37,
+        "away": 63.69
       },
       "model_probability": {
-        "home": 26.2,
-        "draw": 21.52,
-        "away": 52.28
+        "home": 25.79,
+        "draw": 22.75,
+        "away": 51.46
       },
       "home_elo": 1870,
       "away_elo": 1990,
@@ -1380,11 +1138,11 @@
         {
           "outcome": "Home Win",
           "selection": "Uruguay",
-          "decimal_odds": 6.1,
-          "model_probability": 26.2,
-          "implied_probability": 16.3934,
-          "edge": 9.81,
-          "expected_value": 0.5982,
+          "decimal_odds": 6.33,
+          "model_probability": 25.79,
+          "implied_probability": 15.7978,
+          "edge": 9.99,
+          "expected_value": 0.6325,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -1406,14 +1164,25 @@
         "away": 24.45
       },
       "model_probability": {
-        "home": 48.67,
-        "draw": 22.34,
-        "away": 28.99
+        "home": 35.64,
+        "draw": 26.62,
+        "away": 37.75
       },
       "home_elo": 1740,
-      "away_elo": 1650,
-      "value_bets": [],
-      "has_value": false
+      "away_elo": 1750,
+      "value_bets": [
+        {
+          "outcome": "Away Win",
+          "selection": "IR Iran",
+          "decimal_odds": 4.09,
+          "model_probability": 37.75,
+          "implied_probability": 24.4499,
+          "edge": 13.3,
+          "expected_value": 0.544,
+          "rating": "\u2605\u2605 GOOD"
+        }
+      ],
+      "has_value": true
     },
     {
       "home_team": "New Zealand",
@@ -1431,25 +1200,14 @@
         "away": 80.65
       },
       "model_probability": {
-        "home": 14.33,
-        "draw": 17.84,
-        "away": 67.83
+        "home": 14.24,
+        "draw": 18.36,
+        "away": 67.4
       },
       "home_elo": 1650,
       "away_elo": 1920,
-      "value_bets": [
-        {
-          "outcome": "Home Win",
-          "selection": "New Zealand",
-          "decimal_odds": 14.17,
-          "model_probability": 14.33,
-          "implied_probability": 7.0572,
-          "edge": 7.27,
-          "expected_value": 1.0306,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Croatia",
@@ -1457,19 +1215,19 @@
       "competition": "World Cup",
       "kick_off": "27 Jun 2026 22:00",
       "sportybet_odds": {
-        "home": 1.68,
-        "draw": 3.98,
-        "away": 5.78
+        "home": 1.63,
+        "draw": 4.12,
+        "away": 6.18
       },
       "sportybet_implied": {
-        "home": 59.52,
-        "draw": 25.13,
-        "away": 17.3
+        "home": 61.35,
+        "draw": 24.27,
+        "away": 16.18
       },
       "model_probability": {
-        "home": 59.08,
-        "draw": 19.96,
-        "away": 20.96
+        "home": 58.4,
+        "draw": 20.88,
+        "away": 20.72
       },
       "home_elo": 1880,
       "away_elo": 1700,
@@ -1482,19 +1240,19 @@
       "competition": "World Cup",
       "kick_off": "27 Jun 2026 22:00",
       "sportybet_odds": {
-        "home": 10.31,
-        "draw": 6.26,
-        "away": 1.31
+        "home": 11.17,
+        "draw": 6.52,
+        "away": 1.29
       },
       "sportybet_implied": {
-        "home": 9.7,
-        "draw": 15.97,
-        "away": 76.34
+        "home": 8.95,
+        "draw": 15.34,
+        "away": 77.52
       },
       "model_probability": {
-        "home": 13.09,
-        "draw": 17.4,
-        "away": 69.51
+        "home": 13.02,
+        "draw": 17.84,
+        "away": 69.14
       },
       "home_elo": 1680,
       "away_elo": 1970,
@@ -1507,35 +1265,24 @@
       "competition": "World Cup",
       "kick_off": "28 Jun 2026 00:30",
       "sportybet_odds": {
-        "home": 3.54,
-        "draw": 3.46,
-        "away": 2.23
+        "home": 3.61,
+        "draw": 3.43,
+        "away": 2.22
       },
       "sportybet_implied": {
-        "home": 28.25,
-        "draw": 28.9,
-        "away": 44.84
+        "home": 27.7,
+        "draw": 29.15,
+        "away": 45.05
       },
       "model_probability": {
-        "home": 25.29,
-        "draw": 21.25,
-        "away": 53.46
+        "home": 24.92,
+        "draw": 22.42,
+        "away": 52.66
       },
       "home_elo": 1830,
       "away_elo": 1960,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Portugal",
-          "decimal_odds": 2.23,
-          "model_probability": 53.46,
-          "implied_probability": 44.843,
-          "edge": 8.62,
-          "expected_value": 0.1922,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Congo DR",
@@ -1543,19 +1290,19 @@
       "competition": "World Cup",
       "kick_off": "28 Jun 2026 00:30",
       "sportybet_odds": {
-        "home": 2.21,
-        "draw": 3.62,
-        "away": 3.43
+        "home": 2.16,
+        "draw": 3.61,
+        "away": 3.57
       },
       "sportybet_implied": {
-        "home": 45.25,
-        "draw": 27.62,
-        "away": 29.15
+        "home": 46.3,
+        "draw": 27.7,
+        "away": 28.01
       },
       "model_probability": {
-        "home": 43.73,
-        "draw": 23.49,
-        "away": 32.78
+        "home": 42.78,
+        "draw": 25.14,
+        "away": 32.08
       },
       "home_elo": 1690,
       "away_elo": 1640,
@@ -1568,35 +1315,24 @@
       "competition": "World Cup",
       "kick_off": "28 Jun 2026 03:00",
       "sportybet_odds": {
-        "home": 3.08,
-        "draw": 3.2,
+        "home": 3.1,
+        "draw": 3.19,
         "away": 2.61
       },
       "sportybet_implied": {
-        "home": 32.47,
-        "draw": 31.25,
+        "home": 32.26,
+        "draw": 31.35,
         "away": 38.31
       },
       "model_probability": {
-        "home": 30.88,
-        "draw": 22.91,
-        "away": 46.21
+        "home": 30.27,
+        "draw": 24.43,
+        "away": 45.3
       },
       "home_elo": 1740,
       "away_elo": 1810,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Austria",
-          "decimal_odds": 2.61,
-          "model_probability": 46.21,
-          "implied_probability": 38.3142,
-          "edge": 7.9,
-          "expected_value": 0.2061,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Jordan",
@@ -1614,50 +1350,14 @@
         "away": 81.3
       },
       "model_probability": {
-        "home": 5.68,
-        "draw": 14.07,
-        "away": 80.25
+        "home": 5.69,
+        "draw": 13.99,
+        "away": 80.32
       },
       "home_elo": 1620,
       "away_elo": 2080,
       "value_bets": [],
       "has_value": false
-    },
-    {
-      "home_team": "AGF Aarhus",
-      "away_team": "KKS Lech Poznan",
-      "competition": "UEFA Champions League",
-      "kick_off": "21 Jul 2026 14:00",
-      "sportybet_odds": {
-        "home": 2.29,
-        "draw": 3.29,
-        "away": 3.14
-      },
-      "sportybet_implied": {
-        "home": 43.67,
-        "draw": 30.4,
-        "away": 31.85
-      },
-      "model_probability": {
-        "home": 37.5,
-        "draw": 25.0,
-        "away": 37.5
-      },
-      "home_elo": 1650,
-      "away_elo": 1650,
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "KKS Lech Poznan",
-          "decimal_odds": 3.14,
-          "model_probability": 37.5,
-          "implied_probability": 31.8471,
-          "edge": 5.65,
-          "expected_value": 0.1775,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
     }
   ]
 }
