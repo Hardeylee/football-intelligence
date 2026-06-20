@@ -1,279 +1,22 @@
 {
-  "generated_at": "2026-06-19T00:19:25.613720",
-  "total_matches": 45,
-  "value_matches": 21,
+  "generated_at": "2026-06-20T04:47:28.851251",
+  "total_matches": 40,
+  "value_matches": 18,
   "analyses": [
-    {
-      "home_team": "Mexico",
-      "away_team": "Korea Republic",
-      "competition": "World Cup",
-      "kick_off": "19 Jun 2026 02:00",
-      "sportybet_odds": {
-        "home": 2.11,
-        "draw": 3.39,
-        "away": 4.0
-      },
-      "sportybet_implied": {
-        "home": 47.39,
-        "draw": 29.5,
-        "away": 25.0
-      },
-      "model_probability": {
-        "home": 42.78,
-        "draw": 25.14,
-        "away": 32.08
-      },
-      "home_elo": 1820,
-      "away_elo": 1770,
-      "manager_intelligence": {
-        "home_manager": "Javier Aguirre",
-        "home_style": "counter",
-        "home_formation": "4-3-3",
-        "home_tenure_months": 34,
-        "home_confidence": 1.0,
-        "away_manager": "Hong Myung-bo",
-        "away_style": "counter",
-        "away_formation": "4-2-3-1",
-        "away_tenure_months": 40,
-        "away_confidence": 1.0,
-        "combined_confidence": 1.0,
-        "tactical_matchup": "counter vs counter",
-        "home_tactical_adj": 0.0,
-        "away_tactical_adj": 0.0,
-        "base_probability": {
-          "home": 42.78,
-          "draw": 25.14,
-          "away": 32.08
-        }
-      },
-      "tactical_narrative": "Mexico (Javier Aguirre, 4-3-3, counter style) vs Korea Republic (Hong Myung-bo, 4-2-3-1, counter style)\n  Tactical matchup: counter vs counter\n  Mexico: Second spell. Pragmatic, defensive-minded. Prioritises organisation over possession.\n  Korea Republic: Former national team captain. Transition period after Klinsmann dismissal.",
-      "value_bets": [],
-      "has_value": false
-    },
-    {
-      "home_team": "USA",
-      "away_team": "Australia",
-      "competition": "World Cup",
-      "kick_off": "19 Jun 2026 20:00",
-      "sportybet_odds": {
-        "home": 1.65,
-        "draw": 4.3,
-        "away": 5.54
-      },
-      "sportybet_implied": {
-        "home": 60.61,
-        "draw": 23.26,
-        "away": 18.05
-      },
-      "model_probability": {
-        "home": 44.04,
-        "draw": 24.78,
-        "away": 31.18
-      },
-      "home_elo": 1800,
-      "away_elo": 1740,
-      "manager_intelligence": {
-        "home_manager": "Mauricio Pochettino",
-        "home_style": "pressing",
-        "home_formation": "4-3-3",
-        "home_tenure_months": 30,
-        "home_confidence": 1.0,
-        "away_manager": "Tony Popovic",
-        "away_style": "counter",
-        "away_formation": "4-3-3",
-        "away_tenure_months": 20,
-        "away_confidence": 1.0,
-        "combined_confidence": 1.0,
-        "tactical_matchup": "pressing vs counter",
-        "home_tactical_adj": 0.0,
-        "away_tactical_adj": 0.0,
-        "base_probability": {
-          "home": 44.04,
-          "draw": 24.78,
-          "away": 31.18
-        }
-      },
-      "tactical_narrative": "USA (Mauricio Pochettino, 4-3-3, pressing style) vs Australia (Tony Popovic, 4-3-3, counter style)\n  Tactical matchup: pressing vs counter\n  USA: High-profile appointment. Pressing system, demands high energy. Tactical upgrade.\n  Australia: Relatively new. Replaced Graham Arnold. Building his own identity.",
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Australia",
-          "decimal_odds": 5.54,
-          "model_probability": 31.18,
-          "implied_probability": 18.0505,
-          "edge": 13.13,
-          "expected_value": 0.7274,
-          "rating": "\u2605\u2605 GOOD"
-        }
-      ],
-      "has_value": true
-    },
-    {
-      "home_team": "Scotland",
-      "away_team": "Morocco",
-      "competition": "World Cup",
-      "kick_off": "19 Jun 2026 23:00",
-      "sportybet_odds": {
-        "home": 5.4,
-        "draw": 3.71,
-        "away": 1.77
-      },
-      "sportybet_implied": {
-        "home": 18.52,
-        "draw": 26.95,
-        "away": 56.5
-      },
-      "model_probability": {
-        "home": 31.18,
-        "draw": 24.78,
-        "away": 44.04
-      },
-      "home_elo": 1770,
-      "away_elo": 1830,
-      "manager_intelligence": {
-        "home_manager": "Steve Clarke",
-        "home_style": "counter",
-        "home_formation": "3-4-3",
-        "home_tenure_months": 85,
-        "home_confidence": 1.0,
-        "away_manager": "Walid Regragui",
-        "away_style": "counter",
-        "away_formation": "4-3-3",
-        "away_tenure_months": 46,
-        "away_confidence": 1.0,
-        "combined_confidence": 1.0,
-        "tactical_matchup": "counter vs counter",
-        "home_tactical_adj": 0.0,
-        "away_tactical_adj": 0.0,
-        "base_probability": {
-          "home": 31.18,
-          "draw": 24.78,
-          "away": 44.04
-        }
-      },
-      "tactical_narrative": "Scotland (Steve Clarke, 3-4-3, counter style) vs Morocco (Walid Regragui, 4-3-3, counter style)\n  Tactical matchup: counter vs counter\n  Scotland: Long tenure \u2014 excellent stability. Consistent performer. Hard to beat defensively.\n  Morocco: World Cup 2022 semifinalist. Excellent defensive organisation. Counter-attacking threat.",
-      "value_bets": [
-        {
-          "outcome": "Home Win",
-          "selection": "Scotland",
-          "decimal_odds": 5.4,
-          "model_probability": 31.18,
-          "implied_probability": 18.5185,
-          "edge": 12.66,
-          "expected_value": 0.6837,
-          "rating": "\u2605\u2605 GOOD"
-        }
-      ],
-      "has_value": true
-    },
-    {
-      "home_team": "Brazil",
-      "away_team": "Haiti",
-      "competition": "World Cup",
-      "kick_off": "20 Jun 2026 01:30",
-      "sportybet_odds": {
-        "home": 1.12,
-        "draw": 11.7,
-        "away": 26.02
-      },
-      "sportybet_implied": {
-        "home": 89.29,
-        "draw": 8.55,
-        "away": 3.84
-      },
-      "model_probability": {
-        "home": 78.76,
-        "draw": 14.61,
-        "away": 6.63
-      },
-      "home_elo": 2050,
-      "away_elo": 1620,
-      "manager_intelligence": {
-        "home_manager": "Dorival Junior",
-        "home_style": "possession",
-        "home_formation": "4-2-3-1",
-        "home_tenure_months": 29,
-        "home_confidence": 1.0,
-        "away_manager": "Marc Collat",
-        "away_style": "defensive",
-        "away_formation": "4-4-2",
-        "away_tenure_months": 41,
-        "away_confidence": 1.0,
-        "combined_confidence": 1.0,
-        "tactical_matchup": "possession vs defensive",
-        "home_tactical_adj": 0.0,
-        "away_tactical_adj": 0.0,
-        "base_probability": {
-          "home": 78.77,
-          "draw": 14.61,
-          "away": 6.63
-        }
-      },
-      "tactical_narrative": "Brazil (Dorival Junior, 4-2-3-1, possession style) vs Haiti (Marc Collat, 4-4-2, defensive style)\n  Tactical matchup: possession vs defensive\n  Brazil: Restored stability after turbulent period. More pragmatic than previous coaches.\n  Haiti: Underdog. Will park the bus against top teams.",
-      "value_bets": [],
-      "has_value": false
-    },
-    {
-      "home_team": "Turkiye",
-      "away_team": "Paraguay",
-      "competition": "World Cup",
-      "kick_off": "20 Jun 2026 04:00",
-      "sportybet_odds": {
-        "home": 2.08,
-        "draw": 3.48,
-        "away": 3.98
-      },
-      "sportybet_implied": {
-        "home": 48.08,
-        "draw": 28.74,
-        "away": 25.13
-      },
-      "model_probability": {
-        "home": 45.79,
-        "draw": 23.74,
-        "away": 30.47
-      },
-      "home_elo": 1810,
-      "away_elo": 1720,
-      "manager_intelligence": {
-        "home_manager": "Vincenzo Montella",
-        "home_style": "possession",
-        "home_formation": "4-2-3-1",
-        "home_tenure_months": 34,
-        "home_confidence": 1.0,
-        "away_manager": "Daniel Garnero",
-        "away_style": "counter",
-        "away_formation": "4-4-2",
-        "away_tenure_months": 39,
-        "away_confidence": 1.0,
-        "combined_confidence": 1.0,
-        "tactical_matchup": "possession vs counter",
-        "home_tactical_adj": -0.02,
-        "away_tactical_adj": 0.02,
-        "base_probability": {
-          "home": 47.79,
-          "draw": 23.74,
-          "away": 28.47
-        }
-      },
-      "tactical_narrative": "Turkiye (Vincenzo Montella, 4-2-3-1, possession style) vs Paraguay (Daniel Garnero, 4-4-2, counter style)\n  Paraguay will absorb pressure and look to exploit space behind Turkiye's high line.\n  Turkiye: Excellent Euros 2024 campaign. Italian tactical discipline. Technically strong setup.\n  Paraguay: Solid CONMEBOL qualifying campaign.",
-      "value_bets": [],
-      "has_value": false
-    },
     {
       "home_team": "Netherlands",
       "away_team": "Sweden",
       "competition": "World Cup",
       "kick_off": "20 Jun 2026 18:00",
       "sportybet_odds": {
-        "home": 1.8,
-        "draw": 3.91,
-        "away": 4.8
+        "home": 1.76,
+        "draw": 4.17,
+        "away": 4.73
       },
       "sportybet_implied": {
-        "home": 55.56,
-        "draw": 25.58,
-        "away": 20.83
+        "home": 56.82,
+        "draw": 23.98,
+        "away": 21.14
       },
       "model_probability": {
         "home": 48.25,
@@ -361,13 +104,13 @@
       "kick_off": "21 Jun 2026 01:00",
       "sportybet_odds": {
         "home": 1.13,
-        "draw": 10.48,
-        "away": 27.84
+        "draw": 10.44,
+        "away": 25.94
       },
       "sportybet_implied": {
         "home": 88.5,
-        "draw": 9.54,
-        "away": 3.59
+        "draw": 9.58,
+        "away": 3.86
       },
       "model_probability": {
         "home": 55.62,
@@ -402,11 +145,11 @@
         {
           "outcome": "Draw",
           "selection": "Draw",
-          "decimal_odds": 10.48,
+          "decimal_odds": 10.44,
           "model_probability": 21.26,
-          "implied_probability": 9.542,
-          "edge": 11.72,
-          "expected_value": 1.228,
+          "implied_probability": 9.5785,
+          "edge": 11.68,
+          "expected_value": 1.2195,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -418,14 +161,14 @@
       "competition": "World Cup",
       "kick_off": "21 Jun 2026 05:00",
       "sportybet_odds": {
-        "home": 6.77,
-        "draw": 4.22,
-        "away": 1.57
+        "home": 6.31,
+        "draw": 4.09,
+        "away": 1.62
       },
       "sportybet_implied": {
-        "home": 14.77,
-        "draw": 23.7,
-        "away": 63.69
+        "home": 15.85,
+        "draw": 24.45,
+        "away": 61.73
       },
       "model_probability": {
         "home": 28.24,
@@ -460,11 +203,11 @@
         {
           "outcome": "Home Win",
           "selection": "Tunisia",
-          "decimal_odds": 6.77,
+          "decimal_odds": 6.31,
           "model_probability": 28.24,
-          "implied_probability": 14.771,
-          "edge": 13.47,
-          "expected_value": 0.9118,
+          "implied_probability": 15.8479,
+          "edge": 12.39,
+          "expected_value": 0.7819,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -477,13 +220,13 @@
       "kick_off": "21 Jun 2026 17:00",
       "sportybet_odds": {
         "home": 1.12,
-        "draw": 10.76,
-        "away": 30.14
+        "draw": 10.97,
+        "away": 31.08
       },
       "sportybet_implied": {
         "home": 89.29,
-        "draw": 9.29,
-        "away": 3.32
+        "draw": 9.12,
+        "away": 3.22
       },
       "model_probability": {
         "home": 67.93,
@@ -523,14 +266,14 @@
       "competition": "World Cup",
       "kick_off": "21 Jun 2026 20:00",
       "sportybet_odds": {
-        "home": 1.45,
-        "draw": 4.87,
-        "away": 7.95
+        "home": 1.46,
+        "draw": 4.86,
+        "away": 7.65
       },
       "sportybet_implied": {
-        "home": 68.97,
-        "draw": 20.53,
-        "away": 12.58
+        "home": 68.49,
+        "draw": 20.58,
+        "away": 13.07
       },
       "model_probability": {
         "home": 57.29,
@@ -565,11 +308,11 @@
         {
           "outcome": "Away Win",
           "selection": "IR Iran",
-          "decimal_odds": 7.95,
+          "decimal_odds": 7.65,
           "model_probability": 21.53,
-          "implied_probability": 12.5786,
-          "edge": 8.95,
-          "expected_value": 0.7116,
+          "implied_probability": 13.0719,
+          "edge": 8.46,
+          "expected_value": 0.647,
           "rating": "\u2605 MARGINAL"
         }
       ],
@@ -581,14 +324,14 @@
       "competition": "World Cup",
       "kick_off": "21 Jun 2026 23:00",
       "sportybet_odds": {
-        "home": 1.51,
-        "draw": 4.32,
-        "away": 7.99
+        "home": 1.49,
+        "draw": 4.37,
+        "away": 8.29
       },
       "sportybet_implied": {
-        "home": 66.23,
-        "draw": 23.15,
-        "away": 12.52
+        "home": 67.11,
+        "draw": 22.88,
+        "away": 12.06
       },
       "model_probability": {
         "home": 59.49,
@@ -686,14 +429,14 @@
       "competition": "World Cup",
       "kick_off": "22 Jun 2026 18:00",
       "sportybet_odds": {
-        "home": 1.64,
-        "draw": 4.11,
-        "away": 5.99
+        "home": 1.61,
+        "draw": 4.2,
+        "away": 6.16
       },
       "sportybet_implied": {
-        "home": 60.98,
-        "draw": 24.33,
-        "away": 16.69
+        "home": 62.11,
+        "draw": 23.81,
+        "away": 16.23
       },
       "model_probability": {
         "home": 67.4,
@@ -734,13 +477,13 @@
       "kick_off": "22 Jun 2026 22:00",
       "sportybet_odds": {
         "home": 1.1,
-        "draw": 12.01,
-        "away": 33.81
+        "draw": 12.43,
+        "away": 34.65
       },
       "sportybet_implied": {
         "home": 90.91,
-        "draw": 8.33,
-        "away": 2.96
+        "draw": 8.05,
+        "away": 2.89
       },
       "model_probability": {
         "home": 73.74,
@@ -885,22 +628,22 @@
       "competition": "World Cup",
       "kick_off": "23 Jun 2026 18:00",
       "sportybet_odds": {
-        "home": 1.23,
-        "draw": 7.26,
-        "away": 14.96
+        "home": 1.22,
+        "draw": 7.37,
+        "away": 15.65
       },
       "sportybet_implied": {
-        "home": 81.3,
-        "draw": 13.77,
-        "away": 6.68
+        "home": 81.97,
+        "draw": 13.57,
+        "away": 6.39
       },
       "model_probability": {
-        "home": 71.57,
-        "draw": 17.09,
-        "away": 11.34
+        "home": 72.18,
+        "draw": 16.9,
+        "away": 10.92
       },
       "home_elo": 1960,
-      "away_elo": 1640,
+      "away_elo": 1632.0,
       "manager_intelligence": {
         "home_manager": "Roberto Martinez",
         "home_style": "possession",
@@ -917,9 +660,9 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.0,
         "base_probability": {
-          "home": 71.56,
-          "draw": 17.09,
-          "away": 11.34
+          "home": 72.18,
+          "draw": 16.9,
+          "away": 10.92
         }
       },
       "tactical_narrative": "Portugal (Roberto Martinez, 4-3-3, possession style) vs Uzbekistan (Srecko Katanec, 4-2-3-1, defensive style)\n  Tactical matchup: possession vs defensive\n  Portugal: Former Belgium manager. Excellent squad depth. Post-Ronaldo transition ongoing.\n  Uzbekistan: First World Cup. Will be pragmatic and hard to break down.",
@@ -933,21 +676,21 @@
       "kick_off": "23 Jun 2026 21:00",
       "sportybet_odds": {
         "home": 1.24,
-        "draw": 6.91,
-        "away": 14.96
+        "draw": 6.88,
+        "away": 14.38
       },
       "sportybet_implied": {
         "home": 80.65,
-        "draw": 14.47,
-        "away": 6.68
+        "draw": 14.53,
+        "away": 6.95
       },
       "model_probability": {
-        "home": 67.4,
-        "draw": 18.36,
-        "away": 14.24
+        "home": 66.02,
+        "draw": 18.76,
+        "away": 15.22
       },
       "home_elo": 1970,
-      "away_elo": 1700,
+      "away_elo": 1715.1,
       "manager_intelligence": {
         "home_manager": "Thomas Tuchel",
         "home_style": "pressing",
@@ -964,14 +707,25 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.0,
         "base_probability": {
-          "home": 67.4,
-          "draw": 18.36,
-          "away": 14.24
+          "home": 66.02,
+          "draw": 18.76,
+          "away": 15.22
         }
       },
       "tactical_narrative": "England (Thomas Tuchel, 4-2-3-1, pressing style) vs Ghana (Otto Addo, 4-2-3-1, counter style)\n  Tactical matchup: pressing vs counter\n  England: NEW MANAGER \u2014 replaced Southgate. German pressing philosophy. Tactical upgrade expected.\n  Ghana: Second spell. Physical, direct. Building young squad.",
-      "value_bets": [],
-      "has_value": false
+      "value_bets": [
+        {
+          "outcome": "Away Win",
+          "selection": "Ghana",
+          "decimal_odds": 14.38,
+          "model_probability": 15.22,
+          "implied_probability": 6.9541,
+          "edge": 8.27,
+          "expected_value": 1.1886,
+          "rating": "\u2605 MARGINAL"
+        }
+      ],
+      "has_value": true
     },
     {
       "home_team": "Panama",
@@ -989,11 +743,11 @@
         "away": 63.69
       },
       "model_probability": {
-        "home": 19.15,
-        "draw": 20.29,
-        "away": 60.56
+        "home": 18.01,
+        "draw": 19.86,
+        "away": 62.13
       },
-      "home_elo": 1680,
+      "home_elo": 1664.9,
       "away_elo": 1880,
       "manager_intelligence": {
         "home_manager": "Thomas Christiansen",
@@ -1011,9 +765,9 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.0,
         "base_probability": {
-          "home": 19.15,
-          "draw": 20.29,
-          "away": 60.56
+          "home": 18.01,
+          "draw": 19.86,
+          "away": 62.13
         }
       },
       "tactical_narrative": "Panama (Thomas Christiansen, 4-4-2, defensive style) vs Croatia (Zlatko Dalic, 4-3-3, possession style)\n  Tactical matchup: defensive vs possession\n  Panama: Will be extremely defensive vs England and Croatia. Set piece oriented.\n  Croatia: Long tenure. WC 2018 finalist, WC 2022 third place. Experienced. Modric era ending.",
@@ -1036,11 +790,11 @@
         "away": 13.51
       },
       "model_probability": {
-        "home": 51.84,
-        "draw": 22.11,
-        "away": 26.05
+        "home": 52.78,
+        "draw": 21.85,
+        "away": 25.37
       },
-      "home_elo": 1830,
+      "home_elo": 1838.0,
       "away_elo": 1690,
       "manager_intelligence": {
         "home_manager": "Nestor Lorenzo",
@@ -1058,9 +812,9 @@
         "home_tactical_adj": -0.02,
         "away_tactical_adj": 0.02,
         "base_probability": {
-          "home": 53.84,
-          "draw": 22.11,
-          "away": 24.05
+          "home": 54.78,
+          "draw": 21.85,
+          "away": 23.37
         }
       },
       "tactical_narrative": "Colombia (Nestor Lorenzo, 4-2-3-1, possession style) vs Congo DR (S\u00e9bastien Desabre, 4-3-3, counter style)\n  Congo DR will absorb pressure and look to exploit space behind Colombia's high line.\n  Colombia: Copa America 2024 finalists. Excellent qualifying campaign. Dangerous side.\n  Congo DR: Athletic, physical. AFCON semifinalists. Dangerous on the break.",
@@ -1069,10 +823,10 @@
           "outcome": "Away Win",
           "selection": "Congo DR",
           "decimal_odds": 7.4,
-          "model_probability": 26.05,
+          "model_probability": 25.37,
           "implied_probability": 13.5135,
-          "edge": 12.54,
-          "expected_value": 0.9277,
+          "edge": 11.86,
+          "expected_value": 0.8774,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1084,22 +838,22 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 20:00",
       "sportybet_odds": {
-        "home": 1.62,
-        "draw": 4.18,
-        "away": 6.07
+        "home": 1.46,
+        "draw": 5.1,
+        "away": 7.26
       },
       "sportybet_implied": {
-        "home": 61.73,
-        "draw": 23.92,
-        "away": 16.47
+        "home": 68.49,
+        "draw": 19.61,
+        "away": 13.77
       },
       "model_probability": {
-        "home": 49.79,
-        "draw": 23.74,
-        "away": 26.47
+        "home": 50.09,
+        "draw": 23.66,
+        "away": 26.25
       },
-      "home_elo": 1730,
-      "away_elo": 1640,
+      "home_elo": 1721.3,
+      "away_elo": 1628.9,
       "manager_intelligence": {
         "home_manager": "Sergej Barbarez",
         "home_style": "counter",
@@ -1116,9 +870,9 @@
         "home_tactical_adj": 0.02,
         "away_tactical_adj": -0.02,
         "base_probability": {
-          "home": 47.79,
-          "draw": 23.74,
-          "away": 28.47
+          "home": 48.09,
+          "draw": 23.66,
+          "away": 28.25
         }
       },
       "tactical_narrative": "Bosnia & Herzegovina (Sergej Barbarez, 4-2-3-1, counter style) vs Qatar (Marquez Lopez, 4-3-3, possession style)\n  Bosnia & Herzegovina will sit deep and look to hit Qatar on the break.\n  Bosnia & Herzegovina: Former national team striker. First major coaching role at senior international level.\n  Qatar: Spanish influence. Qatar investing heavily in football infrastructure.",
@@ -1126,11 +880,11 @@
         {
           "outcome": "Away Win",
           "selection": "Qatar",
-          "decimal_odds": 6.07,
-          "model_probability": 26.47,
-          "implied_probability": 16.4745,
-          "edge": 10.0,
-          "expected_value": 0.6067,
+          "decimal_odds": 7.26,
+          "model_probability": 26.25,
+          "implied_probability": 13.7741,
+          "edge": 12.48,
+          "expected_value": 0.9058,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1142,22 +896,22 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 20:00",
       "sportybet_odds": {
-        "home": 2.26,
-        "draw": 3.42,
-        "away": 3.51
+        "home": 2.5,
+        "draw": 3.21,
+        "away": 3.24
       },
       "sportybet_implied": {
-        "home": 44.25,
-        "draw": 29.24,
-        "away": 28.49
+        "home": 40.0,
+        "draw": 31.15,
+        "away": 30.86
       },
       "model_probability": {
-        "home": 53.41,
-        "draw": 21.16,
-        "away": 25.43
+        "home": 53.14,
+        "draw": 21.23,
+        "away": 25.63
       },
-      "home_elo": 1900,
-      "away_elo": 1750,
+      "home_elo": 1908.7,
+      "away_elo": 1761.1,
       "manager_intelligence": {
         "home_manager": "Murat Yakin",
         "home_style": "possession",
@@ -1174,9 +928,9 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.03,
         "base_probability": {
-          "home": 55.01,
-          "draw": 21.79,
-          "away": 23.2
+          "home": 54.73,
+          "draw": 21.87,
+          "away": 23.4
         }
       },
       "tactical_narrative": "Switzerland (Murat Yakin, 3-4-3, possession style) vs Canada (Jesse Marsch, 4-3-3, pressing style)\n  Tactical matchup: possession vs pressing\n  Switzerland: Solid continuity. Led Switzerland to excellent Euros 2024 campaign. Tactically flexible.\n  Canada: High energy pressing system. Former RB Leipzig coach. Brings European intensity.",
@@ -1184,12 +938,12 @@
         {
           "outcome": "Home Win",
           "selection": "Switzerland",
-          "decimal_odds": 2.26,
-          "model_probability": 53.41,
-          "implied_probability": 44.2478,
-          "edge": 9.16,
-          "expected_value": 0.2071,
-          "rating": "\u2605 MARGINAL"
+          "decimal_odds": 2.5,
+          "model_probability": 53.14,
+          "implied_probability": 40.0,
+          "edge": 13.14,
+          "expected_value": 0.3285,
+          "rating": "\u2605\u2605 GOOD"
         }
       ],
       "has_value": true
@@ -1200,14 +954,14 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 23:00",
       "sportybet_odds": {
-        "home": 1.31,
-        "draw": 6.1,
-        "away": 10.84
+        "home": 1.22,
+        "draw": 7.24,
+        "away": 15.6
       },
       "sportybet_implied": {
-        "home": 76.34,
-        "draw": 16.39,
-        "away": 9.23
+        "home": 81.97,
+        "draw": 13.81,
+        "away": 6.41
       },
       "model_probability": {
         "home": 61.0,
@@ -1238,19 +992,8 @@
         }
       },
       "tactical_narrative": "Morocco (Walid Regragui, 4-3-3, counter style) vs Haiti (Marc Collat, 4-4-2, defensive style)\n  Tactical matchup: counter vs defensive\n  Morocco: World Cup 2022 semifinalist. Excellent defensive organisation. Counter-attacking threat.\n  Haiti: Underdog. Will park the bus against top teams.",
-      "value_bets": [
-        {
-          "outcome": "Away Win",
-          "selection": "Haiti",
-          "decimal_odds": 10.84,
-          "model_probability": 19.2,
-          "implied_probability": 9.2251,
-          "edge": 9.97,
-          "expected_value": 1.0813,
-          "rating": "\u2605 MARGINAL"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "Scotland",
@@ -1258,14 +1001,14 @@
       "competition": "World Cup",
       "kick_off": "24 Jun 2026 23:00",
       "sportybet_odds": {
-        "home": 7.73,
-        "draw": 4.99,
-        "away": 1.45
+        "home": 7.95,
+        "draw": 5.29,
+        "away": 1.42
       },
       "sportybet_implied": {
-        "home": 12.94,
-        "draw": 20.04,
-        "away": 68.97
+        "home": 12.58,
+        "draw": 18.9,
+        "away": 70.42
       },
       "model_probability": {
         "home": 15.62,
@@ -1305,21 +1048,21 @@
       "competition": "World Cup",
       "kick_off": "25 Jun 2026 02:00",
       "sportybet_odds": {
-        "home": 4.89,
-        "draw": 3.72,
-        "away": 1.83
+        "home": 3.59,
+        "draw": 3.74,
+        "away": 2.11
       },
       "sportybet_implied": {
-        "home": 20.45,
-        "draw": 26.88,
-        "away": 54.64
+        "home": 27.86,
+        "draw": 26.74,
+        "away": 47.39
       },
       "model_probability": {
-        "home": 31.87,
-        "draw": 25.87,
-        "away": 42.26
+        "home": 31.37,
+        "draw": 25.66,
+        "away": 42.97
       },
-      "home_elo": 1790,
+      "home_elo": 1784.3,
       "away_elo": 1820,
       "manager_intelligence": {
         "home_manager": "Ivan Hasek",
@@ -1337,25 +1080,14 @@
         "home_tactical_adj": -0.02,
         "away_tactical_adj": 0.02,
         "base_probability": {
-          "home": 33.87,
-          "draw": 25.87,
-          "away": 40.26
+          "home": 33.37,
+          "draw": 25.66,
+          "away": 40.98
         }
       },
       "tactical_narrative": "Czechia (Ivan Hasek, 4-2-3-1, possession style) vs Mexico (Javier Aguirre, 4-3-3, counter style)\n  Mexico will absorb pressure and look to exploit space behind Czechia's high line.\n  Czechia: Relatively new appointment. Czech style \u2014 technical, structured.\n  Mexico: Second spell. Pragmatic, defensive-minded. Prioritises organisation over possession.",
-      "value_bets": [
-        {
-          "outcome": "Home Win",
-          "selection": "Czechia",
-          "decimal_odds": 4.89,
-          "model_probability": 31.87,
-          "implied_probability": 20.4499,
-          "edge": 11.42,
-          "expected_value": 0.5584,
-          "rating": "\u2605\u2605 GOOD"
-        }
-      ],
-      "has_value": true
+      "value_bets": [],
+      "has_value": false
     },
     {
       "home_team": "South Africa",
@@ -1363,21 +1095,21 @@
       "competition": "World Cup",
       "kick_off": "25 Jun 2026 02:00",
       "sportybet_odds": {
-        "home": 5.73,
-        "draw": 4.06,
+        "home": 5.75,
+        "draw": 4.07,
         "away": 1.67
       },
       "sportybet_implied": {
-        "home": 17.45,
-        "draw": 24.63,
+        "home": 17.39,
+        "draw": 24.57,
         "away": 59.88
       },
       "model_probability": {
-        "home": 27.41,
-        "draw": 22.84,
-        "away": 49.75
+        "home": 27.9,
+        "draw": 23.03,
+        "away": 49.07
       },
-      "home_elo": 1660,
+      "home_elo": 1665.7,
       "away_elo": 1770,
       "manager_intelligence": {
         "home_manager": "Hugo Broos",
@@ -1395,9 +1127,9 @@
         "home_tactical_adj": 0.01,
         "away_tactical_adj": 0.0,
         "base_probability": {
-          "home": 26.68,
-          "draw": 23.07,
-          "away": 50.25
+          "home": 27.18,
+          "draw": 23.26,
+          "away": 49.55
         }
       },
       "tactical_narrative": "South Africa (Hugo Broos, 4-4-2, defensive style) vs Korea Republic (Hong Myung-bo, 4-2-3-1, counter style)\n  Tactical matchup: defensive vs counter\n  South Africa: Experienced. Built Bafana Bafana into AFCON qualifiers. Disciplined structure.\n  Korea Republic: Former national team captain. Transition period after Klinsmann dismissal.",
@@ -1405,12 +1137,12 @@
         {
           "outcome": "Home Win",
           "selection": "South Africa",
-          "decimal_odds": 5.73,
-          "model_probability": 27.41,
-          "implied_probability": 17.452,
-          "edge": 9.96,
-          "expected_value": 0.5706,
-          "rating": "\u2605 MARGINAL"
+          "decimal_odds": 5.75,
+          "model_probability": 27.9,
+          "implied_probability": 17.3913,
+          "edge": 10.51,
+          "expected_value": 0.6042,
+          "rating": "\u2605\u2605 GOOD"
         }
       ],
       "has_value": true
@@ -1421,13 +1153,13 @@
       "competition": "World Cup",
       "kick_off": "25 Jun 2026 21:00",
       "sportybet_odds": {
-        "home": 22.34,
-        "draw": 9.53,
+        "home": 22.75,
+        "draw": 9.68,
         "away": 1.15
       },
       "sportybet_implied": {
-        "home": 4.48,
-        "draw": 10.49,
+        "home": 4.4,
+        "draw": 10.33,
         "away": 86.96
       },
       "model_probability": {
@@ -1463,11 +1195,11 @@
         {
           "outcome": "Draw",
           "selection": "Draw",
-          "decimal_odds": 9.53,
+          "decimal_odds": 9.68,
           "model_probability": 23.74,
-          "implied_probability": 10.4932,
-          "edge": 13.25,
-          "expected_value": 1.2624,
+          "implied_probability": 10.3306,
+          "edge": 13.41,
+          "expected_value": 1.298,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1631,14 +1363,14 @@
       "competition": "World Cup",
       "kick_off": "26 Jun 2026 03:00",
       "sportybet_odds": {
-        "home": 2.24,
-        "draw": 3.38,
-        "away": 3.61
+        "home": 2.19,
+        "draw": 3.48,
+        "away": 3.62
       },
       "sportybet_implied": {
-        "home": 44.64,
-        "draw": 29.59,
-        "away": 27.7
+        "home": 45.66,
+        "draw": 28.74,
+        "away": 27.62
       },
       "model_probability": {
         "home": 34.76,
@@ -1673,11 +1405,11 @@
         {
           "outcome": "Away Win",
           "selection": "Australia",
-          "decimal_odds": 3.61,
+          "decimal_odds": 3.62,
           "model_probability": 39.0,
-          "implied_probability": 27.7008,
-          "edge": 11.3,
-          "expected_value": 0.4079,
+          "implied_probability": 27.6243,
+          "edge": 11.38,
+          "expected_value": 0.4118,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -1689,14 +1421,14 @@
       "competition": "World Cup",
       "kick_off": "26 Jun 2026 03:00",
       "sportybet_odds": {
-        "home": 2.89,
-        "draw": 3.67,
-        "away": 2.49
+        "home": 2.72,
+        "draw": 3.82,
+        "away": 2.56
       },
       "sportybet_implied": {
-        "home": 34.6,
-        "draw": 27.25,
-        "away": 40.16
+        "home": 36.76,
+        "draw": 26.18,
+        "away": 39.06
       },
       "model_probability": {
         "home": 36.65,
@@ -1796,12 +1528,12 @@
       "sportybet_odds": {
         "home": 1.33,
         "draw": 5.63,
-        "away": 11.16
+        "away": 11.15
       },
       "sportybet_implied": {
         "home": 75.19,
         "draw": 17.76,
-        "away": 8.96
+        "away": 8.97
       },
       "model_probability": {
         "home": 53.31,
@@ -1836,11 +1568,11 @@
         {
           "outcome": "Away Win",
           "selection": "Iraq",
-          "decimal_odds": 11.16,
+          "decimal_odds": 11.15,
           "model_probability": 24.8,
-          "implied_probability": 8.9606,
-          "edge": 15.84,
-          "expected_value": 1.7677,
+          "implied_probability": 8.9686,
+          "edge": 15.83,
+          "expected_value": 1.7652,
           "rating": "\u2605\u2605\u2605 STRONG"
         }
       ],
@@ -1899,14 +1631,14 @@
       "competition": "World Cup",
       "kick_off": "27 Jun 2026 01:00",
       "sportybet_odds": {
-        "home": 6.33,
-        "draw": 4.47,
-        "away": 1.57
+        "home": 6.11,
+        "draw": 4.39,
+        "away": 1.59
       },
       "sportybet_implied": {
-        "home": 15.8,
-        "draw": 22.37,
-        "away": 63.69
+        "home": 16.37,
+        "draw": 22.78,
+        "away": 62.89
       },
       "model_probability": {
         "home": 27.95,
@@ -1941,11 +1673,11 @@
         {
           "outcome": "Home Win",
           "selection": "Uruguay",
-          "decimal_odds": 6.33,
+          "decimal_odds": 6.11,
           "model_probability": 27.95,
-          "implied_probability": 15.7978,
-          "edge": 12.15,
-          "expected_value": 0.7692,
+          "implied_probability": 16.3666,
+          "edge": 11.58,
+          "expected_value": 0.7077,
           "rating": "\u2605\u2605 GOOD"
         }
       ],
@@ -2072,12 +1804,12 @@
         "away": 16.18
       },
       "model_probability": {
-        "home": 56.4,
-        "draw": 20.88,
-        "away": 22.72
+        "home": 54.72,
+        "draw": 21.33,
+        "away": 23.95
       },
       "home_elo": 1880,
-      "away_elo": 1700,
+      "away_elo": 1715.1,
       "manager_intelligence": {
         "home_manager": "Zlatko Dalic",
         "home_style": "possession",
@@ -2094,9 +1826,9 @@
         "home_tactical_adj": -0.02,
         "away_tactical_adj": 0.02,
         "base_probability": {
-          "home": 58.4,
-          "draw": 20.88,
-          "away": 20.72
+          "home": 56.72,
+          "draw": 21.33,
+          "away": 21.95
         }
       },
       "tactical_narrative": "Croatia (Zlatko Dalic, 4-3-3, possession style) vs Ghana (Otto Addo, 4-2-3-1, counter style)\n  Ghana will absorb pressure and look to exploit space behind Croatia's high line.\n  Croatia: Long tenure. WC 2018 finalist, WC 2022 third place. Experienced. Modric era ending.\n  Ghana: Second spell. Physical, direct. Building young squad.",
@@ -2109,21 +1841,21 @@
       "competition": "World Cup",
       "kick_off": "27 Jun 2026 22:00",
       "sportybet_odds": {
-        "home": 11.17,
-        "draw": 6.52,
-        "away": 1.29
+        "home": 12.18,
+        "draw": 6.8,
+        "away": 1.26
       },
       "sportybet_implied": {
-        "home": 8.95,
-        "draw": 15.34,
-        "away": 77.52
+        "home": 8.21,
+        "draw": 14.71,
+        "away": 79.37
       },
       "model_probability": {
-        "home": 12.52,
-        "draw": 17.15,
-        "away": 70.33
+        "home": 11.68,
+        "draw": 16.79,
+        "away": 71.53
       },
-      "home_elo": 1680,
+      "home_elo": 1664.9,
       "away_elo": 1970,
       "manager_intelligence": {
         "home_manager": "Thomas Christiansen",
@@ -2141,9 +1873,9 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.04,
         "base_probability": {
-          "home": 13.02,
-          "draw": 17.84,
-          "away": 69.14
+          "home": 12.15,
+          "draw": 17.46,
+          "away": 70.38
         }
       },
       "tactical_narrative": "Panama (Thomas Christiansen, 4-4-2, defensive style) vs England (Thomas Tuchel, 4-2-3-1, pressing style)\n  England's press vs Panama's defensive structure \u2014 expect a physical battle.\n  Panama: Will be extremely defensive vs England and Croatia. Set piece oriented.\n  England: NEW MANAGER \u2014 replaced Southgate. German pressing philosophy. Tactical upgrade expected.",
@@ -2156,21 +1888,21 @@
       "competition": "World Cup",
       "kick_off": "28 Jun 2026 00:30",
       "sportybet_odds": {
-        "home": 3.61,
-        "draw": 3.43,
-        "away": 2.22
+        "home": 3.79,
+        "draw": 3.53,
+        "away": 2.12
       },
       "sportybet_implied": {
-        "home": 27.7,
-        "draw": 29.15,
-        "away": 45.05
+        "home": 26.39,
+        "draw": 28.33,
+        "away": 47.17
       },
       "model_probability": {
-        "home": 24.92,
-        "draw": 22.42,
-        "away": 52.66
+        "home": 25.62,
+        "draw": 22.68,
+        "away": 51.7
       },
-      "home_elo": 1830,
+      "home_elo": 1838.0,
       "away_elo": 1960,
       "manager_intelligence": {
         "home_manager": "Nestor Lorenzo",
@@ -2188,9 +1920,9 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.0,
         "base_probability": {
-          "home": 24.92,
-          "draw": 22.42,
-          "away": 52.66
+          "home": 25.62,
+          "draw": 22.68,
+          "away": 51.7
         }
       },
       "tactical_narrative": "Colombia (Nestor Lorenzo, 4-2-3-1, possession style) vs Portugal (Roberto Martinez, 4-3-3, possession style)\n  Tactical matchup: possession vs possession\n  Colombia: Copa America 2024 finalists. Excellent qualifying campaign. Dangerous side.\n  Portugal: Former Belgium manager. Excellent squad depth. Post-Ronaldo transition ongoing.",
@@ -2213,12 +1945,12 @@
         "away": 28.01
       },
       "model_probability": {
-        "home": 42.36,
-        "draw": 24.89,
-        "away": 32.75
+        "home": 43.36,
+        "draw": 24.6,
+        "away": 32.04
       },
       "home_elo": 1690,
-      "away_elo": 1640,
+      "away_elo": 1632.0,
       "manager_intelligence": {
         "home_manager": "S\u00e9bastien Desabre",
         "home_style": "counter",
@@ -2235,9 +1967,9 @@
         "home_tactical_adj": 0.0,
         "away_tactical_adj": 0.01,
         "base_probability": {
-          "home": 42.78,
-          "draw": 25.14,
-          "away": 32.08
+          "home": 43.79,
+          "draw": 24.85,
+          "away": 31.36
         }
       },
       "tactical_narrative": "Congo DR (S\u00e9bastien Desabre, 4-3-3, counter style) vs Uzbekistan (Srecko Katanec, 4-2-3-1, defensive style)\n  Tactical matchup: counter vs defensive\n  Congo DR: Athletic, physical. AFCON semifinalists. Dangerous on the break.\n  Uzbekistan: First World Cup. Will be pragmatic and hard to break down.",
@@ -2308,14 +2040,14 @@
       "competition": "World Cup",
       "kick_off": "28 Jun 2026 03:00",
       "sportybet_odds": {
-        "home": 14.27,
-        "draw": 7.22,
-        "away": 1.23
+        "home": 14.96,
+        "draw": 7.43,
+        "away": 1.22
       },
       "sportybet_implied": {
-        "home": 7.01,
-        "draw": 13.85,
-        "away": 81.3
+        "home": 6.68,
+        "draw": 13.46,
+        "away": 81.97
       },
       "model_probability": {
         "home": 6.62,

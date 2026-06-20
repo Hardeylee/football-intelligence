@@ -6,6 +6,7 @@ Sends value bet alerts directly to your phone.
 import asyncio
 import os
 import json
+from src.models.market_analyzer import analyze_markets, format_market_analysis_telegram
 from datetime import datetime
 from dotenv import load_dotenv
 from telegram import Bot
@@ -165,6 +166,45 @@ async def send_test():
     await send_message(msg)
 
 
+async def send_market_analysis():
+    """Send market analysis for all World Cup matches."""
+
+    if not os.path.exists("data/value_bets.json"):
+        await send_message("⚠️ No analysis found. Run pipeline first.")
+        return
+
+    with open("data/value_bets.json") as f:
+        data = json.load(f)
+
+    analyses = data.get("analyses", [])
+
+    if not analyses:
+        await send_message("No matches found.")
+        return
+
+    # Header
+    await send_message(
+        f"📊 <b>MARKET ANALYSIS — {len(analyses)} MATCHES</b>\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n"
+        f"Full breakdown of recommended markets\n"
+        f"for every World Cup match today.\n"
+        f"Stake guide based on ₦1000 max budget."
+    )
+    await asyncio.sleep(1)
+
+    for match in analyses:
+        analysis = analyze_markets(
+            match["home_team"],
+            match["away_team"],
+            match["home_elo"],
+            match["away_elo"],
+            match["model_probability"]
+        )
+        msg = format_market_analysis_telegram(analysis)
+        await send_message(msg)
+        await asyncio.sleep(2)
+
+
 if __name__ == "__main__":
     import sys
     cmd = sys.argv[1] if len(sys.argv) > 1 else "test"
@@ -173,5 +213,13 @@ if __name__ == "__main__":
         asyncio.run(send_test())
     elif cmd == "bets":
         asyncio.run(send_value_bets())
+    elif cmd == "markets":
+        asyncio.run(send_market_analysis())
     elif cmd == "summary":
         asyncio.run(send_daily_summary())
+    elif cmd == "all":
+        async def send_all():
+            await send_value_bets()
+            await asyncio.sleep(2)
+            await send_market_analysis()
+        asyncio.run(send_all())
