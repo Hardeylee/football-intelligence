@@ -1,0 +1,5418 @@
+{
+  "updated_at": "2026-06-20T10:49:41.357801",
+  "total_teams": 48,
+  "teams": {
+    "Mexico": [
+      {
+        "player": "Aynsley Pears",
+        "position": "Aynsley PearsGoalkeeper",
+        "injury": "Aynsley Pears",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Bal\u00e1zs T\u00f3th",
+        "position": "Bal\u00e1zs T\u00f3thGoalkeeper",
+        "injury": "Bal\u00e1zs T\u00f3th",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Hayden Carter",
+        "position": "Hayden CarterCentre-Back",
+        "injury": "Hayden Carter",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Scott Wharton",
+        "position": "Scott WhartonCentre-Back",
+        "injury": "Scott Wharton",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Tom Atcheson",
+        "position": "Tom AtchesonCentre-Back",
+        "injury": "Tom Atcheson",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "George Pratt",
+        "position": "George PrattCentre-Back",
+        "injury": "George Pratt",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Sean McLoughlin",
+        "position": "Sean McLoughlinCentre-Back",
+        "injury": "Sean McLoughlin",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Connor O'Riordan",
+        "position": "Connor O'RiordanCentre-Back",
+        "injury": "Connor O'Riordan",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Harry Pickering",
+        "position": "Harry PickeringLeft-Back",
+        "injury": "Harry Pickering",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Yuri Ribeiro",
+        "position": "Yuri RibeiroLeft-Back",
+        "injury": "Yuri Ribeiro",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Ryan Alebiosu",
+        "position": "Ryan AlebiosuRight-Back",
+        "injury": "Ryan Alebiosu",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Lewis Miller",
+        "position": "Lewis MillerRight-Back",
+        "injury": "Lewis Miller",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Taylor Gardner-Hickman",
+        "position": "Taylor Gardner-HickmanDefensive Midfield",
+        "injury": "Taylor Gardner-Hickman",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Sidnei Tavares",
+        "position": "Sidnei TavaresDefensive Midfield",
+        "injury": "Sidnei Tavares",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jake Garrett",
+        "position": "Jake GarrettDefensive Midfield",
+        "injury": "Jake Garrett",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Moussa Baradji",
+        "position": "Moussa BaradjiCentral Midfield",
+        "injury": "Moussa Baradji",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Sondre Tronstad",
+        "position": "Sondre TronstadCentral Midfield",
+        "injury": "Sondre Tronstad",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Axel Henriksson",
+        "position": "Axel HenrikssonCentral Midfield",
+        "injury": "Axel Henriksson",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Kristi Montgomery",
+        "position": "Kristi MontgomeryCentral Midfield",
+        "injury": "Kristi Montgomery",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Adam Forshaw",
+        "position": "Adam ForshawCentral Midfield",
+        "injury": "Adam Forshaw",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Dion De Neve",
+        "position": "Dion De NeveLeft Midfield",
+        "injury": "Dion De Neve",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Todd Cantwell",
+        "position": "Todd CantwellAttacking Midfield",
+        "injury": "Todd Cantwell",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Ryoya Morishita",
+        "position": "Ryoya MorishitaAttacking Midfield",
+        "injury": "Ryoya Morishita",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Mathias J\u00f8rgensen",
+        "position": "Mathias J\u00f8rgensenRight Winger",
+        "injury": "Mathias J\u00f8rgensen",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Oladapo Afolayan",
+        "position": "Oladapo AfolayanRight Winger",
+        "injury": "Oladapo Afolayan",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Ryan Hedges",
+        "position": "Ryan HedgesRight Winger",
+        "injury": "Ryan Hedges",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Nathan Redmond",
+        "position": "Nathan RedmondRight Winger",
+        "injury": "Nathan Redmond",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Augustus Kargbo",
+        "position": "Augustus KargboSecond Striker",
+        "injury": "Augustus Kargbo",
+        "return_date": "Second Striker"
+      },
+      {
+        "player": "Andri Gudjohnsen",
+        "position": "Andri GudjohnsenCentre-Forward",
+        "injury": "Andri Gudjohnsen",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Yuki Ohashi",
+        "position": "Yuki OhashiCentre-Forward",
+        "injury": "Yuki Ohashi",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "South Africa": [],
+    "Korea Republic": [
+      {
+        "player": "Daniel Iversen",
+        "position": "Daniel IversenGoalkeeper",
+        "injury": "Daniel Iversen",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jack Walton",
+        "position": "Jack WaltonGoalkeeper",
+        "injury": "Jack Walton",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "David Cornell",
+        "position": "David CornellGoalkeeper",
+        "injury": "David Cornell",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "James Pradic",
+        "position": "James PradicGoalkeeper",
+        "injury": "James Pradic",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jordan Storey",
+        "position": "Jordan StoreyCentre-Back",
+        "injury": "Jordan Storey",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Lewis Gibson",
+        "position": "Lewis GibsonCentre-Back",
+        "injury": "Lewis Gibson",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Odeluga Offiah",
+        "position": "Odeluga OffiahCentre-Back",
+        "injury": "Odeluga Offiah",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Liam Lindsay",
+        "position": "Liam LindsayCentre-Back",
+        "injury": "Liam Lindsay",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Andrew Hughes",
+        "position": "Andrew HughesCentre-Back",
+        "injury": "Andrew Hughes",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Thierry Small",
+        "position": "Thierry SmallLeft-Back",
+        "injury": "Thierry Small",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Jamal Lewis",
+        "position": "Jamal LewisLeft-Back",
+        "injury": "Jamal Lewis",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Andrija Vukcevic",
+        "position": "Andrija VukcevicLeft-Back",
+        "injury": "Andrija Vukcevic",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Kacper Pasiek",
+        "position": "Kacper PasiekLeft-Back",
+        "injury": "Kacper Pasiek",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Pol Valent\u00edn",
+        "position": "Pol Valent\u00ednRight-Back",
+        "injury": "Pol Valent\u00edn",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Brad Potts",
+        "position": "Brad PottsRight-Back",
+        "injury": "Brad Potts",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Noah Mawene",
+        "position": "Noah MaweneDefensive Midfield",
+        "injury": "Noah Mawene",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Ali McCann",
+        "position": "Ali McCannCentral Midfield",
+        "injury": "Ali McCann",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Ben Whiteman",
+        "position": "Ben WhitemanCentral Midfield",
+        "injury": "Ben Whiteman",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Jordan Thompson",
+        "position": "Jordan ThompsonCentral Midfield",
+        "injury": "Jordan Thompson",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Kaedyn Kamara",
+        "position": "Kaedyn KamaraCentral Midfield",
+        "injury": "Kaedyn Kamara",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Robbie Brady",
+        "position": "Robbie BradyLeft Midfield",
+        "injury": "Robbie Brady",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Alfie Devine",
+        "position": "Alfie DevineAttacking Midfield",
+        "injury": "Alfie Devine",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Andrew Moran",
+        "position": "Andrew MoranAttacking Midfield",
+        "injury": "Andrew Moran",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Kitt Nelson",
+        "position": "Kitt NelsonAttacking Midfield",
+        "injury": "Kitt Nelson",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Theo Carroll",
+        "position": "Theo CarrollAttacking Midfield",
+        "injury": "Theo Carroll",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Callum Lang",
+        "position": "Callum LangRight Winger",
+        "injury": "Callum Lang",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Daniel Jebbison",
+        "position": "Daniel JebbisonCentre-Forward",
+        "injury": "Daniel Jebbison",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Milos Lukovic",
+        "position": "Milos LukovicCentre-Forward",
+        "injury": "Milos Lukovic",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Milutin Osmajic",
+        "position": "Milutin OsmajicCentre-Forward",
+        "injury": "Milutin Osmajic",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Will Keane",
+        "position": "Will KeaneCentre-Forward",
+        "injury": "Will Keane",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Michael Smith",
+        "position": "Michael SmithCentre-Forward",
+        "injury": "Michael Smith",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Czechia": [
+      {
+        "player": "Frederik R\u00f6nnow",
+        "position": "Frederik R\u00f6nnowGoalkeeper",
+        "injury": "Frederik R\u00f6nnow",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Matheo Raab",
+        "position": "Matheo RaabGoalkeeper",
+        "injury": "Matheo Raab",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Carl Klaus",
+        "position": "Carl KlausGoalkeeper",
+        "injury": "Carl Klaus",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Leopold Querfeld",
+        "position": "Leopold QuerfeldCentre-Back",
+        "injury": "Leopold Querfeld",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Danilho Doekhi",
+        "position": "Danilho DoekhiCentre-Back",
+        "injury": "Danilho Doekhi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Diogo Leite",
+        "position": "Diogo LeiteCentre-Back",
+        "injury": "Diogo Leite",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Stanley Nsoki",
+        "position": "Stanley NsokiCentre-Back",
+        "injury": "Stanley Nsoki",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Tom Rothe",
+        "position": "Tom RotheLeft-Back",
+        "injury": "Tom Rothe",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Derrick K\u00f6hn",
+        "position": "Derrick K\u00f6hnLeft-Back",
+        "injury": "Derrick K\u00f6hn",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Andrik Markgraf",
+        "position": "Andrik MarkgrafLeft-Back",
+        "injury": "Andrik Markgraf",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Josip Juranovic",
+        "position": "Josip JuranovicRight-Back",
+        "injury": "Josip Juranovic",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Christopher Trimmel",
+        "position": "Christopher TrimmelRight-Back",
+        "injury": "Christopher Trimmel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Aljoscha Kemlein",
+        "position": "Aljoscha KemleinDefensive Midfield",
+        "injury": "Aljoscha Kemlein",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Rani Khedira",
+        "position": "Rani KhediraDefensive Midfield",
+        "injury": "Rani Khedira",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Andr\u00e1s Sch\u00e4fer",
+        "position": "Andr\u00e1s Sch\u00e4ferCentral Midfield",
+        "injury": "Andr\u00e1s Sch\u00e4fer",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Alex Kr\u00e1l",
+        "position": "Alex Kr\u00e1lCentral Midfield",
+        "injury": "Alex Kr\u00e1l",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Janik Haberer",
+        "position": "Janik HabererCentral Midfield",
+        "injury": "Janik Haberer",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Robert Skov",
+        "position": "Robert SkovLeft Midfield",
+        "injury": "Robert Skov",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Woo-yeong Jeong",
+        "position": "Woo-yeong JeongAttacking Midfield",
+        "injury": "Woo-yeong Jeong",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Livan Burcu",
+        "position": "Livan BurcuLeft Winger",
+        "injury": "Livan Burcu",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "David Preu",
+        "position": "David PreuLeft Winger",
+        "injury": "David Preu",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Ilyas Ansah",
+        "position": "Ilyas AnsahCentre-Forward",
+        "injury": "Ilyas Ansah",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Andrej Ilic",
+        "position": "Andrej IlicCentre-Forward",
+        "injury": "Andrej Ilic",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Oliver Burke",
+        "position": "Oliver BurkeCentre-Forward",
+        "injury": "Oliver Burke",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Tim Skarke",
+        "position": "Tim SkarkeCentre-Forward",
+        "injury": "Tim Skarke",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Dmytro Bogdanov",
+        "position": "Dmytro BogdanovCentre-Forward",
+        "injury": "Dmytro Bogdanov",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Canada": [
+      {
+        "player": "Finn Tjorven Dierks",
+        "position": "Finn Tjorven DierksGoalkeeper",
+        "injury": "Finn Tjorven Dierks",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Olaf Dierks",
+        "position": "Olaf DierksGoalkeeper",
+        "injury": "Olaf Dierks",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Henning Sch\u00f6ttler",
+        "position": "Henning Sch\u00f6ttlerGoalkeeper",
+        "injury": "Henning Sch\u00f6ttler",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Henric Sietas",
+        "position": "Henric SietasDefender",
+        "injury": "Henric Sietas",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Christian Atanassov",
+        "position": "Christian AtanassovDefender",
+        "injury": "Christian Atanassov",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Jonathan Niko Miller",
+        "position": "Jonathan Niko MillerDefender",
+        "injury": "Jonathan Niko Miller",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Jacob Werner Pien",
+        "position": "Jacob Werner PienDefender",
+        "injury": "Jacob Werner Pien",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Ole Zapke",
+        "position": "Ole ZapkeDefender",
+        "injury": "Ole Zapke",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Yannick Herrmann",
+        "position": "Yannick HerrmannMidfielder",
+        "injury": "Yannick Herrmann",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Lasse R\u00fcter",
+        "position": "Lasse R\u00fcterMidfielder",
+        "injury": "Lasse R\u00fcter",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Nino Radomski",
+        "position": "Nino RadomskiMidfielder",
+        "injury": "Nino Radomski",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Artur Sichwart",
+        "position": "Artur SichwartMidfielder",
+        "injury": "Artur Sichwart",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Kevin Wienecke",
+        "position": "Kevin WieneckeMidfielder",
+        "injury": "Kevin Wienecke",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Lennart P\u00f6ppe",
+        "position": "Lennart P\u00f6ppeMidfielder",
+        "injury": "Lennart P\u00f6ppe",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Eric Ole Bewernick",
+        "position": "Eric Ole BewernickMidfielder",
+        "injury": "Eric Ole Bewernick",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Moritz Jonas",
+        "position": "Moritz JonasMidfielder",
+        "injury": "Moritz Jonas",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Niklas Okelmann",
+        "position": "Niklas OkelmannMidfielder",
+        "injury": "Niklas Okelmann",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Artur Del",
+        "position": "Artur DelMidfielder",
+        "injury": "Artur Del",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Julian Werner",
+        "position": "Julian WernerMidfielder",
+        "injury": "Julian Werner",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Tom Moritz",
+        "position": "Tom MoritzMidfielder",
+        "injury": "Tom Moritz",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Joshua John Kassner",
+        "position": "Joshua John KassnerMidfielder",
+        "injury": "Joshua John Kassner",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Marcel Limanski",
+        "position": "Marcel LimanskiMidfielder",
+        "injury": "Marcel Limanski",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Lasse Kuhn",
+        "position": "Lasse KuhnMidfielder",
+        "injury": "Lasse Kuhn",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Lukas Kalkowsky",
+        "position": "Lukas KalkowskyStriker",
+        "injury": "Lukas Kalkowsky",
+        "return_date": "Striker"
+      },
+      {
+        "player": "Simon Stehr",
+        "position": "Simon StehrStriker",
+        "injury": "Simon Stehr",
+        "return_date": "Striker"
+      },
+      {
+        "player": "Jarne St\u00f6lcken",
+        "position": "Jarne St\u00f6lckenStriker",
+        "injury": "Jarne St\u00f6lcken",
+        "return_date": "Striker"
+      },
+      {
+        "player": "Nick Henrik Rehder",
+        "position": "Nick Henrik RehderStriker",
+        "injury": "Nick Henrik Rehder",
+        "return_date": "Striker"
+      },
+      {
+        "player": "Marvin Sch\u00fctt",
+        "position": "Marvin Sch\u00fcttStriker",
+        "injury": "Marvin Sch\u00fctt",
+        "return_date": "Striker"
+      }
+    ],
+    "Bosnia and Herzegovina": [
+      {
+        "player": "Tobias Strau\u00df",
+        "position": "Tobias Strau\u00dfDefensive Midfield",
+        "injury": "Tobias Strau\u00df",
+        "return_date": "Defensive Midfield"
+      }
+    ],
+    "Qatar": [],
+    "Switzerland": [
+      {
+        "player": "Guglielmo Vicario",
+        "position": "Guglielmo VicarioGoalkeeper",
+        "injury": "Guglielmo Vicario",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Anton\u00edn Kinsk\u00fd",
+        "position": "Anton\u00edn Kinsk\u00fdGoalkeeper",
+        "injury": "Anton\u00edn Kinsk\u00fd",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Brandon Austin",
+        "position": "Brandon AustinGoalkeeper",
+        "injury": "Brandon Austin",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Micky van de Ven",
+        "position": "Micky van de VenCentre-Back",
+        "injury": "Micky van de Ven",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Cristian Romero",
+        "position": "Cristian RomeroCentre-Back",
+        "injury": "Cristian Romero",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Kevin Danso",
+        "position": "Kevin DansoCentre-Back",
+        "injury": "Kevin Danso",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Radu Dr\u0103gu\u0219in",
+        "position": "Radu Dr\u0103gu\u0219inCentre-Back",
+        "injury": "Radu Dr\u0103gu\u0219in",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Ashley Phillips",
+        "position": "Ashley PhillipsCentre-Back",
+        "injury": "Ashley Phillips",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Ben Davies",
+        "position": "Ben DaviesCentre-Back",
+        "injury": "Ben Davies",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Destiny Udogie",
+        "position": "Destiny UdogieLeft-Back",
+        "injury": "Destiny Udogie",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Djed Spence",
+        "position": "Djed SpenceLeft-Back",
+        "injury": "Djed Spence",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Souza",
+        "position": "SouzaLeft-Back",
+        "injury": "Souza",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Pedro Porro",
+        "position": "Pedro PorroRight-Back",
+        "injury": "Pedro Porro",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Rodrigo Bentancur",
+        "position": "Rodrigo BentancurDefensive Midfield",
+        "injury": "Rodrigo Bentancur",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jo\u00e3o Palhinha",
+        "position": "Jo\u00e3o PalhinhaDefensive Midfield",
+        "injury": "Jo\u00e3o Palhinha",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Yves Bissouma",
+        "position": "Yves BissoumaDefensive Midfield",
+        "injury": "Yves Bissouma",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Archie Gray",
+        "position": "Archie GrayCentral Midfield",
+        "injury": "Archie Gray",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Lucas Bergvall",
+        "position": "Lucas BergvallCentral Midfield",
+        "injury": "Lucas Bergvall",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Conor Gallagher",
+        "position": "Conor GallagherCentral Midfield",
+        "injury": "Conor Gallagher",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Pape Matar Sarr",
+        "position": "Pape Matar SarrCentral Midfield",
+        "injury": "Pape Matar Sarr",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Xavi Simons",
+        "position": "Xavi SimonsAttacking Midfield",
+        "injury": "Xavi Simons",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "James Maddison",
+        "position": "James MaddisonAttacking Midfield",
+        "injury": "James Maddison",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Dejan Kulusevski",
+        "position": "Dejan KulusevskiAttacking Midfield",
+        "injury": "Dejan Kulusevski",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Wilson Odobert",
+        "position": "Wilson OdobertLeft Winger",
+        "injury": "Wilson Odobert",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Mohammed Kudus",
+        "position": "Mohammed KudusRight Winger",
+        "injury": "Mohammed Kudus",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Dominic Solanke",
+        "position": "Dominic SolankeCentre-Forward",
+        "injury": "Dominic Solanke",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Richarlison",
+        "position": "RicharlisonCentre-Forward",
+        "injury": "Richarlison",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Mathys Tel",
+        "position": "Mathys TelCentre-Forward",
+        "injury": "Mathys Tel",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Randal Kolo Muani",
+        "position": "Randal Kolo MuaniCentre-Forward",
+        "injury": "Randal Kolo Muani",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Dane Scarlett",
+        "position": "Dane ScarlettCentre-Forward",
+        "injury": "Dane Scarlett",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Brazil": [
+      {
+        "player": "Kerem Mat\u0131\u015fl\u0131",
+        "position": "Kerem Mat\u0131\u015fl\u0131Goalkeeper",
+        "injury": "Kerem Mat\u0131\u015fl\u0131",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "An\u0131l Ata\u011f",
+        "position": "An\u0131l Ata\u011fGoalkeeper",
+        "injury": "An\u0131l Ata\u011f",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Salih Efe Fidan",
+        "position": "Salih Efe FidanGoalkeeper",
+        "injury": "Salih Efe Fidan",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Ertu\u011frul Ersoy",
+        "position": "Ertu\u011frul ErsoyCentre-Back",
+        "injury": "Ertu\u011frul Ersoy",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Alperen Babacan",
+        "position": "Alperen BabacanCentre-Back",
+        "injury": "Alperen Babacan",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Batuhan Yay\u0131kc\u0131",
+        "position": "Batuhan Yay\u0131kc\u0131Centre-Back",
+        "injury": "Batuhan Yay\u0131kc\u0131",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Emir Kayac\u0131k",
+        "position": "Emir Kayac\u0131kCentre-Back",
+        "injury": "Emir Kayac\u0131k",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Bar\u0131\u015f G\u00f6k",
+        "position": "Bar\u0131\u015f G\u00f6kLeft-Back",
+        "injury": "Bar\u0131\u015f G\u00f6k",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Talha Y\u00fcnku\u015f",
+        "position": "Talha Y\u00fcnku\u015fLeft-Back",
+        "injury": "Talha Y\u00fcnku\u015f",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Rahmetullah Beri\u015fbek",
+        "position": "Rahmetullah Beri\u015fbekRight-Back",
+        "injury": "Rahmetullah Beri\u015fbek",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Hamza G\u00fcr",
+        "position": "Hamza G\u00fcrRight-Back",
+        "injury": "Hamza G\u00fcr",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Sefa Narin",
+        "position": "Sefa NarinDefensive Midfield",
+        "injury": "Sefa Narin",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Musa \u00c7a\u011f\u0131ran",
+        "position": "Musa \u00c7a\u011f\u0131ranDefensive Midfield",
+        "injury": "Musa \u00c7a\u011f\u0131ran",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Ey\u00fcp Akcan",
+        "position": "Ey\u00fcp AkcanCentral Midfield",
+        "injury": "Ey\u00fcp Akcan",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Tayfun Aydo\u011fan",
+        "position": "Tayfun Aydo\u011fanCentral Midfield",
+        "injury": "Tayfun Aydo\u011fan",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Hakk\u0131 T\u00fcrker",
+        "position": "Hakk\u0131 T\u00fcrkerCentral Midfield",
+        "injury": "Hakk\u0131 T\u00fcrker",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Zeki Dursun",
+        "position": "Zeki DursunCentral Midfield",
+        "injury": "Zeki Dursun",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Soner Aydo\u011fdu",
+        "position": "Soner Aydo\u011fduCentral Midfield",
+        "injury": "Soner Aydo\u011fdu",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Hakan At\u0131\u015f",
+        "position": "Hakan At\u0131\u015fAttacking Midfield",
+        "injury": "Hakan At\u0131\u015f",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Salih Kavrazl\u0131",
+        "position": "Salih Kavrazl\u0131Left Winger",
+        "injury": "Salih Kavrazl\u0131",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "\u0130lhan Depe",
+        "position": "\u0130lhan DepeLeft Winger",
+        "injury": "\u0130lhan Depe",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Halil Akbunar",
+        "position": "Halil AkbunarRight Winger",
+        "injury": "Halil Akbunar",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Emir Kaan G\u00fcltekin",
+        "position": "Emir Kaan G\u00fcltekinCentre-Forward",
+        "injury": "Emir Kaan G\u00fcltekin",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Baran Ba\u015fyi\u011fit",
+        "position": "Baran Ba\u015fyi\u011fitCentre-Forward",
+        "injury": "Baran Ba\u015fyi\u011fit",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Ertu\u011frul Furat",
+        "position": "Ertu\u011frul FuratCentre-Forward",
+        "injury": "Ertu\u011frul Furat",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Muhammet Demir",
+        "position": "Muhammet DemirCentre-Forward",
+        "injury": "Muhammet Demir",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Morocco": [
+      {
+        "player": "Owen Goodman",
+        "position": "Owen GoodmanGoalkeeper",
+        "injury": "Owen Goodman",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Kieren Flavell",
+        "position": "Kieren FlavellGoalkeeper",
+        "injury": "Kieren Flavell",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Josh Earl",
+        "position": "Josh EarlCentre-Back",
+        "injury": "Josh Earl",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Ma\u00ebl de Gevigney",
+        "position": "Ma\u00ebl de GevigneyCentre-Back",
+        "injury": "Ma\u00ebl de Gevigney",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Eoghan O'Connell",
+        "position": "Eoghan O'ConnellCentre-Back",
+        "injury": "Eoghan O'Connell",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jack Shepherd",
+        "position": "Jack ShepherdCentre-Back",
+        "injury": "Jack Shepherd",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Marc Roberts",
+        "position": "Marc RobertsCentre-Back",
+        "injury": "Marc Roberts",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Georgie Gent",
+        "position": "Georgie GentLeft-Back",
+        "injury": "Georgie Gent",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Corey O'Keeffe",
+        "position": "Corey O'KeeffeRight-Back",
+        "injury": "Corey O'Keeffe",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Tennai Watson",
+        "position": "Tennai WatsonRight-Back",
+        "injury": "Tennai Watson",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Luca Connell",
+        "position": "Luca ConnellDefensive Midfield",
+        "injury": "Luca Connell",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Patrick Kelly",
+        "position": "Patrick KellyDefensive Midfield",
+        "injury": "Patrick Kelly",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jonathan Bland",
+        "position": "Jonathan BlandDefensive Midfield",
+        "injury": "Jonathan Bland",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Kelechi Nwakali",
+        "position": "Kelechi NwakaliCentral Midfield",
+        "injury": "Kelechi Nwakali",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Vimal Yoganathan",
+        "position": "Vimal YoganathanCentral Midfield",
+        "injury": "Vimal Yoganathan",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Adam Phillips",
+        "position": "Adam PhillipsAttacking Midfield",
+        "injury": "Adam Phillips",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Reyes Cleary",
+        "position": "Reyes ClearyLeft Winger",
+        "injury": "Reyes Cleary",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Charlie Lennon",
+        "position": "Charlie LennonLeft Winger",
+        "injury": "Charlie Lennon",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Scott Banks",
+        "position": "Scott BanksRight Winger",
+        "injury": "Scott Banks",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "David McGoldrick",
+        "position": "David McGoldrickCentre-Forward",
+        "injury": "David McGoldrick",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Haiti": [
+      {
+        "player": "Gonzalo Crettaz",
+        "position": "Gonzalo CrettazGoalkeeper",
+        "injury": "Gonzalo Crettaz",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jasper Cillessen",
+        "position": "Jasper CillessenGoalkeeper",
+        "injury": "Jasper Cillessen",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Rijk Janse",
+        "position": "Rijk JanseGoalkeeper",
+        "injury": "Rijk Janse",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Ahmetcan Kaplan",
+        "position": "Ahmetcan KaplanCentre-Back",
+        "injury": "Ahmetcan Kaplan",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Philippe Sandler",
+        "position": "Philippe SandlerCentre-Back",
+        "injury": "Philippe Sandler",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Deveron Fonville",
+        "position": "Deveron FonvilleCentre-Back",
+        "injury": "Deveron Fonville",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Brayann Pereira",
+        "position": "Brayann PereiraCentre-Back",
+        "injury": "Brayann Pereira",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Thomas Ouwejan",
+        "position": "Thomas OuwejanCentre-Back",
+        "injury": "Thomas Ouwejan",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Eli Dasa",
+        "position": "Eli DasaCentre-Back",
+        "injury": "Eli Dasa",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jetro Willems",
+        "position": "Jetro WillemsCentre-Back",
+        "injury": "Jetro Willems",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Bram Nuytinck",
+        "position": "Bram NuytinckCentre-Back",
+        "injury": "Bram Nuytinck",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Darko Nejasmic",
+        "position": "Darko NejasmicDefensive Midfield",
+        "injury": "Darko Nejasmic",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Dirk Proper",
+        "position": "Dirk ProperDefensive Midfield",
+        "injury": "Dirk Proper",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Kodai Sano",
+        "position": "Kodai SanoCentral Midfield",
+        "injury": "Kodai Sano",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Sam de Laat",
+        "position": "Sam de LaatCentral Midfield",
+        "injury": "Sam de Laat",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Sami Ouaissa",
+        "position": "Sami OuaissaRight Midfield",
+        "injury": "Sami Ouaissa",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Ba\u015far \u00d6nal",
+        "position": "Ba\u015far \u00d6nalLeft Midfield",
+        "injury": "Ba\u015far \u00d6nal",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Virgil Misidjan",
+        "position": "Virgil MisidjanLeft Midfield",
+        "injury": "Virgil Misidjan",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "No\u00e9 Lebreton",
+        "position": "No\u00e9 LebretonAttacking Midfield",
+        "injury": "No\u00e9 Lebreton",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Willum Th\u00f3r Willumsson",
+        "position": "Willum Th\u00f3r WillumssonAttacking Midfield",
+        "injury": "Willum Th\u00f3r Willumsson",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Isak Hansen-Aar\u00f8en",
+        "position": "Isak Hansen-Aar\u00f8enAttacking Midfield",
+        "injury": "Isak Hansen-Aar\u00f8en",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Tjaronn Chery",
+        "position": "Tjaronn CheryAttacking Midfield",
+        "injury": "Tjaronn Chery",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Koki Ogawa",
+        "position": "Koki OgawaCentre-Forward",
+        "injury": "Koki Ogawa",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Danilo",
+        "position": "DaniloCentre-Forward",
+        "injury": "Danilo",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Youssef El Kachati",
+        "position": "Youssef El KachatiCentre-Forward",
+        "injury": "Youssef El Kachati",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Bryan Linssen",
+        "position": "Bryan LinssenCentre-Forward",
+        "injury": "Bryan Linssen",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Scotland": [
+      {
+        "player": "Lucas Zahaczewski",
+        "position": "Lucas ZahaczewskiGoalkeeper",
+        "injury": "Lucas Zahaczewski",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lino Kasten",
+        "position": "Lino KastenGoalkeeper",
+        "injury": "Lino Kasten",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Henry H\u00f6cker",
+        "position": "Henry H\u00f6ckerGoalkeeper",
+        "injury": "Henry H\u00f6cker",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Edwin Schwarz",
+        "position": "Edwin SchwarzCentre-Back",
+        "injury": "Edwin Schwarz",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Felix Sch\u00e4ffner",
+        "position": "Felix Sch\u00e4ffnerCentre-Back",
+        "injury": "Felix Sch\u00e4ffner",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Alexander Seidel",
+        "position": "Alexander SeidelCentre-Back",
+        "injury": "Alexander Seidel",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Dennis Lippert",
+        "position": "Dennis LippertLeft-Back",
+        "injury": "Dennis Lippert",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Angelo Br\u00fcckner",
+        "position": "Angelo Br\u00fccknerRight-Back",
+        "injury": "Angelo Br\u00fcckner",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Leon Bucher",
+        "position": "Leon BucherRight-Back",
+        "injury": "Leon Bucher",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Ben Fischer",
+        "position": "Ben FischerRight-Back",
+        "injury": "Ben Fischer",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Nicolas Andermatt",
+        "position": "Nicolas AndermattCentral Midfield",
+        "injury": "Nicolas Andermatt",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Marco Zietsch",
+        "position": "Marco ZietschCentral Midfield",
+        "injury": "Marco Zietsch",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Tino Lennerth",
+        "position": "Tino LennerthCentral Midfield",
+        "injury": "Tino Lennerth",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Florian Markert",
+        "position": "Florian MarkertCentral Midfield",
+        "injury": "Florian Markert",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Lukas Quirin",
+        "position": "Lukas QuirinCentral Midfield",
+        "injury": "Lukas Quirin",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Fabian Dachsbacher",
+        "position": "Fabian DachsbacherCentral Midfield",
+        "injury": "Fabian Dachsbacher",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Davide-Danilo Sekulovic",
+        "position": "Davide-Danilo SekulovicAttacking Midfield",
+        "injury": "Davide-Danilo Sekulovic",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Deniz Koc",
+        "position": "Deniz KocAttacking Midfield",
+        "injury": "Deniz Koc",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Felix Heim",
+        "position": "Felix HeimRight Winger",
+        "injury": "Felix Heim",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Maximilian Fesser",
+        "position": "Maximilian FesserRight Winger",
+        "injury": "Maximilian Fesser",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Thomas Winklbauer",
+        "position": "Thomas WinklbauerCentre-Forward",
+        "injury": "Thomas Winklbauer",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Patrick Scheder",
+        "position": "Patrick SchederCentre-Forward",
+        "injury": "Patrick Scheder",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Jann George",
+        "position": "Jann GeorgeCentre-Forward",
+        "injury": "Jann George",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Levi Kraus",
+        "position": "Levi KrausCentre-Forward",
+        "injury": "Levi Kraus",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Maximilian Weimer",
+        "position": "Maximilian WeimerCentre-Forward",
+        "injury": "Maximilian Weimer",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "United States": [],
+    "Paraguay": [
+      {
+        "player": "Bart\u0142omiej Gradecki",
+        "position": "Bart\u0142omiej GradeckiGoalkeeper",
+        "injury": "Bart\u0142omiej Gradecki",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jakub Bielecki",
+        "position": "Jakub BieleckiGoalkeeper",
+        "injury": "Jakub Bielecki",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jakub Szyma\u0144ski",
+        "position": "Jakub Szyma\u0144skiGoalkeeper",
+        "injury": "Jakub Szyma\u0144ski",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Marcel Potoczny",
+        "position": "Marcel PotocznyGoalkeeper",
+        "injury": "Marcel Potoczny",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Nikodem Proczek",
+        "position": "Nikodem ProczekGoalkeeper",
+        "injury": "Nikodem Proczek",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Nikodem Le\u015bniak-Paduch",
+        "position": "Nikodem Le\u015bniak-PaduchCentre-Back",
+        "injury": "Nikodem Le\u015bniak-Paduch",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Max Watson",
+        "position": "Max WatsonCentre-Back",
+        "injury": "Max Watson",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Andrej Lukic",
+        "position": "Andrej LukicCentre-Back",
+        "injury": "Andrej Lukic",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Aleksander Komor",
+        "position": "Aleksander KomorCentre-Back",
+        "injury": "Aleksander Komor",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Przemys\u0142aw Szymi\u0144ski",
+        "position": "Przemys\u0142aw Szymi\u0144skiCentre-Back",
+        "injury": "Przemys\u0142aw Szymi\u0144ski",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Maciej Krzempek",
+        "position": "Maciej KrzempekCentre-Back",
+        "injury": "Maciej Krzempek",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jakub Domaga\u0142a",
+        "position": "Jakub Domaga\u0142aCentre-Back",
+        "injury": "Jakub Domaga\u0142a",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Kajetan Klaja",
+        "position": "Kajetan KlajaCentre-Back",
+        "injury": "Kajetan Klaja",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Szymon Karasi\u0144ski",
+        "position": "Szymon Karasi\u0144skiLeft-Back",
+        "injury": "Szymon Karasi\u0144ski",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Dominik Preisler",
+        "position": "Dominik PreislerLeft-Back",
+        "injury": "Dominik Preisler",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Martin Konczkowski",
+        "position": "Martin KonczkowskiRight-Back",
+        "injury": "Martin Konczkowski",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Szymon Szyma\u0144ski",
+        "position": "Szymon Szyma\u0144skiDefensive Midfield",
+        "injury": "Szymon Szyma\u0144ski",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Denis Ventura",
+        "position": "Denis VenturaDefensive Midfield",
+        "injury": "Denis Ventura",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Patryk Sikora",
+        "position": "Patryk SikoraDefensive Midfield",
+        "injury": "Patryk Sikora",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Mateusz Ros\u00f3\u0142",
+        "position": "Mateusz Ros\u00f3\u0142Defensive Midfield",
+        "injury": "Mateusz Ros\u00f3\u0142",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Mateusz Szwoch",
+        "position": "Mateusz SzwochDefensive Midfield",
+        "injury": "Mateusz Szwoch",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Shuma Nagamatsu",
+        "position": "Shuma NagamatsuAttacking Midfield",
+        "injury": "Shuma Nagamatsu",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Filip Lachendro",
+        "position": "Filip LachendroAttacking Midfield",
+        "injury": "Filip Lachendro",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Kamil Imiolek",
+        "position": "Kamil ImiolekAttacking Midfield",
+        "injury": "Kamil Imiolek",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Piotr Ceglarz",
+        "position": "Piotr CeglarzLeft Winger",
+        "injury": "Piotr Ceglarz",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Mohamed Mezghrani",
+        "position": "Mohamed MezghraniLeft Winger",
+        "injury": "Mohamed Mezghrani",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Jakub Jendryka",
+        "position": "Jakub JendrykaRight Winger",
+        "injury": "Jakub Jendryka",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Patryk Szwedzik",
+        "position": "Patryk SzwedzikRight Winger",
+        "injury": "Patryk Szwedzik",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Marko Kolar",
+        "position": "Marko KolarCentre-Forward",
+        "injury": "Marko Kolar",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Daniel Szczepan",
+        "position": "Daniel SzczepanCentre-Forward",
+        "injury": "Daniel Szczepan",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Robert \u0141ukowiak",
+        "position": "Robert \u0141ukowiakCentre-Forward",
+        "injury": "Robert \u0141ukowiak",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Dawid Magusiak",
+        "position": "Dawid MagusiakCentre-Forward",
+        "injury": "Dawid Magusiak",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Kacper Dyduch",
+        "position": "Kacper DyduchCentre-Forward",
+        "injury": "Kacper Dyduch",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Australia": [
+      {
+        "player": "Johannes Brinkies",
+        "position": "Johannes BrinkiesGoalkeeper",
+        "injury": "Johannes Brinkies",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jannik Horz",
+        "position": "Jannik HorzGoalkeeper",
+        "injury": "Jannik Horz",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Angelo Tramontana",
+        "position": "Angelo TramontanaGoalkeeper",
+        "injury": "Angelo Tramontana",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Nikolas Tatomirovic",
+        "position": "Nikolas TatomirovicGoalkeeper",
+        "injury": "Nikolas Tatomirovic",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Kristjan Arh Cesen",
+        "position": "Kristjan Arh CesenCentre-Back",
+        "injury": "Kristjan Arh Cesen",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jayson Breitenbach",
+        "position": "Jayson BreitenbachCentre-Back",
+        "injury": "Jayson Breitenbach",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Maximilian Rossmann",
+        "position": "Maximilian RossmannCentre-Back",
+        "injury": "Maximilian Rossmann",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Noel Knothe",
+        "position": "Noel KnotheCentre-Back",
+        "injury": "Noel Knothe",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Dominik Crljenec",
+        "position": "Dominik CrljenecCentre-Back",
+        "injury": "Dominik Crljenec",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Mohamadaziz Abdelhadi",
+        "position": "Mohamadaziz AbdelhadiCentre-Back",
+        "injury": "Mohamadaziz Abdelhadi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Noah Lehmann",
+        "position": "Noah LehmannCentre-Back",
+        "injury": "Noah Lehmann",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Ronny Marcos",
+        "position": "Ronny MarcosLeft-Back",
+        "injury": "Ronny Marcos",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Nathan Doganay",
+        "position": "Nathan DoganayLeft-Back",
+        "injury": "Nathan Doganay",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Faris El Ouali",
+        "position": "Faris El OualiLeft-Back",
+        "injury": "Faris El Ouali",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Giuseppe Franco",
+        "position": "Giuseppe FrancoLeft-Back",
+        "injury": "Giuseppe Franco",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Vincent Moreno Giesel",
+        "position": "Vincent Moreno GieselRight-Back",
+        "injury": "Vincent Moreno Giesel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Ouassim Karada",
+        "position": "Ouassim KaradaRight-Back",
+        "injury": "Ouassim Karada",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Jona Borsum",
+        "position": "Jona BorsumDefensive Midfield",
+        "injury": "Jona Borsum",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Daniel Dejanovic",
+        "position": "Daniel DejanovicDefensive Midfield",
+        "injury": "Daniel Dejanovic",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Marc Wachs",
+        "position": "Marc WachsDefensive Midfield",
+        "injury": "Marc Wachs",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Sascha Korb",
+        "position": "Sascha KorbDefensive Midfield",
+        "injury": "Sascha Korb",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Adam Loune",
+        "position": "Adam LouneCentral Midfield",
+        "injury": "Adam Loune",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Tom Reuter",
+        "position": "Tom ReuterAttacking Midfield",
+        "injury": "Tom Reuter",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Onur \u00dcnl\u00fccifci",
+        "position": "Onur \u00dcnl\u00fccifciLeft Winger",
+        "injury": "Onur \u00dcnl\u00fccifci",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Keanu Staude",
+        "position": "Keanu StaudeLeft Winger",
+        "injury": "Keanu Staude",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Stephan Mensah",
+        "position": "Stephan MensahLeft Winger",
+        "injury": "Stephan Mensah",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Boubacar Barry",
+        "position": "Boubacar BarryRight Winger",
+        "injury": "Boubacar Barry",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Ron Berlinski",
+        "position": "Ron BerlinskiCentre-Forward",
+        "injury": "Ron Berlinski",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Valdrin Mustafa",
+        "position": "Valdrin MustafaCentre-Forward",
+        "injury": "Valdrin Mustafa",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Jelle Goselink",
+        "position": "Jelle GoselinkCentre-Forward",
+        "injury": "Jelle Goselink",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Kilian Skolik",
+        "position": "Kilian SkolikCentre-Forward",
+        "injury": "Kilian Skolik",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Turkiye": [],
+    "Germany": [
+      {
+        "player": "Alexander Hahnemann",
+        "position": "Alexander HahnemannGoalkeeper",
+        "injury": "Alexander Hahnemann",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lukas van Ingen",
+        "position": "Lukas van IngenGoalkeeper",
+        "injury": "Lukas van Ingen",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Hendrik Rauf",
+        "position": "Hendrik RaufGoalkeeper",
+        "injury": "Hendrik Rauf",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Franko Uzelac",
+        "position": "Franko UzelacCentre-Back",
+        "injury": "Franko Uzelac",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Bruno Soares",
+        "position": "Bruno SoaresCentre-Back",
+        "injury": "Bruno Soares",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Oktay Dal",
+        "position": "Oktay DalCentre-Back",
+        "injury": "Oktay Dal",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Tim Breuer",
+        "position": "Tim BreuerCentre-Back",
+        "injury": "Tim Breuer",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Keleb Nwubani",
+        "position": "Keleb NwubaniCentre-Back",
+        "injury": "Keleb Nwubani",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Gideon Guzy",
+        "position": "Gideon GuzyLeft-Back",
+        "injury": "Gideon Guzy",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Mike Pihl",
+        "position": "Mike PihlLeft-Back",
+        "injury": "Mike Pihl",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Philimon Tawiah",
+        "position": "Philimon TawiahLeft-Back",
+        "injury": "Philimon Tawiah",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Kilian Hornbruch",
+        "position": "Kilian HornbruchLeft-Back",
+        "injury": "Kilian Hornbruch",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Emro Curic",
+        "position": "Emro CuricRight-Back",
+        "injury": "Emro Curic",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Iskender Aslan",
+        "position": "Iskender AslanRight-Back",
+        "injury": "Iskender Aslan",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Fabian Holthaus",
+        "position": "Fabian HolthausDefensive Midfield",
+        "injury": "Fabian Holthaus",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jan Holldack",
+        "position": "Jan HolldackDefensive Midfield",
+        "injury": "Jan Holldack",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Erik Heidbrink",
+        "position": "Erik HeidbrinkDefensive Midfield",
+        "injury": "Erik Heidbrink",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jan Nzeba-Bost",
+        "position": "Jan Nzeba-BostDefensive Midfield",
+        "injury": "Jan Nzeba-Bost",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Louis Krieg",
+        "position": "Louis KriegCentral Midfield",
+        "injury": "Louis Krieg",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Gianluca Di Vinti",
+        "position": "Gianluca Di VintiRight Midfield",
+        "injury": "Gianluca Di Vinti",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Ben Binyamin",
+        "position": "Ben BinyaminRight Midfield",
+        "injury": "Ben Binyamin",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Marius M\u00fcller",
+        "position": "Marius M\u00fcllerAttacking Midfield",
+        "injury": "Marius M\u00fcller",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Aaron Osei Bonsu",
+        "position": "Aaron Osei BonsuRight Winger",
+        "injury": "Aaron Osei Bonsu",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Aristote Lufuankenda",
+        "position": "Aristote LufuankendaRight Winger",
+        "injury": "Aristote Lufuankenda",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Marc Heider",
+        "position": "Marc HeiderCentre-Forward",
+        "injury": "Marc Heider",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Bernard Gllogjani",
+        "position": "Bernard GllogjaniCentre-Forward",
+        "injury": "Bernard Gllogjani",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Davin W\u00f6stmann",
+        "position": "Davin W\u00f6stmannCentre-Forward",
+        "injury": "Davin W\u00f6stmann",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Curacao": [
+      {
+        "player": "Marvin Ekuase",
+        "position": "Marvin EkuaseGoalkeeper",
+        "injury": "Marvin Ekuase",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Michael P\u00f6hlking",
+        "position": "Michael P\u00f6hlkingGoalkeeper",
+        "injury": "Michael P\u00f6hlking",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Michel Kolbeck",
+        "position": "Michel KolbeckGoalkeeper",
+        "injury": "Michel Kolbeck",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Paul Roggenkamp",
+        "position": "Paul RoggenkampDefender",
+        "injury": "Paul Roggenkamp",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Bruno Korbion",
+        "position": "Bruno KorbionDefender",
+        "injury": "Bruno Korbion",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Johannes Kuhlmann",
+        "position": "Johannes KuhlmannDefender",
+        "injury": "Johannes Kuhlmann",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Nils Meyer",
+        "position": "Nils MeyerDefender",
+        "injury": "Nils Meyer",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Maxim Repinetchii",
+        "position": "Maxim RepinetchiiMidfielder",
+        "injury": "Maxim Repinetchii",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Lukas Themann",
+        "position": "Lukas ThemannMidfielder",
+        "injury": "Lukas Themann",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Omar Ceesay",
+        "position": "Omar CeesayMidfielder",
+        "injury": "Omar Ceesay",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Ali Kurt",
+        "position": "Ali KurtMidfielder",
+        "injury": "Ali Kurt",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Norman Hamo",
+        "position": "Norman HamoMidfielder",
+        "injury": "Norman Hamo",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Dennis Bart",
+        "position": "Dennis BartMidfielder",
+        "injury": "Dennis Bart",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Kevin Struschein",
+        "position": "Kevin StruscheinMidfielder",
+        "injury": "Kevin Struschein",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Mika Wessel-Ellermann",
+        "position": "Mika Wessel-EllermannMidfielder",
+        "injury": "Mika Wessel-Ellermann",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Halil Ablak",
+        "position": "Halil AblakMidfielder",
+        "injury": "Halil Ablak",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Andreas Zimmermann",
+        "position": "Andreas ZimmermannCentral Midfield",
+        "injury": "Andreas Zimmermann",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Nick Baron",
+        "position": "Nick BaronAttacking Midfield",
+        "injury": "Nick Baron",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Hugo Magouhi",
+        "position": "Hugo MagouhiCentre-Forward",
+        "injury": "Hugo Magouhi",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Tymofiy Ivanchenko",
+        "position": "Tymofiy IvanchenkoCentre-Forward",
+        "injury": "Tymofiy Ivanchenko",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Michael Michaelis",
+        "position": "Michael MichaelisStriker",
+        "injury": "Michael Michaelis",
+        "return_date": "Striker"
+      },
+      {
+        "player": "Brice Manckoundia",
+        "position": "Brice ManckoundiaCentre-Forward",
+        "injury": "Brice Manckoundia",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Ivory Coast": [
+      {
+        "player": "Erik Maurer",
+        "position": "Erik MaurerGoalkeeper",
+        "injury": "Erik Maurer",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Andreas M\u00f6ller",
+        "position": "Andreas M\u00f6llerGoalkeeper",
+        "injury": "Andreas M\u00f6ller",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Till Kozelnik",
+        "position": "Till KozelnikCentre-Back",
+        "injury": "Till Kozelnik",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Julian R\u00fch",
+        "position": "Julian R\u00fchCentre-Back",
+        "injury": "Julian R\u00fch",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Richard Bauer",
+        "position": "Richard BauerCentre-Back",
+        "injury": "Richard Bauer",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nick Gennerich",
+        "position": "Nick GennerichCentre-Back",
+        "injury": "Nick Gennerich",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jordan Thomas",
+        "position": "Jordan ThomasCentre-Back",
+        "injury": "Jordan Thomas",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Maximilian Heiden",
+        "position": "Maximilian HeidenLeft-Back",
+        "injury": "Maximilian Heiden",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Nils Schulz",
+        "position": "Nils SchulzRight-Back",
+        "injury": "Nils Schulz",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Herman Schwarz",
+        "position": "Herman SchwarzRight-Back",
+        "injury": "Herman Schwarz",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Marc B\u00f6lter",
+        "position": "Marc B\u00f6lterDefensive Midfield",
+        "injury": "Marc B\u00f6lter",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Moritz Rosenberg",
+        "position": "Moritz RosenbergDefensive Midfield",
+        "injury": "Moritz Rosenberg",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Mattes Krebs",
+        "position": "Mattes KrebsDefensive Midfield",
+        "injury": "Mattes Krebs",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Matheo Venohr",
+        "position": "Matheo VenohrCentral Midfield",
+        "injury": "Matheo Venohr",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Alessandro Schulz",
+        "position": "Alessandro SchulzAttacking Midfield",
+        "injury": "Alessandro Schulz",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Mattes Kelm",
+        "position": "Mattes KelmAttacking Midfield",
+        "injury": "Mattes Kelm",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "John-Lukas Sauer",
+        "position": "John-Lukas SauerLeft Winger",
+        "injury": "John-Lukas Sauer",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Luca Stoldt",
+        "position": "Luca StoldtCentre-Forward",
+        "injury": "Luca Stoldt",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Julian Hahnel",
+        "position": "Julian HahnelCentre-Forward",
+        "injury": "Julian Hahnel",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Bennett Peters",
+        "position": "Bennett PetersCentre-Forward",
+        "injury": "Bennett Peters",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Claas Zamzow",
+        "position": "Claas ZamzowCentre-Forward",
+        "injury": "Claas Zamzow",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Ecuador": [
+      {
+        "player": "Andrea Fulignati",
+        "position": "Andrea FulignatiGoalkeeper",
+        "injury": "Andrea Fulignati",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Samuele Perisan",
+        "position": "Samuele PerisanGoalkeeper",
+        "injury": "Samuele Perisan",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Manuel Gasparini",
+        "position": "Manuel GaspariniGoalkeeper",
+        "injury": "Manuel Gasparini",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Francesco Versari",
+        "position": "Francesco VersariGoalkeeper",
+        "injury": "Francesco Versari",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Gabriele Guarino",
+        "position": "Gabriele GuarinoCentre-Back",
+        "injury": "Gabriele Guarino",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Matteo Lovato",
+        "position": "Matteo LovatoCentre-Back",
+        "injury": "Matteo Lovato",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nosa Edward Obaretin",
+        "position": "Nosa Edward ObaretinCentre-Back",
+        "injury": "Nosa Edward Obaretin",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Marco Curto",
+        "position": "Marco CurtoCentre-Back",
+        "injury": "Marco Curto",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Gabriele Indragoli",
+        "position": "Gabriele IndragoliCentre-Back",
+        "injury": "Gabriele Indragoli",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Simone Romagnoli",
+        "position": "Simone RomagnoliCentre-Back",
+        "injury": "Simone Romagnoli",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Dawid Bembnista",
+        "position": "Dawid BembnistaCentre-Back",
+        "injury": "Dawid Bembnista",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Brando Moruzzi",
+        "position": "Brando MoruzziLeft-Back",
+        "injury": "Brando Moruzzi",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Tyronne Ebuehi",
+        "position": "Tyronne EbuehiRight-Back",
+        "injury": "Tyronne Ebuehi",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Antonio Candela",
+        "position": "Antonio CandelaRight-Back",
+        "injury": "Antonio Candela",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Duccio Degli Innocenti",
+        "position": "Duccio Degli InnocentiDefensive Midfield",
+        "injury": "Duccio Degli Innocenti",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Andrea Ghion",
+        "position": "Andrea GhionDefensive Midfield",
+        "injury": "Andrea Ghion",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Gerard Yepes",
+        "position": "Gerard YepesDefensive Midfield",
+        "injury": "Gerard Yepes",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Lorenzo Ignacchiti",
+        "position": "Lorenzo IgnacchitiCentral Midfield",
+        "injury": "Lorenzo Ignacchiti",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Luca Magnino",
+        "position": "Luca MagninoCentral Midfield",
+        "injury": "Luca Magnino",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Nicolas Haas",
+        "position": "Nicolas HaasCentral Midfield",
+        "injury": "Nicolas Haas",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Salvatore Elia",
+        "position": "Salvatore EliaRight Midfield",
+        "injury": "Salvatore Elia",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Joseph Ceesay",
+        "position": "Joseph CeesayRight Midfield",
+        "injury": "Joseph Ceesay",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Rare\u0219 Ilie",
+        "position": "Rare\u0219 IlieAttacking Midfield",
+        "injury": "Rare\u0219 Ilie",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Edoardo Saporiti",
+        "position": "Edoardo SaporitiAttacking Midfield",
+        "injury": "Edoardo Saporiti",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Danilo Busiello",
+        "position": "Danilo BusielloAttacking Midfield",
+        "injury": "Danilo Busiello",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Andrea Orlandi",
+        "position": "Andrea OrlandiAttacking Midfield",
+        "injury": "Andrea Orlandi",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Stiven Shpendi",
+        "position": "Stiven ShpendiCentre-Forward",
+        "injury": "Stiven Shpendi",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Bogdan Popov",
+        "position": "Bogdan PopovCentre-Forward",
+        "injury": "Bogdan Popov",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Daniel Fila",
+        "position": "Daniel FilaCentre-Forward",
+        "injury": "Daniel Fila",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Marco Nasti",
+        "position": "Marco NastiCentre-Forward",
+        "injury": "Marco Nasti",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Thomas Campaniello",
+        "position": "Thomas CampanielloCentre-Forward",
+        "injury": "Thomas Campaniello",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Pietro Pellegri",
+        "position": "Pietro PellegriCentre-Forward",
+        "injury": "Pietro Pellegri",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Flavio Bianchi",
+        "position": "Flavio BianchiCentre-Forward",
+        "injury": "Flavio Bianchi",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Netherlands": [
+      {
+        "player": "Nicolas Kristof",
+        "position": "Nicolas KristofGoalkeeper",
+        "injury": "Nicolas Kristof",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Tim Boss",
+        "position": "Tim BossGoalkeeper",
+        "injury": "Tim Boss",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Frank Lehmann",
+        "position": "Frank LehmannGoalkeeper",
+        "injury": "Frank Lehmann",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lukas Pinckert",
+        "position": "Lukas PinckertCentre-Back",
+        "injury": "Lukas Pinckert",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Maximilian Rohr",
+        "position": "Maximilian RohrCentre-Back",
+        "injury": "Maximilian Rohr",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Florian Le Joncour",
+        "position": "Florian Le JoncourCentre-Back",
+        "injury": "Florian Le Joncour",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Luis Seifert",
+        "position": "Luis SeifertCentre-Back",
+        "injury": "Luis Seifert",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Lasse G\u00fcnther",
+        "position": "Lasse G\u00fcntherLeft-Back",
+        "injury": "Lasse G\u00fcnther",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Nicholas Mickelson",
+        "position": "Nicholas MickelsonLeft-Back",
+        "injury": "Nicholas Mickelson",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Felix Keidel",
+        "position": "Felix KeidelRight-Back",
+        "injury": "Felix Keidel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Jan Gyamerah",
+        "position": "Jan GyamerahRight-Back",
+        "injury": "Jan Gyamerah",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Daniel Pantschenko",
+        "position": "Daniel PantschenkoRight-Back",
+        "injury": "Daniel Pantschenko",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Lukasz Poreba",
+        "position": "Lukasz PorebaDefensive Midfield",
+        "injury": "Lukasz Poreba",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Amara Cond\u00e9",
+        "position": "Amara Cond\u00e9Defensive Midfield",
+        "injury": "Amara Cond\u00e9",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Carlo Sickinger",
+        "position": "Carlo SickingerDefensive Midfield",
+        "injury": "Carlo Sickinger",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Patryk Dragon",
+        "position": "Patryk DragonDefensive Midfield",
+        "injury": "Patryk Dragon",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Frederik Schmahl",
+        "position": "Frederik SchmahlCentral Midfield",
+        "injury": "Frederik Schmahl",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Bambas\u00e9 Cont\u00e9",
+        "position": "Bambas\u00e9 Cont\u00e9Attacking Midfield",
+        "injury": "Bambas\u00e9 Cont\u00e9",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Immanuel Pherai",
+        "position": "Immanuel PheraiAttacking Midfield",
+        "injury": "Immanuel Pherai",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Jarzinho Malanga",
+        "position": "Jarzinho MalangaLeft Winger",
+        "injury": "Jarzinho Malanga",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Tom Zimmerschied",
+        "position": "Tom ZimmerschiedLeft Winger",
+        "injury": "Tom Zimmerschied",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Lukas Petkov",
+        "position": "Lukas PetkovRight Winger",
+        "injury": "Lukas Petkov",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Raif Adam",
+        "position": "Raif AdamRight Winger",
+        "injury": "Raif Adam",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Manuel Feil",
+        "position": "Manuel FeilRight Winger",
+        "injury": "Manuel Feil",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "David Mokwa",
+        "position": "David MokwaCentre-Forward",
+        "injury": "David Mokwa",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Luca Pfeiffer",
+        "position": "Luca PfeifferCentre-Forward",
+        "injury": "Luca Pfeiffer",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Luca Schnellbacher",
+        "position": "Luca SchnellbacherCentre-Forward",
+        "injury": "Luca Schnellbacher",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Mohammad Mahmoud",
+        "position": "Mohammad MahmoudCentre-Forward",
+        "injury": "Mohammad Mahmoud",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Japan": [],
+    "Sweden": [
+      {
+        "player": "Mio Backhaus",
+        "position": "Mio BackhausGoalkeeper",
+        "injury": "Mio Backhaus",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Karl Hein",
+        "position": "Karl HeinGoalkeeper",
+        "injury": "Karl Hein",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Markus Kolke",
+        "position": "Markus KolkeGoalkeeper",
+        "injury": "Markus Kolke",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Stefan Smarkalev",
+        "position": "Stefan SmarkalevGoalkeeper",
+        "injury": "Stefan Smarkalev",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Karim Coulibaly",
+        "position": "Karim CoulibalyCentre-Back",
+        "injury": "Karim Coulibaly",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Marco Friedl",
+        "position": "Marco FriedlCentre-Back",
+        "injury": "Marco Friedl",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Amos Pieper",
+        "position": "Amos PieperCentre-Back",
+        "injury": "Amos Pieper",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Maximilian W\u00f6ber",
+        "position": "Maximilian W\u00f6berCentre-Back",
+        "injury": "Maximilian W\u00f6ber",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Niklas Stark",
+        "position": "Niklas StarkCentre-Back",
+        "injury": "Niklas Stark",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Juli\u00e1n Malatini",
+        "position": "Juli\u00e1n MalatiniCentre-Back",
+        "injury": "Juli\u00e1n Malatini",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Mick Schmetgens",
+        "position": "Mick SchmetgensCentre-Back",
+        "injury": "Mick Schmetgens",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Felix Agu",
+        "position": "Felix AguLeft-Back",
+        "injury": "Felix Agu",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Olivier Deman",
+        "position": "Olivier DemanLeft-Back",
+        "injury": "Olivier Deman",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Isaac Schmidt",
+        "position": "Isaac SchmidtLeft-Back",
+        "injury": "Isaac Schmidt",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Yukinari Sugawara",
+        "position": "Yukinari SugawaraRight-Back",
+        "injury": "Yukinari Sugawara",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Mitchell Weiser",
+        "position": "Mitchell WeiserRight-Back",
+        "injury": "Mitchell Weiser",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Senne Lynen",
+        "position": "Senne LynenDefensive Midfield",
+        "injury": "Senne Lynen",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Wesley Adeh",
+        "position": "Wesley AdehDefensive Midfield",
+        "injury": "Wesley Adeh",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jens Stage",
+        "position": "Jens StageCentral Midfield",
+        "injury": "Jens Stage",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Cameron Puertas",
+        "position": "Cameron PuertasCentral Midfield",
+        "injury": "Cameron Puertas",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Leonardo Bittencourt",
+        "position": "Leonardo BittencourtCentral Midfield",
+        "injury": "Leonardo Bittencourt",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Romano Schmid",
+        "position": "Romano SchmidAttacking Midfield",
+        "injury": "Romano Schmid",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Patrice Covic",
+        "position": "Patrice CovicAttacking Midfield",
+        "injury": "Patrice Covic",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Samuel Mbangula",
+        "position": "Samuel MbangulaLeft Winger",
+        "injury": "Samuel Mbangula",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Marco Gr\u00fcll",
+        "position": "Marco Gr\u00fcllLeft Winger",
+        "injury": "Marco Gr\u00fcll",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Justin Njinmah",
+        "position": "Justin NjinmahRight Winger",
+        "injury": "Justin Njinmah",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Jovan Milosevic",
+        "position": "Jovan MilosevicCentre-Forward",
+        "injury": "Jovan Milosevic",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Victor Boniface",
+        "position": "Victor BonifaceCentre-Forward",
+        "injury": "Victor Boniface",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Keke Topp",
+        "position": "Keke ToppCentre-Forward",
+        "injury": "Keke Topp",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Salim Musah",
+        "position": "Salim MusahCentre-Forward",
+        "injury": "Salim Musah",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Tunisia": [],
+    "Belgium": [
+      {
+        "player": "Marcel Schuhen",
+        "position": "Marcel SchuhenGoalkeeper",
+        "injury": "Marcel Schuhen",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Alexander Brunst",
+        "position": "Alexander BrunstGoalkeeper",
+        "injury": "Alexander Brunst",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Benedikt B\u00f6rner",
+        "position": "Benedikt B\u00f6rnerGoalkeeper",
+        "injury": "Benedikt B\u00f6rner",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Patric Pfeiffer",
+        "position": "Patric PfeifferCentre-Back",
+        "injury": "Patric Pfeiffer",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Matej Maglica",
+        "position": "Matej MaglicaCentre-Back",
+        "injury": "Matej Maglica",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Aleksandar Vukotic",
+        "position": "Aleksandar VukoticCentre-Back",
+        "injury": "Aleksandar Vukotic",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Grayson Dettoni",
+        "position": "Grayson DettoniCentre-Back",
+        "injury": "Grayson Dettoni",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Raoul Petretta",
+        "position": "Raoul PetrettaLeft-Back",
+        "injury": "Raoul Petretta",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Fabian Holland",
+        "position": "Fabian HollandLeft-Back",
+        "injury": "Fabian Holland",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Sergio L\u00f3pez",
+        "position": "Sergio L\u00f3pezRight-Back",
+        "injury": "Sergio L\u00f3pez",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Matthias Bader",
+        "position": "Matthias BaderRight-Back",
+        "injury": "Matthias Bader",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Hiroki Akiyama",
+        "position": "Hiroki AkiyamaDefensive Midfield",
+        "injury": "Hiroki Akiyama",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Kai Klefisch",
+        "position": "Kai KlefischDefensive Midfield",
+        "injury": "Kai Klefisch",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Niklas Schmidt",
+        "position": "Niklas SchmidtCentral Midfield",
+        "injury": "Niklas Schmidt",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Merveille Papela",
+        "position": "Merveille PapelaCentral Midfield",
+        "injury": "Merveille Papela",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Fabian N\u00fcrnberger",
+        "position": "Fabian N\u00fcrnbergerLeft Midfield",
+        "injury": "Fabian N\u00fcrnberger",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Marco Richter",
+        "position": "Marco RichterAttacking Midfield",
+        "injury": "Marco Richter",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Luca Marseiler",
+        "position": "Luca MarseilerAttacking Midfield",
+        "injury": "Luca Marseiler",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Yosuke Furukawa",
+        "position": "Yosuke FurukawaLeft Winger",
+        "injury": "Yosuke Furukawa",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Isac Lidberg",
+        "position": "Isac LidbergCentre-Forward",
+        "injury": "Isac Lidberg",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Fraser Hornby",
+        "position": "Fraser HornbyCentre-Forward",
+        "injury": "Fraser Hornby",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Killian Corredor",
+        "position": "Killian CorredorCentre-Forward",
+        "injury": "Killian Corredor",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Bartosz Bialek",
+        "position": "Bartosz BialekCentre-Forward",
+        "injury": "Bartosz Bialek",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Fynn Lakenmacher",
+        "position": "Fynn LakenmacherCentre-Forward",
+        "injury": "Fynn Lakenmacher",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Serhat-Semih G\u00fcler",
+        "position": "Serhat-Semih G\u00fclerCentre-Forward",
+        "injury": "Serhat-Semih G\u00fcler",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Egypt": [
+      {
+        "player": "Oscar Hedvall",
+        "position": "Oscar HedvallGoalkeeper",
+        "injury": "Oscar Hedvall",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Magnus Sj\u00f8eng",
+        "position": "Magnus Sj\u00f8engGoalkeeper",
+        "injury": "Magnus Sj\u00f8eng",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Alexander Ordal",
+        "position": "Alexander OrdalGoalkeeper",
+        "injury": "Alexander Ordal",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Aaron Kiil Olsen",
+        "position": "Aaron Kiil OlsenCentre-Back",
+        "injury": "Aaron Kiil Olsen",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Ivan N\u00e4sberg",
+        "position": "Ivan N\u00e4sbergCentre-Back",
+        "injury": "Ivan N\u00e4sberg",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Kevin Tshiembe",
+        "position": "Kevin TshiembeCentre-Back",
+        "injury": "Kevin Tshiembe",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Sebastian Jarl",
+        "position": "Sebastian JarlCentre-Back",
+        "injury": "Sebastian Jarl",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Mario Gomes",
+        "position": "Mario GomesCentre-Back",
+        "injury": "Mario Gomes",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Kolbeinn Finnsson",
+        "position": "Kolbeinn FinnssonLeft-Back",
+        "injury": "Kolbeinn Finnsson",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "H\u00e5kon Sj\u00e5til",
+        "position": "H\u00e5kon Sj\u00e5tilRight-Back",
+        "injury": "H\u00e5kon Sj\u00e5til",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Vegar Hedenstad",
+        "position": "Vegar HedenstadRight-Back",
+        "injury": "Vegar Hedenstad",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Fidel Brice Ambina",
+        "position": "Fidel Brice AmbinaDefensive Midfield",
+        "injury": "Fidel Brice Ambina",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Odin Thiago Holm",
+        "position": "Odin Thiago HolmCentral Midfield",
+        "injury": "Odin Thiago Holm",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Henrik Bj\u00f8rdal",
+        "position": "Henrik Bj\u00f8rdalCentral Midfield",
+        "injury": "Henrik Bj\u00f8rdal",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Magnus Westergaard",
+        "position": "Magnus WestergaardCentral Midfield",
+        "injury": "Magnus Westergaard",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Petter Strand",
+        "position": "Petter StrandCentral Midfield",
+        "injury": "Petter Strand",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Omar Bully",
+        "position": "Omar BullyCentral Midfield",
+        "injury": "Omar Bully",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Even Forcha",
+        "position": "Even ForchaCentral Midfield",
+        "injury": "Even Forcha",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Carl Lange",
+        "position": "Carl LangeAttacking Midfield",
+        "injury": "Carl Lange",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Filip Thorvaldsen",
+        "position": "Filip ThorvaldsenLeft Winger",
+        "injury": "Filip Thorvaldsen",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Elias S\u00f8rensen",
+        "position": "Elias S\u00f8rensenLeft Winger",
+        "injury": "Elias S\u00f8rensen",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Mohamed Ofkir",
+        "position": "Mohamed OfkirLeft Winger",
+        "injury": "Mohamed Ofkir",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Gabriel Rajkovi\u0107",
+        "position": "Gabriel Rajkovi\u0107Left Winger",
+        "injury": "Gabriel Rajkovi\u0107",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Lucas Haren",
+        "position": "Lucas HarenRight Winger",
+        "injury": "Lucas Haren",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Mathias Grundetjern",
+        "position": "Mathias GrundetjernCentre-Forward",
+        "injury": "Mathias Grundetjern",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Ole S\u00e6ter",
+        "position": "Ole S\u00e6terCentre-Forward",
+        "injury": "Ole S\u00e6ter",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "IR Iran": [
+      {
+        "player": "Santiago Beltr\u00e1n",
+        "position": "Santiago Beltr\u00e1nGoalkeeper",
+        "injury": "Santiago Beltr\u00e1n",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Ezequiel Centuri\u00f3n",
+        "position": "Ezequiel Centuri\u00f3nGoalkeeper",
+        "injury": "Ezequiel Centuri\u00f3n",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Franco Armani",
+        "position": "Franco ArmaniGoalkeeper",
+        "injury": "Franco Armani",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lautaro Rivero",
+        "position": "Lautaro RiveroCentre-Back",
+        "injury": "Lautaro Rivero",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Lucas Mart\u00ednez Quarta",
+        "position": "Lucas Mart\u00ednez QuartaCentre-Back",
+        "injury": "Lucas Mart\u00ednez Quarta",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Tob\u00edas Ram\u00edrez",
+        "position": "Tob\u00edas Ram\u00edrezCentre-Back",
+        "injury": "Tob\u00edas Ram\u00edrez",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Juan Carlos Portillo",
+        "position": "Juan Carlos PortilloCentre-Back",
+        "injury": "Juan Carlos Portillo",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Paulo D\u00edaz",
+        "position": "Paulo D\u00edazCentre-Back",
+        "injury": "Paulo D\u00edaz",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Germ\u00e1n Pezzella",
+        "position": "Germ\u00e1n PezzellaCentre-Back",
+        "injury": "Germ\u00e1n Pezzella",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Ulises Gim\u00e9nez",
+        "position": "Ulises Gim\u00e9nezCentre-Back",
+        "injury": "Ulises Gim\u00e9nez",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Mat\u00edas Vi\u00f1a",
+        "position": "Mat\u00edas Vi\u00f1aLeft-Back",
+        "injury": "Mat\u00edas Vi\u00f1a",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Marcos Acu\u00f1a",
+        "position": "Marcos Acu\u00f1aLeft-Back",
+        "injury": "Marcos Acu\u00f1a",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Gonzalo Montiel",
+        "position": "Gonzalo MontielRight-Back",
+        "injury": "Gonzalo Montiel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Fabricio Bustos",
+        "position": "Fabricio BustosRight-Back",
+        "injury": "Fabricio Bustos",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "An\u00edbal Moreno",
+        "position": "An\u00edbal MorenoDefensive Midfield",
+        "injury": "An\u00edbal Moreno",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Kevin Casta\u00f1o",
+        "position": "Kevin Casta\u00f1oDefensive Midfield",
+        "injury": "Kevin Casta\u00f1o",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Fausto Vera",
+        "position": "Fausto VeraDefensive Midfield",
+        "injury": "Fausto Vera",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Eli\u00e1n Gim\u00e9nez",
+        "position": "Eli\u00e1n Gim\u00e9nezDefensive Midfield",
+        "injury": "Eli\u00e1n Gim\u00e9nez",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Lucas Silva",
+        "position": "Lucas SilvaDefensive Midfield",
+        "injury": "Lucas Silva",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Giuliano Galoppo",
+        "position": "Giuliano GaloppoCentral Midfield",
+        "injury": "Giuliano Galoppo",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Kendry P\u00e1ez",
+        "position": "Kendry P\u00e1ezAttacking Midfield",
+        "injury": "Kendry P\u00e1ez",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Tom\u00e1s Galv\u00e1n",
+        "position": "Tom\u00e1s Galv\u00e1nAttacking Midfield",
+        "injury": "Tom\u00e1s Galv\u00e1n",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Santiago Lencina",
+        "position": "Santiago LencinaAttacking Midfield",
+        "injury": "Santiago Lencina",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Juan Fernando Quintero",
+        "position": "Juan Fernando QuinteroAttacking Midfield",
+        "injury": "Juan Fernando Quintero",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Juan Cruz Meza",
+        "position": "Juan Cruz MezaAttacking Midfield",
+        "injury": "Juan Cruz Meza",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Leonel Jaime",
+        "position": "Leonel JaimeLeft Winger",
+        "injury": "Leonel Jaime",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Ian Subiabre",
+        "position": "Ian SubiabreRight Winger",
+        "injury": "Ian Subiabre",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Maximiliano Meza",
+        "position": "Maximiliano MezaRight Winger",
+        "injury": "Maximiliano Meza",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Facundo Colidio",
+        "position": "Facundo ColidioCentre-Forward",
+        "injury": "Facundo Colidio",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Maximiliano Salas",
+        "position": "Maximiliano SalasCentre-Forward",
+        "injury": "Maximiliano Salas",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Sebasti\u00e1n Driussi",
+        "position": "Sebasti\u00e1n DriussiCentre-Forward",
+        "injury": "Sebasti\u00e1n Driussi",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Agust\u00edn Ruberto",
+        "position": "Agust\u00edn RubertoCentre-Forward",
+        "injury": "Agust\u00edn Ruberto",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Joaqu\u00edn Freitas",
+        "position": "Joaqu\u00edn FreitasCentre-Forward",
+        "injury": "Joaqu\u00edn Freitas",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "New Zealand": [
+      {
+        "player": "Jaakko Lakkam\u00e4ki",
+        "position": "Jaakko Lakkam\u00e4kiGoalkeeper",
+        "injury": "Jaakko Lakkam\u00e4ki",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lucas Treiber",
+        "position": "Lucas TreiberGoalkeeper",
+        "injury": "Lucas Treiber",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Marcus Vopel",
+        "position": "Marcus VopelCentre-Back",
+        "injury": "Marcus Vopel",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Stergios Dodontsakis",
+        "position": "Stergios DodontsakisCentre-Back",
+        "injury": "Stergios Dodontsakis",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Till Gro\u00dfer",
+        "position": "Till Gro\u00dferCentre-Back",
+        "injury": "Till Gro\u00dfer",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Deco Biai",
+        "position": "Deco BiaiCentre-Back",
+        "injury": "Deco Biai",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Tim Hartmann",
+        "position": "Tim HartmannCentre-Back",
+        "injury": "Tim Hartmann",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Clemens Meinert",
+        "position": "Clemens MeinertLeft-Back",
+        "injury": "Clemens Meinert",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Nick Kr\u00e4uter",
+        "position": "Nick Kr\u00e4uterRight-Back",
+        "injury": "Nick Kr\u00e4uter",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Lucian Goutier",
+        "position": "Lucian GoutierRight-Back",
+        "injury": "Lucian Goutier",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Felix Schwerdt",
+        "position": "Felix SchwerdtDefensive Midfield",
+        "injury": "Felix Schwerdt",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Fabian Stix",
+        "position": "Fabian StixDefensive Midfield",
+        "injury": "Fabian Stix",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Vijith Manokaran",
+        "position": "Vijith ManokaranDefensive Midfield",
+        "injury": "Vijith Manokaran",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Marvin Hoche",
+        "position": "Marvin HocheDefensive Midfield",
+        "injury": "Marvin Hoche",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Adrian Hanselmann",
+        "position": "Adrian HanselmannDefensive Midfield",
+        "injury": "Adrian Hanselmann",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Leander Heiser",
+        "position": "Leander HeiserCentral Midfield",
+        "injury": "Leander Heiser",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Kevin Schlesier",
+        "position": "Kevin SchlesierRight Midfield",
+        "injury": "Kevin Schlesier",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "H\u00fcseyin Canli",
+        "position": "H\u00fcseyin CanliRight Midfield",
+        "injury": "H\u00fcseyin Canli",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Maximilian Strube",
+        "position": "Maximilian StrubeRight Midfield",
+        "injury": "Maximilian Strube",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Linus Klapproth",
+        "position": "Linus KlapprothRight Midfield",
+        "injury": "Linus Klapproth",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "David Raasch",
+        "position": "David RaaschLeft Midfield",
+        "injury": "David Raasch",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Alexander Ludwig",
+        "position": "Alexander LudwigAttacking Midfield",
+        "injury": "Alexander Ludwig",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Ivan Taranenko",
+        "position": "Ivan TaranenkoAttacking Midfield",
+        "injury": "Ivan Taranenko",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Abdullah Sermelwall",
+        "position": "Abdullah SermelwallAttacking Midfield",
+        "injury": "Abdullah Sermelwall",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Lenox Schleusing",
+        "position": "Lenox SchleusingLeft Winger",
+        "injury": "Lenox Schleusing",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Robert Knopp",
+        "position": "Robert KnoppRight Winger",
+        "injury": "Robert Knopp",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Thomas Riemekasten",
+        "position": "Thomas RiemekastenCentre-Forward",
+        "injury": "Thomas Riemekasten",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Paul Eichel",
+        "position": "Paul EichelCentre-Forward",
+        "injury": "Paul Eichel",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Lennard Emmermann",
+        "position": "Lennard EmmermannCentre-Forward",
+        "injury": "Lennard Emmermann",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Spain": [
+      {
+        "player": "Davy Roef",
+        "position": "Davy RoefGoalkeeper",
+        "injury": "Davy Roef",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Kjell Peersman",
+        "position": "Kjell PeersmanGoalkeeper",
+        "injury": "Kjell Peersman",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Tom Vandenberghe",
+        "position": "Tom VandenbergheGoalkeeper",
+        "injury": "Tom Vandenberghe",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Bas Evers",
+        "position": "Bas EversGoalkeeper",
+        "injury": "Bas Evers",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Maksim Paskotsi",
+        "position": "Maksim PaskotsiCentre-Back",
+        "injury": "Maksim Paskotsi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Siebe Van der Heyden",
+        "position": "Siebe Van der HeydenCentre-Back",
+        "injury": "Siebe Van der Heyden",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jean-K\u00e9vin Duverne",
+        "position": "Jean-K\u00e9vin DuverneCentre-Back",
+        "injury": "Jean-K\u00e9vin Duverne",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Matties Volckaert",
+        "position": "Matties VolckaertCentre-Back",
+        "injury": "Matties Volckaert",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Hatim Es-Saoubi",
+        "position": "Hatim Es-SaoubiCentre-Back",
+        "injury": "Hatim Es-Saoubi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Tiago Ara\u00fajo",
+        "position": "Tiago Ara\u00fajoLeft-Back",
+        "injury": "Tiago Ara\u00fajo",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Abdoul Ayinde",
+        "position": "Abdoul AyindeLeft-Back",
+        "injury": "Abdoul Ayinde",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Daiki Hashioka",
+        "position": "Daiki HashiokaRight-Back",
+        "injury": "Daiki Hashioka",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Gilles De Meyer",
+        "position": "Gilles De MeyerRight-Back",
+        "injury": "Gilles De Meyer",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Mohammed El \u00c2dfaoui",
+        "position": "Mohammed El \u00c2dfaouiDefensive Midfield",
+        "injury": "Mohammed El \u00c2dfaoui",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Wout Asselman",
+        "position": "Wout AsselmanDefensive Midfield",
+        "injury": "Wout Asselman",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Mathias Delorge",
+        "position": "Mathias DelorgeCentral Midfield",
+        "injury": "Mathias Delorge",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Tibe De Vlieger",
+        "position": "Tibe De VliegerCentral Midfield",
+        "injury": "Tibe De Vlieger",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Atsuki Ito",
+        "position": "Atsuki ItoCentral Midfield",
+        "injury": "Atsuki Ito",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Leonardo Lopes",
+        "position": "Leonardo LopesCentral Midfield",
+        "injury": "Leonardo Lopes",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Matisse Samoise",
+        "position": "Matisse SamoiseRight Midfield",
+        "injury": "Matisse Samoise",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Hyun-seok Hong",
+        "position": "Hyun-seok HongAttacking Midfield",
+        "injury": "Hyun-seok Hong",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Abdelkahar Kadri",
+        "position": "Abdelkahar KadriAttacking Midfield",
+        "injury": "Abdelkahar Kadri",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Aim\u00e9 Omgba",
+        "position": "Aim\u00e9 OmgbaAttacking Midfield",
+        "injury": "Aim\u00e9 Omgba",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Michal Skoras",
+        "position": "Michal SkorasLeft Winger",
+        "injury": "Michal Skoras",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Momodou Sonko",
+        "position": "Momodou SonkoLeft Winger",
+        "injury": "Momodou Sonko",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Hyllarion Goore",
+        "position": "Hyllarion GooreCentre-Forward",
+        "injury": "Hyllarion Goore",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Wilfried Kanga",
+        "position": "Wilfried KangaCentre-Forward",
+        "injury": "Wilfried Kanga",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Max Dean",
+        "position": "Max DeanCentre-Forward",
+        "injury": "Max Dean",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Ibrahima Ciss\u00e9",
+        "position": "Ibrahima Ciss\u00e9Centre-Forward",
+        "injury": "Ibrahima Ciss\u00e9",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Moctar Diop",
+        "position": "Moctar DiopCentre-Forward",
+        "injury": "Moctar Diop",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Cape Verde": [],
+    "Saudi Arabia": [],
+    "Uruguay": [],
+    "France": [
+      {
+        "player": "Ron-Thorben Hoffmann",
+        "position": "Ron-Thorben HoffmannGoalkeeper",
+        "injury": "Ron-Thorben Hoffmann",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Elhan Kastrati",
+        "position": "Elhan KastratiGoalkeeper",
+        "injury": "Elhan Kastrati",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Marko Rajkovacic",
+        "position": "Marko RajkovacicGoalkeeper",
+        "injury": "Marko Rajkovacic",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Leon Herdes",
+        "position": "Leon HerdesGoalkeeper",
+        "injury": "Leon Herdes",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Louis Breunig",
+        "position": "Louis BreunigCentre-Back",
+        "injury": "Louis Breunig",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Kevin Ehlers",
+        "position": "Kevin EhlersCentre-Back",
+        "injury": "Kevin Ehlers",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Lukas Frenkert",
+        "position": "Lukas FrenkertCentre-Back",
+        "injury": "Lukas Frenkert",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Patrick Nkoa",
+        "position": "Patrick NkoaCentre-Back",
+        "injury": "Patrick Nkoa",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Andi Hoti",
+        "position": "Andi HotiCentre-Back",
+        "injury": "Andi Hoti",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Frederik J\u00e4kel",
+        "position": "Frederik J\u00e4kelCentre-Back",
+        "injury": "Frederik J\u00e4kel",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Fabio Di Michele Sanchez",
+        "position": "Fabio Di Michele SanchezLeft-Back",
+        "injury": "Fabio Di Michele Sanchez",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Leon Bell Bell",
+        "position": "Leon Bell BellLeft-Back",
+        "injury": "Leon Bell Bell",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Mehmet Aydin",
+        "position": "Mehmet AydinRight-Back",
+        "injury": "Mehmet Aydin",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Florian Flick",
+        "position": "Florian FlickDefensive Midfield",
+        "injury": "Florian Flick",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Max Marie",
+        "position": "Max MarieCentral Midfield",
+        "injury": "Max Marie",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Lino Tempelmann",
+        "position": "Lino TempelmannCentral Midfield",
+        "injury": "Lino Tempelmann",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Robin Heu\u00dfer",
+        "position": "Robin Heu\u00dferCentral Midfield",
+        "injury": "Robin Heu\u00dfer",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Sidney Raebiger",
+        "position": "Sidney RaebigerCentral Midfield",
+        "injury": "Sidney Raebiger",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Johan G\u00f3mez",
+        "position": "Johan G\u00f3mezAttacking Midfield",
+        "injury": "Johan G\u00f3mez",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Anas Bakhat",
+        "position": "Anas BakhatAttacking Midfield",
+        "injury": "Anas Bakhat",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Faride Alidou",
+        "position": "Faride AlidouLeft Winger",
+        "injury": "Faride Alidou",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Aaron Opoku",
+        "position": "Aaron OpokuLeft Winger",
+        "injury": "Aaron Opoku",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Sidi San\u00e9",
+        "position": "Sidi San\u00e9Right Winger",
+        "injury": "Sidi San\u00e9",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Fabio Kaufmann",
+        "position": "Fabio KaufmannRight Winger",
+        "injury": "Fabio Kaufmann",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Jovan Mijatovic",
+        "position": "Jovan MijatovicCentre-Forward",
+        "injury": "Jovan Mijatovic",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Erencan Yard\u0131mc\u0131",
+        "position": "Erencan Yard\u0131mc\u0131Centre-Forward",
+        "injury": "Erencan Yard\u0131mc\u0131",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Grant-Leon Ranos",
+        "position": "Grant-Leon RanosCentre-Forward",
+        "injury": "Grant-Leon Ranos",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Ken Izekor",
+        "position": "Ken IzekorCentre-Forward",
+        "injury": "Ken Izekor",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Senegal": [
+      {
+        "player": "Magnus Krabbenh\u00f8ft",
+        "position": "Magnus Krabbenh\u00f8ftGoalkeeper",
+        "injury": "Magnus Krabbenh\u00f8ft",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lucas Wernblad",
+        "position": "Lucas WernbladGoalkeeper",
+        "injury": "Lucas Wernblad",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Tobias S\u00f8derstr\u00f8m",
+        "position": "Tobias S\u00f8derstr\u00f8mGoalkeeper",
+        "injury": "Tobias S\u00f8derstr\u00f8m",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Gustav Hansen",
+        "position": "Gustav HansenCentre-Back",
+        "injury": "Gustav Hansen",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Thor H\u00f8holt",
+        "position": "Thor H\u00f8holtCentre-Back",
+        "injury": "Thor H\u00f8holt",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Emil Schou J\u00f8rgensen",
+        "position": "Emil Schou J\u00f8rgensenCentre-Back",
+        "injury": "Emil Schou J\u00f8rgensen",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Malthe Karsberg",
+        "position": "Malthe KarsbergLeft-Back",
+        "injury": "Malthe Karsberg",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Noah Poulsen",
+        "position": "Noah PoulsenLeft-Back",
+        "injury": "Noah Poulsen",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Christoffer Remmer",
+        "position": "Christoffer RemmerRight-Back",
+        "injury": "Christoffer Remmer",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Philip Oslev",
+        "position": "Philip OslevRight-Back",
+        "injury": "Philip Oslev",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Marc Winkel",
+        "position": "Marc WinkelRight-Back",
+        "injury": "Marc Winkel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Casper Froulund",
+        "position": "Casper FroulundDefensive Midfield",
+        "injury": "Casper Froulund",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Daniel Warmbach",
+        "position": "Daniel WarmbachCentral Midfield",
+        "injury": "Daniel Warmbach",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Emil Wass",
+        "position": "Emil WassCentral Midfield",
+        "injury": "Emil Wass",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Rasmus Fink Hansen",
+        "position": "Rasmus Fink HansenCentral Midfield",
+        "injury": "Rasmus Fink Hansen",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Jonathan Pank",
+        "position": "Jonathan PankCentral Midfield",
+        "injury": "Jonathan Pank",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Nicholas Sejr",
+        "position": "Nicholas SejrRight Midfield",
+        "injury": "Nicholas Sejr",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Asger Hemmingsen",
+        "position": "Asger HemmingsenAttacking Midfield",
+        "injury": "Asger Hemmingsen",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Oussama Djafer-Bey",
+        "position": "Oussama Djafer-BeyLeft Winger",
+        "injury": "Oussama Djafer-Bey",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Tekin Abdulovski",
+        "position": "Tekin AbdulovskiLeft Winger",
+        "injury": "Tekin Abdulovski",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Javany Lawrence",
+        "position": "Javany LawrenceRight Winger",
+        "injury": "Javany Lawrence",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Justin Shaibu",
+        "position": "Justin ShaibuCentre-Forward",
+        "injury": "Justin Shaibu",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Marco Vinterberg",
+        "position": "Marco VinterbergCentre-Forward",
+        "injury": "Marco Vinterberg",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Andreas Vilberg",
+        "position": "Andreas VilbergCentre-Forward",
+        "injury": "Andreas Vilberg",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Niclas Coort",
+        "position": "Niclas CoortCentre-Forward",
+        "injury": "Niclas Coort",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Alex Lindstr\u00f8m",
+        "position": "Alex Lindstr\u00f8mCentre-Forward",
+        "injury": "Alex Lindstr\u00f8m",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Iraq": [
+      {
+        "player": "Justin Bijlow",
+        "position": "Justin BijlowGoalkeeper",
+        "injury": "Justin Bijlow",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Nicola Leali",
+        "position": "Nicola LealiGoalkeeper",
+        "injury": "Nicola Leali",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Ernestas Lysionok",
+        "position": "Ernestas LysionokGoalkeeper",
+        "injury": "Ernestas Lysionok",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Benjamin Siegrist",
+        "position": "Benjamin SiegristGoalkeeper",
+        "injury": "Benjamin Siegrist",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Daniele Sommariva",
+        "position": "Daniele SommarivaGoalkeeper",
+        "injury": "Daniele Sommariva",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Alessandro Marcandalli",
+        "position": "Alessandro MarcandalliCentre-Back",
+        "injury": "Alessandro Marcandalli",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Leo \u00d8stig\u00e5rd",
+        "position": "Leo \u00d8stig\u00e5rdCentre-Back",
+        "injury": "Leo \u00d8stig\u00e5rd",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Johan V\u00e1squez",
+        "position": "Johan V\u00e1squezCentre-Back",
+        "injury": "Johan V\u00e1squez",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nils Z\u00e4tterstr\u00f6m",
+        "position": "Nils Z\u00e4tterstr\u00f6mCentre-Back",
+        "injury": "Nils Z\u00e4tterstr\u00f6m",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Sebastian Otoa",
+        "position": "Sebastian OtoaCentre-Back",
+        "injury": "Sebastian Otoa",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Aar\u00f3n Mart\u00edn",
+        "position": "Aar\u00f3n Mart\u00ednLeft-Back",
+        "injury": "Aar\u00f3n Mart\u00edn",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Brooke Norton-Cuffy",
+        "position": "Brooke Norton-CuffyRight-Back",
+        "injury": "Brooke Norton-Cuffy",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Stefano Sabelli",
+        "position": "Stefano SabelliRight-Back",
+        "injury": "Stefano Sabelli",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Morten Frendrup",
+        "position": "Morten FrendrupDefensive Midfield",
+        "injury": "Morten Frendrup",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Jean Onana",
+        "position": "Jean OnanaDefensive Midfield",
+        "injury": "Jean Onana",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Amorim",
+        "position": "AmorimCentral Midfield",
+        "injury": "Amorim",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Mikael Egill Ellertsson",
+        "position": "Mikael Egill EllertssonCentral Midfield",
+        "injury": "Mikael Egill Ellertsson",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Patrizio Masini",
+        "position": "Patrizio MasiniCentral Midfield",
+        "injury": "Patrizio Masini",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Ruslan Malinovskyi",
+        "position": "Ruslan MalinovskyiCentral Midfield",
+        "injury": "Ruslan Malinovskyi",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Tommaso Baldanzi",
+        "position": "Tommaso BaldanziAttacking Midfield",
+        "injury": "Tommaso Baldanzi",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Maxwel Cornet",
+        "position": "Maxwel CornetLeft Winger",
+        "injury": "Maxwel Cornet",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Junior Messias",
+        "position": "Junior MessiasRight Winger",
+        "injury": "Junior Messias",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Jeff Ekhator",
+        "position": "Jeff EkhatorCentre-Forward",
+        "injury": "Jeff Ekhator",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Lorenzo Colombo",
+        "position": "Lorenzo ColomboCentre-Forward",
+        "injury": "Lorenzo Colombo",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Vitinha",
+        "position": "VitinhaCentre-Forward",
+        "injury": "Vitinha",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Caleb Ekuban",
+        "position": "Caleb EkubanCentre-Forward",
+        "injury": "Caleb Ekuban",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Norway": [],
+    "Argentina": [
+      {
+        "player": "Emiliano Mart\u00ednez",
+        "position": "Emiliano Mart\u00ednezGoalkeeper",
+        "injury": "Emiliano Mart\u00ednez",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Ger\u00f3nimo Rulli",
+        "position": "Ger\u00f3nimo RulliGoalkeeper",
+        "injury": "Ger\u00f3nimo Rulli",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Juan Musso",
+        "position": "Juan MussoGoalkeeper",
+        "injury": "Juan Musso",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Cristian Romero",
+        "position": "Cristian RomeroCentre-Back",
+        "injury": "Cristian Romero",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Lisandro Mart\u00ednez",
+        "position": "Lisandro Mart\u00ednezCentre-Back",
+        "injury": "Lisandro Mart\u00ednez",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Marcos Senesi",
+        "position": "Marcos SenesiCentre-Back",
+        "injury": "Marcos Senesi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Facundo Medina",
+        "position": "Facundo MedinaCentre-Back",
+        "injury": "Facundo Medina",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nicol\u00e1s Otamendi",
+        "position": "Nicol\u00e1s OtamendiCentre-Back",
+        "injury": "Nicol\u00e1s Otamendi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nicol\u00e1s Tagliafico",
+        "position": "Nicol\u00e1s TagliaficoLeft-Back",
+        "injury": "Nicol\u00e1s Tagliafico",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Nahuel Molina",
+        "position": "Nahuel MolinaRight-Back",
+        "injury": "Nahuel Molina",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Gonzalo Montiel",
+        "position": "Gonzalo MontielRight-Back",
+        "injury": "Gonzalo Montiel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Leandro Paredes",
+        "position": "Leandro ParedesDefensive Midfield",
+        "injury": "Leandro Paredes",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Enzo Fern\u00e1ndez",
+        "position": "Enzo Fern\u00e1ndezCentral Midfield",
+        "injury": "Enzo Fern\u00e1ndez",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Alexis Mac Allister",
+        "position": "Alexis Mac AllisterCentral Midfield",
+        "injury": "Alexis Mac Allister",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Valent\u00edn Barco",
+        "position": "Valent\u00edn BarcoCentral Midfield",
+        "injury": "Valent\u00edn Barco",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Exequiel Palacios",
+        "position": "Exequiel PalaciosCentral Midfield",
+        "injury": "Exequiel Palacios",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Rodrigo De Paul",
+        "position": "Rodrigo De PaulCentral Midfield",
+        "injury": "Rodrigo De Paul",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Nico Paz",
+        "position": "Nico PazAttacking Midfield",
+        "injury": "Nico Paz",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Giovani Lo Celso",
+        "position": "Giovani Lo CelsoAttacking Midfield",
+        "injury": "Giovani Lo Celso",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Nico Gonz\u00e1lez",
+        "position": "Nico Gonz\u00e1lezLeft Winger",
+        "injury": "Nico Gonz\u00e1lez",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Thiago Almada",
+        "position": "Thiago AlmadaLeft Winger",
+        "injury": "Thiago Almada",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Giuliano Simeone",
+        "position": "Giuliano SimeoneRight Winger",
+        "injury": "Giuliano Simeone",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Lionel Messi",
+        "position": "Lionel MessiRight Winger",
+        "injury": "Lionel Messi",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Juli\u00e1n Alvarez",
+        "position": "Juli\u00e1n AlvarezCentre-Forward",
+        "injury": "Juli\u00e1n Alvarez",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Lautaro Mart\u00ednez",
+        "position": "Lautaro Mart\u00ednezCentre-Forward",
+        "injury": "Lautaro Mart\u00ednez",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Flaco L\u00f3pez",
+        "position": "Flaco L\u00f3pezCentre-Forward",
+        "injury": "Flaco L\u00f3pez",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Algeria": [
+      {
+        "player": "Thomas Gschwindt",
+        "position": "Thomas GschwindtGoalkeeper",
+        "injury": "Thomas Gschwindt",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Pierre Amann",
+        "position": "Pierre AmannDefender",
+        "injury": "Pierre Amann",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Patrick Kuhn",
+        "position": "Patrick KuhnDefender",
+        "injury": "Patrick Kuhn",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Felix Sitter",
+        "position": "Felix SitterMidfielder",
+        "injury": "Felix Sitter",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Tumelo Khoza",
+        "position": "Tumelo KhozaMidfielder",
+        "injury": "Tumelo Khoza",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Simon Keakavocy",
+        "position": "Simon KeakavocyMidfielder",
+        "injury": "Simon Keakavocy",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Sulayman Jobe",
+        "position": "Sulayman JobeMidfielder",
+        "injury": "Sulayman Jobe",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Luca Subas",
+        "position": "Luca SubasStriker",
+        "injury": "Luca Subas",
+        "return_date": "Striker"
+      }
+    ],
+    "Austria": [
+      {
+        "player": "Nico Weide",
+        "position": "Nico WeideGoalkeeper",
+        "injury": "Nico Weide",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jacob Lorenz",
+        "position": "Jacob LorenzGoalkeeper",
+        "injury": "Jacob Lorenz",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Nicholas Dressler",
+        "position": "Nicholas DresslerGoalkeeper",
+        "injury": "Nicholas Dressler",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Ahmed Isse",
+        "position": "Ahmed IsseCentre-Back",
+        "injury": "Ahmed Isse",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Philip Karol Glombik",
+        "position": "Philip Karol GlombikCentre-Back",
+        "injury": "Philip Karol Glombik",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Luca Seidel",
+        "position": "Luca SeidelCentre-Back",
+        "injury": "Luca Seidel",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Obed Riccard Thiem",
+        "position": "Obed Riccard ThiemCentre-Back",
+        "injury": "Obed Riccard Thiem",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Vincent Reppel",
+        "position": "Vincent ReppelLeft-Back",
+        "injury": "Vincent Reppel",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Williams Noukpetor",
+        "position": "Williams NoukpetorRight-Back",
+        "injury": "Williams Noukpetor",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Adam Parker",
+        "position": "Adam ParkerRight-Back",
+        "injury": "Adam Parker",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Salif Kujabi",
+        "position": "Salif KujabiRight-Back",
+        "injury": "Salif Kujabi",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Egzon Jetishi",
+        "position": "Egzon JetishiMidfielder",
+        "injury": "Egzon Jetishi",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "Ali Ceesay",
+        "position": "Ali CeesayDefensive Midfield",
+        "injury": "Ali Ceesay",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Mohammed Nehal",
+        "position": "Mohammed NehalDefensive Midfield",
+        "injury": "Mohammed Nehal",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Fabian Wapsas",
+        "position": "Fabian WapsasCentral Midfield",
+        "injury": "Fabian Wapsas",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Hamdi Erkul",
+        "position": "Hamdi ErkulCentral Midfield",
+        "injury": "Hamdi Erkul",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Emir Basar",
+        "position": "Emir BasarCentral Midfield",
+        "injury": "Emir Basar",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Benjamin Mashollaj",
+        "position": "Benjamin MashollajCentral Midfield",
+        "injury": "Benjamin Mashollaj",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Oguzhan Hoshaber",
+        "position": "Oguzhan HoshaberAttacking Midfield",
+        "injury": "Oguzhan Hoshaber",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Lejs Bukvic",
+        "position": "Lejs BukvicAttacking Midfield",
+        "injury": "Lejs Bukvic",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Sadrak Nankishi",
+        "position": "Sadrak NankishiRight Winger",
+        "injury": "Sadrak Nankishi",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Elly Senayah",
+        "position": "Elly SenayahRight Winger",
+        "injury": "Elly Senayah",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Malik Memisevic",
+        "position": "Malik MemisevicCentre-Forward",
+        "injury": "Malik Memisevic",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Jordan": [
+      {
+        "player": "Unai Sim\u00f3n",
+        "position": "Unai Sim\u00f3nGoalkeeper",
+        "injury": "Unai Sim\u00f3n",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "\u00c1lex Padilla",
+        "position": "\u00c1lex PadillaGoalkeeper",
+        "injury": "\u00c1lex Padilla",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Dani Vivian",
+        "position": "Dani VivianCentre-Back",
+        "injury": "Dani Vivian",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Aymeric Laporte",
+        "position": "Aymeric LaporteCentre-Back",
+        "injury": "Aymeric Laporte",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Aitor Paredes",
+        "position": "Aitor ParedesCentre-Back",
+        "injury": "Aitor Paredes",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Yeray \u00c1lvarez",
+        "position": "Yeray \u00c1lvarezCentre-Back",
+        "injury": "Yeray \u00c1lvarez",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Unai Egiluz",
+        "position": "Unai EgiluzCentre-Back",
+        "injury": "Unai Egiluz",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Adama Boiro",
+        "position": "Adama BoiroLeft-Back",
+        "injury": "Adama Boiro",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Yuri Berchiche",
+        "position": "Yuri BerchicheLeft-Back",
+        "injury": "Yuri Berchiche",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Jes\u00fas Areso",
+        "position": "Jes\u00fas AresoRight-Back",
+        "injury": "Jes\u00fas Areso",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Andoni Gorosabel",
+        "position": "Andoni GorosabelRight-Back",
+        "injury": "Andoni Gorosabel",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "I\u00f1igo Lekue",
+        "position": "I\u00f1igo LekueRight-Back",
+        "injury": "I\u00f1igo Lekue",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Mikel Vesga",
+        "position": "Mikel VesgaDefensive Midfield",
+        "injury": "Mikel Vesga",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Mikel Jauregizar",
+        "position": "Mikel JauregizarCentral Midfield",
+        "injury": "Mikel Jauregizar",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Be\u00f1at Prados",
+        "position": "Be\u00f1at PradosCentral Midfield",
+        "injury": "Be\u00f1at Prados",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Alejandro Rego",
+        "position": "Alejandro RegoCentral Midfield",
+        "injury": "Alejandro Rego",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Selton S\u00e1nchez",
+        "position": "Selton S\u00e1nchezCentral Midfield",
+        "injury": "Selton S\u00e1nchez",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "I\u00f1igo Ruiz de Galarreta",
+        "position": "I\u00f1igo Ruiz de GalarretaCentral Midfield",
+        "injury": "I\u00f1igo Ruiz de Galarreta",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Oihan Sancet",
+        "position": "Oihan SancetAttacking Midfield",
+        "injury": "Oihan Sancet",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Unai G\u00f3mez",
+        "position": "Unai G\u00f3mezAttacking Midfield",
+        "injury": "Unai G\u00f3mez",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Nico Williams",
+        "position": "Nico WilliamsLeft Winger",
+        "injury": "Nico Williams",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "\u00c1lex Berenguer",
+        "position": "\u00c1lex BerenguerLeft Winger",
+        "injury": "\u00c1lex Berenguer",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Nico Serrano",
+        "position": "Nico SerranoLeft Winger",
+        "injury": "Nico Serrano",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "I\u00f1aki Williams",
+        "position": "I\u00f1aki WilliamsRight Winger",
+        "injury": "I\u00f1aki Williams",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Robert Navarro",
+        "position": "Robert NavarroRight Winger",
+        "injury": "Robert Navarro",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Gorka Guruzeta",
+        "position": "Gorka GuruzetaCentre-Forward",
+        "injury": "Gorka Guruzeta",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Maroan Sannadi",
+        "position": "Maroan SannadiCentre-Forward",
+        "injury": "Maroan Sannadi",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Urko Izeta",
+        "position": "Urko IzetaCentre-Forward",
+        "injury": "Urko Izeta",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Portugal": [],
+    "DR Congo": [
+      {
+        "player": "Mustafa \u00d6zdarakci",
+        "position": "Mustafa \u00d6zdarakciDefender",
+        "injury": "Mustafa \u00d6zdarakci",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Cedric Meuser",
+        "position": "Cedric MeuserDefender",
+        "injury": "Cedric Meuser",
+        "return_date": "Defender"
+      },
+      {
+        "player": "Anouar Harraou",
+        "position": "Anouar HarraouMidfielder",
+        "injury": "Anouar Harraou",
+        "return_date": "Midfielder"
+      },
+      {
+        "player": "M'Hammed Ait Ougrame",
+        "position": "M'Hammed Ait OugrameCentral Midfield",
+        "injury": "M'Hammed Ait Ougrame",
+        "return_date": "Central Midfield"
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "player": "Massimo Pessina",
+        "position": "Massimo PessinaGoalkeeper",
+        "injury": "Massimo Pessina",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Lukasz Skorupski",
+        "position": "Lukasz SkorupskiGoalkeeper",
+        "injury": "Lukasz Skorupski",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Federico Ravaglia",
+        "position": "Federico RavagliaGoalkeeper",
+        "injury": "Federico Ravaglia",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Jhon Lucum\u00ed",
+        "position": "Jhon Lucum\u00edCentre-Back",
+        "injury": "Jhon Lucum\u00ed",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Torbj\u00f8rn Heggem",
+        "position": "Torbj\u00f8rn HeggemCentre-Back",
+        "injury": "Torbj\u00f8rn Heggem",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Martin Vit\u00edk",
+        "position": "Martin Vit\u00edkCentre-Back",
+        "injury": "Martin Vit\u00edk",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Eivind Helland",
+        "position": "Eivind HellandCentre-Back",
+        "injury": "Eivind Helland",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nicol\u00f2 Casale",
+        "position": "Nicol\u00f2 CasaleCentre-Back",
+        "injury": "Nicol\u00f2 Casale",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Kevin Bonifazi",
+        "position": "Kevin BonifaziCentre-Back",
+        "injury": "Kevin Bonifazi",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Juan Miranda",
+        "position": "Juan MirandaLeft-Back",
+        "injury": "Juan Miranda",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Charalampos Lykogiannis",
+        "position": "Charalampos LykogiannisLeft-Back",
+        "injury": "Charalampos Lykogiannis",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Jo\u00e3o M\u00e1rio",
+        "position": "Jo\u00e3o M\u00e1rioRight-Back",
+        "injury": "Jo\u00e3o M\u00e1rio",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Nadir Zortea",
+        "position": "Nadir ZorteaRight-Back",
+        "injury": "Nadir Zortea",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Lorenzo De Silvestri",
+        "position": "Lorenzo De SilvestriRight-Back",
+        "injury": "Lorenzo De Silvestri",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Nikola Moro",
+        "position": "Nikola MoroDefensive Midfield",
+        "injury": "Nikola Moro",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Lewis Ferguson",
+        "position": "Lewis FergusonCentral Midfield",
+        "injury": "Lewis Ferguson",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Tommaso Pobega",
+        "position": "Tommaso PobegaCentral Midfield",
+        "injury": "Tommaso Pobega",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Simon Sohm",
+        "position": "Simon SohmCentral Midfield",
+        "injury": "Simon Sohm",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Remo Freuler",
+        "position": "Remo FreulerCentral Midfield",
+        "injury": "Remo Freuler",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Jens Odgaard",
+        "position": "Jens OdgaardAttacking Midfield",
+        "injury": "Jens Odgaard",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Jonathan Rowe",
+        "position": "Jonathan RoweLeft Winger",
+        "injury": "Jonathan Rowe",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Nicol\u00f2 Cambiaghi",
+        "position": "Nicol\u00f2 CambiaghiLeft Winger",
+        "injury": "Nicol\u00f2 Cambiaghi",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Benja Dom\u00ednguez",
+        "position": "Benja Dom\u00ednguezLeft Winger",
+        "injury": "Benja Dom\u00ednguez",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Riccardo Orsolini",
+        "position": "Riccardo OrsoliniRight Winger",
+        "injury": "Riccardo Orsolini",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Federico Bernardeschi",
+        "position": "Federico BernardeschiRight Winger",
+        "injury": "Federico Bernardeschi",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Santiago Castro",
+        "position": "Santiago CastroCentre-Forward",
+        "injury": "Santiago Castro",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Thijs Dallinga",
+        "position": "Thijs DallingaCentre-Forward",
+        "injury": "Thijs Dallinga",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Colombia": [
+      {
+        "player": "Maduka Okoye",
+        "position": "Maduka OkoyeGoalkeeper",
+        "injury": "Maduka Okoye",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "R\u0103zvan Sava",
+        "position": "R\u0103zvan SavaGoalkeeper",
+        "injury": "R\u0103zvan Sava",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Alessandro Nunziante",
+        "position": "Alessandro NunzianteGoalkeeper",
+        "injury": "Alessandro Nunziante",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Daniele Padelli",
+        "position": "Daniele PadelliGoalkeeper",
+        "injury": "Daniele Padelli",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Oumar Solet",
+        "position": "Oumar SoletCentre-Back",
+        "injury": "Oumar Solet",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Thomas Kristensen",
+        "position": "Thomas KristensenCentre-Back",
+        "injury": "Thomas Kristensen",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nicol\u00f2 Bertola",
+        "position": "Nicol\u00f2 BertolaCentre-Back",
+        "injury": "Nicol\u00f2 Bertola",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Branimir Mlacic",
+        "position": "Branimir MlacicCentre-Back",
+        "injury": "Branimir Mlacic",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Christian Kabasele",
+        "position": "Christian KabaseleCentre-Back",
+        "injury": "Christian Kabasele",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jordan Zemura",
+        "position": "Jordan ZemuraLeft-Back",
+        "injury": "Jordan Zemura",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Hassane Kamara",
+        "position": "Hassane KamaraLeft-Back",
+        "injury": "Hassane Kamara",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Alessandro Zanoli",
+        "position": "Alessandro ZanoliRight-Back",
+        "injury": "Alessandro Zanoli",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Kingsley Ehizibue",
+        "position": "Kingsley EhizibueRight-Back",
+        "injury": "Kingsley Ehizibue",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Jesper Karlstr\u00f6m",
+        "position": "Jesper Karlstr\u00f6mDefensive Midfield",
+        "injury": "Jesper Karlstr\u00f6m",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Abdoulaye Camara",
+        "position": "Abdoulaye CamaraDefensive Midfield",
+        "injury": "Abdoulaye Camara",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Arthur Atta",
+        "position": "Arthur AttaCentral Midfield",
+        "injury": "Arthur Atta",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Jurgen Ekkelenkamp",
+        "position": "Jurgen EkkelenkampCentral Midfield",
+        "injury": "Jurgen Ekkelenkamp",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Lennon Miller",
+        "position": "Lennon MillerCentral Midfield",
+        "injury": "Lennon Miller",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Jakub Piotrowski",
+        "position": "Jakub PiotrowskiCentral Midfield",
+        "injury": "Jakub Piotrowski",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Oier Zarraga",
+        "position": "Oier ZarragaCentral Midfield",
+        "injury": "Oier Zarraga",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Juan Arizala",
+        "position": "Juan ArizalaLeft Midfield",
+        "injury": "Juan Arizala",
+        "return_date": "Left Midfield"
+      },
+      {
+        "player": "Nicol\u00f2 Zaniolo",
+        "position": "Nicol\u00f2 ZanioloSecond Striker",
+        "injury": "Nicol\u00f2 Zaniolo",
+        "return_date": "Second Striker"
+      },
+      {
+        "player": "Keinan Davis",
+        "position": "Keinan DavisCentre-Forward",
+        "injury": "Keinan Davis",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Idrissa Gueye",
+        "position": "Idrissa GueyeCentre-Forward",
+        "injury": "Idrissa Gueye",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Adam Buksa",
+        "position": "Adam BuksaCentre-Forward",
+        "injury": "Adam Buksa",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Vakoun Bayo",
+        "position": "Vakoun BayoCentre-Forward",
+        "injury": "Vakoun Bayo",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "England": [
+      {
+        "player": "John Victor",
+        "position": "John VictorGoalkeeper",
+        "injury": "John Victor",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Stefan Ortega",
+        "position": "Stefan OrtegaGoalkeeper",
+        "injury": "Stefan Ortega",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Matz Sels",
+        "position": "Matz SelsGoalkeeper",
+        "injury": "Matz Sels",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Angus Gunn",
+        "position": "Angus GunnGoalkeeper",
+        "injury": "Angus Gunn",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Murillo",
+        "position": "MurilloCentre-Back",
+        "injury": "Murillo",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Nikola Milenkovi\u0107",
+        "position": "Nikola Milenkovi\u0107Centre-Back",
+        "injury": "Nikola Milenkovi\u0107",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jair Cunha",
+        "position": "Jair CunhaCentre-Back",
+        "injury": "Jair Cunha",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Morato",
+        "position": "MoratoCentre-Back",
+        "injury": "Morato",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Zach Abbott",
+        "position": "Zach AbbottCentre-Back",
+        "injury": "Zach Abbott",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Willy Boly",
+        "position": "Willy BolyCentre-Back",
+        "injury": "Willy Boly",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Neco Williams",
+        "position": "Neco WilliamsLeft-Back",
+        "injury": "Neco Williams",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Luca Netz",
+        "position": "Luca NetzLeft-Back",
+        "injury": "Luca Netz",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Ola Aina",
+        "position": "Ola AinaRight-Back",
+        "injury": "Ola Aina",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Nicol\u00f2 Savona",
+        "position": "Nicol\u00f2 SavonaRight-Back",
+        "injury": "Nicol\u00f2 Savona",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Eric da Silva Moreira",
+        "position": "Eric da Silva MoreiraRight-Back",
+        "injury": "Eric da Silva Moreira",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Ibrahim Sangar\u00e9",
+        "position": "Ibrahim Sangar\u00e9Defensive Midfield",
+        "injury": "Ibrahim Sangar\u00e9",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Elliot Anderson",
+        "position": "Elliot AndersonCentral Midfield",
+        "injury": "Elliot Anderson",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Nicol\u00e1s Dom\u00ednguez",
+        "position": "Nicol\u00e1s Dom\u00ednguezCentral Midfield",
+        "injury": "Nicol\u00e1s Dom\u00ednguez",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Ryan Yates",
+        "position": "Ryan YatesCentral Midfield",
+        "injury": "Ryan Yates",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Morgan Gibbs-White",
+        "position": "Morgan Gibbs-WhiteAttacking Midfield",
+        "injury": "Morgan Gibbs-White",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Omari Hutchinson",
+        "position": "Omari HutchinsonAttacking Midfield",
+        "injury": "Omari Hutchinson",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "James McAtee",
+        "position": "James McAteeAttacking Midfield",
+        "injury": "James McAtee",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Callum Hudson-Odoi",
+        "position": "Callum Hudson-OdoiLeft Winger",
+        "injury": "Callum Hudson-Odoi",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Dan Ndoye",
+        "position": "Dan NdoyeRight Winger",
+        "injury": "Dan Ndoye",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Dilane Bakwa",
+        "position": "Dilane BakwaRight Winger",
+        "injury": "Dilane Bakwa",
+        "return_date": "Right Winger"
+      },
+      {
+        "player": "Igor Jesus",
+        "position": "Igor JesusCentre-Forward",
+        "injury": "Igor Jesus",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Lorenzo Lucca",
+        "position": "Lorenzo LuccaCentre-Forward",
+        "injury": "Lorenzo Lucca",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Taiwo Awoniyi",
+        "position": "Taiwo AwoniyiCentre-Forward",
+        "injury": "Taiwo Awoniyi",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Chris Wood",
+        "position": "Chris WoodCentre-Forward",
+        "injury": "Chris Wood",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Croatia": [],
+    "Ghana": [
+      {
+        "player": "Hannes Hermann",
+        "position": "Hannes HermannGoalkeeper",
+        "injury": "Hannes Hermann",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Colin Poppelbaum",
+        "position": "Colin PoppelbaumGoalkeeper",
+        "injury": "Colin Poppelbaum",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Bennet Schmidt",
+        "position": "Bennet SchmidtGoalkeeper",
+        "injury": "Bennet Schmidt",
+        "return_date": "Goalkeeper"
+      },
+      {
+        "player": "Shafiq Nandja",
+        "position": "Shafiq NandjaCentre-Back",
+        "injury": "Shafiq Nandja",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Lukas Bornschein",
+        "position": "Lukas BornscheinCentre-Back",
+        "injury": "Lukas Bornschein",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Jeremy Gandert",
+        "position": "Jeremy GandertCentre-Back",
+        "injury": "Jeremy Gandert",
+        "return_date": "Centre-Back"
+      },
+      {
+        "player": "Louis Lemke",
+        "position": "Louis LemkeLeft-Back",
+        "injury": "Louis Lemke",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Simon Kristiansen",
+        "position": "Simon KristiansenLeft-Back",
+        "injury": "Simon Kristiansen",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Jamal Nabe",
+        "position": "Jamal NabeLeft-Back",
+        "injury": "Jamal Nabe",
+        "return_date": "Left-Back"
+      },
+      {
+        "player": "Dorian Migalic",
+        "position": "Dorian MigalicRight-Back",
+        "injury": "Dorian Migalic",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Timon Kramer",
+        "position": "Timon KramerRight-Back",
+        "injury": "Timon Kramer",
+        "return_date": "Right-Back"
+      },
+      {
+        "player": "Leonardo Posadas",
+        "position": "Leonardo PosadasDefensive Midfield",
+        "injury": "Leonardo Posadas",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Benjamin Lamce",
+        "position": "Benjamin LamceDefensive Midfield",
+        "injury": "Benjamin Lamce",
+        "return_date": "Defensive Midfield"
+      },
+      {
+        "player": "Davis Rath",
+        "position": "Davis RathCentral Midfield",
+        "injury": "Davis Rath",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Arnaud Riedel",
+        "position": "Arnaud RiedelCentral Midfield",
+        "injury": "Arnaud Riedel",
+        "return_date": "Central Midfield"
+      },
+      {
+        "player": "Nilavan Prabakaran",
+        "position": "Nilavan PrabakaranRight Midfield",
+        "injury": "Nilavan Prabakaran",
+        "return_date": "Right Midfield"
+      },
+      {
+        "player": "Bilal Yalcinkaya",
+        "position": "Bilal YalcinkayaAttacking Midfield",
+        "injury": "Bilal Yalcinkaya",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Omar Megeed",
+        "position": "Omar MegeedAttacking Midfield",
+        "injury": "Omar Megeed",
+        "return_date": "Attacking Midfield"
+      },
+      {
+        "player": "Moritz Reimers",
+        "position": "Moritz ReimersLeft Winger",
+        "injury": "Moritz Reimers",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Levin \u00d6ztunali",
+        "position": "Levin \u00d6ztunaliLeft Winger",
+        "injury": "Levin \u00d6ztunali",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Kelvin Ojo",
+        "position": "Kelvin OjoLeft Winger",
+        "injury": "Kelvin Ojo",
+        "return_date": "Left Winger"
+      },
+      {
+        "player": "Maurice Boakye",
+        "position": "Maurice BoakyeCentre-Forward",
+        "injury": "Maurice Boakye",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Glory Kiveta",
+        "position": "Glory KivetaCentre-Forward",
+        "injury": "Glory Kiveta",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Niklas Tuppeck",
+        "position": "Niklas TuppeckCentre-Forward",
+        "injury": "Niklas Tuppeck",
+        "return_date": "Centre-Forward"
+      }
+    ],
+    "Panama": [
+      {
+        "player": "Tim Kalzu",
+        "position": "Tim KalzuCentre-Forward",
+        "injury": "Tim Kalzu",
+        "return_date": "Centre-Forward"
+      },
+      {
+        "player": "Ensar Bajrami",
+        "position": "Ensar BajramiCentre-Forward",
+        "injury": "Ensar Bajrami",
+        "return_date": "Centre-Forward"
+      }
+    ]
+  }
+}
