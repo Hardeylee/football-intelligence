@@ -1,0 +1,286 @@
+"""
+Match Prediction Engine — Club Football
+Takes two team names, returns market probabilities for:
+- Result (Home/Draw/Away)
+- Over/Under Goals (1.5, 2.5, 3.5)
+- BTTS
+- Yellow Cards
+- Corners
+"""
+
+import json
+import os
+from datetime import datetime
+
+PROFILES_FILE = "data/team_profiles.json"
+H2H_FILE = "data/h2h.json"
+
+# Home advantage factor (well established in football research)
+HOME_ADVANTAGE = 0.06
+
+
+def load_profiles() -> dict:
+    with open(PROFILES_FILE) as f:
+        return json.load(f)["teams"]
+
+
+def load_h2h() -> dict:
+    with open(H2H_FILE) as f:
+        return json.load(f)["h2h"]
+
+
+def get_h2h(home: str, away: str, h2h: dict) -> dict:
+    key = f"{home}_vs_{away}"
+    reverse = f"{away}_vs_{home}"
+    return h2h.get(key) or h2h.get(reverse) or {}
+
+
+def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
+    """
+    Predict goals using Dixon-Coles style attack/defense ratings.
+    Uses home/away splits for accuracy.
+    """
+    hp = profiles[home]
+    ap = profiles[away]
+
+    # Expected goals — home team attacks vs away team defense
+    home_xg = (hp["home_avg_goals_scored"] + ap["away_avg_goals_conceded"]) / 2
+    away_xg = (ap["away_avg_goals_scored"] + hp["home_avg_goals_conceded"]) / 2
+
+    # H2H adjustment — if we have history, blend it in
+    h2h = get_h2h(home, away, h2h_data)
+    if h2h and h2h["matches"] >= 3:
+        h2h_avg = h2h["avg_goals"]
+        home_xg = (home_xg * 0.75) + (h2h_avg * 0.5 * 0.25)
+        away_xg = (away_xg * 0.75) + (h2h_avg * 0.5 * 0.25)
+
+    total_xg = home_xg + away_xg
+
+    # Over/Under probabilities using Poisson approximation
+    # P(over X.5) derived from historical rates + xG blend
+    home_over15 = (hp["home_avg_goals_scored"] > 1.0)
+    away_over15 = (ap["away_avg_goals_scored"] > 0.8)
+
+    # Blend historical rates with xG signal
+    over15_rate = (hp["over15_rate"] + ap["over15_rate"]) / 2
+    over25_rate = (hp["over25_rate"] + ap["over25_rate"]) / 2
+    over35_rate = over25_rate * 0.52  # Rough scaling
+
+    # H2H goals adjustment
+    if h2h and h2h["matches"] >= 3:
+        h2h_over25 = 1.0 if h2h["avg_goals"] > 2.5 else 0.0
+        over25_rate = (over25_rate * 0.8) + (h2h_over25 * 0.2)
+
+    # BTTS
+    btts_rate = (hp["btts_rate"] + ap["btts_rate"]) / 2
+    if h2h and h2h["matches"] >= 3:
+        btts_rate = (btts_rate * 0.8) + (h2h.get("btts_rate", btts_rate) * 0.2)
+
+    return {
+        "home_xg":     round(home_xg, 2),
+        "away_xg":     round(away_xg, 2),
+        "total_xg":    round(total_xg, 2),
+        "over15":      round(min(over15_rate, 0.97), 3),
+        "over25":      round(min(over25_rate, 0.95), 3),
+        "over35":      round(min(over35_rate, 0.85), 3),
+        "under15":     round(1 - over15_rate, 3),
+        "under25":     round(1 - over25_rate, 3),
+        "under35":     round(1 - over35_rate, 3),
+        "btts_yes":    round(min(btts_rate, 0.95), 3),
+        "btts_no":     round(1 - btts_rate, 3),
+    }
+
+
+def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
+    """
+    Predict match result using form, home advantage, and H2H.
+    """
+    hp = profiles[home]
+    ap = profiles[away]
+
+    # Base win rates from home/away splits
+    home_strength = (hp["home_win_rate"] +
+                     hp["form_score"]) / 2 + HOME_ADVANTAGE
+    away_strength = (ap["away_win_rate"] + ap["form_score"]) / 2
+    draw_base = (hp["draw_rate"] + ap["draw_rate"]) / 2
+
+    # H2H adjustment
+    h2h = get_h2h(home, away, h2h_data)
+    if h2h and h2h["matches"] >= 3:
+        h2h_home_rate = h2h["home_wins"] / h2h["matches"]
+        h2h_away_rate = h2h["away_wins"] / h2h["matches"]
+        home_strength = (home_strength * 0.75) + (h2h_home_rate * 0.25)
+        away_strength = (away_strength * 0.75) + (h2h_away_rate * 0.25)
+
+    # Normalize to sum to 1
+    total = home_strength + away_strength + draw_base
+    home_win = home_strength / total
+    away_win = away_strength / total
+    draw = draw_base / total
+
+    return {
+        "home_win":      round(home_win, 3),
+        "draw":          round(draw, 3),
+        "away_win":      round(away_win, 3),
+        "home_or_draw":  round(home_win + draw, 3),
+        "away_or_draw":  round(away_win + draw, 3),
+    }
+
+
+def predict_cards(home: str, away: str, profiles: dict) -> dict:
+    """
+    Predict yellow cards using team foul rates and card history.
+    """
+    hp = profiles[home]
+    ap = profiles[away]
+
+    avg_cards = hp["avg_yellow_cards"] + ap["avg_yellow_cards"]
+
+    # Rivalry factor — derbies get more cards
+    derby_pairs = [
+        {"Arsenal", "Tottenham"}, {"Arsenal", "Chelsea"},
+        {"Manchester United", "Manchester City"},
+        {"Liverpool", "Everton"}, {"Liverpool", "Manchester United"},
+        {"Chelsea", "Tottenham"}, {"Newcastle United", "Sunderland"},
+    ]
+    is_derby = {home, away} in derby_pairs
+    if is_derby:
+        avg_cards *= 1.2
+
+    over35_cards = 1.0 if avg_cards > 3.5 else 0.65 if avg_cards > 2.8 else 0.40
+    over45_cards = 1.0 if avg_cards > 4.5 else 0.45 if avg_cards > 3.5 else 0.25
+    over25_cards = min(over35_cards + 0.15, 0.95)
+
+    return {
+        "avg_total_cards": round(avg_cards, 2),
+        "is_derby":        is_derby,
+        "over25_cards":    round(over25_cards, 3),
+        "over35_cards":    round(over35_cards, 3),
+        "over45_cards":    round(over45_cards, 3),
+        "under35_cards":   round(1 - over35_cards, 3),
+    }
+
+
+def predict_corners(home: str, away: str, profiles: dict) -> dict:
+    """
+    Predict corners using team averages.
+    """
+    hp = profiles[home]
+    ap = profiles[away]
+
+    avg_corners = (
+        hp["avg_corners_for"] + hp["avg_corners_against"] +
+        ap["avg_corners_for"] + ap["avg_corners_against"]
+    ) / 2
+
+    over85 = 0.75 if avg_corners > 9.5 else 0.55
+    over105 = 0.55 if avg_corners > 10.5 else 0.38
+    over125 = 0.35 if avg_corners > 11.5 else 0.22
+
+    return {
+        "avg_total_corners": round(avg_corners, 2),
+        "over85_corners":    round(over85, 3),
+        "over105_corners":   round(over105, 3),
+        "over125_corners":   round(over125, 3),
+    }
+
+
+def predict_match(home_team: str, away_team: str) -> dict:
+    """
+    Master function — runs all engines, returns full prediction.
+    """
+    profiles = load_profiles()
+    h2h = load_h2h()
+
+    # Validate teams exist
+    missing = []
+    if home_team not in profiles:
+        missing.append(home_team)
+    if away_team not in profiles:
+        missing.append(away_team)
+    if missing:
+        return {"error": f"Teams not found in profiles: {missing}"}
+
+    goals = predict_goals(home_team, away_team, profiles, h2h)
+    result = predict_result(home_team, away_team, profiles, h2h)
+    cards = predict_cards(home_team, away_team, profiles)
+    corners = predict_corners(home_team, away_team, profiles)
+
+    h2h_data = get_h2h(home_team, away_team, h2h)
+
+    return {
+        "home_team":  home_team,
+        "away_team":  away_team,
+        "generated":  datetime.now().isoformat(),
+        "result":     result,
+        "goals":      goals,
+        "cards":      cards,
+        "corners":    corners,
+        "h2h":        h2h_data,
+    }
+
+
+def format_prediction(pred: dict) -> str:
+    """Print-friendly prediction summary."""
+    if "error" in pred:
+        return f"ERROR: {pred['error']}"
+
+    h = pred["home_team"]
+    a = pred["away_team"]
+    r = pred["result"]
+    g = pred["goals"]
+    c = pred["cards"]
+    co = pred["corners"]
+    h2h = pred.get("h2h", {})
+
+    lines = [
+        f"\n{'='*45}",
+        f"  {h} vs {a}",
+        f"{'='*45}",
+        f"\n📊 RESULT PROBABILITIES",
+        f"  {h} Win:    {r['home_win']*100:.1f}%",
+        f"  Draw:         {r['draw']*100:.1f}%",
+        f"  {a} Win:  {r['away_win']*100:.1f}%",
+        f"  {h} DC:   {r['home_or_draw']*100:.1f}%",
+        f"  {a} DC:   {r['away_or_draw']*100:.1f}%",
+
+        f"\n⚽ GOALS  (xG: {g['home_xg']} - {g['away_xg']})",
+        f"  Over 1.5:   {g['over15']*100:.1f}%",
+        f"  Over 2.5:   {g['over25']*100:.1f}%",
+        f"  Over 3.5:   {g['over35']*100:.1f}%",
+        f"  BTTS Yes:   {g['btts_yes']*100:.1f}%",
+
+        f"\n🟨 CARDS  (avg total: {c['avg_total_cards']})",
+        f"  Over 2.5:   {c['over25_cards']*100:.1f}%",
+        f"  Over 3.5:   {c['over35_cards']*100:.1f}%",
+        f"  Over 4.5:   {c['over45_cards']*100:.1f}%",
+        f"  Derby match: {'YES ⚠️' if c['is_derby'] else 'No'}",
+
+        f"\n🚩 CORNERS (avg total: {co['avg_total_corners']})",
+        f"  Over 8.5:   {co['over85_corners']*100:.1f}%",
+        f"  Over 10.5:  {co['over105_corners']*100:.1f}%",
+        f"  Over 12.5:  {co['over125_corners']*100:.1f}%",
+    ]
+
+    if h2h:
+        lines += [
+            f"\n📋 H2H ({h2h['matches']} matches)",
+            f"  {h} wins: {h2h['home_wins']}",
+            f"  {a} wins: {h2h['away_wins']}",
+            f"  Draws:    {h2h['draws']}",
+            f"  Avg goals per game: {h2h['avg_goals']}",
+        ]
+
+    return "\n".join(lines)
+
+
+if __name__ == "__main__":
+    # Test: Arsenal vs Chelsea
+    pred = predict_match("Arsenal", "Chelsea")
+    print(format_prediction(pred))
+
+    print("\n")
+
+    # Test: Manchester City vs Liverpool
+    pred2 = predict_match("Manchester City", "Liverpool")
+    print(format_prediction(pred2))

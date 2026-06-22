@@ -1,0 +1,4533 @@
+{
+  "updated_at": "2026-06-21T07:44:31.609009",
+  "h2h": {
+    "Crystal Palace_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 4,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 4.25,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Wolves": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Leicester_vs_Brentford": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 4.25,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Man City": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Everton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 0.75
+    },
+    "Man City_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.75,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Leeds": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Brentford_vs_Man United": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.25,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Chelsea": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Newcastle_vs_Man City": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Man United": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Everton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 2.25,
+      "btts_rate": 0.75
+    },
+    "Nott'm Forest_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Chelsea": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Everton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 1.25,
+      "btts_rate": 0.75
+    },
+    "Man City_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Man United": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 0.75
+    },
+    "Brentford_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 0.75
+    },
+    "Nott'm Forest_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Man City": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 0.75
+    },
+    "Wolves_vs_Man City": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 1.5,
+      "btts_rate": 0.5
+    },
+    "Crystal Palace_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Everton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Man United": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.75,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Aston Villa": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.5
+    },
+    "Leicester_vs_Nott'm Forest": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.5
+    },
+    "West Ham_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.25,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Man United": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 0.75
+    },
+    "Leicester_vs_Crystal Palace": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.0,
+      "btts_rate": 0.5
+    },
+    "Fulham_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Everton": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Arsenal": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Southampton_vs_West Ham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Man City": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Crystal Palace_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4,
+      "avg_goals": 2.0,
+      "btts_rate": 0.5
+    },
+    "Liverpool_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Everton": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Leeds": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 1.25,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Man United": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Fulham": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Arsenal": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 3,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Leicester_vs_Man City": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 4.75,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Everton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 1.75,
+      "btts_rate": 0.5
+    },
+    "Liverpool_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.5
+    },
+    "Arsenal_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Bournemouth": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.25,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Man United": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 0.75
+    },
+    "Southampton_vs_Newcastle": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Everton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Man United": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 2.5,
+      "btts_rate": 0.75
+    },
+    "Crystal Palace_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 1.75,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Newcastle": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Brighton": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Man City": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Man United": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Fulham_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.5
+    },
+    "Man City_vs_Everton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 0.5
+    },
+    "Brighton_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Fulham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 4.25,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Nott'm Forest": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_West Ham": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Man City": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Man City": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Brighton_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Newcastle_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 4,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Man United": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 0.75
+    },
+    "Man City_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.5,
+      "btts_rate": 0.75
+    },
+    "Bournemouth_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Brighton": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Aston Villa": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Everton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Crystal Palace_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 1.75,
+      "btts_rate": 0.75
+    },
+    "Leeds_vs_Brentford": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 0.0,
+      "btts_rate": 0.0
+    },
+    "Man City_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Man United": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 1.25,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Man City": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 3,
+      "avg_goals": 1.75,
+      "btts_rate": 0.75
+    },
+    "Fulham_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Tottenham": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Wolves": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 3,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Leeds_vs_Man United": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Everton": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Man City": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 3,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Man City": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 4,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 0.75,
+      "btts_rate": 0.5
+    },
+    "Leeds_vs_Southampton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Arsenal": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Man City": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 0.75
+    },
+    "Tottenham_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Everton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 0.75
+    },
+    "Liverpool_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Everton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Man United": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 3.5,
+      "btts_rate": 0.75
+    },
+    "Brentford_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.5,
+      "btts_rate": 0.5
+    },
+    "Bournemouth_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Leeds_vs_Brighton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Chelsea": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Man City": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 0.5
+    },
+    "West Ham_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Brentford": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Tottenham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Everton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 0.75
+    },
+    "Crystal Palace_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4,
+      "avg_goals": 2.0,
+      "btts_rate": 0.75
+    },
+    "Chelsea_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 3,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Man United": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Nott'm Forest": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Aston Villa": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 0.75
+    },
+    "Man United_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Everton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.75,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Bournemouth": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Man City": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 0.5
+    },
+    "Leeds_vs_Crystal Palace": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 3,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 0.75
+    },
+    "Chelsea_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Crystal Palace": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Man United": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Liverpool": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 6.5,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Everton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 0.75
+    },
+    "Leicester_vs_Wolves": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Leicester": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Liverpool": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 0.75
+    },
+    "Southampton_vs_Bournemouth": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Man United": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 0.75
+    },
+    "Brentford_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.25,
+      "btts_rate": 0.75
+    },
+    "Bournemouth_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Man City": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 4,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 5.25,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Everton": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Man United": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 1.25,
+      "btts_rate": 0.5
+    },
+    "Man City_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 1.75,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.75,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Man United": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Everton": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Newcastle": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.0,
+      "btts_rate": 0.5
+    },
+    "Aston Villa_vs_Tottenham": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 2.5,
+      "btts_rate": 0.75
+    },
+    "Man United_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Fulham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_West Ham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Man City": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 3,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Liverpool": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Brentford": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Man United": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 3,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Crystal Palace": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 2,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Aston Villa": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Everton": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Arsenal": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 2,
+      "avg_goals": 1.0,
+      "btts_rate": 0.5
+    },
+    "West Ham_vs_Leeds": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Southampton": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.25,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Leicester": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 0.5
+    },
+    "Brighton_vs_Man City": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Chelsea": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Wolves": {
+      "matches": 4,
+      "home_wins": 4,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.25,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Brighton": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.75,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Man City": {
+      "matches": 4,
+      "home_wins": 1,
+      "away_wins": 2,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Newcastle": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.75,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Nott'm Forest": {
+      "matches": 4,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4,
+      "avg_goals": 1.5,
+      "btts_rate": 0.75
+    },
+    "Everton_vs_Bournemouth": {
+      "matches": 4,
+      "home_wins": 2,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Tottenham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_West Ham": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Fulham": {
+      "matches": 4,
+      "home_wins": 3,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Southampton_vs_Liverpool": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 6.5,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Man City": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Crystal Palace": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Aston Villa": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Man City": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_West Ham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Everton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Tottenham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 5.5,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Wolves": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Man United": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Newcastle": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 8.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Luton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Burnley": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Tottenham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Chelsea": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Luton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Man United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Crystal Palace": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Wolves": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Liverpool": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_West Ham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Crystal Palace": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Bournemouth": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Arsenal": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 7.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Liverpool": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Brentford": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Man City": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Everton": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.0,
+      "btts_rate": 0.5
+    },
+    "Aston Villa_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Newcastle": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Luton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Liverpool": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Chelsea": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Luton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_West Ham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Brighton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Fulham": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Luton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 8.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Aston Villa": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Arsenal": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Brighton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Man United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Aston Villa": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Bournemouth": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 1.0,
+      "btts_rate": 0.5
+    },
+    "Sheffield United_vs_Arsenal": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Luton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 7.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Brentford": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Nott'm Forest": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Fulham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Wolves": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.5,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Bournemouth": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Chelsea": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Brighton": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Brentford": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Burnley": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 3.5,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Everton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Newcastle": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 2,
+      "draws": 0,
+      "avg_goals": 4.5,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Nott'm Forest": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Sheffield United": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Burnley": {
+      "matches": 2,
+      "home_wins": 2,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Luton": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Nott'm Forest": {
+      "matches": 2,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 1,
+      "avg_goals": 2.5,
+      "btts_rate": 1.0
+    },
+    "Luton_vs_Fulham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Sheffield United_vs_Tottenham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Liverpool": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Fulham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 0.0,
+      "btts_rate": 0.0
+    },
+    "Southampton_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Aston Villa": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Everton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 7.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Leicester": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Tottenham_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Man United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Crystal Palace": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Bournemouth": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Newcastle": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Chelsea": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Brighton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Man City": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Southampton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Tottenham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Nott'm Forest": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 6.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Wolves": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Arsenal": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Everton_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_Brentford": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Leicester_vs_Ipswich": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Ipswich_vs_West Ham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_West Ham": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Brentford": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Crystal Palace_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 0.0,
+      "btts_rate": 0.0
+    },
+    "Sunderland_vs_Aston Villa": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Nott'm Forest_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Man United_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Burnley_vs_Leeds": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Wolves": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Chelsea_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Everton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Arsenal": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Fulham_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Bournemouth": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Liverpool_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Man City_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Newcastle": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Brighton_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 0.0,
+      "btts_rate": 0.0
+    },
+    "Sunderland_vs_Leeds": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Man City": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 0.0,
+      "btts_rate": 0.0
+    },
+    "Tottenham_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Brentford_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Crystal Palace": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "West Ham_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Burnley": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Arsenal_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Liverpool": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Fulham": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Bournemouth_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Brighton": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Newcastle_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Tottenham": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 1.0,
+      "btts_rate": 1.0
+    },
+    "Aston Villa_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 7.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Nott'm Forest": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 5.0,
+      "btts_rate": 1.0
+    },
+    "Leeds_vs_Burnley": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Wolves_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 2.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Man United": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1,
+      "avg_goals": 0.0,
+      "btts_rate": 0.0
+    },
+    "Everton_vs_Sunderland": {
+      "matches": 1,
+      "home_wins": 0,
+      "away_wins": 1,
+      "draws": 0,
+      "avg_goals": 4.0,
+      "btts_rate": 1.0
+    },
+    "Sunderland_vs_Chelsea": {
+      "matches": 1,
+      "home_wins": 1,
+      "away_wins": 0,
+      "draws": 0,
+      "avg_goals": 3.0,
+      "btts_rate": 1.0
+    }
+  }
+}
