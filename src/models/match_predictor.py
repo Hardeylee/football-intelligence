@@ -11,6 +11,7 @@ Takes two team names, returns market probabilities for:
 import json
 import os
 from datetime import datetime
+from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_referee
 
 PROFILES_FILE = "data/team_profiles.json"
 H2H_FILE = "data/h2h.json"
@@ -127,16 +128,17 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
     }
 
 
-def predict_cards(home: str, away: str, profiles: dict) -> dict:
+def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> dict:
     """
-    Predict yellow cards using team foul rates and card history.
+    Predict yellow cards using team foul rates, card history,
+    and referee tendency (weighted 40%).
     """
     hp = profiles[home]
     ap = profiles[away]
 
     avg_cards = hp["avg_yellow_cards"] + ap["avg_yellow_cards"]
 
-    # Rivalry factor — derbies get more cards
+    # Derby factor
     derby_pairs = [
         {"Arsenal", "Tottenham"}, {"Arsenal", "Chelsea"},
         {"Manchester United", "Manchester City"},
@@ -147,17 +149,26 @@ def predict_cards(home: str, away: str, profiles: dict) -> dict:
     if is_derby:
         avg_cards *= 1.2
 
-    over35_cards = 1.0 if avg_cards > 3.5 else 0.65 if avg_cards > 2.8 else 0.40
-    over45_cards = 1.0 if avg_cards > 4.5 else 0.45 if avg_cards > 3.5 else 0.25
-    over25_cards = min(over35_cards + 0.15, 0.95)
+    # Base rates from team history
+    base_over35 = 1.0 if avg_cards > 3.5 else 0.65 if avg_cards > 2.8 else 0.40
+    base_over45 = 1.0 if avg_cards > 4.5 else 0.45 if avg_cards > 3.5 else 0.25
+
+    # Blend with referee data if provided
+    ref_profiles = load_referee_profiles()
+    ref_adjustment = adjust_cards_for_referee(
+        base_over35, base_over45, referee, ref_profiles)
 
     return {
-        "avg_total_cards": round(avg_cards, 2),
-        "is_derby":        is_derby,
-        "over25_cards":    round(over25_cards, 3),
-        "over35_cards":    round(over35_cards, 3),
-        "over45_cards":    round(over45_cards, 3),
-        "under35_cards":   round(1 - over35_cards, 3),
+        "avg_total_cards":   round(avg_cards, 2),
+        "is_derby":          is_derby,
+        "over25_cards":      round(min(ref_adjustment["over35_cards"] + 0.15, 0.95), 3),
+        "over35_cards":      ref_adjustment["over35_cards"],
+        "over45_cards":      ref_adjustment["over45_cards"],
+        "under35_cards":     round(1 - ref_adjustment["over35_cards"], 3),
+        "referee":           ref_adjustment["referee"],
+        "referee_tendency":  ref_adjustment["referee_tendency"],
+        "referee_avg_cards": ref_adjustment["referee_avg_cards"],
+        "referee_found":     ref_adjustment["referee_found"],
     }
 
 
@@ -185,7 +196,7 @@ def predict_corners(home: str, away: str, profiles: dict) -> dict:
     }
 
 
-def predict_match(home_team: str, away_team: str) -> dict:
+def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
     """
     Master function — runs all engines, returns full prediction.
     """
@@ -203,7 +214,7 @@ def predict_match(home_team: str, away_team: str) -> dict:
 
     goals = predict_goals(home_team, away_team, profiles, h2h)
     result = predict_result(home_team, away_team, profiles, h2h)
-    cards = predict_cards(home_team, away_team, profiles)
+    cards = predict_cards(home_team, away_team, profiles, referee)
     corners = predict_corners(home_team, away_team, profiles)
 
     h2h_data = get_h2h(home_team, away_team, h2h)
@@ -251,6 +262,7 @@ def format_prediction(pred: dict) -> str:
         f"  BTTS Yes:   {g['btts_yes']*100:.1f}%",
 
         f"\n🟨 CARDS  (avg total: {c['avg_total_cards']})",
+        f"  Referee: {c['referee']} — {c['referee_tendency']} ({c['referee_avg_cards']} cards/game)",
         f"  Over 2.5:   {c['over25_cards']*100:.1f}%",
         f"  Over 3.5:   {c['over35_cards']*100:.1f}%",
         f"  Over 4.5:   {c['over45_cards']*100:.1f}%",
