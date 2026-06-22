@@ -29,6 +29,212 @@ async def send_message(text):
     print(f"[TG] Sent: {text[:60]}...")
 
 
+# ─── TEAM NAME ALIASES ───────────────────────────────────────────
+
+ALIASES = {
+    # Manchester United
+    "man united":           "Manchester United",
+    "man utd":              "Manchester United",
+    "man u":                "Manchester United",
+    "mufc":                 "Manchester United",
+    "united":               "Manchester United",
+    "red devils":           "Manchester United",
+
+    # Manchester City
+    "man city":             "Manchester City",
+    "man c":                "Manchester City",
+    "mcfc":                 "Manchester City",
+    "city":                 "Manchester City",
+    "the citizens":         "Manchester City",
+
+    # Tottenham
+    "spurs":                "Tottenham",
+    "tottenham hotspur":    "Tottenham",
+    "thfc":                 "Tottenham",
+    "tottenham":            "Tottenham",
+
+    # Arsenal
+    "arsenal":              "Arsenal",
+    "the gunners":          "Arsenal",
+    "afc":                  "Arsenal",
+    "gooners":              "Arsenal",
+    "gunners":              "Arsenal",
+
+    # Chelsea
+    "chelsea":              "Chelsea",
+    "the blues":            "Chelsea",
+    "cfc":                  "Chelsea",
+    "blues":                "Chelsea",
+
+    # Liverpool
+    "liverpool":            "Liverpool",
+    "the reds":             "Liverpool",
+    "lfc":                  "Liverpool",
+    "pool":                 "Liverpool",
+    "reds":                 "Liverpool",
+
+    # Wolverhampton
+    "wolves":               "Wolverhampton Wanderers",
+    "wolverhampton":        "Wolverhampton Wanderers",
+    "wwfc":                 "Wolverhampton Wanderers",
+
+    # West Ham
+    "west ham":             "West Ham",
+    "hammers":              "West Ham",
+    "whufc":                "West Ham",
+    "irons":                "West Ham",
+
+    # Aston Villa
+    "villa":                "Aston Villa",
+    "aston villa":          "Aston Villa",
+    "avfc":                 "Aston Villa",
+    "villans":              "Aston Villa",
+
+    # Nottingham Forest
+    "forest":               "Nottingham Forest",
+    "nott forest":          "Nottingham Forest",
+    "nffc":                 "Nottingham Forest",
+    "nottingham":           "Nottingham Forest",
+    "nott'm forest":        "Nottingham Forest",
+
+    # Newcastle
+    "newcastle":            "Newcastle United",
+    "newcastle utd":        "Newcastle United",
+    "nufc":                 "Newcastle United",
+    "magpies":              "Newcastle United",
+    "toon":                 "Newcastle United",
+
+    # Leicester
+    "leicester":            "Leicester",
+    "leicester city":       "Leicester",
+    "lcfc":                 "Leicester",
+    "foxes":                "Leicester",
+
+    # Brighton
+    "brighton":             "Brighton",
+    "brighton & hove":      "Brighton",
+    "bhafc":                "Brighton",
+    "seagulls":             "Brighton",
+
+    # Crystal Palace
+    "crystal palace":       "Crystal Palace",
+    "palace":               "Crystal Palace",
+    "cpfc":                 "Crystal Palace",
+    "eagles":               "Crystal Palace",
+
+    # Everton
+    "everton":              "Everton",
+    "efc":                  "Everton",
+    "toffees":              "Everton",
+
+    # Brentford
+    "brentford":            "Brentford",
+    "bees":                 "Brentford",
+
+    # Fulham
+    "fulham":               "Fulham",
+    "ffc":                  "Fulham",
+    "cottagers":            "Fulham",
+
+    # Bournemouth
+    "bournemouth":          "Bournemouth",
+    "afcb":                 "Bournemouth",
+    "cherries":             "Bournemouth",
+
+    # Southampton
+    "southampton":          "Southampton",
+    "saints":               "Southampton",
+
+    # Ipswich
+    "ipswich":              "Ipswich",
+    "ipswich town":         "Ipswich",
+    "itfc":                 "Ipswich",
+    "tractor boys":         "Ipswich",
+
+    # Luton
+    "luton":                "Luton",
+    "luton town":           "Luton",
+    "hatters":              "Luton",
+
+    # Burnley
+    "burnley":              "Burnley",
+    "clarets":              "Burnley",
+
+    # Sheffield United
+    "sheffield utd":        "Sheffield United",
+    "sheffield united":     "Sheffield United",
+    "sufc":                 "Sheffield United",
+    "blades":               "Sheffield United",
+
+    # Leeds
+    "leeds":                "Leeds United",
+    "leeds utd":            "Leeds United",
+    "lufc":                 "Leeds United",
+    "whites":               "Leeds United",
+
+    # Sunderland
+    "sunderland":           "Sunderland",
+    "safc":                 "Sunderland",
+    "black cats":           "Sunderland",
+
+    # Hull
+    "hull":                 "Hull City",
+    "hull city":            "Hull City",
+    "tigers":               "Hull City",
+
+    # Coventry
+    "coventry":             "Coventry City",
+    "coventry city":        "Coventry City",
+    "ccfc":                 "Coventry City",
+    "sky blues":            "Coventry City",
+
+    # Middlesbrough
+    "middlesbrough":        "Middlesbrough",
+    "boro":                 "Middlesbrough",
+    "mfc":                  "Middlesbrough",
+
+    # West Brom
+    "west brom":            "West Brom",
+    "west bromwich":        "West Brom",
+    "wba":                  "West Brom",
+    "baggies":              "West Brom",
+
+    # Watford
+    "watford":              "Watford",
+    "hornets":              "Watford",
+
+    # Norwich
+    "norwich":              "Norwich City",
+    "canaries":             "Norwich City",
+    "ncfc":                 "Norwich City",
+
+    # QPR
+    "qpr":                  "QPR",
+    "queens park rangers":  "QPR",
+
+    # Blackburn
+    "blackburn":            "Blackburn",
+    "blackburn rovers":     "Blackburn",
+    "rovers":               "Blackburn",
+
+    # Swansea
+    "swansea":              "Swansea City",
+    "swans":                "Swansea City",
+
+    # Cardiff
+    "cardiff":              "Cardiff City",
+    "bluebirds":            "Cardiff City",
+
+    # Stoke
+    "stoke":                "Stoke City",
+    "potters":              "Stoke City",
+
+    # Millwall
+    "millwall":             "Millwall",
+    "lions":                "Millwall",
+}
+
+
 # ─── FUZZY TEAM NAME MATCHER ─────────────────────────────────────
 
 def load_known_teams() -> list:
@@ -39,50 +245,16 @@ def load_known_teams() -> list:
 def fuzzy_match(raw: str, teams: list) -> str:
     raw = raw.lower().strip()
 
-    # Common shorthand aliases
-    aliases = {
-        "man united":   "Manchester United",
-        "man utd":      "Manchester United",
-        "man u":        "Manchester United",
-        "mufc":         "Manchester United",
-        "man city":     "Manchester City",
-        "man c":        "Manchester City",
-        "mcfc":         "Manchester City",
-        "spurs":        "Tottenham",
-        "tottenham hotspur": "Tottenham",
-        "wolves":       "Wolverhampton Wanderers",
-        "wolverhampton": "Wolverhampton Wanderers",
-        "west ham":     "West Ham",
-        "leicester":    "Leicester",
-        "brighton":     "Brighton",
-        "newcastle":    "Newcastle",
-        "villa":        "Aston Villa",
-        "forest":       "Nottingham Forest",
-        "nott forest":  "Nottingham Forest",
-        "nffc":         "Nottingham Forest",
-        "brentford":    "Brentford",
-        "fulham":       "Fulham",
-        "everton":      "Everton",
-        "ipswich":      "Ipswich",
-        "southampton":  "Southampton",
-        "bournemouth":  "Bournemouth",
-        "crystal palace": "Crystal Palace",
-        "palace":       "Crystal Palace",
-        "luton":        "Luton",
-        "burnley":      "Burnley",
-        "sheffield utd": "Sheffield United",
-        "sheffield united": "Sheffield United",
-    }
-
-    if raw in aliases:
-        return aliases[raw]
+    # Check aliases first (case-insensitive)
+    if raw in ALIASES:
+        return ALIASES[raw]
 
     # Exact match (case-insensitive)
     for t in teams:
         if t.lower() == raw:
             return t
 
-    # Partial match — raw is contained in team name or vice versa
+    # Partial match — raw contained in team name or vice versa
     for t in teams:
         if raw in t.lower() or t.lower() in raw:
             return t
@@ -101,36 +273,49 @@ def fuzzy_match(raw: str, teams: list) -> str:
 # ─── EPL MATCH HANDLER ───────────────────────────────────────────
 
 async def handle_epl_match(home_team: str, away_team: str):
-    """Run club value detection and send report to Telegram."""
+    """Run club value detection with live SportyBet odds."""
     await send_message(f"🔍 Analysing <b>{home_team} vs {away_team}</b>...")
 
-    # Placeholder odds — will be replaced with live SportyBet scrape
-    placeholder_odds = {
-        "home_win":        2.10,
-        "draw":            3.40,
-        "away_win":        3.80,
-        "over15":          1.35,
-        "over25":          1.90,
-        "over35":          3.20,
-        "under25":         1.95,
-        "btts_yes":        1.75,
-        "btts_no":         2.05,
-        "over35_cards":    1.85,
-        "over45_cards":    2.40,
-        "over85_corners":  1.55,
-        "over105_corners": 2.10,
-    }
+    from src.collectors.epl_odds_scraper import get_odds_for_match
 
-    analysis = detect_value(home_team, away_team, placeholder_odds)
+    live_odds = get_odds_for_match(home_team, away_team)
+
+    if live_odds and live_odds.get("home_win"):
+        odds_source = "Live SportyBet odds"
+        odds = live_odds
+    else:
+        odds_source = "Model odds (match not found on SportyBet)"
+        odds = {
+            "home_win":        2.10,
+            "draw":            3.40,
+            "away_win":        3.80,
+            "over15":          1.35,
+            "over25":          1.90,
+            "over35":          3.20,
+            "under25":         1.95,
+            "btts_yes":        1.75,
+            "btts_no":         2.05,
+            "over35_cards":    1.85,
+            "over45_cards":    2.40,
+            "over85_corners":  1.55,
+            "over105_corners": 2.10,
+        }
+
+    analysis = detect_value(home_team, away_team, odds)
+
+    if "error" in analysis:
+        await send_message(f"❌ {analysis['error']}\nCheck team names match EPL clubs.")
+        return
+
     report = format_value_report(analysis)
-    await send_message(report)
+    footer = f"\n\n📡 <i>{odds_source}</i>"
+    await send_message(report + footer)
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle free-text messages like 'Arsenal vs Chelsea'."""
     text = update.message.text.strip()
 
-    # Only respond to messages from your chat
     if str(update.message.chat_id) != str(CHAT_ID):
         return
 
@@ -147,14 +332,15 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await send_message(
             "❓ Format: <b>Arsenal vs Chelsea</b>\n"
-            "Works with shortcuts too:\n"
-            "<code>man utd vs liverpool</code>\n"
-            "<code>spurs vs man city</code>"
+            "Shortcuts work too:\n"
+            "<code>united vs city</code>\n"
+            "<code>spurs vs reds</code>\n"
+            "<code>toon vs blues</code>"
         )
 
 
 def run_bot_listener():
-    """Start the bot in listening mode — responds to messages."""
+    """Start the bot in listening mode."""
     app = Application.builder().token(TOKEN).build()
     app.add_handler(MessageHandler(
         filters.TEXT & ~filters.COMMAND, handle_message))
@@ -162,11 +348,9 @@ def run_bot_listener():
     app.run_polling()
 
 
-# ─── EXISTING FUNCTIONS (unchanged) ──────────────────────────────
+# ─── EXISTING FUNCTIONS ───────────────────────────────────────────
 
 async def send_value_bets():
-    """Load latest analysis and send value bets to Telegram."""
-
     if not os.path.exists("data/value_bets.json"):
         await send_message("⚠️ No analysis found. Run the pipeline first.")
         return
@@ -225,7 +409,6 @@ async def send_value_bets():
             )
 
         vb_text = "\n".join(vb_lines)
-
         tactical = ""
         if mgr:
             tactical = (
@@ -255,8 +438,6 @@ async def send_value_bets():
 
 
 async def send_daily_summary():
-    """Send performance summary."""
-
     if not os.path.exists("data/model_performance.json"):
         await send_message("📊 No performance data yet.")
         return
@@ -287,22 +468,21 @@ async def send_daily_summary():
 
 
 async def send_test():
-    """Send a test message to verify bot works."""
     msg = (
         f"✅ <b>Football Intelligence Bot Active</b>\n"
         f"━━━━━━━━━━━━━━━━━━━━\n"
         f"🤖 Bot is connected and working\n"
         f"⚽ Ready to send value bet alerts\n"
         f"📅 {datetime.now().strftime('%d %b %Y %H:%M')}\n\n"
-        f"💡 Type any match: <code>Arsenal vs Chelsea</code>\n"
-        f"💡 Shortcuts work: <code>man utd vs spurs</code>"
+        f"💡 Type any match:\n"
+        f"<code>Arsenal vs Chelsea</code>\n"
+        f"<code>united vs city</code>\n"
+        f"<code>spurs vs reds</code>"
     )
     await send_message(msg)
 
 
 async def send_market_analysis():
-    """Send market analysis for all World Cup matches."""
-
     if not os.path.exists("data/value_bets.json"):
         await send_message("⚠️ No analysis found. Run pipeline first.")
         return
@@ -311,7 +491,6 @@ async def send_market_analysis():
         data = json.load(f)
 
     analyses = data.get("analyses", [])
-
     if not analyses:
         await send_message("No matches found.")
         return
