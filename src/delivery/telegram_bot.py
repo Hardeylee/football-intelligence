@@ -273,13 +273,16 @@ def fuzzy_match(raw: str, teams: list) -> str:
 # ─── EPL MATCH HANDLER ───────────────────────────────────────────
 
 async def handle_epl_match(home_team: str, away_team: str):
-    """Run club value detection with live SportyBet odds."""
+    """Run club value detection with live SportyBet odds + streak analysis."""
     await send_message(f"🔍 Analysing <b>{home_team} vs {away_team}</b>...")
 
     from src.collectors.epl_odds_scraper import get_odds_for_match
+    from src.models.streak_analyzer import (
+        analyze_match_streaks, get_streak_confirmation, format_streak_report
+    )
 
+    # Fetch live odds
     live_odds = get_odds_for_match(home_team, away_team)
-
     if live_odds and live_odds.get("home_win"):
         odds_source = "Live SportyBet odds"
         odds = live_odds
@@ -301,15 +304,41 @@ async def handle_epl_match(home_team: str, away_team: str):
             "over105_corners": 2.10,
         }
 
+    # Run value detection
     analysis = detect_value(home_team, away_team, odds)
-
     if "error" in analysis:
         await send_message(f"❌ {analysis['error']}\nCheck team names match EPL clubs.")
         return
 
+    # Run streak analysis
+    streak_data = analyze_match_streaks(home_team, away_team)
+    home_streaks = streak_data["home_streaks"]
+    away_streaks = streak_data["away_streaks"]
+
+    # Get confirmation signals
+    pred = analysis["prediction"]
+    confirmation = get_streak_confirmation(
+        home_streaks,
+        away_streaks,
+        model_over25=pred["goals"]["over25"],
+        model_btts=pred["goals"]["btts_yes"],
+        model_over35_cards=pred["cards"]["over35_cards"],
+        model_over85_corners=pred["corners"]["over85_corners"],
+    )
+
+    # Format and send value report
     report = format_value_report(analysis)
     footer = f"\n\n📡 <i>{odds_source}</i>"
     await send_message(report + footer)
+
+    # Send streak report as separate message
+    streak_report = format_streak_report(
+        home_team, away_team,
+        home_streaks, away_streaks,
+        confirmation
+    )
+    if streak_report:
+        await send_message(streak_report)
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
