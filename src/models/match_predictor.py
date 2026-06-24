@@ -12,6 +12,7 @@ import json
 import os
 from datetime import datetime
 from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_referee
+from src.collectors.xg_scraper import load_xg_profiles
 
 PROFILES_FILE = "data/team_profiles.json"
 H2H_FILE = "data/h2h.json"
@@ -38,57 +39,81 @@ def get_h2h(home: str, away: str, h2h: dict) -> dict:
 
 def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     """
-    Predict goals using Dixon-Coles style attack/defense ratings.
-    Uses home/away splits for accuracy.
+    Predict goals using xG data (primary) blended with
+    historical rates (secondary) and H2H (tertiary).
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    # Expected goals — home team attacks vs away team defense
-    home_xg = (hp["home_avg_goals_scored"] + ap["away_avg_goals_conceded"]) / 2
-    away_xg = (ap["away_avg_goals_scored"] + hp["home_avg_goals_conceded"]) / 2
+    # Load xG profiles
+    xg_profiles = load_xg_profiles()
+    home_xg_data = xg_profiles.get(home, {})
+    away_xg_data = xg_profiles.get(away, {})
 
-    # H2H adjustment — if we have history, blend it in
+    # Expected goals — xG attack vs xG defense
+    if home_xg_data and away_xg_data:
+        # Primary: xG based (home attack vs away defense)
+        home_xg = (home_xg_data["avg_xg_for"] +
+                   away_xg_data["avg_xg_against"]) / 2
+        away_xg = (away_xg_data["avg_xg_for"] +
+                   home_xg_data["avg_xg_against"]) / 2
+
+        # Market rates — blend xG rates with historical rates (70/30)
+        over15_rate = (
+            home_xg_data["xg_over15_rate"] * 0.35 +
+            away_xg_data["xg_over15_rate"] * 0.35 +
+            hp["over15_rate"] * 0.15 +
+            ap["over15_rate"] * 0.15
+        )
+        over25_rate = (
+            home_xg_data["xg_over25_rate"] * 0.35 +
+            away_xg_data["xg_over25_rate"] * 0.35 +
+            hp["over25_rate"] * 0.15 +
+            ap["over25_rate"] * 0.15
+        )
+        btts_rate = (
+            home_xg_data["xg_btts_rate"] * 0.35 +
+            away_xg_data["xg_btts_rate"] * 0.35 +
+            hp["btts_rate"] * 0.15 +
+            ap["btts_rate"] * 0.15
+        )
+        data_source = "xG"
+
+    else:
+        # Fallback: historical rates only
+        home_xg = (hp["home_avg_goals_scored"] +
+                   ap["away_avg_goals_conceded"]) / 2
+        away_xg = (ap["away_avg_goals_scored"] +
+                   hp["home_avg_goals_conceded"]) / 2
+        over15_rate = (hp["over15_rate"] + ap["over15_rate"]) / 2
+        over25_rate = (hp["over25_rate"] + ap["over25_rate"]) / 2
+        btts_rate = (hp["btts_rate"] + ap["btts_rate"]) / 2
+        data_source = "historical"
+
+    # H2H adjustment
     h2h = get_h2h(home, away, h2h_data)
     if h2h and h2h["matches"] >= 3:
         h2h_avg = h2h["avg_goals"]
-        home_xg = (home_xg * 0.75) + (h2h_avg * 0.5 * 0.25)
-        away_xg = (away_xg * 0.75) + (h2h_avg * 0.5 * 0.25)
+        home_xg = (home_xg * 0.80) + (h2h_avg * 0.5 * 0.20)
+        away_xg = (away_xg * 0.80) + (h2h_avg * 0.5 * 0.20)
+        h2h_over25 = 1.0 if h2h_avg > 2.5 else 0.0
+        over25_rate = (over25_rate * 0.85) + (h2h_over25 * 0.15)
 
-    total_xg = home_xg + away_xg
-
-    # Over/Under probabilities using Poisson approximation
-    # P(over X.5) derived from historical rates + xG blend
-    home_over15 = (hp["home_avg_goals_scored"] > 1.0)
-    away_over15 = (ap["away_avg_goals_scored"] > 0.8)
-
-    # Blend historical rates with xG signal
-    over15_rate = (hp["over15_rate"] + ap["over15_rate"]) / 2
-    over25_rate = (hp["over25_rate"] + ap["over25_rate"]) / 2
-    over35_rate = over25_rate * 0.52  # Rough scaling
-
-    # H2H goals adjustment
-    if h2h and h2h["matches"] >= 3:
-        h2h_over25 = 1.0 if h2h["avg_goals"] > 2.5 else 0.0
-        over25_rate = (over25_rate * 0.8) + (h2h_over25 * 0.2)
-
-    # BTTS
-    btts_rate = (hp["btts_rate"] + ap["btts_rate"]) / 2
-    if h2h and h2h["matches"] >= 3:
-        btts_rate = (btts_rate * 0.8) + (h2h.get("btts_rate", btts_rate) * 0.2)
+    over35_rate = over25_rate * 0.48
 
     return {
-        "home_xg":     round(home_xg, 2),
-        "away_xg":     round(away_xg, 2),
-        "total_xg":    round(total_xg, 2),
-        "over15":      round(min(over15_rate, 0.97), 3),
-        "over25":      round(min(over25_rate, 0.95), 3),
-        "over35":      round(min(over35_rate, 0.85), 3),
-        "under15":     round(1 - over15_rate, 3),
-        "under25":     round(1 - over25_rate, 3),
-        "under35":     round(1 - over35_rate, 3),
-        "btts_yes":    round(min(btts_rate, 0.95), 3),
-        "btts_no":     round(1 - btts_rate, 3),
+        "home_xg":      round(home_xg, 2),
+        "away_xg":      round(away_xg, 2),
+        "total_xg":     round(home_xg + away_xg, 2),
+        "data_source":  data_source,
+        "over15":       round(min(over15_rate, 0.97), 3),
+        "over25":       round(min(over25_rate, 0.95), 3),
+        "over35":       round(min(over35_rate, 0.85), 3),
+        "under15":      round(max(1 - over15_rate, 0.03), 3),
+        "under25":      round(max(1 - over25_rate, 0.05), 3),
+        "under35":      round(max(1 - over35_rate, 0.15), 3),
+        "btts_yes":     round(min(btts_rate, 0.95), 3),
+        "btts_no":      round(max(1 - btts_rate, 0.05), 3),
     }
 
 
