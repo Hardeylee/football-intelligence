@@ -13,6 +13,7 @@ import os
 from datetime import datetime
 from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_referee
 from src.collectors.xg_scraper import load_xg_profiles
+from src.models.epl_manager_profiles import apply_manager_adjustments
 
 PROFILES_FILE = "data/team_profiles.json"
 H2H_FILE = "data/h2h.json"
@@ -244,15 +245,22 @@ def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
 
     h2h_data = get_h2h(home_team, away_team, h2h)
 
+   # Apply manager tactical adjustments
+    mgr_adjusted = apply_manager_adjustments(
+        home_team, away_team, goals, cards, corners
+    )
+
     return {
-        "home_team":  home_team,
-        "away_team":  away_team,
-        "generated":  datetime.now().isoformat(),
-        "result":     result,
-        "goals":      goals,
-        "cards":      cards,
-        "corners":    corners,
-        "h2h":        h2h_data,
+        "home_team":      home_team,
+        "away_team":      away_team,
+        "generated":      datetime.now().isoformat(),
+        "result":         result,
+        "goals":          mgr_adjusted["goals"],
+        "cards":          mgr_adjusted["cards"],
+        "corners":        mgr_adjusted["corners"],
+        "h2h":            h2h_data,
+        "home_manager":   mgr_adjusted["home_manager"],
+        "away_manager":   mgr_adjusted["away_manager"],
     }
 
 
@@ -280,6 +288,8 @@ def format_prediction(pred: dict) -> str:
         f"  {h} DC:   {r['home_or_draw']*100:.1f}%",
         f"  {a} DC:   {r['away_or_draw']*100:.1f}%",
 
+        f"\n👔 {pred.get('home_manager', {}).get('name', '?')} ({pred.get('home_manager', {}).get('style', '?')})",
+        f"   vs {pred.get('away_manager', {}).get('name', '?')} ({pred.get('away_manager', {}).get('style', '?')})",
         f"\n⚽ GOALS  (xG: {g['home_xg']} - {g['away_xg']})",
         f"  Over 1.5:   {g['over15']*100:.1f}%",
         f"  Over 2.5:   {g['over25']*100:.1f}%",
@@ -319,5 +329,5 @@ if __name__ == "__main__":
     print("\n")
 
     # Test: Manchester City vs Liverpool
-    pred2 = predict_match("Manchester City", "Liverpool")
+    pred2 = predict_match("Man City", "Liverpool")
     print(format_prediction(pred2))
