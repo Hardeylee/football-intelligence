@@ -153,18 +153,18 @@ EPL_MANAGER_PROFILES = {
     },
 
     "Fulham": {
-        "manager":            "Unknown",
-        "style":              "Unknown",
-        "formation":          "Unknown",
-        "pressing_intensity": 6,
-        "defensive_line":     5,
-        "attacking_tempo":    6,
-        "set_piece_focus":    5,
-        "foul_tendency":      6,
-        "cards_modifier":     0.00,   # Neutral until manager confirmed
-        "corners_modifier":   0.00,
-        "goals_modifier":     0.00,
-        "notes": "Manager TBC. Using league average modifiers until confirmed."
+        "manager":            "Marco Silva",
+        "style":              "Possession / Attacking",
+        "formation":          "4-2-3-1",
+        "pressing_intensity": 7,
+        "defensive_line":     6,
+        "attacking_tempo":    8,
+        "set_piece_focus":    6,
+        "foul_tendency":      5,
+        "cards_modifier":     0.03,
+        "corners_modifier":   0.03,
+        "goals_modifier":     0.05,
+        "notes": "Silva built Fulham into an attacking, possession-based side. Teams score and concede freely. High tempo."
     },
 
     "Hull City": {

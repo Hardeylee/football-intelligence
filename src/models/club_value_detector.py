@@ -6,8 +6,9 @@ Flags markets where edge >= 8% and EV >= 0.10
 
 from src.models.match_predictor import predict_match
 
-MIN_EDGE = 0.08
-MIN_EV = 0.10
+MIN_EDGE = 0.08        # Default minimum edge
+MIN_EV = 0.10          # Minimum expected value
+RESULT_MIN_EDGE = 0.15  # Higher bar for 1X2 result markets
 
 
 def implied_prob(odds: float) -> float:
@@ -28,6 +29,27 @@ def calculate_edge(model_prob: float, market_odds: float) -> dict:
         "ev":           round(ev, 4),
         "value":        edge >= MIN_EDGE and ev >= MIN_EV,
     }
+
+
+def check_goals_filter(home_team: str, away_team: str, min_rate: float = 0.55) -> dict:
+    """
+    Check if both teams have high enough over 2.5 rates from historical data.
+    Used as additional filter on top of edge check for goals markets.
+    """
+    import json
+    try:
+        with open("data/team_profiles.json") as f:
+            profiles = json.load(f)["teams"]
+        home_rate = profiles.get(home_team, {}).get("over25_rate", 0)
+        away_rate = profiles.get(away_team, {}).get("over25_rate", 0)
+        both_qualify = home_rate >= min_rate and away_rate >= min_rate
+        return {
+            "home_over25_rate": home_rate,
+            "away_over25_rate": away_rate,
+            "both_qualify":     both_qualify,
+        }
+    except:
+        return {"home_over25_rate": 0, "away_over25_rate": 0, "both_qualify": False}
 
 
 def detect_value(home_team: str, away_team: str, sportybet_odds: dict) -> dict:
@@ -83,18 +105,38 @@ def detect_value(home_team: str, away_team: str, sportybet_odds: dict) -> dict:
     results = {}
     value_bets = []
 
+    # Markets that need higher edge threshold
+    result_markets = {"home_win", "draw",
+                      "away_win", "home_or_draw", "away_or_draw"}
+
     for market, model_prob in market_map.items():
         odds = sportybet_odds.get(market)
         if not odds:
             continue
-        analysis = calculate_edge(model_prob, odds)
+
+        # Use higher edge threshold for result markets
+        min_edge = RESULT_MIN_EDGE if market in result_markets else MIN_EDGE
+        imp = implied_prob(odds)
+        edge = model_prob - imp
+        ev = (model_prob * (odds - 1)) - (1 - model_prob)
+
+        analysis = {
+            "model_prob":   round(model_prob, 3),
+            "implied_prob": round(imp, 3),
+            "odds":         odds,
+            "edge":         round(edge, 4),
+            "ev":           round(ev, 4),
+            "value":        edge >= min_edge and ev >= MIN_EV,
+            "min_edge_used": min_edge,
+        }
+
         results[market] = analysis
         if analysis["value"]:
             value_bets.append({
-                "market": market,
-                "odds":   odds,
-                "edge":   analysis["edge"],
-                "ev":     analysis["ev"],
+                "market":     market,
+                "odds":       odds,
+                "edge":       analysis["edge"],
+                "ev":         analysis["ev"],
                 "model_prob": analysis["model_prob"],
             })
 
@@ -145,6 +187,15 @@ def format_value_report(analysis: dict) -> str:
         f"xG: {g['home_xg']} — {g['away_xg']}",
         "",
     ]
+
+    # Add goals filter info
+    gf = check_goals_filter(h, a)
+    if gf["home_over25_rate"] and gf["away_over25_rate"]:
+        lines.append(
+            f"📊 Over 2.5 rates: {h} {gf['home_over25_rate']*100:.0f}% | "
+            f"{a} {gf['away_over25_rate']*100:.0f}%"
+            f" {'✅' if gf['both_qualify'] else '⚠️ one team low'}"
+        )
 
     if vb:
         lines.append("✅ VALUE BETS FOUND:")

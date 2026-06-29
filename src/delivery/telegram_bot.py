@@ -12,6 +12,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from telegram import Bot, Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
+from src.models.acca_builder import build_acca, format_acca_report, build_match_acca_legs
 
 load_dotenv()
 
@@ -341,6 +342,54 @@ async def handle_epl_match(home_team: str, away_team: str):
         await send_message(streak_report)
 
 
+async def handle_acca_request(text: str):
+    """
+    Handle acca requests.
+    Format: acca Arsenal vs Chelsea, Man City vs Liverpool, Leeds vs Ipswich
+    """
+    from src.collectors.epl_odds_scraper import get_odds_for_match
+
+    # Strip the 'acca' prefix
+    raw = text.lower().replace("acca", "").strip()
+
+    # Split by comma to get individual matches
+    raw_matches = [m.strip() for m in raw.split(",") if "vs" in m.lower()]
+
+    if not raw_matches:
+        await send_message(
+            "❓ Acca format:\n"
+            "<code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>"
+        )
+        return
+
+    known_teams = load_known_teams()
+    matches = []
+    odds_map = {}
+
+    for raw_match in raw_matches:
+        parts = raw_match.lower().split(" vs ")
+        if len(parts) != 2:
+            continue
+        home = fuzzy_match(parts[0].strip(), known_teams)
+        away = fuzzy_match(parts[1].strip(), known_teams)
+        matches.append((home, away))
+
+        # Try to fetch live odds
+        live_odds = get_odds_for_match(home, away)
+        if live_odds and live_odds.get("home_win"):
+            odds_map[f"{home} vs {away}"] = live_odds
+
+    if not matches:
+        await send_message("❌ No valid matches found. Format: acca Arsenal vs Chelsea, Liverpool vs Leeds")
+        return
+
+    await send_message(f"🔍 Building acca for <b>{len(matches)} matches</b>...")
+
+    acca = build_acca(matches, odds_map if odds_map else None)
+    report = format_acca_report(acca)
+    await send_message(report)
+
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle free-text messages like 'Arsenal vs Chelsea'."""
     text = update.message.text.strip()
@@ -348,8 +397,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if str(update.message.chat_id) != str(CHAT_ID):
         return
 
-    if " vs " in text.lower():
-        parts = text.lower().split(" vs ")
+    text_lower = text.lower().strip()
+
+    if text_lower.startswith("acca"):
+        await handle_acca_request(text)
+    elif " vs " in text_lower:
+        parts = text_lower.split(" vs ")
         raw_home = parts[0].strip()
         raw_away = parts[1].strip()
 
@@ -360,11 +413,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_epl_match(home, away)
     else:
         await send_message(
-            "❓ Format: <b>Arsenal vs Chelsea</b>\n"
-            "Shortcuts work too:\n"
-            "<code>united vs city</code>\n"
-            "<code>spurs vs reds</code>\n"
-            "<code>toon vs blues</code>"
+            "❓ Commands:\n"
+            "Match: <code>Arsenal vs Chelsea</code>\n"
+            "Acca: <code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>\n"
+            "Shortcuts: <code>spurs vs reds</code>, <code>united vs city</code>"
         )
 
 
