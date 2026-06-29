@@ -222,6 +222,34 @@ def predict_corners(home: str, away: str, profiles: dict) -> dict:
     }
 
 
+def _build_league_average(profiles: dict) -> dict:
+    """Build a league average profile from all existing team profiles."""
+    if not profiles:
+        return {}
+
+    keys = [
+        "win_rate", "draw_rate", "loss_rate",
+        "btts_rate", "over15_rate", "over25_rate",
+        "home_win_rate", "home_avg_goals_scored", "home_avg_goals_conceded",
+        "away_win_rate", "away_avg_goals_scored", "away_avg_goals_conceded",
+        "avg_yellow_cards", "avg_corners_for", "avg_corners_against",
+        "form_score", "clean_sheet_rate",
+    ]
+
+    avg = {}
+    for key in keys:
+        vals = [p[key] for p in profiles.values() if key in p]
+        avg[key] = round(sum(vals) / len(vals), 3) if vals else 0.5
+
+    # Promoted teams are weaker than average — apply 10% reduction
+    avg["win_rate"] = round(avg["win_rate"] * 0.85, 3)
+    avg["home_win_rate"] = round(avg["home_win_rate"] * 0.85, 3)
+    avg["away_win_rate"] = round(avg["away_win_rate"] * 0.85, 3)
+    avg["form_score"] = round(avg["form_score"] * 0.85, 3)
+
+    return avg
+
+
 def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
     """
     Master function — runs all engines, returns full prediction.
@@ -229,14 +257,20 @@ def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
     profiles = load_profiles()
     h2h = load_h2h()
 
-    # Validate teams exist
+    # Validate teams exist — use league average fallback for promoted teams
     missing = []
     if home_team not in profiles:
         missing.append(home_team)
     if away_team not in profiles:
         missing.append(away_team)
+
     if missing:
-        return {"error": f"Teams not found in profiles: {missing}"}
+        # Build league average profile as fallback
+        league_avg = _build_league_average(profiles)
+        for team in missing:
+            profiles[team] = league_avg.copy()
+            print(
+                f"[INFO] {team} not in historical profiles — using league average fallback")
 
     goals = predict_goals(home_team, away_team, profiles, h2h)
     result = predict_result(home_team, away_team, profiles, h2h)

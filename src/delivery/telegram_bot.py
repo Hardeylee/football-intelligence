@@ -183,12 +183,12 @@ ALIASES = {
     "hull city":            "Hull City",
     "tigers":               "Hull City",
 
-    # Coventry
+    # Coventry must be explicit to avoid "city" matching Man City
     "coventry":             "Coventry City",
     "coventry city":        "Coventry City",
+    "cov":                  "Coventry City",
     "ccfc":                 "Coventry City",
     "sky blues":            "Coventry City",
-
     # Middlesbrough
     "middlesbrough":        "Middlesbrough",
     "boro":                 "Middlesbrough",
@@ -255,17 +255,28 @@ def fuzzy_match(raw: str, teams: list) -> str:
         if t.lower() == raw:
             return t
 
+    # Multi-word exact phrase match — prevents "coventry city" matching "man city"
+    for t in teams:
+        t_lower = t.lower()
+        if raw == t_lower:
+            return t
+        # All words in raw must appear in team name in order
+        raw_words = raw.split()
+        if all(w in t_lower for w in raw_words):
+            return t
+
     # Partial match — raw contained in team name or vice versa
     for t in teams:
         if raw in t.lower() or t.lower() in raw:
             return t
 
-    # Word overlap scoring
+    # Word overlap scoring — require majority match
     raw_words = set(raw.split())
     best, best_score = None, 0
     for t in teams:
-        overlap = len(raw_words & set(t.lower().split()))
-        if overlap > best_score:
+        t_words = set(t.lower().split())
+        overlap = len(raw_words & t_words)
+        if overlap > best_score and overlap >= len(raw_words) * 0.6:
             best, best_score = t, overlap
 
     return best or raw.title()
@@ -391,7 +402,7 @@ async def handle_acca_request(text: str):
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Handle free-text messages like 'Arsenal vs Chelsea'."""
+    """Handle free-text messages."""
     text = update.message.text.strip()
 
     if str(update.message.chat_id) != str(CHAT_ID):
@@ -399,25 +410,50 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text_lower = text.lower().strip()
 
+    # Acca request
     if text_lower.startswith("acca"):
         await handle_acca_request(text)
-    elif " vs " in text_lower:
+        return
+
+    # Count how many "vs" are in the message
+    # Handle different line break formats Telegram might send
+    import re
+    lines = [l.strip()
+             for l in re.split(r'[\n\r]+', text) if "vs" in l.lower()]
+
+    # Multiple matches in one message
+    if len(lines) > 1:
+        await send_message(f"🔍 Processing <b>{len(lines)} matches</b>...")
+        known_teams = load_known_teams()
+        for line in lines:
+            parts = line.lower().split(" vs ")
+            if len(parts) != 2:
+                continue
+            home = fuzzy_match(parts[0].strip(), known_teams)
+            away = fuzzy_match(parts[1].strip(), known_teams)
+            await handle_epl_match(home, away)
+            await asyncio.sleep(2)
+        return
+
+    # Single match
+    if " vs " in text_lower:
         parts = text_lower.split(" vs ")
         raw_home = parts[0].strip()
         raw_away = parts[1].strip()
-
         known_teams = load_known_teams()
         home = fuzzy_match(raw_home, known_teams)
         away = fuzzy_match(raw_away, known_teams)
-
         await handle_epl_match(home, away)
-    else:
-        await send_message(
-            "❓ Commands:\n"
-            "Match: <code>Arsenal vs Chelsea</code>\n"
-            "Acca: <code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>\n"
-            "Shortcuts: <code>spurs vs reds</code>, <code>united vs city</code>"
-        )
+        return
+
+    # Unknown command
+    await send_message(
+        "❓ Commands:\n"
+        "Match: <code>Arsenal vs Chelsea</code>\n"
+        "Multiple: paste multiple matches on separate lines\n"
+        "Acca: <code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>\n"
+        "Shortcuts: <code>spurs vs reds</code>, <code>united vs city</code>"
+    )
 
 
 def run_bot_listener():

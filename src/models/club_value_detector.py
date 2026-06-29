@@ -33,23 +33,52 @@ def calculate_edge(model_prob: float, market_odds: float) -> dict:
 
 def check_goals_filter(home_team: str, away_team: str, min_rate: float = 0.55) -> dict:
     """
-    Check if both teams have high enough over 2.5 rates from historical data.
-    Used as additional filter on top of edge check for goals markets.
+    Check if both teams have high enough over 2.5 rates.
+    Uses historical profiles first, falls back to xG-derived rates for promoted teams.
     """
     import json
+
     try:
         with open("data/team_profiles.json") as f:
-            profiles = json.load(f)["teams"]
-        home_rate = profiles.get(home_team, {}).get("over25_rate", 0)
-        away_rate = profiles.get(away_team, {}).get("over25_rate", 0)
-        both_qualify = home_rate >= min_rate and away_rate >= min_rate
-        return {
-            "home_over25_rate": home_rate,
-            "away_over25_rate": away_rate,
-            "both_qualify":     both_qualify,
-        }
+            hist = json.load(f)["teams"]
     except:
-        return {"home_over25_rate": 0, "away_over25_rate": 0, "both_qualify": False}
+        hist = {}
+
+    try:
+        with open("data/xg_profiles.json") as f:
+            xg = json.load(f)["teams"]
+    except:
+        xg = {}
+
+    def get_over25_rate(team: str) -> tuple:
+        """Returns (rate, source)"""
+        # Try historical first
+        if team in hist and hist[team].get("over25_rate", 0) > 0:
+            return hist[team]["over25_rate"], "historical"
+        # Fall back to xG-derived rate
+        if team in xg and xg[team].get("xg_over25_rate", 0) > 0:
+            return xg[team]["xg_over25_rate"], "xG"
+        return 0.50, "league_average"  # Neutral fallback
+
+    home_rate, home_source = get_over25_rate(home_team)
+    away_rate, away_source = get_over25_rate(away_team)
+
+    # Apply promoted team discount if using xG source
+    # Promoted teams' xG rates from Championship need slight reduction
+    if home_source == "xG":
+        home_rate = round(home_rate * 0.92, 3)
+    if away_source == "xG":
+        away_rate = round(away_rate * 0.92, 3)
+
+    both_qualify = home_rate >= min_rate and away_rate >= min_rate
+
+    return {
+        "home_over25_rate":   home_rate,
+        "away_over25_rate":   away_rate,
+        "home_source":        home_source,
+        "away_source":        away_source,
+        "both_qualify":       both_qualify,
+    }
 
 
 def detect_value(home_team: str, away_team: str, sportybet_odds: dict) -> dict:
@@ -191,9 +220,11 @@ def format_value_report(analysis: dict) -> str:
     # Add goals filter info
     gf = check_goals_filter(h, a)
     if gf["home_over25_rate"] and gf["away_over25_rate"]:
+        home_src = "xG" if gf.get("home_source") == "xG" else ""
+        away_src = "xG" if gf.get("away_source") == "xG" else ""
         lines.append(
-            f"📊 Over 2.5 rates: {h} {gf['home_over25_rate']*100:.0f}% | "
-            f"{a} {gf['away_over25_rate']*100:.0f}%"
+            f"📊 Over 2.5 rates: {h} {gf['home_over25_rate']*100:.0f}%{home_src} | "
+            f"{a} {gf['away_over25_rate']*100:.0f}%{away_src}"
             f" {'✅' if gf['both_qualify'] else '⚠️ one team low'}"
         )
 
