@@ -214,8 +214,147 @@ def format_value_report(analysis: dict) -> str:
     lines = [
         f"⚽ {h} vs {a}",
         f"xG: {g['home_xg']} — {g['away_xg']}",
-        "",
     ]
+
+    # Goals filter info
+    gf = check_goals_filter(h, a)
+    if gf["home_over25_rate"] and gf["away_over25_rate"]:
+        home_src = "xG" if gf.get("home_source") == "xG" else ""
+        away_src = "xG" if gf.get("away_source") == "xG" else ""
+        lines.append(
+            f"📊 Over 2.5 rates: {h} {gf['home_over25_rate']*100:.0f}%{home_src} | "
+            f"{a} {gf['away_over25_rate']*100:.0f}%{away_src}"
+            f" {'✅' if gf['both_qualify'] else '⚠️ one team low'}"
+        )
+
+    lines.append("")
+
+    if vb:
+        lines.append("✅ VALUE BETS FOUND:")
+        for b in vb:
+            label = market_labels.get(b["market"], b["market"])
+            lines.append(
+                f"  🎯 {label} @ {b['odds']}"
+                f" | Edge: {b['edge']*100:.1f}%"
+                f" | EV: {b['ev']:.2f}"
+                f" | Model: {b['model_prob']*100:.1f}%"
+            )
+    else:
+        lines.append("❌ No value bets found for this match.")
+
+    return "\n".join(lines)
+
+
+def get_informed_bets(home_team: str, away_team: str, sportybet_odds: dict = None, top_n: int = 3) -> dict:
+    """
+    Informed bet mode — returns top N highest confidence markets
+    regardless of edge or value. For accas and casual analysis.
+    No minimum edge required — purely confidence ranked.
+    """
+    pred = predict_match(home_team, away_team)
+    if "error" in pred:
+        return {"error": pred["error"]}
+
+    g = pred["goals"]
+    r = pred["result"]
+    c = pred["cards"]
+    co = pred["corners"]
+
+    # All markets with probabilities
+    all_markets = {
+        "home_win":        r["home_win"],
+        "draw":            r["draw"],
+        "away_win":        r["away_win"],
+        "home_or_draw":    r["home_or_draw"],
+        "away_or_draw":    r["away_or_draw"],
+        "over15":          g["over15"],
+        "over25":          g["over25"],
+        "btts_yes":        g["btts_yes"],
+        "btts_no":         g["btts_no"],
+        "over35_cards":    c["over35_cards"],
+        "over45_cards":    c["over45_cards"],
+        "over85_corners":  co["over85_corners"],
+        "over105_corners": co["over105_corners"],
+    }
+
+    market_labels = {
+        "home_win":        f"{home_team} Win",
+        "draw":            "Draw",
+        "away_win":        f"{away_team} Win",
+        "home_or_draw":    f"{home_team} DC",
+        "away_or_draw":    f"{away_team} DC",
+        "over15":          "Over 1.5 Goals",
+        "over25":          "Over 2.5 Goals",
+        "btts_yes":        "BTTS Yes",
+        "btts_no":         "BTTS No",
+        "over35_cards":    "Over 3.5 Cards",
+        "over45_cards":    "Over 4.5 Cards",
+        "over85_corners":  "Over 8.5 Corners",
+        "over105_corners": "Over 10.5 Corners",
+    }
+
+    def confidence_icon(prob: float) -> str:
+        if prob >= 0.90:
+            return "⭐⭐⭐"
+        elif prob >= 0.75:
+            return "⭐⭐"
+        elif prob >= 0.60:
+            return "⭐"
+        else:
+            return ""
+
+    # Rank all markets by probability
+    ranked = sorted(all_markets.items(), key=lambda x: x[1], reverse=True)
+
+    # Build informed picks
+    picks = []
+    for market, prob in ranked[:top_n]:
+        odds = sportybet_odds.get(market) if sportybet_odds else None
+        picks.append({
+            "market":     market,
+            "label":      market_labels[market],
+            "probability": round(prob, 3),
+            "odds":       odds,
+            "confidence": confidence_icon(prob),
+        })
+
+    return {
+        "home_team":    home_team,
+        "away_team":    away_team,
+        "home_xg":      g["home_xg"],
+        "away_xg":      g["away_xg"],
+        "home_manager": pred.get("home_manager", {}).get("name", "Unknown"),
+        "away_manager": pred.get("away_manager", {}).get("name", "Unknown"),
+        "picks":        picks,
+        "prediction":   pred,
+    }
+
+
+def format_informed_report(result: dict) -> str:
+    """Format informed bet report for Telegram."""
+    if "error" in result:
+        return f"❌ {result['error']}"
+
+    h = result["home_team"]
+    a = result["away_team"]
+    picks = result["picks"]
+
+    lines = [
+        f"⚽ <b>{h} vs {a}</b>",
+        f"xG: {result['home_xg']} — {result['away_xg']}",
+        f"👔 {result['home_manager']} vs {result['away_manager']}",
+        "",
+        "🎯 <b>TOP PICKS (by confidence):</b>",
+    ]
+
+    for i, p in enumerate(picks, 1):
+        odds_str = f"@ {p['odds']}" if p["odds"] else ""
+        lines.append(
+            f"  {i}. {p['label']} {odds_str} "
+            f"— {p['probability']*100:.0f}% {p['confidence']}"
+        )
+
+    return "\n".join(lines)
 
     # Add goals filter info
     gf = check_goals_filter(h, a)

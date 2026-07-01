@@ -12,6 +12,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from telegram import Bot, Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
+from src.models.club_value_detector import detect_value, format_value_report, get_informed_bets, format_informed_report
 from src.models.acca_builder import build_acca, format_acca_report, build_match_acca_legs
 
 load_dotenv()
@@ -340,6 +341,8 @@ async def handle_epl_match(home_team: str, away_team: str):
 
     # Format and send value report
     report = format_value_report(analysis)
+    if not report:
+        report = f"⚽ {home_team} vs {away_team}\n❌ No report generated."
     footer = f"\n\n📡 <i>{odds_source}</i>"
     await send_message(report + footer)
 
@@ -399,6 +402,22 @@ async def handle_acca_request(text: str):
     acca = build_acca(matches, odds_map if odds_map else None)
     report = format_acca_report(acca)
     await send_message(report)
+
+
+async def handle_informed_request(home_team: str, away_team: str):
+    """Handle informed bet request — top picks by confidence, no edge required."""
+    from src.collectors.epl_odds_scraper import get_odds_for_match
+
+    await send_message(f"🎯 Top picks for <b>{home_team} vs {away_team}</b>...")
+
+    live_odds = get_odds_for_match(home_team, away_team)
+    odds = live_odds if live_odds and live_odds.get("home_win") else None
+
+    result = get_informed_bets(home_team, away_team, odds, top_n=3)
+    report = format_informed_report(result)
+
+    odds_source = "Live SportyBet odds" if odds else "Model odds (match not found on SportyBet)"
+    await send_message(report + f"\n\n📡 <i>{odds_source}</i>")
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
