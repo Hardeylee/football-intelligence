@@ -210,19 +210,28 @@ def build_xg_profiles() -> dict:
         "total_ga":      0,
     })
 
+    # Recency weights for xG seasons
+    XG_WEIGHTS = {
+        "xg 22-23.csv": 0.10,
+        "xg 23-24.csv": 0.20,
+        "xg 24-25.csv": 0.30,
+        "xg 25-26.csv": 0.40,
+    }
+
     for filename in csv_files:
         filepath = os.path.join(RAW_XG_DIR, filename)
         rows = load_xg_csv(filepath)
-        print(f"  {filename}: {len(rows)} teams")
+        weight = XG_WEIGHTS.get(filename, 0.25)
+        print(f"  {filename}: {len(rows)} teams (weight: {weight})")
 
         for r in rows:
             s = team_stats[r["team"]]
             s["seasons"] += 1
-            s["total_matches"] += r["matches"]
-            s["total_xg"] += r["xG"]
-            s["total_xga"] += r["xGA"]
-            s["total_goals"] += r["goals"]
-            s["total_ga"] += r["ga"]
+            s["total_matches"] += r["matches"] * weight
+            s["total_xg"] += r["xG"] * weight
+            s["total_xga"] += r["xGA"] * weight
+            s["total_goals"] += r["goals"] * weight
+            s["total_ga"] += r["ga"] * weight
 
     # Build final profiles with averages
     profiles = {}

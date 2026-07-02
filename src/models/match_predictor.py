@@ -156,30 +156,40 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
 
 def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> dict:
     """
-    Predict yellow cards using team foul rates, card history,
-    and referee tendency (weighted 40%).
+    Predict yellow cards using home/away split card rates,
+    team foul rates, referee tendency, derby factor and
+    manager pressing intensity.
+    Home teams average fewer cards than away teams.
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    avg_cards = hp["avg_yellow_cards"] + ap["avg_yellow_cards"]
+    # Use home/away card splits if available
+    # Home team cards at home, away team cards away
+    home_cards_rate = hp.get("home_avg_yellow_cards",
+                             hp.get("avg_yellow_cards", 1.5))
+    away_cards_rate = ap.get("away_avg_yellow_cards",
+                             ap.get("avg_yellow_cards", 1.8))
+
+    avg_cards = home_cards_rate + away_cards_rate
 
     # Derby factor
     derby_pairs = [
         {"Arsenal", "Tottenham"}, {"Arsenal", "Chelsea"},
         {"Manchester United", "Manchester City"},
-        {"Liverpool", "Everton"}, {"Liverpool", "Manchester United"},
-        {"Chelsea", "Tottenham"}, {"Newcastle United", "Sunderland"},
+        {"Man United", "Man City"},
+        {"Liverpool", "Everton"}, {"Liverpool", "Man United"},
+        {"Chelsea", "Tottenham"}, {"Newcastle", "Sunderland"},
     ]
     is_derby = {home, away} in derby_pairs
     if is_derby:
         avg_cards *= 1.2
 
-    # Base rates from team history
+    # Base rates
     base_over35 = 1.0 if avg_cards > 3.5 else 0.65 if avg_cards > 2.8 else 0.40
     base_over45 = 1.0 if avg_cards > 4.5 else 0.45 if avg_cards > 3.5 else 0.25
 
-    # Blend with referee data if provided
+    # Referee adjustment
     ref_profiles = load_referee_profiles()
     ref_adjustment = adjust_cards_for_referee(
         base_over35, base_over45, referee, ref_profiles)
@@ -200,15 +210,27 @@ def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> di
 
 def predict_corners(home: str, away: str, profiles: dict) -> dict:
     """
-    Predict corners using team averages.
+    Predict corners using home/away split rates.
+    Home teams win more corners (more attacking intent).
+    Away teams concede more corners (defending deeper).
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    avg_corners = (
-        hp["avg_corners_for"] + hp["avg_corners_against"] +
-        ap["avg_corners_for"] + ap["avg_corners_against"]
-    ) / 2
+    # Home team corners at home vs away team corners away
+    home_corners_for = hp.get("home_avg_corners_for",
+                              hp.get("avg_corners_for", 5.0))
+    away_corners_against = ap.get("away_avg_corners_against",
+                                  ap.get("avg_corners_against", 5.0))
+    away_corners_for = ap.get("away_avg_corners_for",
+                              ap.get("avg_corners_for", 4.5))
+    home_corners_against = hp.get("home_avg_corners_against",
+                                  hp.get("avg_corners_against", 4.5))
+
+    # Total expected corners
+    home_expected = (home_corners_for + away_corners_against) / 2
+    away_expected = (away_corners_for + home_corners_against) / 2
+    avg_corners = home_expected + away_expected
 
     over85 = 0.75 if avg_corners > 9.5 else 0.55
     over105 = 0.55 if avg_corners > 10.5 else 0.38
@@ -216,6 +238,8 @@ def predict_corners(home: str, away: str, profiles: dict) -> dict:
 
     return {
         "avg_total_corners": round(avg_corners, 2),
+        "home_expected":     round(home_expected, 2),
+        "away_expected":     round(away_expected, 2),
         "over85_corners":    round(over85, 3),
         "over105_corners":   round(over105, 3),
         "over125_corners":   round(over125, 3),
