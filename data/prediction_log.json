@@ -1,0 +1,74 @@
+{
+  "predictions": [
+    {
+      "match_key": "Brighton_vs_Aston Villa_GW1",
+      "home_team": "Brighton",
+      "away_team": "Aston Villa",
+      "kick_off": "GW1",
+      "logged_at": "2026-07-02T03:28:00.762760",
+      "settled": true,
+      "result": null,
+      "model": {
+        "home_win": 0.346,
+        "draw": 0.212,
+        "away_win": 0.442,
+        "over25": 0.714,
+        "btts": 0.853,
+        "over35_cards": 0.848,
+        "over85_corners": 0.76
+      },
+      "odds": {
+        "home_win": 2.36,
+        "draw": 3.8,
+        "away_win": 3.01,
+        "over25": 1.58,
+        "btts_yes": 1.52
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.52,
+          "edge": 0.1951,
+          "prob": 0.853,
+          "won": true,
+          "profit": 520.0
+        },
+        {
+          "market": "over15",
+          "odds": 1.18,
+          "edge": 0.1185,
+          "prob": 0.966,
+          "won": false,
+          "profit": -1000
+        },
+        {
+          "market": "over25",
+          "odds": 1.58,
+          "edge": 0.0811,
+          "prob": 0.714,
+          "won": true,
+          "profit": 580.0000000000001
+        }
+      ],
+      "settled_at": "2026-07-02T03:30:52.461636",
+      "actual_result": {
+        "home_goals": 2,
+        "away_goals": 1,
+        "total_goals": 3,
+        "result": "H",
+        "home_win": true,
+        "draw": false,
+        "away_win": false,
+        "over25": true,
+        "btts": true
+      },
+      "total_profit": 100.00000000000011,
+      "model_checks": {
+        "predicted_over25": true,
+        "predicted_btts": true
+      }
+    }
+  ],
+  "total": 1,
+  "updated_at": "2026-07-02T03:28:00.762795"
+}

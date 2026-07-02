@@ -1,0 +1,77 @@
+{
+  "updated_at": "2026-07-02T03:30:52.463346",
+  "total_predicted": 1,
+  "total_settled": 1,
+  "summary": {
+    "home_win": {
+      "predictions": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "value_bets": 0,
+      "value_won": 0,
+      "value_accuracy": 0,
+      "profit": 0.0,
+      "roi_pct": 0
+    },
+    "draw": {
+      "predictions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "value_bets": 0,
+      "value_won": 0,
+      "value_accuracy": 0,
+      "profit": 0.0,
+      "roi_pct": 0
+    },
+    "away_win": {
+      "predictions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "value_bets": 0,
+      "value_won": 0,
+      "value_accuracy": 0,
+      "profit": 0.0,
+      "roi_pct": 0
+    },
+    "over25": {
+      "predictions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "value_bets": 1,
+      "value_won": 1,
+      "value_accuracy": 1.0,
+      "profit": 580.0,
+      "roi_pct": 58.0
+    },
+    "btts": {
+      "predictions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "value_bets": 0,
+      "value_won": 0,
+      "value_accuracy": 0,
+      "profit": 0.0,
+      "roi_pct": 0
+    },
+    "btts_yes": {
+      "predictions": 0,
+      "correct": 0,
+      "accuracy": 0,
+      "value_bets": 1,
+      "value_won": 1,
+      "value_accuracy": 1.0,
+      "profit": 520.0,
+      "roi_pct": 52.0
+    },
+    "over15": {
+      "predictions": 0,
+      "correct": 0,
+      "accuracy": 0,
+      "value_bets": 1,
+      "value_won": 0,
+      "value_accuracy": 0.0,
+      "profit": -1000.0,
+      "roi_pct": -100.0
+    }
+  }
+}

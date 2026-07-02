@@ -14,6 +14,7 @@ from telegram import Bot, Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 from src.models.club_value_detector import detect_value, format_value_report, get_informed_bets, format_informed_report
 from src.models.acca_builder import build_acca, format_acca_report, build_match_acca_legs
+from src.utils.result_tracker import log_prediction, send_performance_telegram
 
 load_dotenv()
 
@@ -323,6 +324,19 @@ async def handle_epl_match(home_team: str, away_team: str):
         await send_message(f"❌ {analysis['error']}\nCheck team names match EPL clubs.")
         return
 
+    # Auto-log prediction
+    try:
+        log_prediction(
+            home_team=home_team,
+            away_team=away_team,
+            kick_off="GW1",
+            prediction=analysis.get("prediction", {}),
+            odds=odds,
+            value_bets=analysis.get("value_bets", []),
+        )
+    except Exception as e:
+        print(f"[LOG] Could not log prediction: {e}")
+
     # Run streak analysis
     streak_data = analyze_match_streaks(home_team, away_team)
     home_streaks = streak_data["home_streaks"]
@@ -429,18 +443,33 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text_lower = text.lower().strip()
 
+    # Stats command — must be first
+    if text_lower == "stats":
+        from src.utils.result_tracker import send_performance_telegram
+        await send_message(send_performance_telegram())
+        return
+
+    # Pick / informed bet mode
+    if text_lower.startswith("pick ") or text_lower.startswith("informed "):
+        raw = text_lower.replace("pick ", "").replace("informed ", "").strip()
+        if " vs " in raw:
+            parts = raw.split(" vs ")
+            known_teams = load_known_teams()
+            home = fuzzy_match(parts[0].strip(), known_teams)
+            away = fuzzy_match(parts[1].strip(), known_teams)
+            await handle_informed_request(home, away)
+            return
+
     # Acca request
     if text_lower.startswith("acca"):
         await handle_acca_request(text)
         return
 
-    # Count how many "vs" are in the message
-    # Handle different line break formats Telegram might send
+    # Multiple matches in one message
     import re
     lines = [l.strip()
              for l in re.split(r'[\n\r]+', text) if "vs" in l.lower()]
 
-    # Multiple matches in one message
     if len(lines) > 1:
         await send_message(f"🔍 Processing <b>{len(lines)} matches</b>...")
         known_teams = load_known_teams()
@@ -468,10 +497,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Unknown command
     await send_message(
         "❓ Commands:\n"
-        "Match: <code>Arsenal vs Chelsea</code>\n"
-        "Multiple: paste multiple matches on separate lines\n"
-        "Acca: <code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>\n"
-        "Shortcuts: <code>spurs vs reds</code>, <code>united vs city</code>"
+        "Value bets: <code>Arsenal vs Chelsea</code>\n"
+        "Top picks:  <code>pick Arsenal vs Chelsea</code>\n"
+        "Acca:       <code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>\n"
+        "Multiple:   paste matches on separate lines\n"
+        "Stats:      <code>stats</code>\n"
+        "Shortcuts:  <code>spurs vs reds</code>, <code>united vs city</code>"
     )
 
 
@@ -683,3 +714,5 @@ if __name__ == "__main__":
             print("Usage: python -m src.delivery.telegram_bot match Arsenal Chelsea")
     elif cmd == "listen":
         run_bot_listener()
+elif cmd == "stats":
+    asyncio.run(send_message(send_performance_telegram()))
