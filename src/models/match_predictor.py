@@ -121,15 +121,30 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
 
 def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     """
-    Predict match result using form, home advantage, and H2H.
+    Predict match result using home/away form splits.
+    Uses home win rate for home team and away win rate for away team
+    rather than combined win rates — more accurate for venue-specific form.
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    # Base win rates from home/away splits
-    home_strength = (hp["home_win_rate"] +
-                     hp["form_score"]) / 2 + HOME_ADVANTAGE
-    away_strength = (ap["away_win_rate"] + ap["form_score"]) / 2
+    HOME_ADV = 0.06
+
+    # Use venue-specific rates
+    # Home team: how often do they win AT HOME
+    # Away team: how often do they win AWAY
+    home_win_rate = hp.get("home_win_rate", hp["win_rate"])
+    away_win_rate = ap.get("away_win_rate", ap["win_rate"])
+
+    # Form score from last 6 matches (venue-independent — captures momentum)
+    home_form = hp.get("form_score", 0.5)
+    away_form = ap.get("form_score", 0.5)
+
+    # Blend venue rate (60%) with form score (40%)
+    home_strength = (home_win_rate * 0.60 + home_form * 0.40) + HOME_ADV
+    away_strength = (away_win_rate * 0.60 + away_form * 0.40)
+
+    # Draw rate — average of both teams' historical draw rates
     draw_base = (hp["draw_rate"] + ap["draw_rate"]) / 2
 
     # H2H adjustment
@@ -140,18 +155,18 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
         home_strength = (home_strength * 0.75) + (h2h_home_rate * 0.25)
         away_strength = (away_strength * 0.75) + (h2h_away_rate * 0.25)
 
-    # Normalize to sum to 1
+    # Normalize
     total = home_strength + away_strength + draw_base
     home_win = home_strength / total
     away_win = away_strength / total
     draw = draw_base / total
 
     return {
-        "home_win":      round(home_win, 3),
-        "draw":          round(draw, 3),
-        "away_win":      round(away_win, 3),
-        "home_or_draw":  round(home_win + draw, 3),
-        "away_or_draw":  round(away_win + draw, 3),
+        "home_win":     round(home_win, 3),
+        "draw":         round(draw, 3),
+        "away_win":     round(away_win, 3),
+        "home_or_draw": round(home_win + draw, 3),
+        "away_or_draw": round(away_win + draw, 3),
     }
 
 
