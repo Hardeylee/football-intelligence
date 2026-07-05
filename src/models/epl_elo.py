@@ -26,6 +26,15 @@ TRAIN_FILES = [
     ("data/raw/25-26.csv", 0.40),
 ]
 
+# Promoted teams + teams with stale Elo data
+# Override with realistic starting ratings based on Championship performance
+PROMOTED_RATINGS = {
+    "Coventry City": 1380,  # Strong Championship side
+    "Hull City":     1350,  # Mid-Championship level
+    "Ipswich":       1320,  # Relegated last season, rebuilding
+    "Sunderland":    1420,  # Championship winners, EPL newcomers
+}
+
 
 def expected_score(rating_a: float, rating_b: float) -> float:
     """Expected score for team A against team B."""
@@ -35,21 +44,19 @@ def expected_score(rating_a: float, rating_b: float) -> float:
 def update_elo(
     home_rating: float,
     away_rating: float,
-    home_goals: int,
-    away_goals: int,
+    home_goals:  int,
+    away_goals:  int,
     k: float = K_FACTOR,
 ) -> tuple:
     """
     Update Elo ratings after a match.
     Returns (new_home_rating, new_away_rating).
+    Goal difference multiplier rewards bigger wins.
     """
-    # Adjusted home rating includes home advantage
     home_adj = home_rating + HOME_ADVANTAGE
-
     exp_home = expected_score(home_adj, away_rating)
     exp_away = 1 - exp_home
 
-    # Actual scores
     if home_goals > away_goals:
         actual_home, actual_away = 1.0, 0.0
     elif home_goals < away_goals:
@@ -57,11 +64,8 @@ def update_elo(
     else:
         actual_home, actual_away = 0.5, 0.5
 
-    # Goal difference multiplier — bigger wins = bigger rating changes
     goal_diff = abs(home_goals - away_goals)
-    if goal_diff == 0:
-        multiplier = 1.0
-    elif goal_diff == 1:
+    if goal_diff <= 1:
         multiplier = 1.0
     elif goal_diff == 2:
         multiplier = 1.5
@@ -77,9 +81,9 @@ def update_elo(
 def initialise_ratings() -> dict:
     """
     Build Elo ratings from historical match data.
-    All teams start at 1500, ratings evolve from there.
-    Uses recency weighting by processing seasons in order
-    and applying higher K-factor to recent seasons.
+    All teams start at 1500, ratings evolve through 4 seasons.
+    Recent seasons use higher K-factor for more influence.
+    Promoted/stale teams are overridden with realistic estimates.
     """
     ratings = {}
 
@@ -93,7 +97,6 @@ def initialise_ratings() -> dict:
             print(f"  [SKIP] {filepath} not found")
             continue
 
-        # Higher K for more recent seasons
         season_k = K_FACTOR * (1 + weight)
 
         matches = []
@@ -118,9 +121,17 @@ def initialise_ratings() -> dict:
             home_r = get_rating(m["home"])
             away_r = get_rating(m["away"])
             new_h, new_a = update_elo(
-                home_r, away_r, m["hg"], m["ag"], season_k)
+                home_r, away_r, m["hg"], m["ag"], season_k
+            )
             ratings[m["home"]] = new_h
             ratings[m["away"]] = new_a
+
+    # Override promoted/stale teams with realistic estimates
+    print("\n  Applying promoted team overrides:")
+    for team, rating in PROMOTED_RATINGS.items():
+        old = f"{ratings[team]:.0f}" if team in ratings else "NEW"
+        ratings[team] = rating
+        print(f"    {team:<20} {old} → {rating}")
 
     return ratings
 
@@ -128,7 +139,7 @@ def initialise_ratings() -> dict:
 def predict_result_elo(
     home_team: str,
     away_team: str,
-    ratings: dict,
+    ratings:   dict,
 ) -> dict:
     """
     Predict match result probabilities from Elo ratings.
@@ -137,20 +148,16 @@ def predict_result_elo(
     home_r = ratings.get(home_team, BASE_RATING)
     away_r = ratings.get(away_team, BASE_RATING)
 
-    # Expected score with home advantage
     home_adj = home_r + HOME_ADVANTAGE
     exp_home = expected_score(home_adj, away_r)
     exp_away = expected_score(away_r, home_adj)
 
-    # Convert expected scores to win/draw/loss probabilities
-    # Draw probability derived from rating closeness
     rating_diff = abs(home_adj - away_r)
     draw_prob = max(0.10, 0.28 - (rating_diff / 2000))
 
     home_win = exp_home * (1 - draw_prob / 2)
     away_win = exp_away * (1 - draw_prob / 2)
 
-    # Normalize
     total = home_win + draw_prob + away_win
     home_win = home_win / total
     away_win = away_win / total
@@ -169,24 +176,31 @@ def predict_result_elo(
 
 
 def save_ratings(ratings: dict):
+    """Save Elo ratings to JSON."""
     os.makedirs("data", exist_ok=True)
     with open(ELO_FILE, "w") as f:
         json.dump({
-            "updated_at": datetime.now().isoformat(),
+            "updated_at":  datetime.now().isoformat(),
             "base_rating": BASE_RATING,
-            "ratings": ratings,
+            "ratings":     ratings,
         }, f, indent=2)
-    print(f"Saved {len(ratings)} Elo ratings → {ELO_FILE}")
+    print(f"\nSaved {len(ratings)} Elo ratings → {ELO_FILE}")
 
 
 def load_ratings() -> dict:
+    """Load Elo ratings from JSON."""
     if not os.path.exists(ELO_FILE):
         return {}
     with open(ELO_FILE) as f:
         return json.load(f)["ratings"]
 
 
-def settle_elo(home_team: str, away_team: str, home_goals: int, away_goals: int):
+def settle_elo(
+    home_team:  str,
+    away_team:  str,
+    home_goals: int,
+    away_goals: int,
+):
     """Update Elo ratings after a real match result."""
     ratings = load_ratings()
     if not ratings:
@@ -198,8 +212,8 @@ def settle_elo(home_team: str, away_team: str, home_goals: int, away_goals: int)
 
     new_h, new_a = update_elo(home_r, away_r, home_goals, away_goals)
 
-    print(f"{home_team}: {home_r} → {new_h} ({new_h-home_r:+.1f})")
-    print(f"{away_team}: {away_r} → {new_a} ({new_a-away_r:+.1f})")
+    print(f"{home_team}: {home_r} → {new_h} ({new_h - home_r:+.1f})")
+    print(f"{away_team}: {away_r} → {new_a} ({new_a - away_r:+.1f})")
 
     ratings[home_team] = new_h
     ratings[away_team] = new_a
@@ -211,23 +225,34 @@ if __name__ == "__main__":
     ratings = initialise_ratings()
     save_ratings(ratings)
 
-    print("\nEPL Elo Rankings:")
+    print("\nEPL Elo Rankings (2026/27 season start):")
+    print(f"{'Rank':<5} {'Team':<25} {'Rating':>7}  {'Bar'}")
+    print("-" * 60)
+
+    seen = set()
+    rank = 1
     ranked = sorted(ratings.items(), key=lambda x: x[1], reverse=True)
-    for i, (team, rating) in enumerate(ranked, 1):
-        bar = "█" * int((rating - 1300) / 20)
-        print(f"  {i:>2}. {team:<25} {rating:>7.1f} {bar}")
+    for team, rating in ranked:
+        if team in seen:
+            continue
+        seen.add(team)
+        bar = "█" * max(0, int((rating - 1300) / 20))
+        print(f"  {rank:>2}. {team:<25} {rating:>7.1f}  {bar}")
+        rank += 1
 
     print("\nSample predictions:")
     tests = [
-        ("Arsenal",  "Chelsea"),
-        ("Man City", "Liverpool"),
-        ("Ipswich",  "Sunderland"),
+        ("Arsenal",       "Chelsea"),
+        ("Man City",      "Liverpool"),
+        ("Ipswich",       "Sunderland"),
         ("Nott'm Forest", "Leeds"),
+        ("Arsenal",       "Coventry City"),
+        ("Hull City",     "Man United"),
     ]
     for home, away in tests:
         pred = predict_result_elo(home, away, ratings)
         print(
-            f"  {home} vs {away}: "
+            f"  {home:<20} vs {away:<20} "
             f"H {pred['home_win']:.0%} / "
             f"D {pred['draw']:.0%} / "
             f"A {pred['away_win']:.0%} "

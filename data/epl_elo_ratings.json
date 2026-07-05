@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T19:56:54.680949",
+  "updated_at": "2026-07-05T12:36:37.353963",
   "base_rating": 1500,
   "ratings": {
     "Crystal Palace": 1489.5,
@@ -25,7 +25,9 @@
     "Burnley": 1293.8,
     "Luton": 1307.1,
     "Sheffield United": 1220.0,
-    "Ipswich": 1268.0,
-    "Sunderland": 1544.0
+    "Ipswich": 1320,
+    "Sunderland": 1420,
+    "Coventry City": 1380,
+    "Hull City": 1350
   }
 }
