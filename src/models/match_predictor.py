@@ -15,6 +15,7 @@ from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_
 from src.collectors.xg_scraper import load_xg_profiles
 from src.models.epl_manager_profiles import apply_manager_adjustments
 from src.models.formation_engine import get_formation_adjustment
+from src.models.epl_elo import load_ratings, predict_result_elo
 
 PROFILES_FILE = "data/team_profiles.json"
 H2H_FILE = "data/h2h.json"
@@ -121,45 +122,59 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
 
 def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     """
-    Predict match result using home/away form splits.
-    Uses home win rate for home team and away win rate for away team
-    rather than combined win rates — more accurate for venue-specific form.
+    Predict match result blending:
+    - Elo ratings (50% weight) — current team strength
+    - Historical home/away rates (30% weight) — venue-specific form
+    - Recent form score (20% weight) — momentum
     """
     hp = profiles[home]
     ap = profiles[away]
 
     HOME_ADV = 0.06
 
-    # Use venue-specific rates
-    # Home team: how often do they win AT HOME
-    # Away team: how often do they win AWAY
+    # ── ELO PREDICTION (50%) ─────────────────────────────────────
+    elo_ratings = load_ratings()
+    elo_pred = predict_result_elo(home, away, elo_ratings)
+    elo_home = elo_pred["home_win"]
+    elo_draw = elo_pred["draw"]
+    elo_away = elo_pred["away_win"]
+
+    # ── HISTORICAL RATES (30%) ───────────────────────────────────
     home_win_rate = hp.get("home_win_rate", hp["win_rate"])
     away_win_rate = ap.get("away_win_rate", ap["win_rate"])
-
-    # Form score from last 6 matches (venue-independent — captures momentum)
-    home_form = hp.get("form_score", 0.5)
-    away_form = ap.get("form_score", 0.5)
-
-    # Blend venue rate (60%) with form score (40%)
-    home_strength = (home_win_rate * 0.60 + home_form * 0.40) + HOME_ADV
-    away_strength = (away_win_rate * 0.60 + away_form * 0.40)
-
-    # Draw rate — average of both teams' historical draw rates
     draw_base = (hp["draw_rate"] + ap["draw_rate"]) / 2
 
-    # H2H adjustment
+    hist_total = home_win_rate + HOME_ADV + away_win_rate + draw_base
+    hist_home = (home_win_rate + HOME_ADV) / hist_total
+    hist_away = away_win_rate / hist_total
+    hist_draw = draw_base / hist_total
+
+    # ── FORM SCORE (20%) ─────────────────────────────────────────
+    home_form = hp.get("form_score", 0.5)
+    away_form = ap.get("form_score", 0.5)
+    total_form = home_form + away_form + 0.25
+    form_home = (home_form + HOME_ADV * 0.5) / total_form
+    form_away = away_form / total_form
+    form_draw = 0.25 / total_form
+
+    # ── BLEND ────────────────────────────────────────────────────
+    home_win = (elo_home * 0.50) + (hist_home * 0.30) + (form_home * 0.20)
+    away_win = (elo_away * 0.50) + (hist_away * 0.30) + (form_away * 0.20)
+    draw = (elo_draw * 0.50) + (hist_draw * 0.30) + (form_draw * 0.20)
+
+    # ── H2H ADJUSTMENT ───────────────────────────────────────────
     h2h = get_h2h(home, away, h2h_data)
     if h2h and h2h["matches"] >= 3:
-        h2h_home_rate = h2h["home_wins"] / h2h["matches"]
-        h2h_away_rate = h2h["away_wins"] / h2h["matches"]
-        home_strength = (home_strength * 0.75) + (h2h_home_rate * 0.25)
-        away_strength = (away_strength * 0.75) + (h2h_away_rate * 0.25)
+        h2h_home = h2h["home_wins"] / h2h["matches"]
+        h2h_away = h2h["away_wins"] / h2h["matches"]
+        home_win = (home_win * 0.80) + (h2h_home * 0.20)
+        away_win = (away_win * 0.80) + (h2h_away * 0.20)
 
     # Normalize
-    total = home_strength + away_strength + draw_base
-    home_win = home_strength / total
-    away_win = away_strength / total
-    draw = draw_base / total
+    total = home_win + away_win + draw
+    home_win = home_win / total
+    away_win = away_win / total
+    draw = draw / total
 
     return {
         "home_win":     round(home_win, 3),
@@ -167,6 +182,8 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
         "away_win":     round(away_win, 3),
         "home_or_draw": round(home_win + draw, 3),
         "away_or_draw": round(away_win + draw, 3),
+        "home_elo":     elo_pred.get("home_elo", 1500),
+        "away_elo":     elo_pred.get("away_elo", 1500),
     }
 
 
@@ -416,6 +433,7 @@ def format_prediction(pred: dict) -> str:
         f"  {a} Win:  {r['away_win']*100:.1f}%",
         f"  {h} DC:   {r['home_or_draw']*100:.1f}%",
         f"  {a} DC:   {r['away_or_draw']*100:.1f}%",
+        f"  Elo: {pred['result'].get('home_elo', '?')} vs {pred['result'].get('away_elo', '?')}",
 
         f"\n👔 {pred.get('home_manager', {}).get('name', '?')} ({pred.get('home_manager', {}).get('style', '?')})",
         f"   vs {pred.get('away_manager', {}).get('name', '?')} ({pred.get('away_manager', {}).get('style', '?')})",

@@ -1,0 +1,31 @@
+{
+  "updated_at": "2026-07-04T19:56:54.680949",
+  "base_rating": 1500,
+  "ratings": {
+    "Crystal Palace": 1489.5,
+    "Arsenal": 1814.9,
+    "Fulham": 1551.8,
+    "Liverpool": 1600.5,
+    "Bournemouth": 1674.0,
+    "Aston Villa": 1610.0,
+    "Leeds": 1551.6,
+    "Wolves": 1360.7,
+    "Newcastle": 1541.2,
+    "Nott'm Forest": 1591.9,
+    "Tottenham": 1443.2,
+    "Southampton": 1183.2,
+    "Everton": 1499.8,
+    "Chelsea": 1508.5,
+    "Leicester": 1280.4,
+    "Brentford": 1573.1,
+    "Man United": 1737.5,
+    "Brighton": 1559.4,
+    "West Ham": 1517.7,
+    "Man City": 1778.2,
+    "Burnley": 1293.8,
+    "Luton": 1307.1,
+    "Sheffield United": 1220.0,
+    "Ipswich": 1268.0,
+    "Sunderland": 1544.0
+  }
+}
