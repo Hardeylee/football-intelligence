@@ -10,6 +10,46 @@ import json
 import os
 from datetime import datetime
 
+# Map SportyBet team names to football-data.co.uk canonical names
+SPORTYBET_NAME_MAP = {
+    "Man Utd":          "Man United",
+    "Manchester Utd":   "Man United",
+    "Manchester United": "Man United",
+    "Man City":         "Man City",
+    "Manchester City":  "Man City",
+    "Nottingham Forest": "Nott'm Forest",
+    "Nott'm Forest":    "Nott'm Forest",
+    "Newcastle United": "Newcastle",
+    "Newcastle Utd":    "Newcastle",
+    "Leeds United":     "Leeds",
+    "Ipswich Town":     "Ipswich",
+    "Sunderland AFC":   "Sunderland",
+    "Wolverhampton":    "Wolves",
+    "Wolverhampton Wanderers": "Wolves",
+    "Tottenham Hotspur": "Tottenham",
+    "West Ham United":  "West Ham",
+    "Sheffield Utd":    "Sheffield United",
+    "Coventry City":    "Coventry City",
+    "Hull City":        "Hull City",
+    "Brighton & Hove Albion": "Brighton",
+    "Brighton & Hove":  "Brighton",
+    "Aston Villa":      "Aston Villa",
+    "Crystal Palace":   "Crystal Palace",
+    "Bournemouth":      "Bournemouth",
+    "Brentford":        "Brentford",
+    "Fulham":           "Fulham",
+    "Chelsea":          "Chelsea",
+    "Arsenal":          "Arsenal",
+    "Everton":          "Everton",
+    "Liverpool":        "Liverpool",
+}
+
+
+def normalise_team_name(name: str) -> str:
+    """Convert SportyBet team name to canonical football-data.co.uk format."""
+    return SPORTYBET_NAME_MAP.get(name, name)
+
+
 OUTPUT_FILE = "data/epl_odds.json"
 
 API_URL = "https://www.sportybet.com/api/ng/factsCenter/wapConfigurableEventsByOrder"
@@ -169,8 +209,8 @@ def extract_epl_matches(data: dict) -> list:
             continue
 
         for event in t.get("events", []):
-            home = event.get("homeTeamName", "")
-            away = event.get("awayTeamName", "")
+            home = normalise_team_name(event.get("homeTeamName", ""))
+            away = normalise_team_name(event.get("awayTeamName", ""))
             if not home or not away:
                 continue
 

@@ -11,17 +11,94 @@ Takes two team names, returns market probabilities for:
 import json
 import os
 from datetime import datetime
-from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_referee
-from src.collectors.xg_scraper import load_xg_profiles
-from src.models.epl_manager_profiles import apply_manager_adjustments
-from src.models.formation_engine import get_formation_adjustment
-from src.models.epl_elo import load_ratings, predict_result_elo
 
 PROFILES_FILE = "data/team_profiles.json"
 H2H_FILE = "data/h2h.json"
 
-# Home advantage factor (well established in football research)
 HOME_ADVANTAGE = 0.06
+
+# Promoted teams forced to use Championship-based profiles
+# even if stale historical EPL data exists
+FORCE_PROMOTED = {"Ipswich", "Coventry City", "Hull City"}
+
+# Explicit profiles for promoted teams built from Championship data
+PROMOTED_TEAM_PROFILES = {
+    "Coventry City": {
+        "win_rate":        0.38,
+        "draw_rate":       0.24,
+        "loss_rate":       0.38,
+        "btts_rate":       0.59,
+        "over15_rate":     0.83,
+        "over25_rate":     0.54,
+        "clean_sheet_rate": 0.21,
+        "home_win_rate":   0.52,
+        "home_avg_goals_scored":   1.83,
+        "home_avg_goals_conceded": 1.27,
+        "away_win_rate":   0.24,
+        "away_avg_goals_scored":   1.46,
+        "away_avg_goals_conceded": 1.65,
+        "avg_yellow_cards":    1.65,
+        "avg_corners_for":     4.8,
+        "avg_corners_against": 4.9,
+        "home_avg_yellow_cards":   1.45,
+        "away_avg_yellow_cards":   1.85,
+        "home_avg_corners_for":    5.2,
+        "home_avg_corners_against": 4.5,
+        "away_avg_corners_for":    4.4,
+        "away_avg_corners_against": 5.3,
+        "form_score":      0.44,
+    },
+    "Hull City": {
+        "win_rate":        0.35,
+        "draw_rate":       0.22,
+        "loss_rate":       0.43,
+        "btts_rate":       0.50,
+        "over15_rate":     0.78,
+        "over25_rate":     0.46,
+        "clean_sheet_rate": 0.26,
+        "home_win_rate":   0.48,
+        "home_avg_goals_scored":   1.52,
+        "home_avg_goals_conceded": 1.21,
+        "away_win_rate":   0.22,
+        "away_avg_goals_scored":   1.18,
+        "away_avg_goals_conceded": 1.58,
+        "avg_yellow_cards":    1.72,
+        "avg_corners_for":     4.5,
+        "avg_corners_against": 4.7,
+        "home_avg_yellow_cards":   1.55,
+        "away_avg_yellow_cards":   1.90,
+        "home_avg_corners_for":    4.9,
+        "home_avg_corners_against": 4.3,
+        "away_avg_corners_for":    4.1,
+        "away_avg_corners_against": 5.1,
+        "form_score":      0.40,
+    },
+    "Ipswich": {
+        "win_rate":        0.26,
+        "draw_rate":       0.21,
+        "loss_rate":       0.53,
+        "btts_rate":       0.50,
+        "over15_rate":     0.74,
+        "over25_rate":     0.45,
+        "clean_sheet_rate": 0.18,
+        "home_win_rate":   0.37,
+        "home_avg_goals_scored":   1.26,
+        "home_avg_goals_conceded": 1.42,
+        "away_win_rate":   0.16,
+        "away_avg_goals_scored":   0.95,
+        "away_avg_goals_conceded": 1.89,
+        "avg_yellow_cards":    1.58,
+        "avg_corners_for":     4.2,
+        "avg_corners_against": 5.1,
+        "home_avg_yellow_cards":   1.40,
+        "away_avg_yellow_cards":   1.76,
+        "home_avg_corners_for":    4.6,
+        "home_avg_corners_against": 4.7,
+        "away_avg_corners_for":    3.8,
+        "away_avg_corners_against": 5.5,
+        "form_score":      0.32,
+    },
+}
 
 
 def load_profiles() -> dict:
@@ -40,6 +117,37 @@ def get_h2h(home: str, away: str, h2h: dict) -> dict:
     return h2h.get(key) or h2h.get(reverse) or {}
 
 
+def _build_league_average(profiles: dict) -> dict:
+    """Build a league average profile from all existing team profiles."""
+    if not profiles:
+        return {}
+
+    keys = [
+        "win_rate", "draw_rate", "loss_rate",
+        "btts_rate", "over15_rate", "over25_rate",
+        "home_win_rate", "home_avg_goals_scored", "home_avg_goals_conceded",
+        "away_win_rate", "away_avg_goals_scored", "away_avg_goals_conceded",
+        "avg_yellow_cards", "avg_corners_for", "avg_corners_against",
+        "form_score", "clean_sheet_rate",
+        "home_avg_yellow_cards", "away_avg_yellow_cards",
+        "home_avg_corners_for", "home_avg_corners_against",
+        "away_avg_corners_for", "away_avg_corners_against",
+    ]
+
+    avg = {}
+    for key in keys:
+        vals = [p[key] for p in profiles.values() if key in p]
+        avg[key] = round(sum(vals) / len(vals), 3) if vals else 0.5
+
+    # Promoted teams are weaker than average
+    avg["win_rate"] = round(avg["win_rate"] * 0.85, 3)
+    avg["home_win_rate"] = round(avg["home_win_rate"] * 0.85, 3)
+    avg["away_win_rate"] = round(avg["away_win_rate"] * 0.85, 3)
+    avg["form_score"] = round(avg["form_score"] * 0.85, 3)
+
+    return avg
+
+
 def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     """
     Predict goals using xG data (primary) blended with
@@ -49,48 +157,47 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     ap = profiles[away]
 
     # Load xG profiles
+    from src.collectors.xg_scraper import load_xg_profiles
     xg_profiles = load_xg_profiles()
     home_xg_data = xg_profiles.get(home, {})
     away_xg_data = xg_profiles.get(away, {})
 
-    # Expected goals — xG attack vs xG defense
     if home_xg_data and away_xg_data:
-        # Primary: xG based (home attack vs away defense)
         home_xg = (home_xg_data["avg_xg_for"] +
                    away_xg_data["avg_xg_against"]) / 2
         away_xg = (away_xg_data["avg_xg_for"] +
                    home_xg_data["avg_xg_against"]) / 2
 
-        # Market rates — blend xG rates with historical rates (70/30)
         over15_rate = (
             home_xg_data["xg_over15_rate"] * 0.35 +
             away_xg_data["xg_over15_rate"] * 0.35 +
-            hp["over15_rate"] * 0.15 +
-            ap["over15_rate"] * 0.15
+            hp.get("over15_rate", 0.75) * 0.15 +
+            ap.get("over15_rate", 0.75) * 0.15
         )
         over25_rate = (
             home_xg_data["xg_over25_rate"] * 0.35 +
             away_xg_data["xg_over25_rate"] * 0.35 +
-            hp["over25_rate"] * 0.15 +
-            ap["over25_rate"] * 0.15
+            hp.get("over25_rate", 0.55) * 0.15 +
+            ap.get("over25_rate", 0.55) * 0.15
         )
         btts_rate = (
             home_xg_data["xg_btts_rate"] * 0.35 +
             away_xg_data["xg_btts_rate"] * 0.35 +
-            hp["btts_rate"] * 0.15 +
-            ap["btts_rate"] * 0.15
+            hp.get("btts_rate", 0.55) * 0.15 +
+            ap.get("btts_rate", 0.55) * 0.15
         )
         data_source = "xG"
 
     else:
-        # Fallback: historical rates only
         home_xg = (hp["home_avg_goals_scored"] +
                    ap["away_avg_goals_conceded"]) / 2
         away_xg = (ap["away_avg_goals_scored"] +
                    hp["home_avg_goals_conceded"]) / 2
-        over15_rate = (hp["over15_rate"] + ap["over15_rate"]) / 2
-        over25_rate = (hp["over25_rate"] + ap["over25_rate"]) / 2
-        btts_rate = (hp["btts_rate"] + ap["btts_rate"]) / 2
+        over15_rate = (hp.get("over15_rate", 0.75) +
+                       ap.get("over15_rate", 0.75)) / 2
+        over25_rate = (hp.get("over25_rate", 0.55) +
+                       ap.get("over25_rate", 0.55)) / 2
+        btts_rate = (hp.get("btts_rate", 0.55) + ap.get("btts_rate", 0.55)) / 2
         data_source = "historical"
 
     # H2H adjustment
@@ -105,64 +212,63 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     over35_rate = over25_rate * 0.48
 
     return {
-        "home_xg":      round(home_xg, 2),
-        "away_xg":      round(away_xg, 2),
-        "total_xg":     round(home_xg + away_xg, 2),
-        "data_source":  data_source,
-        "over15":       round(min(over15_rate, 0.97), 3),
-        "over25":       round(min(over25_rate, 0.95), 3),
-        "over35":       round(min(over35_rate, 0.85), 3),
-        "under15":      round(max(1 - over15_rate, 0.03), 3),
-        "under25":      round(max(1 - over25_rate, 0.05), 3),
-        "under35":      round(max(1 - over35_rate, 0.15), 3),
-        "btts_yes":     round(min(btts_rate, 0.95), 3),
-        "btts_no":      round(max(1 - btts_rate, 0.05), 3),
+        "home_xg":     round(home_xg, 2),
+        "away_xg":     round(away_xg, 2),
+        "total_xg":    round(home_xg + away_xg, 2),
+        "data_source": data_source,
+        "over15":      round(min(over15_rate, 0.97), 3),
+        "over25":      round(min(over25_rate, 0.95), 3),
+        "over35":      round(min(over35_rate, 0.85), 3),
+        "under15":     round(max(1 - over15_rate, 0.03), 3),
+        "under25":     round(max(1 - over25_rate, 0.05), 3),
+        "under35":     round(max(1 - over35_rate, 0.15), 3),
+        "btts_yes":    round(min(btts_rate, 0.95), 3),
+        "btts_no":     round(max(1 - btts_rate, 0.05), 3),
     }
 
 
 def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     """
     Predict match result blending:
-    - Elo ratings (50% weight) — current team strength
-    - Historical home/away rates (30% weight) — venue-specific form
-    - Recent form score (20% weight) — momentum
+    - Elo ratings (50%) — current team strength
+    - Historical home/away rates (30%) — venue form
+    - Recent form score (20%) — momentum
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    HOME_ADV = 0.06
-
-    # ── ELO PREDICTION (50%) ─────────────────────────────────────
+    # Elo prediction (50%)
+    from src.models.epl_elo import load_ratings, predict_result_elo
     elo_ratings = load_ratings()
     elo_pred = predict_result_elo(home, away, elo_ratings)
     elo_home = elo_pred["home_win"]
     elo_draw = elo_pred["draw"]
     elo_away = elo_pred["away_win"]
 
-    # ── HISTORICAL RATES (30%) ───────────────────────────────────
-    home_win_rate = hp.get("home_win_rate", hp["win_rate"])
-    away_win_rate = ap.get("away_win_rate", ap["win_rate"])
-    draw_base = (hp["draw_rate"] + ap["draw_rate"]) / 2
+    # Historical rates (30%)
+    home_win_rate = hp.get("home_win_rate", hp.get("win_rate", 0.45))
+    away_win_rate = ap.get("away_win_rate", ap.get("win_rate", 0.30))
+    draw_base = (hp.get("draw_rate", 0.25) + ap.get("draw_rate", 0.25)) / 2
 
-    hist_total = home_win_rate + HOME_ADV + away_win_rate + draw_base
-    hist_home = (home_win_rate + HOME_ADV) / hist_total
+    hist_total = home_win_rate + HOME_ADVANTAGE + away_win_rate + draw_base
+    hist_home = (home_win_rate + HOME_ADVANTAGE) / hist_total
     hist_away = away_win_rate / hist_total
     hist_draw = draw_base / hist_total
 
-    # ── FORM SCORE (20%) ─────────────────────────────────────────
+    # Form score (20%)
     home_form = hp.get("form_score", 0.5)
     away_form = ap.get("form_score", 0.5)
     total_form = home_form + away_form + 0.25
-    form_home = (home_form + HOME_ADV * 0.5) / total_form
+    form_home = (home_form + HOME_ADVANTAGE * 0.5) / total_form
     form_away = away_form / total_form
     form_draw = 0.25 / total_form
 
-    # ── BLEND ────────────────────────────────────────────────────
+    # Blend
     home_win = (elo_home * 0.50) + (hist_home * 0.30) + (form_home * 0.20)
     away_win = (elo_away * 0.50) + (hist_away * 0.30) + (form_away * 0.20)
     draw = (elo_draw * 0.50) + (hist_draw * 0.30) + (form_draw * 0.20)
 
-    # ── H2H ADJUSTMENT ───────────────────────────────────────────
+    # H2H adjustment
     h2h = get_h2h(home, away, h2h_data)
     if h2h and h2h["matches"] >= 3:
         h2h_home = h2h["home_wins"] / h2h["matches"]
@@ -190,15 +296,11 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
 def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> dict:
     """
     Predict yellow cards using home/away split card rates,
-    team foul rates, referee tendency, derby factor and
-    manager pressing intensity.
-    Home teams average fewer cards than away teams.
+    referee tendency, derby factor and manager pressing intensity.
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    # Use home/away card splits if available
-    # Home team cards at home, away team cards away
     home_cards_rate = hp.get("home_avg_yellow_cards",
                              hp.get("avg_yellow_cards", 1.5))
     away_cards_rate = ap.get("away_avg_yellow_cards",
@@ -206,10 +308,8 @@ def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> di
 
     avg_cards = home_cards_rate + away_cards_rate
 
-    # Derby factor
     derby_pairs = [
         {"Arsenal", "Tottenham"}, {"Arsenal", "Chelsea"},
-        {"Manchester United", "Manchester City"},
         {"Man United", "Man City"},
         {"Liverpool", "Everton"}, {"Liverpool", "Man United"},
         {"Chelsea", "Tottenham"}, {"Newcastle", "Sunderland"},
@@ -218,11 +318,10 @@ def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> di
     if is_derby:
         avg_cards *= 1.2
 
-    # Base rates
     base_over35 = 1.0 if avg_cards > 3.5 else 0.65 if avg_cards > 2.8 else 0.40
     base_over45 = 1.0 if avg_cards > 4.5 else 0.45 if avg_cards > 3.5 else 0.25
 
-    # Referee adjustment
+    from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_referee
     ref_profiles = load_referee_profiles()
     ref_adjustment = adjust_cards_for_referee(
         base_over35, base_over45, referee, ref_profiles)
@@ -244,13 +343,11 @@ def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> di
 def predict_corners(home: str, away: str, profiles: dict) -> dict:
     """
     Predict corners using home/away split rates.
-    Uses continuous probability function instead of fixed thresholds.
-    Home teams win more corners (more attacking intent).
+    Uses continuous probability function calibrated to EPL actuals.
     """
     hp = profiles[home]
     ap = profiles[away]
 
-    # Home team corners at home vs away team corners away
     home_corners_for = hp.get("home_avg_corners_for",
                               hp.get("avg_corners_for", 5.0))
     away_corners_against = ap.get("away_avg_corners_against",
@@ -260,25 +357,14 @@ def predict_corners(home: str, away: str, profiles: dict) -> dict:
     home_corners_against = hp.get("home_avg_corners_against",
                                   hp.get("avg_corners_against", 4.5))
 
-    # Total expected corners
     home_expected = (home_corners_for + away_corners_against) / 2
     away_expected = (away_corners_for + home_corners_against) / 2
     avg_corners = home_expected + away_expected
 
-    # Continuous probability function based on expected corners
-    # Calibrated against EPL historical data:
-    # EPL average: ~10 corners/game
-    # Over 8.5 hits ~65% of EPL matches
-    # Over 10.5 hits ~40% of EPL matches
-    # Over 12.5 hits ~20% of EPL matches
-
     def corners_prob(line: float, expected: float) -> float:
         """
-        Linear calibration anchored to actual EPL rates (last 2 seasons, 760 matches):
-        At EPL average (10.1 corners/game):
-          Over 8.5:  68.3%
-          Over 10.5: 46.1%
-          Over 12.5: 23.8%
+        Linear calibration anchored to EPL actuals (760 matches):
+        Over 8.5: 68.3% | Over 10.5: 46.1% | Over 12.5: 23.8%
         """
         base = {8.5: 0.683, 10.5: 0.461, 12.5: 0.238}
         sensitivity = {8.5: 0.055, 10.5: 0.065, 12.5: 0.060}
@@ -286,46 +372,14 @@ def predict_corners(home: str, away: str, profiles: dict) -> dict:
         prob = base[line] + (sensitivity[line] * delta)
         return round(min(max(prob, 0.05), 0.95), 3)
 
-    over85 = corners_prob(8.5,  avg_corners)
-    over105 = corners_prob(10.5, avg_corners)
-    over125 = corners_prob(12.5, avg_corners)
-
     return {
         "avg_total_corners": round(avg_corners, 2),
         "home_expected":     round(home_expected, 2),
         "away_expected":     round(away_expected, 2),
-        "over85_corners":    over85,
-        "over105_corners":   over105,
-        "over125_corners":   over125,
+        "over85_corners":    corners_prob(8.5,  avg_corners),
+        "over105_corners":   corners_prob(10.5, avg_corners),
+        "over125_corners":   corners_prob(12.5, avg_corners),
     }
-
-
-def _build_league_average(profiles: dict) -> dict:
-    """Build a league average profile from all existing team profiles."""
-    if not profiles:
-        return {}
-
-    keys = [
-        "win_rate", "draw_rate", "loss_rate",
-        "btts_rate", "over15_rate", "over25_rate",
-        "home_win_rate", "home_avg_goals_scored", "home_avg_goals_conceded",
-        "away_win_rate", "away_avg_goals_scored", "away_avg_goals_conceded",
-        "avg_yellow_cards", "avg_corners_for", "avg_corners_against",
-        "form_score", "clean_sheet_rate",
-    ]
-
-    avg = {}
-    for key in keys:
-        vals = [p[key] for p in profiles.values() if key in p]
-        avg[key] = round(sum(vals) / len(vals), 3) if vals else 0.5
-
-    # Promoted teams are weaker than average — apply 10% reduction
-    avg["win_rate"] = round(avg["win_rate"] * 0.85, 3)
-    avg["home_win_rate"] = round(avg["home_win_rate"] * 0.85, 3)
-    avg["away_win_rate"] = round(avg["away_win_rate"] * 0.85, 3)
-    avg["form_score"] = round(avg["form_score"] * 0.85, 3)
-
-    return avg
 
 
 def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
@@ -335,20 +389,23 @@ def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
     profiles = load_profiles()
     h2h = load_h2h()
 
-    # Validate teams exist — use league average fallback for promoted teams
+    # Validate teams — use promoted profiles or league average fallback
     missing = []
-    if home_team not in profiles:
+    if home_team not in profiles or home_team in FORCE_PROMOTED:
         missing.append(home_team)
-    if away_team not in profiles:
+    if away_team not in profiles or away_team in FORCE_PROMOTED:
         missing.append(away_team)
 
     if missing:
-        # Build league average profile as fallback
         league_avg = _build_league_average(profiles)
         for team in missing:
-            profiles[team] = league_avg.copy()
-            print(
-                f"[INFO] {team} not in historical profiles — using league average fallback")
+            if team in PROMOTED_TEAM_PROFILES:
+                profiles[team] = PROMOTED_TEAM_PROFILES[team].copy()
+                print(f"[INFO] {team} using promoted team profile")
+            else:
+                profiles[team] = league_avg.copy()
+                print(
+                    f"[INFO] {team} not in historical profiles — using league average fallback")
 
     goals = predict_goals(home_team, away_team, profiles, h2h)
     result = predict_result(home_team, away_team, profiles, h2h)
@@ -357,15 +414,16 @@ def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
 
     h2h_data = get_h2h(home_team, away_team, h2h)
 
-   # Apply manager tactical adjustments
+    # Apply manager tactical adjustments
+    from src.models.epl_manager_profiles import apply_manager_adjustments
     mgr_adjusted = apply_manager_adjustments(
         home_team, away_team, goals, cards, corners
     )
 
-    # Apply formation matchup adjustments on top
+    # Apply formation matchup adjustments (30% weight)
+    from src.models.formation_engine import get_formation_adjustment
     formation_adj = get_formation_adjustment(home_team, away_team)
 
-    # Blend formation adjustments (weighted 30% — supports manager adjustments)
     fadj_goals = formation_adj["goals_adjustment"] * 0.30
     fadj_cards = formation_adj["cards_adjustment"] * 0.30
     fadj_corners = formation_adj["corners_adjustment"] * 0.30
@@ -375,13 +433,13 @@ def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
     adj_corners = mgr_adjusted["corners"]
 
     adj_goals["over25"] = round(
-        min(max(adj_goals["over25"] + fadj_goals,   0.05), 0.95), 3)
+        min(max(adj_goals["over25"] + fadj_goals, 0.05), 0.95), 3)
     adj_goals["over15"] = round(
-        min(max(adj_goals["over15"] + fadj_goals,   0.05), 0.97), 3)
+        min(max(adj_goals["over15"] + fadj_goals, 0.05), 0.97), 3)
     adj_goals["btts_yes"] = round(
-        min(max(adj_goals["btts_yes"] + fadj_goals,   0.05), 0.95), 3)
+        min(max(adj_goals["btts_yes"] + fadj_goals, 0.05), 0.95), 3)
     adj_goals["over35"] = round(
-        min(max(adj_goals["over35"] + fadj_goals,   0.05), 0.85), 3)
+        min(max(adj_goals["over35"] + fadj_goals, 0.05), 0.85), 3)
     adj_goals["under25"] = round(1 - adj_goals["over25"], 3)
 
     adj_cards["over35_cards"] = round(
@@ -395,18 +453,19 @@ def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
         min(max(adj_corners["over85_corners"] + fadj_corners, 0.05), 0.95), 3)
     adj_corners["over105_corners"] = round(
         min(max(adj_corners["over105_corners"] + fadj_corners, 0.05), 0.90), 3)
+
     return {
-        "home_team":      home_team,
-        "away_team":      away_team,
-        "generated":      datetime.now().isoformat(),
-        "result":         result,
-        "goals":          adj_goals,
-        "cards":          adj_cards,
-        "corners":        adj_corners,
-        "h2h":            h2h_data,
-        "home_manager":   mgr_adjusted["home_manager"],
-        "away_manager":   mgr_adjusted["away_manager"],
-        "formation":      formation_adj,
+        "home_team":    home_team,
+        "away_team":    away_team,
+        "generated":    datetime.now().isoformat(),
+        "result":       result,
+        "goals":        adj_goals,
+        "cards":        adj_cards,
+        "corners":      adj_corners,
+        "h2h":          h2h_data,
+        "home_manager": mgr_adjusted["home_manager"],
+        "away_manager": mgr_adjusted["away_manager"],
+        "formation":    formation_adj,
     }
 
 
@@ -422,6 +481,7 @@ def format_prediction(pred: dict) -> str:
     c = pred["cards"]
     co = pred["corners"]
     h2h = pred.get("h2h", {})
+    fm = pred.get("formation", {})
 
     lines = [
         f"\n{'='*45}",
@@ -433,11 +493,12 @@ def format_prediction(pred: dict) -> str:
         f"  {a} Win:  {r['away_win']*100:.1f}%",
         f"  {h} DC:   {r['home_or_draw']*100:.1f}%",
         f"  {a} DC:   {r['away_or_draw']*100:.1f}%",
-        f"  Elo: {pred['result'].get('home_elo', '?')} vs {pred['result'].get('away_elo', '?')}",
+        f"  Elo: {r.get('home_elo', '?')} vs {r.get('away_elo', '?')}",
 
         f"\n👔 {pred.get('home_manager', {}).get('name', '?')} ({pred.get('home_manager', {}).get('style', '?')})",
         f"   vs {pred.get('away_manager', {}).get('name', '?')} ({pred.get('away_manager', {}).get('style', '?')})",
-        f"⚔️ {pred.get('formation', {}).get('home_formation', '?')} vs {pred.get('formation', {}).get('away_formation', '?')} — {pred.get('formation', {}).get('matchup_type', '')}",
+        f"⚔️ {fm.get('home_formation', '?')} vs {fm.get('away_formation', '?')} — {fm.get('matchup_type', '')}",
+
         f"\n⚽ GOALS  (xG: {g['home_xg']} - {g['away_xg']})",
         f"  Over 1.5:   {g['over15']*100:.1f}%",
         f"  Over 2.5:   {g['over25']*100:.1f}%",
@@ -470,12 +531,10 @@ def format_prediction(pred: dict) -> str:
 
 
 if __name__ == "__main__":
-    # Test: Arsenal vs Chelsea
     pred = predict_match("Arsenal", "Chelsea")
     print(format_prediction(pred))
 
     print("\n")
 
-    # Test: Manchester City vs Liverpool
     pred2 = predict_match("Man City", "Liverpool")
     print(format_prediction(pred2))

@@ -67,8 +67,740 @@
         "predicted_over25": true,
         "predicted_btts": true
       }
+    },
+    {
+      "match_key": "Arsenal_vs_Coventry City_21 Aug 2026 20:00",
+      "home_team": "Arsenal",
+      "away_team": "Coventry City",
+      "kick_off": "21 Aug 2026 20:00",
+      "logged_at": "2026-07-05T12:53:39.908823",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.739,
+        "draw": 0.139,
+        "away_win": 0.122,
+        "over25": 0.612,
+        "btts": 0.832,
+        "over35_cards": 0.638,
+        "over85_corners": 0.69
+      },
+      "odds": {
+        "home_win": 1.2,
+        "draw": 7.74,
+        "away_win": 16.46,
+        "over25": 1.58,
+        "btts_yes": 2.5
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 2.5,
+          "edge": 0.432,
+          "prob": 0.832
+        },
+        {
+          "market": "over15",
+          "odds": 1.19,
+          "edge": 0.0987,
+          "prob": 0.939
+        }
+      ]
+    },
+    {
+      "match_key": "Hull City_vs_Manchester United_22 Aug 2026 12:30",
+      "home_team": "Hull City",
+      "away_team": "Manchester United",
+      "kick_off": "22 Aug 2026 12:30",
+      "logged_at": "2026-07-05T12:53:39.935235",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.376,
+        "draw": 0.252,
+        "away_win": 0.372,
+        "over25": 0.57,
+        "btts": 0.567,
+        "over35_cards": 0.843,
+        "over85_corners": 0.726
+      },
+      "odds": {
+        "home_win": 7.21,
+        "draw": 4.89,
+        "away_win": 1.48,
+        "over25": 1.72,
+        "btts_yes": 1.95
+      },
+      "value_bets": [
+        {
+          "market": "home_or_draw",
+          "odds": 2.6,
+          "edge": 0.2434,
+          "prob": 0.628
+        },
+        {
+          "market": "home_win",
+          "odds": 7.21,
+          "edge": 0.2373,
+          "prob": 0.376
+        }
+      ]
+    },
+    {
+      "match_key": "Everton_vs_Crystal Palace_22 Aug 2026 15:00",
+      "home_team": "Everton",
+      "away_team": "Crystal Palace",
+      "kick_off": "22 Aug 2026 15:00",
+      "logged_at": "2026-07-05T12:53:39.965149",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.486,
+        "draw": 0.293,
+        "away_win": 0.221,
+        "over25": 0.585,
+        "btts": 0.741,
+        "over35_cards": 0.873,
+        "over85_corners": 0.734
+      },
+      "odds": {
+        "home_win": 2.17,
+        "draw": 3.62,
+        "away_win": 3.53,
+        "over25": 1.8,
+        "btts_yes": 1.69
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.69,
+          "edge": 0.1493,
+          "prob": 0.741
+        }
+      ]
+    },
+    {
+      "match_key": "Ipswich_vs_Sunderland_22 Aug 2026 15:00",
+      "home_team": "Ipswich",
+      "away_team": "Sunderland",
+      "kick_off": "22 Aug 2026 15:00",
+      "logged_at": "2026-07-05T12:53:39.993223",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.26,
+        "draw": 0.318,
+        "away_win": 0.422,
+        "over25": 0.52,
+        "btts": 0.749,
+        "over35_cards": 0.848,
+        "over85_corners": 0.701
+      },
+      "odds": {
+        "home_win": 2.8,
+        "draw": 3.44,
+        "away_win": 2.69,
+        "over25": 1.93,
+        "btts_yes": 1.75
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.75,
+          "edge": 0.1776,
+          "prob": 0.749
+        }
+      ]
+    },
+    {
+      "match_key": "Nottingham Forest_vs_Leeds_22 Aug 2026 15:00",
+      "home_team": "Nottingham Forest",
+      "away_team": "Leeds",
+      "kick_off": "22 Aug 2026 15:00",
+      "logged_at": "2026-07-05T12:53:40.023164",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.425,
+        "draw": 0.267,
+        "away_win": 0.308,
+        "over25": 0.608,
+        "btts": 0.619,
+        "over35_cards": 0.833,
+        "over85_corners": 0.698
+      },
+      "odds": {
+        "home_win": 2.3,
+        "draw": 3.6,
+        "away_win": 3.26,
+        "over25": 1.78,
+        "btts_yes": 1.67
+      },
+      "value_bets": []
+    },
+    {
+      "match_key": "Brentford_vs_Tottenham_22 Aug 2026 17:30",
+      "home_team": "Brentford",
+      "away_team": "Tottenham",
+      "kick_off": "22 Aug 2026 17:30",
+      "logged_at": "2026-07-05T12:53:40.055793",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.478,
+        "draw": 0.208,
+        "away_win": 0.314,
+        "over25": 0.59,
+        "btts": 0.863,
+        "over35_cards": 0.848,
+        "over85_corners": 0.757
+      },
+      "odds": {
+        "home_win": 2.62,
+        "draw": 3.72,
+        "away_win": 2.71,
+        "over25": 1.59,
+        "btts_yes": 1.52
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.52,
+          "edge": 0.2051,
+          "prob": 0.863
+        },
+        {
+          "market": "over15",
+          "odds": 1.18,
+          "edge": 0.1225,
+          "prob": 0.97
+        }
+      ]
+    },
+    {
+      "match_key": "Brighton_vs_Aston Villa_23 Aug 2026 14:00",
+      "home_team": "Brighton",
+      "away_team": "Aston Villa",
+      "kick_off": "23 Aug 2026 14:00",
+      "logged_at": "2026-07-05T12:53:40.083438",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.371,
+        "draw": 0.212,
+        "away_win": 0.418,
+        "over25": 0.729,
+        "btts": 0.868,
+        "over35_cards": 0.848,
+        "over85_corners": 0.698
+      },
+      "odds": {
+        "home_win": 2.36,
+        "draw": 3.8,
+        "away_win": 3.01,
+        "over25": 1.58,
+        "btts_yes": 1.52
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.52,
+          "edge": 0.2101,
+          "prob": 0.868
+        },
+        {
+          "market": "over15",
+          "odds": 1.18,
+          "edge": 0.1225,
+          "prob": 0.97
+        },
+        {
+          "market": "over25",
+          "odds": 1.58,
+          "edge": 0.0961,
+          "prob": 0.729
+        }
+      ]
+    },
+    {
+      "match_key": "Manchester City_vs_Bournemouth_23 Aug 2026 14:00",
+      "home_team": "Manchester City",
+      "away_team": "Bournemouth",
+      "kick_off": "23 Aug 2026 14:00",
+      "logged_at": "2026-07-05T12:53:40.109102",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.326,
+        "draw": 0.235,
+        "away_win": 0.439,
+        "over25": 0.608,
+        "btts": 0.62,
+        "over35_cards": 0.848,
+        "over85_corners": 0.749
+      },
+      "odds": {
+        "home_win": 1.52,
+        "draw": 5.17,
+        "away_win": 5.92,
+        "over25": 1.4,
+        "btts_yes": 1.55
+      },
+      "value_bets": [
+        {
+          "market": "away_or_draw",
+          "odds": 2.5,
+          "edge": 0.274,
+          "prob": 0.674
+        },
+        {
+          "market": "away_win",
+          "odds": 5.92,
+          "edge": 0.2701,
+          "prob": 0.439
+        }
+      ]
+    },
+    {
+      "match_key": "Newcastle United_vs_Liverpool_23 Aug 2026 16:30",
+      "home_team": "Newcastle United",
+      "away_team": "Liverpool",
+      "kick_off": "23 Aug 2026 16:30",
+      "logged_at": "2026-07-05T12:53:40.139005",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.364,
+        "draw": 0.238,
+        "away_win": 0.398,
+        "over25": 0.641,
+        "btts": 0.651,
+        "over35_cards": 0.845,
+        "over85_corners": 0.71
+      },
+      "odds": {
+        "home_win": 2.98,
+        "draw": 4.01,
+        "away_win": 2.3,
+        "over25": 1.46,
+        "btts_yes": 1.44
+      },
+      "value_bets": []
+    },
+    {
+      "match_key": "Fulham_vs_Chelsea_24 Aug 2026 20:00",
+      "home_team": "Fulham",
+      "away_team": "Chelsea",
+      "kick_off": "24 Aug 2026 20:00",
+      "logged_at": "2026-07-05T12:53:40.167054",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.498,
+        "draw": 0.2,
+        "away_win": 0.302,
+        "over25": 0.734,
+        "btts": 0.863,
+        "over35_cards": 0.823,
+        "over85_corners": 0.716
+      },
+      "odds": {
+        "home_win": 3.17,
+        "draw": 3.79,
+        "away_win": 2.27,
+        "over25": 1.62,
+        "btts_yes": 1.55
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.55,
+          "edge": 0.2178,
+          "prob": 0.863
+        },
+        {
+          "market": "home_win",
+          "odds": 3.17,
+          "edge": 0.1825,
+          "prob": 0.498
+        },
+        {
+          "market": "over15",
+          "odds": 1.19,
+          "edge": 0.1297,
+          "prob": 0.97
+        },
+        {
+          "market": "over25",
+          "odds": 1.62,
+          "edge": 0.1167,
+          "prob": 0.734
+        }
+      ]
+    },
+    {
+      "match_key": "Nottingham Forest_vs_Leeds United_22 Aug 2026 15:00",
+      "home_team": "Nottingham Forest",
+      "away_team": "Leeds United",
+      "kick_off": "22 Aug 2026 15:00",
+      "logged_at": "2026-07-06T00:44:58.550311",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.464,
+        "draw": 0.242,
+        "away_win": 0.295,
+        "over25": 0.579,
+        "btts": 0.576,
+        "over35_cards": 0.796,
+        "over85_corners": 0.692
+      },
+      "odds": {
+        "home_win": 2.3,
+        "draw": 3.6,
+        "away_win": 3.26,
+        "over25": 1.78,
+        "btts_yes": 1.67
+      },
+      "value_bets": []
+    },
+    {
+      "match_key": "Hull City_vs_Man United_22 Aug 2026 12:30",
+      "home_team": "Hull City",
+      "away_team": "Man United",
+      "kick_off": "22 Aug 2026 12:30",
+      "logged_at": "2026-07-06T00:57:05.822486",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.238,
+        "draw": 0.172,
+        "away_win": 0.59,
+        "over25": 0.554,
+        "btts": 0.703,
+        "over35_cards": 0.858,
+        "over85_corners": 0.75
+      },
+      "odds": {
+        "home_win": 7.21,
+        "draw": 4.89,
+        "away_win": 1.48,
+        "over25": 1.72,
+        "btts_yes": 1.95
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.95,
+          "edge": 0.1902,
+          "prob": 0.703
+        }
+      ]
+    },
+    {
+      "match_key": "Nott'm Forest_vs_Leeds_22 Aug 2026 15:00",
+      "home_team": "Nott'm Forest",
+      "away_team": "Leeds",
+      "kick_off": "22 Aug 2026 15:00",
+      "logged_at": "2026-07-06T00:57:05.864621",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.51,
+        "draw": 0.243,
+        "away_win": 0.247,
+        "over25": 0.577,
+        "btts": 0.793,
+        "over35_cards": 0.883,
+        "over85_corners": 0.722
+      },
+      "odds": {
+        "home_win": 2.3,
+        "draw": 3.6,
+        "away_win": 3.26,
+        "over25": 1.78,
+        "btts_yes": 1.67
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.67,
+          "edge": 0.1942,
+          "prob": 0.793
+        },
+        {
+          "market": "over15",
+          "odds": 1.25,
+          "edge": 0.105,
+          "prob": 0.905
+        }
+      ]
+    },
+    {
+      "match_key": "Man City_vs_Bournemouth_23 Aug 2026 14:00",
+      "home_team": "Man City",
+      "away_team": "Bournemouth",
+      "kick_off": "23 Aug 2026 14:00",
+      "logged_at": "2026-07-06T00:57:05.893937",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.636,
+        "draw": 0.167,
+        "away_win": 0.197,
+        "over25": 0.749,
+        "btts": 0.857,
+        "over35_cards": 0.833,
+        "over85_corners": 0.721
+      },
+      "odds": {
+        "home_win": 1.52,
+        "draw": 5.17,
+        "away_win": 5.92,
+        "over25": 1.4,
+        "btts_yes": 1.55
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.55,
+          "edge": 0.2118,
+          "prob": 0.857
+        }
+      ]
+    },
+    {
+      "match_key": "Newcastle_vs_Liverpool_23 Aug 2026 16:30",
+      "home_team": "Newcastle",
+      "away_team": "Liverpool",
+      "kick_off": "23 Aug 2026 16:30",
+      "logged_at": "2026-07-06T00:57:05.914624",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.353,
+        "draw": 0.212,
+        "away_win": 0.435,
+        "over25": 0.767,
+        "btts": 0.87,
+        "over35_cards": 0.67,
+        "over85_corners": 0.78
+      },
+      "odds": {
+        "home_win": 2.98,
+        "draw": 4.01,
+        "away_win": 2.3,
+        "over25": 1.46,
+        "btts_yes": 1.44
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.44,
+          "edge": 0.1756,
+          "prob": 0.87
+        },
+        {
+          "market": "over15",
+          "odds": 1.14,
+          "edge": 0.0928,
+          "prob": 0.97
+        },
+        {
+          "market": "over25",
+          "odds": 1.46,
+          "edge": 0.0821,
+          "prob": 0.767
+        }
+      ]
+    },
+    {
+      "match_key": "Arsenal_vs_Coventry City_GW1",
+      "home_team": "Arsenal",
+      "away_team": "Coventry City",
+      "kick_off": "GW1",
+      "logged_at": "2026-07-06T14:20:52.244331",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.739,
+        "draw": 0.139,
+        "away_win": 0.122,
+        "over25": 0.612,
+        "btts": 0.832,
+        "over35_cards": 0.638,
+        "over85_corners": 0.69
+      },
+      "odds": {
+        "home_win": 1.2,
+        "draw": 7.74,
+        "away_win": 16.46,
+        "over25": 1.58,
+        "btts_yes": 2.5
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 2.5,
+          "edge": 0.432,
+          "prob": 0.832
+        },
+        {
+          "market": "over15",
+          "odds": 1.19,
+          "edge": 0.0987,
+          "prob": 0.939
+        }
+      ]
+    },
+    {
+      "match_key": "Fulham_vs_Chelsea_GW1",
+      "home_team": "Fulham",
+      "away_team": "Chelsea",
+      "kick_off": "GW1",
+      "logged_at": "2026-07-06T14:21:24.597820",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.498,
+        "draw": 0.2,
+        "away_win": 0.302,
+        "over25": 0.734,
+        "btts": 0.863,
+        "over35_cards": 0.823,
+        "over85_corners": 0.716
+      },
+      "odds": {
+        "home_win": 3.17,
+        "draw": 3.79,
+        "away_win": 2.27,
+        "over25": 1.63,
+        "btts_yes": 1.56
+      },
+      "value_bets": [
+        {
+          "market": "btts_yes",
+          "odds": 1.56,
+          "edge": 0.222,
+          "prob": 0.863
+        },
+        {
+          "market": "home_win",
+          "odds": 3.17,
+          "edge": 0.1825,
+          "prob": 0.498
+        },
+        {
+          "market": "over15",
+          "odds": 1.19,
+          "edge": 0.1297,
+          "prob": 0.97
+        },
+        {
+          "market": "over25",
+          "odds": 1.63,
+          "edge": 0.1205,
+          "prob": 0.734
+        }
+      ]
+    },
+    {
+      "match_key": "Arsenal_vs_Fulham_GW1",
+      "home_team": "Arsenal",
+      "away_team": "Fulham",
+      "kick_off": "GW1",
+      "logged_at": "2026-07-06T14:23:55.718129",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.723,
+        "draw": 0.133,
+        "away_win": 0.143,
+        "over25": 0.71,
+        "btts": 0.857,
+        "over35_cards": 0.86,
+        "over85_corners": 0.669
+      },
+      "odds": {
+        "home_win": 2.1,
+        "draw": 3.4,
+        "away_win": 3.8,
+        "over25": 1.9,
+        "btts_yes": 1.75
+      },
+      "value_bets": [
+        {
+          "market": "over35_cards",
+          "odds": 1.85,
+          "edge": 0.3195,
+          "prob": 0.86
+        },
+        {
+          "market": "btts_yes",
+          "odds": 1.75,
+          "edge": 0.2856,
+          "prob": 0.857
+        },
+        {
+          "market": "home_win",
+          "odds": 2.1,
+          "edge": 0.2468,
+          "prob": 0.723
+        },
+        {
+          "market": "over15",
+          "odds": 1.35,
+          "edge": 0.2293,
+          "prob": 0.97
+        },
+        {
+          "market": "over25",
+          "odds": 1.9,
+          "edge": 0.1837,
+          "prob": 0.71
+        }
+      ]
+    },
+    {
+      "match_key": "Manchester United_vs_Hull City_GW1",
+      "home_team": "Manchester United",
+      "away_team": "Hull City",
+      "kick_off": "GW1",
+      "logged_at": "2026-07-06T14:24:37.326088",
+      "settled": false,
+      "result": null,
+      "model": {
+        "home_win": 0.555,
+        "draw": 0.211,
+        "away_win": 0.234,
+        "over25": 0.57,
+        "btts": 0.567,
+        "over35_cards": 0.843,
+        "over85_corners": 0.726
+      },
+      "odds": {
+        "home_win": 2.1,
+        "draw": 3.4,
+        "away_win": 3.8,
+        "over25": 1.9,
+        "btts_yes": 1.75
+      },
+      "value_bets": [
+        {
+          "market": "over35_cards",
+          "odds": 1.85,
+          "edge": 0.3025,
+          "prob": 0.843
+        },
+        {
+          "market": "over85_corners",
+          "odds": 1.55,
+          "edge": 0.0808,
+          "prob": 0.726
+        }
+      ]
     }
   ],
-  "total": 1,
-  "updated_at": "2026-07-02T03:28:00.762795"
+  "total": 20,
+  "updated_at": "2026-07-06T14:24:37.326115"
 }

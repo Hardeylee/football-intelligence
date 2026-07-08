@@ -15,6 +15,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 from src.models.club_value_detector import detect_value, format_value_report, get_informed_bets, format_informed_report
 from src.models.acca_builder import build_acca, format_acca_report, build_match_acca_legs
 from src.utils.result_tracker import log_prediction, send_performance_telegram
+from src.utils.result_tracker import log_prediction, send_performance_telegram
 
 load_dotenv()
 
@@ -22,14 +23,24 @@ TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 
-async def send_message(text):
-    bot = Bot(token=TOKEN)
-    await bot.send_message(
-        chat_id=CHAT_ID,
-        text=text,
-        parse_mode="HTML"
-    )
-    print(f"[TG] Sent: {text[:60]}...")
+async def send_message(text: str, retries: int = 3):
+    """Send message with retry on timeout."""
+    for attempt in range(retries):
+        try:
+            bot = Bot(token=TOKEN)
+            await bot.send_message(
+                chat_id=CHAT_ID,
+                text=text,
+                parse_mode="HTML"
+            )
+            print(f"[TG] Sent: {text[:60]}...")
+            return
+        except Exception as e:
+            if attempt < retries - 1:
+                print(f"[TG] Retry {attempt + 1} after error: {e}")
+                await asyncio.sleep(3)
+            else:
+                print(f"[TG] Failed after {retries} attempts: {e}")
 
 
 # ─── TEAM NAME ALIASES ───────────────────────────────────────────
@@ -434,6 +445,131 @@ async def handle_informed_request(home_team: str, away_team: str):
     await send_message(report + f"\n\n📡 <i>{odds_source}</i>")
 
 
+async def handle_gw_request():
+    """
+    Fetch all current EPL fixtures from SportyBet and analyse every match.
+    Triggered by typing 'gw' in Telegram.
+    """
+    from src.collectors.epl_odds_scraper import get_epl_odds
+
+    await send_message("🔍 Fetching this gameweek's EPL fixtures from SportyBet...")
+
+    matches = get_epl_odds()
+
+    if not matches:
+        await send_message("❌ No EPL fixtures found on SportyBet right now.")
+        return
+
+    await send_message(
+        f"⚽ <b>GAMEWEEK ANALYSIS</b>\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n"
+        f"Found <b>{len(matches)} EPL fixtures</b>\n"
+        f"Analysing all matches...\n"
+        f"📡 Live SportyBet odds"
+    )
+    await asyncio.sleep(1)
+
+    known_teams = load_known_teams()
+    value_matches = []
+
+    # Load profiles once outside loop
+    from src.models.match_predictor import load_profiles as _load_profiles
+    _profiles = _load_profiles()
+
+    for m in matches:
+        home_raw = m["home_team"]
+        away_raw = m["away_team"]
+        odds = m["odds"]
+        kick_off = m.get("kick_off", "TBC")
+
+        # Names already normalised by epl_odds_scraper
+        # Direct profile lookup — no fuzzy matching needed
+        home = home_raw
+        away = away_raw
+
+        # Only fuzzy match teams that are genuinely missing
+        # Don't fuzzy match if team is in FORCE_PROMOTED — let predictor handle it
+        from src.models.match_predictor import FORCE_PROMOTED
+        home_missing = home not in _profiles and home not in FORCE_PROMOTED
+        away_missing = away not in _profiles and away not in FORCE_PROMOTED
+
+        if home_missing:
+            home = fuzzy_match(home_raw.lower(), known_teams)
+        if away_missing:
+            away = fuzzy_match(away_raw.lower(), known_teams)
+        # Run value detection
+        analysis = detect_value(home, away, odds)
+
+        if "error" in analysis:
+            continue
+
+        # Auto log prediction
+        try:
+            log_prediction(
+                home_team=home,
+                away_team=away,
+                kick_off=kick_off,
+                prediction=analysis.get("prediction", {}),
+                odds=odds,
+                value_bets=analysis.get("value_bets", []),
+            )
+        except Exception as e:
+            print(f"[LOG] Could not log {home} vs {away}: {e}")
+
+        if analysis.get("has_value"):
+            value_matches.append((home, away, analysis, odds, kick_off))
+
+    # Send summary first
+    await send_message(
+        f"📊 <b>GW SUMMARY</b>\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n"
+        f"Matches analysed: {len(matches)}\n"
+        f"Value bets found: {len(value_matches)} matches\n"
+        f"{'━━━━━━━━━━━━━━━━━━━━' if value_matches else ''}"
+    )
+    await asyncio.sleep(1)
+
+    if not value_matches:
+        await send_message("❌ No value bets found across all GW fixtures.")
+        return
+
+    # Send each value match
+    for home, away, analysis, odds, kick_off in value_matches:
+        report = format_value_report(analysis)
+        if not report:
+            continue
+        footer = f"\n🕐 {kick_off}\n📡 Live SportyBet odds"
+        await send_message(report + footer)
+
+        # Send streak report
+        from src.models.streak_analyzer import (
+            analyze_match_streaks, get_streak_confirmation, format_streak_report
+        )
+        streak_data = analyze_match_streaks(home, away)
+        home_streaks = streak_data.get("home_streaks", {})
+        away_streaks = streak_data.get("away_streaks", {})
+        pred = analysis.get("prediction", {})
+        g = pred.get("goals", {})
+        c = pred.get("cards", {})
+        co = pred.get("corners", {})
+
+        confirmation = get_streak_confirmation(
+            home_streaks, away_streaks,
+            model_over25=g.get("over25", 0),
+            model_btts=g.get("btts_yes", 0),
+            model_over35_cards=c.get("over35_cards", 0),
+            model_over85_corners=co.get("over85_corners", 0),
+        )
+
+        streak_report = format_streak_report(
+            home, away, home_streaks, away_streaks, confirmation
+        )
+        if streak_report:
+            await send_message(streak_report)
+
+        await asyncio.sleep(3)
+
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle free-text messages."""
     text = update.message.text.strip()
@@ -444,11 +580,20 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text_lower = text.lower().strip()
 
     # Stats command — must be first
+    # Stats command
     if text_lower == "stats":
         from src.utils.result_tracker import send_performance_telegram
         await send_message(send_performance_telegram())
         return
 
+    # Gameweek batch analysis
+    if text_lower == "gw":
+        await handle_gw_request()
+        return
+
+    # Pick / informed bet mode
+    if text_lower.startswith("pick ") or text_lower.startswith("informed "):
+        ...
     # Pick / informed bet mode
     if text_lower.startswith("pick ") or text_lower.startswith("informed "):
         raw = text_lower.replace("pick ", "").replace("informed ", "").strip()
@@ -497,6 +642,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Unknown command
     await send_message(
         "❓ Commands:\n"
+        "Gameweek:   <code>gw</code>\n"
         "Value bets: <code>Arsenal vs Chelsea</code>\n"
         "Top picks:  <code>pick Arsenal vs Chelsea</code>\n"
         "Acca:       <code>acca Arsenal vs Chelsea, Man City vs Liverpool</code>\n"
@@ -547,7 +693,7 @@ async def send_value_bets():
         f"📊 {len(analyses)} matches analysed"
     )
     await send_message(header)
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
 
     for match in value_matches:
         home = match["home_team"]
