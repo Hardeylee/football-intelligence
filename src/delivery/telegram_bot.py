@@ -586,6 +586,14 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await send_message(send_performance_telegram())
         return
 
+    if text_lower == "settle":
+        from src.utils.epl_result_fetcher import auto_settle_gameweek
+        await send_message("⚙️ Fetching EPL results and settling predictions...")
+        auto_settle_gameweek()
+        from src.utils.result_tracker import send_performance_telegram
+        await send_message(send_performance_telegram())
+        return
+
     # Gameweek batch analysis
     if text_lower == "gw":
         await handle_gw_request()
@@ -649,6 +657,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Multiple:   paste matches on separate lines\n"
         "Stats:      <code>stats</code>\n"
         "Shortcuts:  <code>spurs vs reds</code>, <code>united vs city</code>"
+        "Settle GW:  <code>settle</code>\n"
     )
 
 
