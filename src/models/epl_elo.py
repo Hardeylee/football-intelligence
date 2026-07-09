@@ -32,7 +32,6 @@ PROMOTED_RATINGS = {
     "Coventry City": 1380,  # Strong Championship side
     "Hull City":     1350,  # Mid-Championship level
     "Ipswich":       1320,  # Relegated last season, rebuilding
-    "Sunderland":    1420,  # Championship winners, EPL newcomers
 }
 
 

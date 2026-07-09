@@ -302,6 +302,11 @@ async def handle_epl_match(home_team: str, away_team: str):
     await send_message(f"🔍 Analysing <b>{home_team} vs {away_team}</b>...")
 
     from src.collectors.epl_odds_scraper import get_odds_for_match
+    # Add AH recommendation
+    from src.models.asian_handicap import predict_ah, format_ah_report
+    ah_pred = predict_ah(home_team, away_team)
+    ah_report = format_ah_report(ah_pred)
+    await send_message(ah_report)
     from src.models.streak_analyzer import (
         analyze_match_streaks, get_streak_confirmation, format_streak_report
     )
