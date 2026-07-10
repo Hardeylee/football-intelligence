@@ -153,18 +153,18 @@ EPL_MANAGER_PROFILES = {
     },
 
     "Fulham": {
-        "manager":            "Marco Silva",
-        "style":              "Possession / Attacking",
-        "formation":          "4-2-3-1",
-        "pressing_intensity": 7,
-        "defensive_line":     6,
-        "attacking_tempo":    8,
+        "manager":            "Alvaro Arbeloa",
+        "style":              "Structured / Defensive",
+        "formation":          "4-4-2 / 4-2-3-1",
+        "pressing_intensity": 5,
+        "defensive_line":     5,
+        "attacking_tempo":    6,
         "set_piece_focus":    6,
-        "foul_tendency":      5,
+        "foul_tendency":      6,
         "cards_modifier":     0.03,
-        "corners_modifier":   0.03,
-        "goals_modifier":     0.05,
-        "notes": "Silva built Fulham into an attacking, possession-based side. Teams score and concede freely. High tempo."
+        "corners_modifier":   0.02,
+        "goals_modifier": -0.02,
+        "notes": "Arbeloa is an unproven manager at senior level. Former Real Madrid Castilla coach. Likely to set up defensively while getting used to the Premier League. Neutral modifiers with slight defensive lean until we see his style develop."
     },
 
     "Hull City": {
