@@ -47,11 +47,21 @@ TEAM_NAME_MAP = {
     "Leeds United":              "Leeds",
 }
 
-# EPL adjustment factor for promoted teams (Championship → EPL step up)
+# EPL adjustment factor for promoted teams (Championship → EPL step up).
+# Applied ONLY to attacking output (raw_xg) -- see add_promoted_teams()
+# below. Previously this was also applied to raw_xga, which implied a
+# promoted team's defense gets BETTER stepping up to a tougher league.
+# That was backwards and has been corrected: raw_xga is now used as-is,
+# undiscounted. There's no established factor in this codebase for how
+# much MORE a promoted side should be expected to concede against EPL-
+# level attacks, so rather than invent one, the raw Championship xGA rate
+# is used directly -- flagged as a likely understatement of real
+# defensive risk for these teams, not a solved problem.
 PROMOTION_DISCOUNT = 0.80
 
 # Promoted teams xG data from FootyStats Championship stats
-# xG and xGA are per-game averages, then discounted by PROMOTION_DISCOUNT
+# xG and xGA are per-game averages. Only xG gets PROMOTION_DISCOUNT applied
+# (see note above); xGA is used at its raw Championship value.
 PROMOTED_TEAM_XG = {
     # 2025/26 promoted teams (from Championship 2025/26 season)
     "Coventry City": {
@@ -135,27 +145,25 @@ def derive_market_rates(avg_xg: float, avg_xga: float) -> dict:
     }
 
 
-def add_promoted_teams(profiles: dict) -> dict:
-    """
-    Add promoted teams not already in EPL xG profiles.
-    Uses Championship xG data with a 20% reduction (PROMOTION_DISCOUNT)
-    to account for the step up in quality from Championship to EPL.
-    Only adds a team if it's not already in profiles from EPL data.
-    """
-
-
 # Teams where we override EPL data with adjusted estimate
 FORCE_OVERRIDE = ["Ipswich"]
 
 
 def add_promoted_teams(profiles: dict) -> dict:
+    """
+    Add promoted teams not already in EPL xG profiles.
+    Uses Championship xG data. PROMOTION_DISCOUNT is applied ONLY to
+    raw_xg (attacking output) -- raw_xga is used undiscounted. See the
+    PROMOTION_DISCOUNT comment above for why the two aren't symmetric.
+    Only adds a team if it's not already in profiles from EPL data,
+    except for FORCE_OVERRIDE teams which always use this estimate.
+    """
     for team, data in PROMOTED_TEAM_XG.items():
         if team in profiles and team not in FORCE_OVERRIDE:
             continue
-        ...
 
         avg_xg = round(data["raw_xg"] * PROMOTION_DISCOUNT, 3)
-        avg_xga = round(data["raw_xga"] * PROMOTION_DISCOUNT, 3)
+        avg_xga = round(data["raw_xga"], 3)  # undiscounted, intentionally
         rates = derive_market_rates(avg_xg, avg_xga)
 
         profiles[team] = {
@@ -170,13 +178,14 @@ def add_promoted_teams(profiles: dict) -> dict:
             "xg_btts_rate":        rates["xg_btts_rate"],
             "source": (
                 f"Championship {data['championship_season']} "
-                f"+ {int((1-PROMOTION_DISCOUNT)*100)}% EPL adjustment"
+                f"+ {int((1-PROMOTION_DISCOUNT)*100)}% EPL attack adjustment "
+                f"(xGA undiscounted)"
             ),
         }
         print(
             f"  + Promoted team added: {team:<20} "
-            f"xG: {avg_xg} (raw: {data['raw_xg']}) | "
-            f"xGA: {avg_xga} (raw: {data['raw_xga']})"
+            f"xG: {avg_xg} (raw: {data['raw_xg']}, discounted) | "
+            f"xGA: {avg_xga} (raw, undiscounted)"
         )
 
     return profiles
