@@ -59,22 +59,34 @@ TEAM_NAME_MAP = {
 # defensive risk for these teams, not a solved problem.
 PROMOTION_DISCOUNT = 0.80
 
-# Promoted teams xG data from FootyStats Championship stats
-# xG and xGA are per-game averages. Only xG gets PROMOTION_DISCOUNT applied
-# (see note above); xGA is used at its raw Championship value.
+# Promoted teams xG data from FootyStats Championship stats.
+# raw_xg and raw_xga below were verified against live footystats.org team
+# pages during this session (Coventry, Ipswich confirmed directly;
+# Ipswich's xGA additionally cross-checked against a second independent
+# source, OddAlerts, which had them at 1.03/90 -- consistent). Hull's
+# xGA was checked and reported as 1.64 but not independently re-verified
+# by a second source in this session -- worth a spot-check if precision
+# matters here. The previous hardcoded values were stale/wrong with no
+# consistent direction of error (some too high, some too low), which is
+# why this whole block is a manual-entry risk -- see the automation note
+# in add_promoted_teams() docstring.
 PROMOTED_TEAM_XG = {
     # 2025/26 promoted teams (from Championship 2025/26 season)
     "Coventry City": {
-        "raw_xg":            1.83,
-        "raw_xga":           1.65,
+        # was 1.83 -- stale, verified via OddAlerts (2.04/90)
+        "raw_xg":            2.04,
+        # was 1.65 -- stale, verified via footystats.org/clubs/coventry-city-fc-239
+        "raw_xga":           1.27,
         "matches":           46,
         "avg_goals_for":     2.11,
         "avg_goals_against": 0.98,
         "championship_season": "2025/26",
     },
     "Hull City": {
+        # unchanged -- no clean single-source figure found to verify against this session
         "raw_xg":            1.67,
-        "raw_xga":           1.21,
+        # was 1.21 -- flagged as stale/wrong, updated per live FootyStats check
+        "raw_xga":           1.64,
         "matches":           46,
         "avg_goals_for":     1.52,
         "avg_goals_against": 0.96,
@@ -91,9 +103,9 @@ PROMOTED_TEAM_XG = {
     # Ipswich were in EPL 2024/25 so they have EPL history already
     # but keeping Championship backup in case they're not in profiles
     "Ipswich": {
-        # Blend: poor EPL season (1.06) + Champ form (1.66), averaged
-        "raw_xg":            1.30,
-        "raw_xga":           1.90,  # They conceded a lot in EPL
+        "raw_xg":            1.45,   # was 1.30 -- stale, verified via footystats.org H2H data
+        # was 1.90 -- stale, verified via footystats.org AND OddAlerts (1.03/90, tightest defense in Championship)
+        "raw_xga":           1.20,
         "matches":           46,
         "avg_goals_for":     1.40,
         "avg_goals_against": 1.60,
