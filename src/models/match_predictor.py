@@ -21,82 +21,111 @@ HOME_ADVANTAGE = 0.06
 # even if stale historical EPL data exists
 FORCE_PROMOTED = {"Ipswich", "Coventry City", "Hull City"}
 
-# Explicit profiles for promoted teams built from Championship data
+# Explicit profiles for promoted teams built from Championship data.
+#
+# win_rate / draw_rate / loss_rate / home_win_rate / away_win_rate were
+# CORRECTED against the final 2025/26 Championship table and FootyStats
+# results (Coventry finished 1st/champions: 27W-11D-7L in 45 games;
+# Ipswich 2nd: 22W-15D-8L; Hull 6th: 23W-11D-15L in a longer,
+# playoff-inclusive sample). The previous hardcoded values badly
+# understated Coventry and Ipswich specifically -- e.g. Coventry (the
+# eventual champions) was coded with a 38% win / 38% loss rate, and
+# Ipswich (2nd place) was coded with a 53% loss rate. Both looked like
+# relegation-threatened sides rather than the two best teams in the
+# division. home_win_rate/away_win_rate are DERIVED estimates (the
+# original home/away skew shape preserved, re-anchored to the corrected
+# overall rate) rather than independently verified splits.
+#
+# avg_yellow_cards was corrected via Sofascore end-of-season data.
+# avg_corners_for / avg_corners_against and their home/away splits were
+# CORRECTED via SoccerStats.com's Championship 2025/26 corner splits
+# (exact home/away/total, for AND against -- not derived estimates).
+# These independently corroborate the Sofascore corners-for figures used
+# for the yellow-card fix (Coventry 5.30 vs Sofascore 5.3, Ipswich 5.70
+# vs 5.7), which is a good cross-check that both sources are reliable.
+#
+# STILL UNVERIFIED / OUT OF SCOPE, flagged rather than silently left:
+# - form_score for all three teams
+# - Red cards: Sofascore gave season totals (Coventry 3, Ipswich 1,
+#   Hull 2), not per-match rates, and predict_cards() doesn't currently
+#   read a red-card field at all -- only yellows feed the cards market.
+#   Not wired in; would need a logic change in predict_cards(), not just
+#   a value here, if red-card risk is ever wanted as a signal.
 PROMOTED_TEAM_PROFILES = {
     "Coventry City": {
-        "win_rate":        0.38,
+        "win_rate":        0.60,   # was 0.38 -- corrected, 27W-11D-7L (2025/26 champions)
         "draw_rate":       0.24,
-        "loss_rate":       0.38,
+        "loss_rate":       0.16,   # was 0.38
         "btts_rate":       0.59,
         "over15_rate":     0.83,
         "over25_rate":     0.54,
         "clean_sheet_rate": 0.21,
-        "home_win_rate":   0.52,
+        "home_win_rate":   0.74,   # was 0.52 -- derived, see note above
         "home_avg_goals_scored":   1.83,
         "home_avg_goals_conceded": 1.27,
-        "away_win_rate":   0.24,
+        "away_win_rate":   0.46,   # was 0.24 -- derived, see note above
         "away_avg_goals_scored":   1.46,
         "away_avg_goals_conceded": 1.65,
-        "avg_yellow_cards":    1.65,
-        "avg_corners_for":     4.8,
-        "avg_corners_against": 4.9,
-        "home_avg_yellow_cards":   1.45,
-        "away_avg_yellow_cards":   1.85,
-        "home_avg_corners_for":    5.2,
-        "home_avg_corners_against": 4.5,
-        "away_avg_corners_for":    4.4,
-        "away_avg_corners_against": 5.3,
-        "form_score":      0.44,
+        "avg_yellow_cards":    1.5,    # was 1.65 -- corrected via Sofascore end-of-season data
+        "avg_corners_for":     5.30,   # was 4.8 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_against": 4.20,   # was 4.9 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "home_avg_yellow_cards":   1.3,    # was 1.45 -- derived from corrected overall + original home/away skew
+        "away_avg_yellow_cards":   1.7,    # was 1.85
+        "home_avg_corners_for":    5.91,   # was 5.2 -- exact SoccerStats home split
+        "home_avg_corners_against": 3.48,  # was 4.5 -- exact SoccerStats home split
+        "away_avg_corners_for":    4.70,   # was 4.4 -- exact SoccerStats away split
+        "away_avg_corners_against": 4.91,  # was 5.3 -- exact SoccerStats away split
+        "form_score":      0.44,  # NOT re-verified in this pass
     },
     "Hull City": {
-        "win_rate":        0.35,
+        "win_rate":        0.47,   # was 0.35 -- corrected, 23W-11D-15L
         "draw_rate":       0.22,
-        "loss_rate":       0.43,
+        "loss_rate":       0.31,   # was 0.43
         "btts_rate":       0.50,
         "over15_rate":     0.78,
         "over25_rate":     0.46,
         "clean_sheet_rate": 0.26,
-        "home_win_rate":   0.48,
+        "home_win_rate":   0.60,   # was 0.48 -- derived, see note above
         "home_avg_goals_scored":   1.52,
         "home_avg_goals_conceded": 1.21,
-        "away_win_rate":   0.22,
+        "away_win_rate":   0.34,   # was 0.22 -- derived, see note above
         "away_avg_goals_scored":   1.18,
         "away_avg_goals_conceded": 1.58,
-        "avg_yellow_cards":    1.72,
-        "avg_corners_for":     4.5,
-        "avg_corners_against": 4.7,
-        "home_avg_yellow_cards":   1.55,
-        "away_avg_yellow_cards":   1.90,
-        "home_avg_corners_for":    4.9,
-        "home_avg_corners_against": 4.3,
-        "away_avg_corners_for":    4.1,
-        "away_avg_corners_against": 5.1,
-        "form_score":      0.40,
+        "avg_yellow_cards":    2.5,    # was 1.72 -- corrected via Sofascore end-of-season data
+        "avg_corners_for":     4.50,   # was 4.5 -- confirmed via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_against": 5.98,   # was 4.7 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "home_avg_yellow_cards":   2.33,   # was 1.55 -- derived from corrected overall + original home/away skew
+        "away_avg_yellow_cards":   2.67,   # was 1.90
+        "home_avg_corners_for":    4.52,   # was 4.9 -- exact SoccerStats home split
+        "home_avg_corners_against": 4.57,  # was 4.3 -- exact SoccerStats home split
+        "away_avg_corners_for":    4.48,   # was 4.1 -- exact SoccerStats away split
+        "away_avg_corners_against": 7.39,  # was 5.1 -- exact SoccerStats away split. Notably weak: Hull concede far more corners away than at home (7.39 vs 4.57), consistent with their already-known weaker away form.
+        "form_score":      0.40,  # NOT re-verified in this pass
     },
     "Ipswich": {
-        "win_rate":        0.26,
-        "draw_rate":       0.21,
-        "loss_rate":       0.53,
+        "win_rate":        0.49,   # was 0.26 -- corrected, 22W-15D-8L (2025/26 runners-up)
+        "draw_rate":       0.33,   # was 0.21
+        "loss_rate":       0.18,   # was 0.53
         "btts_rate":       0.50,
         "over15_rate":     0.74,
         "over25_rate":     0.45,
         "clean_sheet_rate": 0.18,
-        "home_win_rate":   0.37,
+        "home_win_rate":   0.59,   # was 0.37 -- derived, see note above
         "home_avg_goals_scored":   1.26,
         "home_avg_goals_conceded": 1.42,
-        "away_win_rate":   0.16,
+        "away_win_rate":   0.38,   # was 0.16 -- derived, see note above
         "away_avg_goals_scored":   0.95,
         "away_avg_goals_conceded": 1.89,
-        "avg_yellow_cards":    1.58,
-        "avg_corners_for":     4.2,
-        "avg_corners_against": 5.1,
-        "home_avg_yellow_cards":   1.40,
-        "away_avg_yellow_cards":   1.76,
-        "home_avg_corners_for":    4.6,
-        "home_avg_corners_against": 4.7,
-        "away_avg_corners_for":    3.8,
-        "away_avg_corners_against": 5.5,
-        "form_score":      0.32,
+        "avg_yellow_cards":    2.0,    # was 1.58 -- corrected via Sofascore end-of-season data
+        "avg_corners_for":     5.70,   # was 4.2 -- confirmed via SoccerStats.com Championship split (exact, not derived), matches Sofascore's 5.7 independently
+        "avg_corners_against": 3.93,   # was 5.1 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "home_avg_yellow_cards":   1.82,   # was 1.40 -- derived from corrected overall + original home/away skew
+        "away_avg_yellow_cards":   2.18,   # was 1.76
+        "home_avg_corners_for":    6.17,   # was 4.6 -- exact SoccerStats home split
+        "home_avg_corners_against": 3.83,  # was 4.7 -- exact SoccerStats home split
+        "away_avg_corners_for":    5.22,   # was 3.8 -- exact SoccerStats away split
+        "away_avg_corners_against": 4.04,  # was 5.5 -- exact SoccerStats away split
+        "form_score":      0.32,  # NOT re-verified in this pass
     },
 }
 

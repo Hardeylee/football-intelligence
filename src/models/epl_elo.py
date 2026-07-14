@@ -27,11 +27,23 @@ TRAIN_FILES = [
 ]
 
 # Promoted teams + teams with stale Elo data
-# Override with realistic starting ratings based on Championship performance
+# Override with realistic starting ratings based on Championship performance.
+#
+# CORRECTED: previous values had Hull (1350) rated ABOVE Ipswich (1320),
+# which is backwards -- confirmed against the final 2025/26 Championship
+# table: Coventry finished 1st (champions), Ipswich 2nd, Hull 6th. Ipswich
+# should never have been rated below a team that finished 4 places behind
+# them. New values preserve Coventry's correctly-highest rating and fix
+# the Ipswich/Hull ordering to match final league position. Still
+# estimates (not derived from a full Elo simulation of Championship
+# results), same caveat as before -- just no longer internally
+# contradictory.
 PROMOTED_RATINGS = {
-    "Coventry City": 1380,  # Strong Championship side
-    "Hull City":     1350,  # Mid-Championship level
-    "Ipswich":       1320,  # Relegated last season, rebuilding
+    "Coventry City": 1380,  # Champions, unchanged -- was already correctly highest
+    # 2nd place -- was 1320 (lower than Hull), now correctly above Hull
+    "Ipswich":       1360,
+    # 6th place -- was 1350 (higher than Ipswich), now correctly below Ipswich
+    "Hull City":     1310,
 }
 
 
