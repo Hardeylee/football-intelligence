@@ -13,7 +13,46 @@ Attributes per manager:
 - cards_modifier: adjustment to cards probability (-0.15 to +0.15)
 - corners_modifier: adjustment to corners probability (-0.15 to +0.15)
 - goals_modifier: adjustment to goals probability (-0.10 to +0.10)
+
+OPTA INTEGRATION (added):
+get_manager_profile() now overrides pressing_intensity, defensive_line,
+attacking_tempo, set_piece_focus, foul_tendency, cards_modifier, and
+goals_modifier with values from data/opta_tactical_profiles.json when
+that team has a trusted sample size (see opta_tactical_engine.py).
+The hardcoded values below remain the fallback for teams without a
+trusted Opta sample yet, and for manager/style/formation/notes, which
+Opta data doesn't cover.
+
+corners_modifier is NEVER overridden by Opta — The Analyst export has no
+corners column at all, so every team's corners_modifier stays on the
+subjective hardcoded value below, always. See opta_tactical_engine.py
+docstring for why.
 """
+
+import json
+from pathlib import Path
+
+_OPTA_PROFILES_PATH = Path("data/opta_tactical_profiles.json")
+_opta_cache = None
+
+
+def _load_opta_profiles() -> dict:
+    """Lazy-load and cache the Opta-derived tactical profiles.
+
+    Returns an empty dict (silent fallback to subjective ratings) if the
+    file doesn't exist yet, e.g. before opta_tactical_engine.py has ever
+    been run. This does not raise, since manager profiles must still work
+    even before the Opta pipeline is set up.
+    """
+    global _opta_cache
+    if _opta_cache is None:
+        if _OPTA_PROFILES_PATH.exists():
+            with open(_OPTA_PROFILES_PATH) as f:
+                _opta_cache = json.load(f)
+        else:
+            _opta_cache = {}
+    return _opta_cache
+
 
 EPL_MANAGER_PROFILES = {
 
@@ -273,18 +312,18 @@ EPL_MANAGER_PROFILES = {
     },
 
     "Nott'm Forest": {
-        "manager":            "Vitor Pereira",
-        "style":              "Defensive / Counter",
-        "formation":          "4-4-2 / 4-5-1",
-        "pressing_intensity": 5,
-        "defensive_line":     4,
-        "attacking_tempo":    5,
-        "set_piece_focus":    7,
-        "foul_tendency":      8,
-        "cards_modifier":     0.10,   # Very physical, defensive style
-        "corners_modifier":   0.05,
-        "goals_modifier": -0.07,  # Low scoring defensive matches
-        "notes": "Pereira sets up defensively compact teams. Very physical. High card rates. Low scoring matches typical."
+        "manager":            "Oliver Glasner",
+        "style":              "Back-3 / High Press / Counter-Attack",
+        "formation":          "3-4-3",
+        "pressing_intensity": 7,
+        "defensive_line":     6,
+        "attacking_tempo":    7,
+        "set_piece_focus":    6,
+        "foul_tendency":      6,
+        "cards_modifier":     0.04,
+        "corners_modifier":   0.06,   # Wide wing-backs in back-3 win corners
+        "goals_modifier":     0.00,
+        "notes": "Glasner corrected from Vitor Pereira per official 2026/27 PL manager announcement. Known for a back-3/back-5 shape (typically 3-4-2-1 in practice, mapped here to the closest defined formation_engine.py profile, 3-4-3, since 3-4-2-1 isn't a recognized key there), aggressive wing-backs, and high pressing from his Europa League-winning Eintracht Frankfurt spell and his run at Crystal Palace. Estimates here are a best-effort subjective fallback -- like all fallback values, they're only used when the Opta sample isn't trusted yet, but the formation field is read regardless of Opta trust, which is why getting the manager identity right matters immediately, not just once enough 2026/27 data exists."
     },
 
     "Tottenham": {
@@ -321,8 +360,23 @@ EPL_MANAGER_PROFILES = {
 
 
 def get_manager_profile(team: str) -> dict:
-    """Get manager profile for a team. Returns neutral profile if not found."""
-    return EPL_MANAGER_PROFILES.get(team, {
+    """Get manager profile for a team. Returns neutral profile if not found.
+
+    Ratings that Opta data can ground -- pressing_intensity, defensive_line,
+    attacking_tempo, set_piece_focus, foul_tendency, cards_modifier,
+    goals_modifier -- are overridden with Opta-derived values when the team
+    has a trusted sample size in data/opta_tactical_profiles.json. Below
+    that trust threshold (see MIN_GAMES_FOR_TRUST in opta_tactical_engine.py)
+    or if the team isn't in the Opta file at all, the subjective hardcoded
+    value stays in place.
+
+    corners_modifier is NEVER overridden by Opta data, for any team, ever --
+    there is no corners column in The Analyst export.
+
+    manager/style/formation/notes are always the hardcoded values; Opta
+    data doesn't cover manager identity.
+    """
+    base = EPL_MANAGER_PROFILES.get(team, {
         "manager":            "Unknown",
         "style":              "Unknown",
         "formation":          "Unknown",
@@ -335,7 +389,25 @@ def get_manager_profile(team: str) -> dict:
         "corners_modifier":   0.00,
         "goals_modifier":     0.00,
         "notes":              "No manager profile available."
-    })
+    }).copy()  # .copy() matters: without it we'd mutate the module-level
+    # dict in place below and corrupt it for every future call.
+
+    opta_team = _load_opta_profiles().get(team)
+
+    if opta_team and opta_team.get("sample_trusted", False):
+        base["pressing_intensity"] = opta_team["pressing_intensity"]
+        base["defensive_line"] = opta_team["defensive_line"]
+        base["attacking_tempo"] = opta_team["attacking_tempo"]
+        base["set_piece_focus"] = opta_team["set_piece_focus"]
+        base["foul_tendency"] = opta_team["foul_tendency"]
+        base["cards_modifier"] = opta_team["cards_modifier"]
+        base["goals_modifier"] = opta_team["goals_modifier"]
+        base["rating_source"] = "opta"
+        # corners_modifier intentionally untouched -- stays subjective.
+    else:
+        base["rating_source"] = "subjective_fallback"
+
+    return base
 
 
 def apply_manager_adjustments(
@@ -405,16 +477,18 @@ def apply_manager_adjustments(
 
 if __name__ == "__main__":
     print("EPL Manager Profiles — 2026/27\n")
-    print(f"{'Club':<20} {'Manager':<25} {'Style':<30} Cards  Corners  Goals")
-    print("-" * 95)
-    for team, p in sorted(EPL_MANAGER_PROFILES.items()):
+    print(f"{'Club':<20} {'Manager':<25} {'Style':<30} Cards  Corners  Goals  Source")
+    print("-" * 110)
+    for team in sorted(EPL_MANAGER_PROFILES.keys()):
         if team == "Sunderland":
             continue
+        p = get_manager_profile(team)
         print(
             f"{team:<20} {p['manager']:<25} {p['style']:<30} "
             f"{p['cards_modifier']:+.2f}   "
             f"{p['corners_modifier']:+.2f}     "
-            f"{p['goals_modifier']:+.2f}"
+            f"{p['goals_modifier']:+.2f}   "
+            f"{p.get('rating_source', 'subjective_fallback')}"
         )
 
     print("\nTest — Arsenal vs Tottenham adjustment:")
