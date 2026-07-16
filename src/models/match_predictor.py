@@ -53,7 +53,8 @@ FORCE_PROMOTED = {"Ipswich", "Coventry City", "Hull City"}
 #   a value here, if red-card risk is ever wanted as a signal.
 PROMOTED_TEAM_PROFILES = {
     "Coventry City": {
-        "win_rate":        0.60,   # was 0.38 -- corrected, 27W-11D-7L (2025/26 champions)
+        # was 0.38 -- corrected, 27W-11D-7L (2025/26 champions)
+        "win_rate":        0.60,
         "draw_rate":       0.24,
         "loss_rate":       0.16,   # was 0.38
         "btts_rate":       0.59,
@@ -66,10 +67,14 @@ PROMOTED_TEAM_PROFILES = {
         "away_win_rate":   0.46,   # was 0.24 -- derived, see note above
         "away_avg_goals_scored":   1.46,
         "away_avg_goals_conceded": 1.65,
-        "avg_yellow_cards":    1.5,    # was 1.65 -- corrected via Sofascore end-of-season data
-        "avg_corners_for":     5.30,   # was 4.8 -- corrected via SoccerStats.com Championship split (exact, not derived)
-        "avg_corners_against": 4.20,   # was 4.9 -- corrected via SoccerStats.com Championship split (exact, not derived)
-        "home_avg_yellow_cards":   1.3,    # was 1.45 -- derived from corrected overall + original home/away skew
+        # was 1.65 -- corrected via Sofascore end-of-season data
+        "avg_yellow_cards":    1.5,
+        # was 4.8 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_for":     5.30,
+        # was 4.9 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_against": 4.20,
+        # was 1.45 -- derived from corrected overall + original home/away skew
+        "home_avg_yellow_cards":   1.3,
         "away_avg_yellow_cards":   1.7,    # was 1.85
         "home_avg_corners_for":    5.91,   # was 5.2 -- exact SoccerStats home split
         "home_avg_corners_against": 3.48,  # was 4.5 -- exact SoccerStats home split
@@ -91,19 +96,25 @@ PROMOTED_TEAM_PROFILES = {
         "away_win_rate":   0.34,   # was 0.22 -- derived, see note above
         "away_avg_goals_scored":   1.18,
         "away_avg_goals_conceded": 1.58,
-        "avg_yellow_cards":    2.5,    # was 1.72 -- corrected via Sofascore end-of-season data
-        "avg_corners_for":     4.50,   # was 4.5 -- confirmed via SoccerStats.com Championship split (exact, not derived)
-        "avg_corners_against": 5.98,   # was 4.7 -- corrected via SoccerStats.com Championship split (exact, not derived)
-        "home_avg_yellow_cards":   2.33,   # was 1.55 -- derived from corrected overall + original home/away skew
+        # was 1.72 -- corrected via Sofascore end-of-season data
+        "avg_yellow_cards":    2.5,
+        # was 4.5 -- confirmed via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_for":     4.50,
+        # was 4.7 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_against": 5.98,
+        # was 1.55 -- derived from corrected overall + original home/away skew
+        "home_avg_yellow_cards":   2.33,
         "away_avg_yellow_cards":   2.67,   # was 1.90
         "home_avg_corners_for":    4.52,   # was 4.9 -- exact SoccerStats home split
         "home_avg_corners_against": 4.57,  # was 4.3 -- exact SoccerStats home split
         "away_avg_corners_for":    4.48,   # was 4.1 -- exact SoccerStats away split
-        "away_avg_corners_against": 7.39,  # was 5.1 -- exact SoccerStats away split. Notably weak: Hull concede far more corners away than at home (7.39 vs 4.57), consistent with their already-known weaker away form.
+        # was 5.1 -- exact SoccerStats away split. Notably weak: Hull concede far more corners away than at home (7.39 vs 4.57), consistent with their already-known weaker away form.
+        "away_avg_corners_against": 7.39,
         "form_score":      0.40,  # NOT re-verified in this pass
     },
     "Ipswich": {
-        "win_rate":        0.49,   # was 0.26 -- corrected, 22W-15D-8L (2025/26 runners-up)
+        # was 0.26 -- corrected, 22W-15D-8L (2025/26 runners-up)
+        "win_rate":        0.49,
         "draw_rate":       0.33,   # was 0.21
         "loss_rate":       0.18,   # was 0.53
         "btts_rate":       0.50,
@@ -116,10 +127,14 @@ PROMOTED_TEAM_PROFILES = {
         "away_win_rate":   0.38,   # was 0.16 -- derived, see note above
         "away_avg_goals_scored":   0.95,
         "away_avg_goals_conceded": 1.89,
-        "avg_yellow_cards":    2.0,    # was 1.58 -- corrected via Sofascore end-of-season data
-        "avg_corners_for":     5.70,   # was 4.2 -- confirmed via SoccerStats.com Championship split (exact, not derived), matches Sofascore's 5.7 independently
-        "avg_corners_against": 3.93,   # was 5.1 -- corrected via SoccerStats.com Championship split (exact, not derived)
-        "home_avg_yellow_cards":   1.82,   # was 1.40 -- derived from corrected overall + original home/away skew
+        # was 1.58 -- corrected via Sofascore end-of-season data
+        "avg_yellow_cards":    2.0,
+        # was 4.2 -- confirmed via SoccerStats.com Championship split (exact, not derived), matches Sofascore's 5.7 independently
+        "avg_corners_for":     5.70,
+        # was 5.1 -- corrected via SoccerStats.com Championship split (exact, not derived)
+        "avg_corners_against": 3.93,
+        # was 1.40 -- derived from corrected overall + original home/away skew
+        "home_avg_yellow_cards":   1.82,
         "away_avg_yellow_cards":   2.18,   # was 1.76
         "home_avg_corners_for":    6.17,   # was 4.6 -- exact SoccerStats home split
         "home_avg_corners_against": 3.83,  # was 4.7 -- exact SoccerStats home split
@@ -240,6 +255,38 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
 
     over35_rate = over25_rate * 0.48
 
+    # ── PLAYER AVAILABILITY ADJUSTMENT ──────────────────────────
+    # Applied last, after xG/historical/H2H blending, since it represents
+    # "this team is missing key players right now" and should apply
+    # regardless of which upstream data path produced the base numbers.
+    # See src/models/player_availability.py -- reduction only triggers
+    # for logged-unavailable players whose Opta importance > 0.20.
+    from src.models.player_availability import get_xg_reduction
+    home_avail = get_xg_reduction(home)
+    away_avail = get_xg_reduction(away)
+
+    home_xg = round(home_xg * home_avail["factor"], 2)
+    away_xg = round(away_xg * away_avail["factor"], 2)
+
+    # NOTE: over15/over25/over35/btts_rate are NOT derived from home_xg/
+    # away_xg via a Poisson relationship in this codebase -- they come
+    # from a separate blend of xg_profiles' precomputed rates (see above).
+    # Scaling them by the same factor is a reasonable approximation, not
+    # an exact derivation -- flagged so this isn't mistaken for more
+    # precision than actually exists.
+    combined_factor = (home_avail["factor"] + away_avail["factor"]) / 2
+    over15_rate = over15_rate * combined_factor
+    over25_rate = over25_rate * combined_factor
+    over35_rate = over35_rate * combined_factor
+    btts_rate = btts_rate * combined_factor
+
+    availability_note = {
+        "home_factor": home_avail["factor"],
+        "home_players_out": home_avail["players"],
+        "away_factor": away_avail["factor"],
+        "away_players_out": away_avail["players"],
+    }
+
     return {
         "home_xg":     round(home_xg, 2),
         "away_xg":     round(away_xg, 2),
@@ -253,6 +300,7 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
         "under35":     round(max(1 - over35_rate, 0.15), 3),
         "btts_yes":    round(min(btts_rate, 0.95), 3),
         "btts_no":     round(max(1 - btts_rate, 0.05), 3),
+        "availability": availability_note,
     }
 
 

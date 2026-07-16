@@ -1,12 +1,48 @@
 """
 EPL Club Elo Rating System
 Initialises and updates Elo ratings for all EPL clubs.
-Uses 4 seasons of historical results to build starting ratings.
+Uses historical results to build starting ratings.
 Updates after each match result.
 
 Starting rating: 1500 (league average)
 K-factor: 32 (standard for club football)
 Home advantage: 100 Elo points
+
+PATCH NOTE (backtest leak fix):
+
+initialise_ratings() used to read TRAIN_FILES and PROMOTED_RATINGS
+directly from module globals, which meant there was no way to build a
+point-in-time snapshot (e.g. "ratings as of end of 23-24, before 24-25
+kicks off") without either mutating these globals or duplicating the
+whole function. Two separate leaks stacked on top of each other as a
+result:
+
+1. TRAIN_FILES included seasons up through 25-26.csv. Any backtest
+   against 24-25 fixtures that called load_ratings() in production was
+   getting ratings built from 24-25's own results plus a full season
+   after it -- the model already "knew" the outcome of the season being
+   tested.
+
+2. PROMOTED_RATINGS is hardcoded for 2026/27's promoted teams
+   (Coventry City, Ipswich, Hull City), derived from their 2025/26
+   Championship form. The 2024/25 season's actual promoted teams were
+   Leicester, Ipswich, and Southampton -- a different set of clubs.
+   Naively reusing initialise_ratings() for a 24/25 backtest would
+   silently override Ipswich's rating with form from a season two years
+   in their future, while Leicester/Southampton -- that season's real
+   promoted teams -- got no override treatment at all.
+
+Fix: initialise_ratings() now takes train_files and promoted_overrides
+as explicit parameters instead of reading globals. The __main__ block
+below passes TRAIN_FILES/PROMOTED_RATINGS explicitly for live production
+use (behavior unchanged). A separate snapshot script
+(build_snapshot_elo.py) calls the same function with only pre-cutoff
+seasons and promoted_overrides=None, so backtest ratings and production
+ratings share one code path instead of two copies drifting apart.
+
+save_ratings()/load_ratings() also take an optional path param so a
+snapshot file (e.g. data/epl_elo_ratings_asof_24-25.json) can't collide
+with the live data/epl_elo_ratings.json.
 """
 
 import json
@@ -38,6 +74,12 @@ TRAIN_FILES = [
 # estimates (not derived from a full Elo simulation of Championship
 # results), same caveat as before -- just no longer internally
 # contradictory.
+#
+# NOTE: these values are specific to the 2026/27 season's promoted
+# clubs. They are ONLY valid for live production use via the __main__
+# block below (which passes them explicitly) -- do NOT reuse them for
+# backtesting any other season. See build_snapshot_elo.py, which
+# deliberately passes promoted_overrides=None for exactly this reason.
 PROMOTED_RATINGS = {
     "Coventry City": 1380,  # Champions, unchanged -- was already correctly highest
     # 2nd place -- was 1320 (lower than Hull), now correctly above Hull
@@ -89,12 +131,27 @@ def update_elo(
     return round(new_home, 1), round(new_away, 1)
 
 
-def initialise_ratings() -> dict:
+def initialise_ratings(train_files: list, promoted_overrides: dict = None) -> dict:
     """
     Build Elo ratings from historical match data.
-    All teams start at 1500, ratings evolve through 4 seasons.
-    Recent seasons use higher K-factor for more influence.
-    Promoted/stale teams are overridden with realistic estimates.
+    All teams start at 1500, ratings evolve through however many
+    seasons are passed in train_files.
+
+    train_files: list of (filepath, weight) tuples. Caller controls
+    exactly which seasons are visible -- this is what makes the same
+    function usable for both live production ratings (all seasons,
+    passed explicitly from TRAIN_FILES in __main__) and a point-in-time
+    backtest snapshot (only seasons up to a cutoff, see
+    build_snapshot_elo.py).
+
+    promoted_overrides: optional {team: rating} dict, applied AFTER
+    training data is processed. Defaults to None -- overrides are never
+    applied unless the caller explicitly asks for them, since a wrong
+    override (a rating from the wrong season) is worse than no override
+    at all. When None, teams with no training-data appearances simply
+    fall back to BASE_RATING, which is the honest "no prior data" state
+    for a backtest involving a promoted team not covered by the training
+    seasons.
     """
     ratings = {}
 
@@ -103,7 +160,7 @@ def initialise_ratings() -> dict:
             ratings[team] = BASE_RATING
         return ratings[team]
 
-    for filepath, weight in TRAIN_FILES:
+    for filepath, weight in train_files:
         if not os.path.exists(filepath):
             print(f"  [SKIP] {filepath} not found")
             continue
@@ -123,7 +180,7 @@ def initialise_ratings() -> dict:
                         "hg":   int(float(row["FTHG"])),
                         "ag":   int(float(row["FTAG"])),
                     })
-                except:
+                except (ValueError, TypeError):
                     continue
 
         print(f"  {filepath}: {len(matches)} matches (K={season_k:.0f})")
@@ -137,12 +194,12 @@ def initialise_ratings() -> dict:
             ratings[m["home"]] = new_h
             ratings[m["away"]] = new_a
 
-    # Override promoted/stale teams with realistic estimates
-    print("\n  Applying promoted team overrides:")
-    for team, rating in PROMOTED_RATINGS.items():
-        old = f"{ratings[team]:.0f}" if team in ratings else "NEW"
-        ratings[team] = rating
-        print(f"    {team:<20} {old} → {rating}")
+    if promoted_overrides:
+        print("\n  Applying promoted team overrides:")
+        for team, rating in promoted_overrides.items():
+            old = f"{ratings[team]:.0f}" if team in ratings else "NEW"
+            ratings[team] = rating
+            print(f"    {team:<20} {old} → {rating}")
 
     return ratings
 
@@ -186,23 +243,25 @@ def predict_result_elo(
     }
 
 
-def save_ratings(ratings: dict):
-    """Save Elo ratings to JSON."""
+def save_ratings(ratings: dict, path: str = ELO_FILE):
+    """Save Elo ratings to JSON. Pass a different path to write a
+    snapshot without touching the live production file."""
     os.makedirs("data", exist_ok=True)
-    with open(ELO_FILE, "w") as f:
+    with open(path, "w") as f:
         json.dump({
             "updated_at":  datetime.now().isoformat(),
             "base_rating": BASE_RATING,
             "ratings":     ratings,
         }, f, indent=2)
-    print(f"\nSaved {len(ratings)} Elo ratings → {ELO_FILE}")
+    print(f"\nSaved {len(ratings)} Elo ratings → {path}")
 
 
-def load_ratings() -> dict:
-    """Load Elo ratings from JSON."""
-    if not os.path.exists(ELO_FILE):
+def load_ratings(path: str = ELO_FILE) -> dict:
+    """Load Elo ratings from JSON. Pass a different path to load a
+    snapshot instead of the live production file."""
+    if not os.path.exists(path):
         return {}
-    with open(ELO_FILE) as f:
+    with open(path) as f:
         return json.load(f)["ratings"]
 
 
@@ -233,7 +292,7 @@ def settle_elo(
 
 if __name__ == "__main__":
     print("Initialising EPL Elo ratings...\n")
-    ratings = initialise_ratings()
+    ratings = initialise_ratings(TRAIN_FILES, PROMOTED_RATINGS)
     save_ratings(ratings)
 
     print("\nEPL Elo Rankings (2026/27 season start):")

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T11:54:44.109935",
+  "updated_at": "2026-07-13T01:09:58.894323",
   "source": "Understat EPL CSV + Championship adjustments",
   "teams": {
     "Man City": {
@@ -281,14 +281,14 @@
     "Ipswich": {
       "seasons": 1,
       "matches": 46,
-      "avg_xg_for": 1.04,
-      "avg_xg_against": 1.52,
+      "avg_xg_for": 1.16,
+      "avg_xg_against": 1.2,
       "avg_goals_for": 1.4,
       "avg_goals_against": 1.6,
-      "xg_over15_rate": 0.853,
-      "xg_over25_rate": 0.512,
-      "xg_btts_rate": 0.79,
-      "source": "Championship 2024/25 EPL (relegated) + discount + 19% EPL adjustment"
+      "xg_over15_rate": 0.787,
+      "xg_over25_rate": 0.472,
+      "xg_btts_rate": 0.696,
+      "source": "Championship 2024/25 EPL (relegated) + discount + 19% EPL attack adjustment (xGA undiscounted)"
     },
     "Sunderland": {
       "seasons": 1,
@@ -305,26 +305,26 @@
     "Coventry City": {
       "seasons": 1,
       "matches": 46,
-      "avg_xg_for": 1.464,
-      "avg_xg_against": 1.32,
+      "avg_xg_for": 1.632,
+      "avg_xg_against": 1.27,
       "avg_goals_for": 2.11,
       "avg_goals_against": 0.98,
-      "xg_over15_rate": 0.928,
-      "xg_over25_rate": 0.557,
+      "xg_over15_rate": 0.967,
+      "xg_over25_rate": 0.58,
       "xg_btts_rate": 0.9,
-      "source": "Championship 2025/26 + 19% EPL adjustment"
+      "source": "Championship 2025/26 + 19% EPL attack adjustment (xGA undiscounted)"
     },
     "Hull City": {
       "seasons": 1,
       "matches": 46,
       "avg_xg_for": 1.336,
-      "avg_xg_against": 0.968,
+      "avg_xg_against": 1.64,
       "avg_goals_for": 1.52,
       "avg_goals_against": 0.96,
-      "xg_over15_rate": 0.768,
-      "xg_over25_rate": 0.461,
-      "xg_btts_rate": 0.647,
-      "source": "Championship 2024/25 + 19% EPL adjustment"
+      "xg_over15_rate": 0.97,
+      "xg_over25_rate": 0.595,
+      "xg_btts_rate": 0.9,
+      "source": "Championship 2024/25 + 19% EPL attack adjustment (xGA undiscounted)"
     }
   }
 }

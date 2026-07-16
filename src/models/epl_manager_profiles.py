@@ -480,8 +480,6 @@ if __name__ == "__main__":
     print(f"{'Club':<20} {'Manager':<25} {'Style':<30} Cards  Corners  Goals  Source")
     print("-" * 110)
     for team in sorted(EPL_MANAGER_PROFILES.keys()):
-        if team == "Sunderland":
-            continue
         p = get_manager_profile(team)
         print(
             f"{team:<20} {p['manager']:<25} {p['style']:<30} "

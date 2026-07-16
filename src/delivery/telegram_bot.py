@@ -6,7 +6,6 @@ Sends value bet alerts directly to your phone.
 import asyncio
 import os
 import json
-from src.models.market_analyzer import analyze_markets, format_market_analysis_telegram
 from src.models.club_value_detector import detect_value, format_value_report
 from datetime import datetime
 from dotenv import load_dotenv
@@ -14,7 +13,6 @@ from telegram import Bot, Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 from src.models.club_value_detector import detect_value, format_value_report, get_informed_bets, format_informed_report
 from src.models.acca_builder import build_acca, format_acca_report, build_match_acca_legs
-from src.utils.result_tracker import log_prediction, send_performance_telegram
 from src.utils.result_tracker import log_prediction, send_performance_telegram
 
 load_dotenv()
@@ -44,22 +42,34 @@ async def send_message(text: str, retries: int = 3):
 
 
 # ─── TEAM NAME ALIASES ───────────────────────────────────────────
+#
+# CORRECTED: several entries below used to map to long-form club names
+# ("Manchester United", "Newcastle United", "Nottingham Forest", "Leeds
+# United", "Wolverhampton Wanderers") that do NOT match any key in
+# data/team_profiles.json -- confirmed against a live dump of its actual
+# keys, which use short forms throughout ("Man United", "Newcastle",
+# "Nott'm Forest", "Leeds", "Wolves"), matching every other file in this
+# codebase (epl_elo.py, xg_scraper.py, opta_tactical_engine.py, etc).
+# Since ALIASES is checked FIRST in fuzzy_match() and returns immediately,
+# this was silently sending unrecognized team names into the prediction
+# pipeline for every shorthand typed for these six clubs -- not just the
+# `injured` command, every match query using these shortcuts.
 
 ALIASES = {
     # Manchester United
-    "man united":           "Manchester United",
-    "man utd":              "Manchester United",
-    "man u":                "Manchester United",
-    "mufc":                 "Manchester United",
-    "united":               "Manchester United",
-    "red devils":           "Manchester United",
+    "man united":           "Man United",
+    "man utd":               "Man United",
+    "man u":                 "Man United",
+    "mufc":                  "Man United",
+    "united":                "Man United",
+    "red devils":            "Man United",
 
     # Manchester City
-    "man city":             "Manchester City",
-    "man c":                "Manchester City",
-    "mcfc":                 "Manchester City",
-    "city":                 "Manchester City",
-    "the citizens":         "Manchester City",
+    "man city":              "Man City",
+    "man c":                 "Man City",
+    "mcfc":                  "Man City",
+    "city":                  "Man City",
+    "the citizens":          "Man City",
 
     # Tottenham
     "spurs":                "Tottenham",
@@ -88,9 +98,9 @@ ALIASES = {
     "reds":                 "Liverpool",
 
     # Wolverhampton
-    "wolves":               "Wolverhampton Wanderers",
-    "wolverhampton":        "Wolverhampton Wanderers",
-    "wwfc":                 "Wolverhampton Wanderers",
+    "wolves":                "Wolves",
+    "wolverhampton":         "Wolves",
+    "wwfc":                  "Wolves",
 
     # West Ham
     "west ham":             "West Ham",
@@ -105,30 +115,30 @@ ALIASES = {
     "villans":              "Aston Villa",
 
     # Nottingham Forest
-    "forest":               "Nottingham Forest",
-    "nott forest":          "Nottingham Forest",
-    "nffc":                 "Nottingham Forest",
-    "nottingham":           "Nottingham Forest",
-    "nott'm forest":        "Nottingham Forest",
+    "forest":                "Nott'm Forest",
+    "nott forest":           "Nott'm Forest",
+    "nffc":                  "Nott'm Forest",
+    "nottingham":            "Nott'm Forest",
+    "nott'm forest":         "Nott'm Forest",
 
     # Newcastle
-    "newcastle":            "Newcastle United",
-    "newcastle utd":        "Newcastle United",
-    "nufc":                 "Newcastle United",
-    "magpies":              "Newcastle United",
-    "toon":                 "Newcastle United",
+    "newcastle":              "Newcastle",
+    "newcastle utd":          "Newcastle",
+    "nufc":                   "Newcastle",
+    "magpies":                "Newcastle",
+    "toon":                   "Newcastle",
 
     # Leicester
-    "leicester":            "Leicester",
-    "leicester city":       "Leicester",
-    "lcfc":                 "Leicester",
-    "foxes":                "Leicester",
+    "leicester":             "Leicester",
+    "leicester city":        "Leicester",
+    "lcfc":                  "Leicester",
+    "foxes":                 "Leicester",
 
     # Brighton
-    "brighton":             "Brighton",
-    "brighton & hove":      "Brighton",
-    "bhafc":                "Brighton",
-    "seagulls":             "Brighton",
+    "brighton":              "Brighton",
+    "brighton & hove":       "Brighton",
+    "bhafc":                 "Brighton",
+    "seagulls":              "Brighton",
 
     # Crystal Palace
     "crystal palace":       "Crystal Palace",
@@ -181,10 +191,10 @@ ALIASES = {
     "blades":               "Sheffield United",
 
     # Leeds
-    "leeds":                "Leeds United",
-    "leeds utd":            "Leeds United",
-    "lufc":                 "Leeds United",
-    "whites":               "Leeds United",
+    "leeds":                 "Leeds",
+    "leeds utd":              "Leeds",
+    "lufc":                   "Leeds",
+    "whites":                 "Leeds",
 
     # Sunderland
     "sunderland":           "Sunderland",
@@ -450,6 +460,84 @@ async def handle_informed_request(home_team: str, away_team: str):
     await send_message(report + f"\n\n📡 <i>{odds_source}</i>")
 
 
+# ─── PLAYER AVAILABILITY (INJURIES) ──────────────────────────────
+
+PLAYER_AVAILABILITY_PATH = "data/player_availability.json"
+
+
+def load_player_availability() -> dict:
+    if not os.path.exists(PLAYER_AVAILABILITY_PATH):
+        return {}
+    with open(PLAYER_AVAILABILITY_PATH) as f:
+        return json.load(f)
+
+
+def save_player_availability(data: dict):
+    os.makedirs(os.path.dirname(PLAYER_AVAILABILITY_PATH), exist_ok=True)
+    with open(PLAYER_AVAILABILITY_PATH, "w") as f:
+        json.dump(data, f, indent=2)
+
+
+async def handle_injured_command(text: str):
+    """
+    Set:   injured Arsenal: Saka, Rice
+    Clear: injured Arsenal: none
+    """
+    raw = text[len("injured"):].strip()
+    if ":" not in raw:
+        await send_message(
+            "❓ Injury format:\n"
+            "<code>injured Arsenal: Saka, Rice</code>\n"
+            "Clear:\n"
+            "<code>injured Arsenal: none</code>"
+        )
+        return
+
+    team_raw, players_raw = raw.split(":", 1)
+    known_teams = load_known_teams()
+    team = fuzzy_match(team_raw.strip().lower(), known_teams)
+    players_raw = players_raw.strip()
+
+    availability = load_player_availability()
+
+    if players_raw.lower() in ("none", "clear", "-"):
+        availability.pop(team, None)
+        save_player_availability(availability)
+        await send_message(f"✅ Cleared injury list for <b>{team}</b>.")
+        return
+
+    players = [p.strip() for p in players_raw.split(",") if p.strip()]
+    if not players:
+        await send_message("❓ No player names found. Format: injured Arsenal: Saka, Rice")
+        return
+
+    availability[team] = {
+        "players": players,
+        "updated_at": datetime.now().isoformat()
+    }
+    save_player_availability(availability)
+
+    await send_message(
+        f"🚑 <b>{team}</b> unavailable:\n"
+        f"{', '.join(players)}\n\n"
+        f"Saved to player_availability.json"
+    )
+
+
+async def handle_injuries_list():
+    """Show everything currently logged as unavailable, across all teams."""
+    availability = load_player_availability()
+    if not availability:
+        await send_message("✅ No injuries currently logged.")
+        return
+
+    lines = ["🚑 <b>CURRENT INJURY LIST</b>", "━━━━━━━━━━━━━━━━━━━━"]
+    for team, info in availability.items():
+        players = info.get("players", []) if isinstance(info, dict) else info
+        lines.append(f"<b>{team}</b>: {', '.join(players)}")
+    await send_message("\n".join(lines))
+
+
 async def handle_gw_request():
     """
     Fetch all current EPL fixtures from SportyBet and analyse every match.
@@ -599,14 +687,19 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await send_message(send_performance_telegram())
         return
 
+    if text_lower.startswith("injured "):
+        await handle_injured_command(text)
+        return
+
+    if text_lower == "injuries":
+        await handle_injuries_list()
+        return
+
     # Gameweek batch analysis
     if text_lower == "gw":
         await handle_gw_request()
         return
 
-    # Pick / informed bet mode
-    if text_lower.startswith("pick ") or text_lower.startswith("informed "):
-        ...
     # Pick / informed bet mode
     if text_lower.startswith("pick ") or text_lower.startswith("informed "):
         raw = text_lower.replace("pick ", "").replace("informed ", "").strip()
@@ -663,6 +756,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Stats:      <code>stats</code>\n"
         "Shortcuts:  <code>spurs vs reds</code>, <code>united vs city</code>"
         "Settle GW:  <code>settle</code>\n"
+        "Injuries:   <code>injured Arsenal: Saka, Rice</code>\n"
+        "List:       <code>injuries</code>\n"
     )
 
 
@@ -799,7 +894,7 @@ async def send_test():
         f"✅ <b>Football Intelligence Bot Active</b>\n"
         f"━━━━━━━━━━━━━━━━━━━━\n"
         f"🤖 Bot is connected and working\n"
-        f"⚽ Ready to send value bet alerts\n"
+        f"⚽ Ready to send EPL value bet alerts\n"
         f"📅 {datetime.now().strftime('%d %b %Y %H:%M')}\n\n"
         f"💡 Type any match:\n"
         f"<code>Arsenal vs Chelsea</code>\n"
@@ -810,38 +905,19 @@ async def send_test():
 
 
 async def send_market_analysis():
-    if not os.path.exists("data/value_bets.json"):
-        await send_message("⚠️ No analysis found. Run pipeline first.")
-        return
-
-    with open("data/value_bets.json") as f:
-        data = json.load(f)
-
-    analyses = data.get("analyses", [])
-    if not analyses:
-        await send_message("No matches found.")
-        return
-
+    """
+    REMOVED: this used to call analyze_markets() from src/models/market_analyzer.py,
+    which depends on the archived World Cup cluster (elo_model.py,
+    manager_intelligence.py) -- broken for EPL context, never migrated after
+    the World Cup -> EPL pivot. If a per-market staking-guide breakdown is
+    wanted again, it belongs in the Evidence Engine / AI Explanation Layer
+    roadmap items, not a revived hand-rolled version of this function.
+    """
     await send_message(
-        f"📊 <b>MARKET ANALYSIS — {len(analyses)} MATCHES</b>\n"
-        f"━━━━━━━━━━━━━━━━━━━━\n"
-        f"Full breakdown of recommended markets\n"
-        f"for every World Cup match today.\n"
-        f"Stake guide based on ₦1000 max budget."
+        "⚠️ Market analysis command removed -- it depended on retired "
+        "World Cup-era code. Use 'gw' or a direct match query for "
+        "per-market breakdowns instead."
     )
-    await asyncio.sleep(1)
-
-    for match in analyses:
-        analysis = analyze_markets(
-            match["home_team"],
-            match["away_team"],
-            match["home_elo"],
-            match["away_elo"],
-            match["model_probability"]
-        )
-        msg = format_market_analysis_telegram(analysis)
-        await send_message(msg)
-        await asyncio.sleep(2)
 
 
 # ─── ENTRY POINT ─────────────────────────────────────────────────
@@ -854,16 +930,8 @@ if __name__ == "__main__":
         asyncio.run(send_test())
     elif cmd == "bets":
         asyncio.run(send_value_bets())
-    elif cmd == "markets":
-        asyncio.run(send_market_analysis())
     elif cmd == "summary":
         asyncio.run(send_daily_summary())
-    elif cmd == "all":
-        async def send_all():
-            await send_value_bets()
-            await asyncio.sleep(2)
-            await send_market_analysis()
-        asyncio.run(send_all())
     elif cmd == "match":
         if len(sys.argv) >= 4:
             known = load_known_teams()
@@ -874,5 +942,5 @@ if __name__ == "__main__":
             print("Usage: python -m src.delivery.telegram_bot match Arsenal Chelsea")
     elif cmd == "listen":
         run_bot_listener()
-elif cmd == "stats":
-    asyncio.run(send_message(send_performance_telegram()))
+    elif cmd == "stats":
+        asyncio.run(send_message(send_performance_telegram()))

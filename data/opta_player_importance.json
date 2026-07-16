@@ -1,0 +1,4510 @@
+{
+  "15157": {
+    "name": "James Milner",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.02,
+    "importance": 0.0176,
+    "mins_played": 778
+  },
+  "17761": {
+    "name": "James Tarkowski",
+    "team": "Everton FC",
+    "player_xg": 2.91,
+    "importance": 0.0623,
+    "mins_played": 3330
+  },
+  "44699": {
+    "name": "Ashley Barnes",
+    "team": "Burnley FC",
+    "player_xg": 0.25,
+    "importance": 0.0077,
+    "mins_played": 40
+  },
+  "50175": {
+    "name": "Danny Welbeck",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 12.44,
+    "importance": 0.2149,
+    "mins_played": 2263
+  },
+  "54469": {
+    "name": "Adam Smith",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1076
+  },
+  "56979": {
+    "name": "Jordan Henderson",
+    "team": "Brentford FC",
+    "player_xg": 0.33,
+    "importance": 0.0055,
+    "mins_played": 1922
+  },
+  "57328": {
+    "name": "Nathaniel Clyne",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.43,
+    "importance": 0.0074,
+    "mins_played": 596
+  },
+  "58621": {
+    "name": "Kyle Walker",
+    "team": "Burnley FC",
+    "player_xg": 0.16,
+    "importance": 0.0049,
+    "mins_played": 3097
+  },
+  "59735": {
+    "name": "Karl Darlow",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "59859": {
+    "name": "Ilkay G\u00fcndogan",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "59949": {
+    "name": "S\u00e9amus Coleman",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 20
+  },
+  "60307": {
+    "name": "Pascal Gro\u00df",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.45,
+    "importance": 0.025,
+    "mins_played": 1636
+  },
+  "60689": {
+    "name": "Chris Wood",
+    "team": "Nottingham Forest FC",
+    "player_xg": 4.25,
+    "importance": 0.0924,
+    "mins_played": 906
+  },
+  "61256": {
+    "name": "Casemiro",
+    "team": "Manchester United FC",
+    "player_xg": 5.52,
+    "importance": 0.0843,
+    "mins_played": 2588
+  },
+  "67089": {
+    "name": "Martin D\u00fabravka",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "72147": {
+    "name": "Marco Bizot",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "75115": {
+    "name": "Callum Wilson",
+    "team": "West Ham United FC",
+    "player_xg": 7.66,
+    "importance": 0.166,
+    "mins_played": 1243
+  },
+  "76357": {
+    "name": "Tom Cairney",
+    "team": "Fulham FC",
+    "player_xg": 1.21,
+    "importance": 0.025,
+    "mins_played": 763
+  },
+  "77794": {
+    "name": "Kieran Trippier",
+    "team": "Newcastle United FC",
+    "player_xg": 0.08,
+    "importance": 0.0014,
+    "mins_played": 1592
+  },
+  "78916": {
+    "name": "Dan Burn",
+    "team": "Newcastle United FC",
+    "player_xg": 1.06,
+    "importance": 0.0186,
+    "mins_played": 2199
+  },
+  "79602": {
+    "name": "Dan Bentley",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "80201": {
+    "name": "Bernd Leno",
+    "team": "Fulham FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "80801": {
+    "name": "Idrissa Gueye",
+    "team": "Everton FC",
+    "player_xg": 2.0,
+    "importance": 0.0428,
+    "mins_played": 2101
+  },
+  "83299": {
+    "name": "Lewis Dunk",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.71,
+    "importance": 0.0295,
+    "mins_played": 2837
+  },
+  "84182": {
+    "name": "Alphonse Areola",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "84450": {
+    "name": "Granit Xhaka",
+    "team": "Sunderland AFC",
+    "player_xg": 1.02,
+    "importance": 0.0262,
+    "mins_played": 2903
+  },
+  "85633": {
+    "name": "Matz Sels",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "87835": {
+    "name": "Matt Doherty",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.09,
+    "importance": 0.0025,
+    "mins_played": 791
+  },
+  "88248": {
+    "name": "Stefan Ortega",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "88894": {
+    "name": "Ross Barkley",
+    "team": "Aston Villa FC",
+    "player_xg": 1.51,
+    "importance": 0.0313,
+    "mins_played": 852
+  },
+  "90585": {
+    "name": "Willy Boly",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "91651": {
+    "name": "Mateo Kovacic",
+    "team": "Manchester City FC",
+    "player_xg": 0.16,
+    "importance": 0.0023,
+    "mins_played": 126
+  },
+  "91889": {
+    "name": "Niclas F\u00fcllkrug",
+    "team": "West Ham United FC",
+    "player_xg": 0.92,
+    "importance": 0.0199,
+    "mins_played": 408
+  },
+  "95658": {
+    "name": "Harry Maguire",
+    "team": "Manchester United FC",
+    "player_xg": 1.11,
+    "importance": 0.0169,
+    "mins_played": 1655
+  },
+  "97032": {
+    "name": "Virgil van Dijk",
+    "team": "Liverpool FC",
+    "player_xg": 3.77,
+    "importance": 0.0615,
+    "mins_played": 3420
+  },
+  "97299": {
+    "name": "John Stones",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 439
+  },
+  "98747": {
+    "name": "Nick Pope",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "98980": {
+    "name": "Emiliano Mart\u00ednez",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "101148": {
+    "name": "Jamaal Lascelles",
+    "team": "Newcastle United FC",
+    "player_xg": 0.04,
+    "importance": 0.0007,
+    "mins_played": 19
+  },
+  "101178": {
+    "name": "James Ward-Prowse",
+    "team": "Burnley FC",
+    "player_xg": 0.22,
+    "importance": 0.0068,
+    "mins_played": 1096
+  },
+  "101188": {
+    "name": "Lucas Digne",
+    "team": "Aston Villa FC",
+    "player_xg": 0.72,
+    "importance": 0.0149,
+    "mins_played": 1852
+  },
+  "101982": {
+    "name": "Sam Johnstone",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "102057": {
+    "name": "Ra\u00fal Jim\u00e9nez",
+    "team": "Fulham FC",
+    "player_xg": 11.5,
+    "importance": 0.2378,
+    "mins_played": 2199
+  },
+  "105717": {
+    "name": "Arthur Masuaku",
+    "team": "Sunderland AFC",
+    "player_xg": 0.07,
+    "importance": 0.0018,
+    "mins_played": 127
+  },
+  "106611": {
+    "name": "Michael Keane",
+    "team": "Everton FC",
+    "player_xg": 2.16,
+    "importance": 0.0463,
+    "mins_played": 2590
+  },
+  "106760": {
+    "name": "Luke Shaw",
+    "team": "Manchester United FC",
+    "player_xg": 0.71,
+    "importance": 0.0108,
+    "mins_played": 3231
+  },
+  "108413": {
+    "name": "Will Hughes",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.09,
+    "importance": 0.0187,
+    "mins_played": 1568
+  },
+  "109345": {
+    "name": "Solly March",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.04,
+    "importance": 0.0007,
+    "mins_played": 38
+  },
+  "109646": {
+    "name": "Tosin Adarabioyo",
+    "team": "Chelsea FC",
+    "player_xg": 0.11,
+    "importance": 0.0017,
+    "mins_played": 789
+  },
+  "109745": {
+    "name": "Kepa Arrizabalaga",
+    "team": "Arsenal FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "110504": {
+    "name": "Bertrand Traor\u00e9",
+    "team": "Sunderland AFC",
+    "player_xg": 0.56,
+    "importance": 0.0144,
+    "mins_played": 638
+  },
+  "111234": {
+    "name": "Jordan Pickford",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "111317": {
+    "name": "David Brooks",
+    "team": "Bournemouth",
+    "player_xg": 5.83,
+    "importance": 0.0942,
+    "mins_played": 1199
+  },
+  "111478": {
+    "name": "Jo\u00ebl Veltman",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.11,
+    "importance": 0.0192,
+    "mins_played": 1050
+  },
+  "111773": {
+    "name": "Emil Krafth",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 45
+  },
+  "113564": {
+    "name": "Sam Byram",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 8
+  },
+  "114243": {
+    "name": "Jacob Murphy",
+    "team": "Newcastle United FC",
+    "player_xg": 3.15,
+    "importance": 0.0551,
+    "mins_played": 1618
+  },
+  "114283": {
+    "name": "Jack Grealish",
+    "team": "Everton FC",
+    "player_xg": 2.15,
+    "importance": 0.046,
+    "mins_played": 1631
+  },
+  "115556": {
+    "name": "Ben Davies",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.49,
+    "importance": 0.0122,
+    "mins_played": 138
+  },
+  "116216": {
+    "name": "Leandro Trossard",
+    "team": "Arsenal FC",
+    "player_xg": 5.47,
+    "importance": 0.0834,
+    "mins_played": 2006
+  },
+  "116535": {
+    "name": "Alisson Becker",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "118748": {
+    "name": "Mohamed Salah",
+    "team": "Liverpool FC",
+    "player_xg": 8.16,
+    "importance": 0.133,
+    "mins_played": 2148
+  },
+  "119471": {
+    "name": "Fabian Sch\u00e4r",
+    "team": "Newcastle United FC",
+    "player_xg": 0.98,
+    "importance": 0.0172,
+    "mins_played": 1091
+  },
+  "121709": {
+    "name": "Walter Ben\u00edtez",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "122798": {
+    "name": "Andy Robertson",
+    "team": "Liverpool FC",
+    "player_xg": 1.1,
+    "importance": 0.0179,
+    "mins_played": 1172
+  },
+  "122806": {
+    "name": "John McGinn",
+    "team": "Aston Villa FC",
+    "player_xg": 2.96,
+    "importance": 0.0614,
+    "mins_played": 2157
+  },
+  "124165": {
+    "name": "Patrick Roberts",
+    "team": "Sunderland AFC",
+    "player_xg": 0.03,
+    "importance": 0.0008,
+    "mins_played": 27
+  },
+  "126184": {
+    "name": "Nathan Ak\u00e9",
+    "team": "Manchester City FC",
+    "player_xg": 0.72,
+    "importance": 0.0101,
+    "mins_played": 688
+  },
+  "128295": {
+    "name": "Christian N\u00f8rgaard",
+    "team": "Arsenal FC",
+    "player_xg": 0.08,
+    "importance": 0.0012,
+    "mins_played": 101
+  },
+  "135720": {
+    "name": "Kevin Danso",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.59,
+    "importance": 0.0147,
+    "mins_played": 1491
+  },
+  "141746": {
+    "name": "Bruno Fernandes",
+    "team": "Manchester United FC",
+    "player_xg": 10.83,
+    "importance": 0.1654,
+    "mins_played": 3066
+  },
+  "149065": {
+    "name": "Jos\u00e9 S\u00e1",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "149484": {
+    "name": "Tyrone Mings",
+    "team": "Aston Villa FC",
+    "player_xg": 1.37,
+    "importance": 0.0284,
+    "mins_played": 1323
+  },
+  "152551": {
+    "name": "Jefferson Lerma",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.82,
+    "importance": 0.0313,
+    "mins_played": 1724
+  },
+  "153133": {
+    "name": "Alex Iwobi",
+    "team": "Fulham FC",
+    "player_xg": 1.92,
+    "importance": 0.0397,
+    "mins_played": 2434
+  },
+  "153366": {
+    "name": "Harrison Reed",
+    "team": "Fulham FC",
+    "player_xg": 0.13,
+    "importance": 0.0027,
+    "mins_played": 90
+  },
+  "153682": {
+    "name": "Harry Wilson",
+    "team": "Fulham FC",
+    "player_xg": 5.83,
+    "importance": 0.1206,
+    "mins_played": 2691
+  },
+  "154296": {
+    "name": "Jo\u00e3o Palhinha",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 2.7,
+    "importance": 0.0673,
+    "mins_played": 2197
+  },
+  "154561": {
+    "name": "David Raya",
+    "team": "Arsenal FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "154566": {
+    "name": "Dominic Solanke",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 2.43,
+    "importance": 0.0606,
+    "mins_played": 1000
+  },
+  "155408": {
+    "name": "Lewis Cook",
+    "team": "Bournemouth",
+    "player_xg": 0.08,
+    "importance": 0.0013,
+    "mins_played": 872
+  },
+  "155503": {
+    "name": "Freddie Woodman",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "155511": {
+    "name": "Adam Armstrong",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.74,
+    "importance": 0.0771,
+    "mins_played": 1146
+  },
+  "156689": {
+    "name": "Andreas Pereira",
+    "team": "Fulham FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "158499": {
+    "name": "Ryan Christie",
+    "team": "Bournemouth",
+    "player_xg": 1.92,
+    "importance": 0.031,
+    "mins_played": 986
+  },
+  "158534": {
+    "name": "Kyle Walker-Peters",
+    "team": "West Ham United FC",
+    "player_xg": 1.13,
+    "importance": 0.0245,
+    "mins_played": 1380
+  },
+  "158983": {
+    "name": "Wataru Endo",
+    "team": "Liverpool FC",
+    "player_xg": 0.04,
+    "importance": 0.0007,
+    "mins_played": 171
+  },
+  "159506": {
+    "name": "Ola Aina",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.4,
+    "importance": 0.0087,
+    "mins_played": 1590
+  },
+  "159533": {
+    "name": "Adama Traor\u00e9",
+    "team": "West Ham United FC",
+    "player_xg": 0.69,
+    "importance": 0.015,
+    "mins_played": 377
+  },
+  "165809": {
+    "name": "Bernardo Silva",
+    "team": "Manchester City FC",
+    "player_xg": 2.56,
+    "importance": 0.0361,
+    "mins_played": 2886
+  },
+  "166477": {
+    "name": "Timothy Castagne",
+    "team": "Fulham FC",
+    "player_xg": 1.42,
+    "importance": 0.0294,
+    "mins_played": 1842
+  },
+  "166989": {
+    "name": "Youri Tielemans",
+    "team": "Aston Villa FC",
+    "player_xg": 1.17,
+    "importance": 0.0243,
+    "mins_played": 1862
+  },
+  "167074": {
+    "name": "Kenny Tete",
+    "team": "Fulham FC",
+    "player_xg": 0.96,
+    "importance": 0.0199,
+    "mins_played": 1794
+  },
+  "167512": {
+    "name": "Luke O'Nien",
+    "team": "Sunderland AFC",
+    "player_xg": 0.15,
+    "importance": 0.0039,
+    "mins_played": 564
+  },
+  "167887": {
+    "name": "Josh Laurent",
+    "team": "Burnley FC",
+    "player_xg": 0.85,
+    "importance": 0.0261,
+    "mins_played": 1759
+  },
+  "168636": {
+    "name": "Enes \u00dcnal",
+    "team": "Bournemouth",
+    "player_xg": 2.0,
+    "importance": 0.0323,
+    "mins_played": 214
+  },
+  "168991": {
+    "name": "Philip Billing",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "169528": {
+    "name": "Antonee Robinson",
+    "team": "Fulham FC",
+    "player_xg": 1.07,
+    "importance": 0.0221,
+    "mins_played": 1492
+  },
+  "171287": {
+    "name": "Joe Gomez",
+    "team": "Liverpool FC",
+    "player_xg": 0.27,
+    "importance": 0.0044,
+    "mins_played": 599
+  },
+  "171314": {
+    "name": "R\u00faben Dias",
+    "team": "Manchester City FC",
+    "player_xg": 0.56,
+    "importance": 0.0079,
+    "mins_played": 2140
+  },
+  "172567": {
+    "name": "Josh Cullen",
+    "team": "Burnley FC",
+    "player_xg": 0.9,
+    "importance": 0.0277,
+    "mins_played": 1519
+  },
+  "172649": {
+    "name": "Dean Henderson",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "172780": {
+    "name": "James Maddison",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.21,
+    "importance": 0.0052,
+    "mins_played": 34
+  },
+  "173879": {
+    "name": "Tammy Abraham",
+    "team": "Aston Villa FC",
+    "player_xg": 2.04,
+    "importance": 0.0423,
+    "mins_played": 279
+  },
+  "174592": {
+    "name": "Marcus Edwards",
+    "team": "Burnley FC",
+    "player_xg": 1.49,
+    "importance": 0.0458,
+    "mins_played": 1064
+  },
+  "174594": {
+    "name": "Lukas Nmecha",
+    "team": "Leeds United FC",
+    "player_xg": 7.23,
+    "importance": 0.1333,
+    "mins_played": 1073
+  },
+  "174874": {
+    "name": "Joachim Andersen",
+    "team": "Fulham FC",
+    "player_xg": 1.48,
+    "importance": 0.0306,
+    "mins_played": 2877
+  },
+  "177815": {
+    "name": "Dominic Calvert-Lewin",
+    "team": "Leeds United FC",
+    "player_xg": 15.81,
+    "importance": 0.2915,
+    "mins_played": 2726
+  },
+  "178186": {
+    "name": "Jarrod Bowen",
+    "team": "West Ham United FC",
+    "player_xg": 7.26,
+    "importance": 0.1573,
+    "mins_played": 3405
+  },
+  "178301": {
+    "name": "Ollie Watkins",
+    "team": "Aston Villa FC",
+    "player_xg": 15.14,
+    "importance": 0.3141,
+    "mins_played": 2852
+  },
+  "179268": {
+    "name": "Marc Cucurella",
+    "team": "Chelsea FC",
+    "player_xg": 2.35,
+    "importance": 0.0353,
+    "mins_played": 2710
+  },
+  "179458": {
+    "name": "Jacob Bruun Larsen",
+    "team": "Burnley FC",
+    "player_xg": 1.38,
+    "importance": 0.0424,
+    "mins_played": 1023
+  },
+  "180135": {
+    "name": "Sean Longstaff",
+    "team": "Leeds United FC",
+    "player_xg": 1.25,
+    "importance": 0.023,
+    "mins_played": 1006
+  },
+  "180736": {
+    "name": "Trevoh Chalobah",
+    "team": "Chelsea FC",
+    "player_xg": 1.43,
+    "importance": 0.0215,
+    "mins_played": 2782
+  },
+  "180804": {
+    "name": "Axel Tuanzebe",
+    "team": "Burnley FC",
+    "player_xg": 0.61,
+    "importance": 0.0188,
+    "mins_played": 1202
+  },
+  "180974": {
+    "name": "Joelinton",
+    "team": "Newcastle United FC",
+    "player_xg": 2.39,
+    "importance": 0.0418,
+    "mins_played": 1953
+  },
+  "183656": {
+    "name": "Josh Dasilva",
+    "team": "Brentford FC",
+    "player_xg": 0.08,
+    "importance": 0.0013,
+    "mins_played": 2
+  },
+  "184029": {
+    "name": "Martin \u00d8degaard",
+    "team": "Arsenal FC",
+    "player_xg": 1.23,
+    "importance": 0.0188,
+    "mins_played": 1370
+  },
+  "184254": {
+    "name": "Guglielmo Vicario",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "184341": {
+    "name": "Mason Mount",
+    "team": "Manchester United FC",
+    "player_xg": 1.5,
+    "importance": 0.0229,
+    "mins_played": 1018
+  },
+  "184349": {
+    "name": "Ryan Sessegnon",
+    "team": "Fulham FC",
+    "player_xg": 1.61,
+    "importance": 0.0333,
+    "mins_played": 1822
+  },
+  "184667": {
+    "name": "Victor Lindel\u00f6f",
+    "team": "Aston Villa FC",
+    "player_xg": 0.28,
+    "importance": 0.0058,
+    "mins_played": 944
+  },
+  "184754": {
+    "name": "Hwang Hee-Chan",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.39,
+    "importance": 0.0673,
+    "mins_played": 1452
+  },
+  "191866": {
+    "name": "Kristoffer Ajer",
+    "team": "Brentford FC",
+    "player_xg": 0.78,
+    "importance": 0.0129,
+    "mins_played": 1807
+  },
+  "192290": {
+    "name": "Connor Roberts",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "194010": {
+    "name": "Rico Henry",
+    "team": "Brentford FC",
+    "player_xg": 0.18,
+    "importance": 0.003,
+    "mins_played": 1328
+  },
+  "195384": {
+    "name": "Mikel Merino",
+    "team": "Arsenal FC",
+    "player_xg": 3.38,
+    "importance": 0.0515,
+    "mins_played": 1027
+  },
+  "195546": {
+    "name": "Emiliano Buend\u00eda",
+    "team": "Aston Villa FC",
+    "player_xg": 3.42,
+    "importance": 0.071,
+    "mins_played": 1759
+  },
+  "197024": {
+    "name": "Guido Rodr\u00edguez",
+    "team": "West Ham United FC",
+    "player_xg": 0.03,
+    "importance": 0.0007,
+    "mins_played": 177
+  },
+  "198869": {
+    "name": "Ben White",
+    "team": "Arsenal FC",
+    "player_xg": 0.46,
+    "importance": 0.007,
+    "mins_played": 704
+  },
+  "199598": {
+    "name": "Ethan Ampadu",
+    "team": "Leeds United FC",
+    "player_xg": 2.5,
+    "importance": 0.0461,
+    "mins_played": 3123
+  },
+  "199670": {
+    "name": "Odsonne \u00c9douard",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 2
+  },
+  "199796": {
+    "name": "Matty Cash",
+    "team": "Aston Villa FC",
+    "player_xg": 1.19,
+    "importance": 0.0247,
+    "mins_played": 3020
+  },
+  "199798": {
+    "name": "Ezri Konsa",
+    "team": "Aston Villa FC",
+    "player_xg": 1.25,
+    "importance": 0.0259,
+    "mins_played": 3036
+  },
+  "200089": {
+    "name": "Joe Willock",
+    "team": "Newcastle United FC",
+    "player_xg": 1.26,
+    "importance": 0.0221,
+    "mins_played": 980
+  },
+  "200617": {
+    "name": "Daniel James",
+    "team": "Leeds United FC",
+    "player_xg": 0.91,
+    "importance": 0.0168,
+    "mins_played": 553
+  },
+  "200641": {
+    "name": "Reiss Nelson",
+    "team": "Brentford FC",
+    "player_xg": 0.71,
+    "importance": 0.0118,
+    "mins_played": 118
+  },
+  "200720": {
+    "name": "Caoimh\u00edn Kelleher",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "200785": {
+    "name": "Tyler Adams",
+    "team": "Bournemouth",
+    "player_xg": 0.6,
+    "importance": 0.0097,
+    "mins_played": 1778
+  },
+  "200834": {
+    "name": "Nordi Mukiele",
+    "team": "Sunderland AFC",
+    "player_xg": 1.88,
+    "importance": 0.0483,
+    "mins_played": 2787
+  },
+  "201595": {
+    "name": "Lucas Perri",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "201658": {
+    "name": "Marcus Tavernier",
+    "team": "Bournemouth",
+    "player_xg": 9.06,
+    "importance": 0.1464,
+    "mins_played": 2738
+  },
+  "201666": {
+    "name": "Harvey Barnes",
+    "team": "Newcastle United FC",
+    "player_xg": 7.07,
+    "importance": 0.1238,
+    "mins_played": 1961
+  },
+  "201895": {
+    "name": "Omar Alderete",
+    "team": "Sunderland AFC",
+    "player_xg": 1.64,
+    "importance": 0.0422,
+    "mins_played": 2802
+  },
+  "202993": {
+    "name": "Rodrigo Bentancur",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.74,
+    "importance": 0.0185,
+    "mins_played": 1892
+  },
+  "204120": {
+    "name": "Olivier Boscagli",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.04,
+    "importance": 0.0007,
+    "mins_played": 800
+  },
+  "204480": {
+    "name": "Declan Rice",
+    "team": "Arsenal FC",
+    "player_xg": 3.17,
+    "importance": 0.0483,
+    "mins_played": 3099
+  },
+  "204580": {
+    "name": "Vitaly Janelt",
+    "team": "Brentford FC",
+    "player_xg": 0.91,
+    "importance": 0.0151,
+    "mins_played": 1437
+  },
+  "204646": {
+    "name": "Donyell Malen",
+    "team": "Aston Villa FC",
+    "player_xg": 4.07,
+    "importance": 0.0844,
+    "mins_played": 645
+  },
+  "204716": {
+    "name": "Ibrahima Konat\u00e9",
+    "team": "Liverpool FC",
+    "player_xg": 1.21,
+    "importance": 0.0197,
+    "mins_played": 3100
+  },
+  "204936": {
+    "name": "Gianluigi Donnarumma",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "204968": {
+    "name": "Ryan Yates",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.5,
+    "importance": 0.0109,
+    "mins_played": 604
+  },
+  "205533": {
+    "name": "Eddie Nketiah",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.77,
+    "importance": 0.0304,
+    "mins_played": 416
+  },
+  "205651": {
+    "name": "Gabriel Jesus",
+    "team": "Arsenal FC",
+    "player_xg": 2.69,
+    "importance": 0.041,
+    "mins_played": 421
+  },
+  "206325": {
+    "name": "Oleksandr Zinchenko",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.08,
+    "importance": 0.0017,
+    "mins_played": 353
+  },
+  "206915": {
+    "name": "Curtis Jones",
+    "team": "Liverpool FC",
+    "player_xg": 2.77,
+    "importance": 0.0452,
+    "mins_played": 1929
+  },
+  "207189": {
+    "name": "Sander Berge",
+    "team": "Fulham FC",
+    "player_xg": 1.54,
+    "importance": 0.0318,
+    "mins_played": 2911
+  },
+  "207283": {
+    "name": "Mathias Jensen",
+    "team": "Brentford FC",
+    "player_xg": 2.27,
+    "importance": 0.0377,
+    "mins_played": 2252
+  },
+  "208706": {
+    "name": "Bruno Guimar\u00e3es",
+    "team": "Newcastle United FC",
+    "player_xg": 5.6,
+    "importance": 0.098,
+    "mins_played": 2455
+  },
+  "208912": {
+    "name": "Joe Worrall",
+    "team": "Burnley FC",
+    "player_xg": 0.08,
+    "importance": 0.0025,
+    "mins_played": 497
+  },
+  "209036": {
+    "name": "Marc Gu\u00e9hi",
+    "team": "Manchester City FC",
+    "player_xg": 4.12,
+    "importance": 0.058,
+    "mins_played": 3150
+  },
+  "209041": {
+    "name": "Angel Gomes",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.26,
+    "importance": 0.0073,
+    "mins_played": 464
+  },
+  "209046": {
+    "name": "Callum Hudson-Odoi",
+    "team": "Nottingham Forest FC",
+    "player_xg": 2.8,
+    "importance": 0.0609,
+    "mins_played": 1844
+  },
+  "209243": {
+    "name": "Jadon Sancho",
+    "team": "Aston Villa FC",
+    "player_xg": 0.58,
+    "importance": 0.012,
+    "mins_played": 873
+  },
+  "209244": {
+    "name": "Phil Foden",
+    "team": "Manchester City FC",
+    "player_xg": 6.15,
+    "importance": 0.0866,
+    "mins_played": 2084
+  },
+  "209289": {
+    "name": "Emile Smith Rowe",
+    "team": "Fulham FC",
+    "player_xg": 4.77,
+    "importance": 0.0986,
+    "mins_played": 1928
+  },
+  "209365": {
+    "name": "Matthijs de Ligt",
+    "team": "Manchester United FC",
+    "player_xg": 1.46,
+    "importance": 0.0223,
+    "mins_played": 1170
+  },
+  "209400": {
+    "name": "Daichi Kamada",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.65,
+    "importance": 0.0284,
+    "mins_played": 1908
+  },
+  "210156": {
+    "name": "Taiwo Awoniyi",
+    "team": "Nottingham Forest FC",
+    "player_xg": 3.58,
+    "importance": 0.0778,
+    "mins_played": 481
+  },
+  "210462": {
+    "name": "Ibrahim Sangar\u00e9",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.15,
+    "importance": 0.025,
+    "mins_played": 2080
+  },
+  "210494": {
+    "name": "Nayef Aguerd",
+    "team": "West Ham United FC",
+    "player_xg": 0.1,
+    "importance": 0.0022,
+    "mins_played": 180
+  },
+  "211975": {
+    "name": "Manuel Akanji",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "212314": {
+    "name": "Sasa Lukic",
+    "team": "Fulham FC",
+    "player_xg": 2.26,
+    "importance": 0.0467,
+    "mins_played": 1734
+  },
+  "212319": {
+    "name": "Richarlison",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 8.09,
+    "importance": 0.2018,
+    "mins_played": 1957
+  },
+  "213999": {
+    "name": "Edson \u00c1lvarez",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "214048": {
+    "name": "Maximilian Kilman",
+    "team": "West Ham United FC",
+    "player_xg": 0.57,
+    "importance": 0.0124,
+    "mins_played": 1559
+  },
+  "214225": {
+    "name": "Joe Rodon",
+    "team": "Leeds United FC",
+    "player_xg": 1.41,
+    "importance": 0.026,
+    "mins_played": 2953
+  },
+  "214590": {
+    "name": "Aaron Wan-Bissaka",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 2084
+  },
+  "215059": {
+    "name": "Robert S\u00e1nchez",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "215136": {
+    "name": "Neco Williams",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.97,
+    "importance": 0.0428,
+    "mins_played": 3206
+  },
+  "215379": {
+    "name": "Elliot Anderson",
+    "team": "Nottingham Forest FC",
+    "player_xg": 2.9,
+    "importance": 0.0631,
+    "mins_played": 3334
+  },
+  "215413": {
+    "name": "Kiernan Dewsbury-Hall",
+    "team": "Everton FC",
+    "player_xg": 4.31,
+    "importance": 0.0923,
+    "mins_played": 2635
+  },
+  "215439": {
+    "name": "Tom\u00e1s Soucek",
+    "team": "West Ham United FC",
+    "player_xg": 5.68,
+    "importance": 0.1231,
+    "mins_played": 2198
+  },
+  "215711": {
+    "name": "Leon Bailey",
+    "team": "Aston Villa FC",
+    "player_xg": 0.49,
+    "importance": 0.0102,
+    "mins_played": 452
+  },
+  "216051": {
+    "name": "Diogo Dalot",
+    "team": "Manchester United FC",
+    "player_xg": 2.0,
+    "importance": 0.0305,
+    "mins_played": 2616
+  },
+  "216055": {
+    "name": "Florentino",
+    "team": "Burnley FC",
+    "player_xg": 0.66,
+    "importance": 0.0203,
+    "mins_played": 2112
+  },
+  "216094": {
+    "name": "Jeremie Frimpong",
+    "team": "Liverpool FC",
+    "player_xg": 0.51,
+    "importance": 0.0083,
+    "mins_played": 1039
+  },
+  "216646": {
+    "name": "Yoane Wissa",
+    "team": "Newcastle United FC",
+    "player_xg": 3.12,
+    "importance": 0.0546,
+    "mins_played": 521
+  },
+  "218328": {
+    "name": "Samuel Chukwueze",
+    "team": "Fulham FC",
+    "player_xg": 2.07,
+    "importance": 0.0428,
+    "mins_played": 1075
+  },
+  "218364": {
+    "name": "Borna Sosa",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.04,
+    "importance": 0.0007,
+    "mins_played": 99
+  },
+  "219168": {
+    "name": "Alexander Isak",
+    "team": "Liverpool FC",
+    "player_xg": 2.65,
+    "importance": 0.0432,
+    "mins_played": 703
+  },
+  "219249": {
+    "name": "Matt O'Riley",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.2,
+    "importance": 0.0207,
+    "mins_played": 203
+  },
+  "219847": {
+    "name": "Kai Havertz",
+    "team": "Arsenal FC",
+    "player_xg": 3.31,
+    "importance": 0.0505,
+    "mins_played": 583
+  },
+  "219924": {
+    "name": "Issa Diop",
+    "team": "Fulham FC",
+    "player_xg": 0.8,
+    "importance": 0.0165,
+    "mins_played": 814
+  },
+  "220237": {
+    "name": "Sven Botman",
+    "team": "Newcastle United FC",
+    "player_xg": 1.74,
+    "importance": 0.0305,
+    "mins_played": 1838
+  },
+  "220362": {
+    "name": "Axel Disasi",
+    "team": "West Ham United FC",
+    "player_xg": 1.02,
+    "importance": 0.0221,
+    "mins_played": 1255
+  },
+  "220566": {
+    "name": "Rodri",
+    "team": "Manchester City FC",
+    "player_xg": 1.13,
+    "importance": 0.0159,
+    "mins_played": 1513
+  },
+  "220627": {
+    "name": "James Justin",
+    "team": "Leeds United FC",
+    "player_xg": 1.67,
+    "importance": 0.0308,
+    "mins_played": 1896
+  },
+  "221389": {
+    "name": "John Victor",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "221399": {
+    "name": "Jack Harrison",
+    "team": "Leeds United FC",
+    "player_xg": 0.28,
+    "importance": 0.0052,
+    "mins_played": 263
+  },
+  "221466": {
+    "name": "Marcos Senesi",
+    "team": "Bournemouth",
+    "player_xg": 1.52,
+    "importance": 0.0246,
+    "mins_played": 3290
+  },
+  "221632": {
+    "name": "Cristian Romero",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.31,
+    "importance": 0.0327,
+    "mins_played": 1872
+  },
+  "221820": {
+    "name": "Lisandro Mart\u00ednez",
+    "team": "Manchester United FC",
+    "player_xg": 0.15,
+    "importance": 0.0023,
+    "mins_played": 1231
+  },
+  "222531": {
+    "name": "Morgan Gibbs-White",
+    "team": "Nottingham Forest FC",
+    "player_xg": 10.84,
+    "importance": 0.2357,
+    "mins_played": 3110
+  },
+  "222683": {
+    "name": "Justin Kluivert",
+    "team": "Bournemouth",
+    "player_xg": 2.32,
+    "importance": 0.0375,
+    "mins_played": 951
+  },
+  "222690": {
+    "name": "Tyrell Malacia",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 15
+  },
+  "222694": {
+    "name": "Pascal Struijk",
+    "team": "Leeds United FC",
+    "player_xg": 3.02,
+    "importance": 0.0557,
+    "mins_played": 2937
+  },
+  "223094": {
+    "name": "Erling Haaland",
+    "team": "Manchester City FC",
+    "player_xg": 25.39,
+    "importance": 0.3576,
+    "mins_played": 2958
+  },
+  "223336": {
+    "name": "Dan Neil",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 13
+  },
+  "223340": {
+    "name": "Bukayo Saka",
+    "team": "Arsenal FC",
+    "player_xg": 7.55,
+    "importance": 0.1151,
+    "mins_played": 2225
+  },
+  "223434": {
+    "name": "Igor Julio",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 103
+  },
+  "223541": {
+    "name": "Federico Chiesa",
+    "team": "Liverpool FC",
+    "player_xg": 1.5,
+    "importance": 0.0244,
+    "mins_played": 318
+  },
+  "223827": {
+    "name": "Dan Ballard",
+    "team": "Sunderland AFC",
+    "player_xg": 2.46,
+    "importance": 0.0633,
+    "mins_played": 2148
+  },
+  "224024": {
+    "name": "Lucas Paquet\u00e1",
+    "team": "West Ham United FC",
+    "player_xg": 2.82,
+    "importance": 0.0611,
+    "mins_played": 1521
+  },
+  "224117": {
+    "name": "Viktor Gy\u00f6keres",
+    "team": "Arsenal FC",
+    "player_xg": 12.4,
+    "importance": 0.189,
+    "mins_played": 2230
+  },
+  "224967": {
+    "name": "Vitalii Mykolenko",
+    "team": "Everton FC",
+    "player_xg": 0.29,
+    "importance": 0.0062,
+    "mins_played": 2960
+  },
+  "225321": {
+    "name": "Aaron Ramsdale",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "225796": {
+    "name": "Reece James",
+    "team": "Chelsea FC",
+    "player_xg": 1.04,
+    "importance": 0.0156,
+    "mins_played": 1961
+  },
+  "226182": {
+    "name": "Jayden Bogle",
+    "team": "Leeds United FC",
+    "player_xg": 2.11,
+    "importance": 0.0389,
+    "mins_played": 2802
+  },
+  "226597": {
+    "name": "Gabriel Magalh\u00e3es",
+    "team": "Arsenal FC",
+    "player_xg": 2.93,
+    "importance": 0.0447,
+    "mins_played": 2751
+  },
+  "226944": {
+    "name": "Boubacar Kamara",
+    "team": "Aston Villa FC",
+    "player_xg": 0.49,
+    "importance": 0.0102,
+    "mins_played": 1418
+  },
+  "226956": {
+    "name": "Mads Roerslev",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "227127": {
+    "name": "Yves Bissouma",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.36,
+    "importance": 0.009,
+    "mins_played": 605
+  },
+  "227444": {
+    "name": "Nikola Milenkovic",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.84,
+    "importance": 0.0183,
+    "mins_played": 3375
+  },
+  "229384": {
+    "name": "Andy Irving",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 157
+  },
+  "230001": {
+    "name": "Noussair Mazraoui",
+    "team": "Manchester United FC",
+    "player_xg": 0.19,
+    "importance": 0.0029,
+    "mins_played": 984
+  },
+  "230046": {
+    "name": "Douglas Luiz",
+    "team": "Aston Villa FC",
+    "player_xg": 0.53,
+    "importance": 0.011,
+    "mins_played": 923
+  },
+  "230376": {
+    "name": "Jhon Arias",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 3.25,
+    "importance": 0.0915,
+    "mins_played": 1121
+  },
+  "231057": {
+    "name": "Jean-Ricner Bellegarde",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.99,
+    "importance": 0.0279,
+    "mins_played": 1251
+  },
+  "231065": {
+    "name": "Ethan Pinnock",
+    "team": "Brentford FC",
+    "player_xg": 0.01,
+    "importance": 0.0002,
+    "mins_played": 321
+  },
+  "231416": {
+    "name": "Ferdi Kadioglu",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 2.03,
+    "importance": 0.0351,
+    "mins_played": 3134
+  },
+  "231480": {
+    "name": "Santiago Bueno",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.28,
+    "importance": 0.0642,
+    "mins_played": 2553
+  },
+  "231747": {
+    "name": "Jean-Philippe Mateta",
+    "team": "Crystal Palace FC",
+    "player_xg": 14.51,
+    "importance": 0.2494,
+    "mins_played": 2222
+  },
+  "232112": {
+    "name": "Manuel Ugarte",
+    "team": "Manchester United FC",
+    "player_xg": 0.71,
+    "importance": 0.0108,
+    "mins_played": 881
+  },
+  "232185": {
+    "name": "Isma\u00efla Sarr",
+    "team": "Crystal Palace FC",
+    "player_xg": 10.91,
+    "importance": 0.1875,
+    "mins_played": 2176
+  },
+  "232356": {
+    "name": "Jenson Jones",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "232413": {
+    "name": "Eberechi Eze",
+    "team": "Arsenal FC",
+    "player_xg": 5.05,
+    "importance": 0.077,
+    "mins_played": 1900
+  },
+  "232653": {
+    "name": "Jacob Ramsey",
+    "team": "Newcastle United FC",
+    "player_xg": 1.19,
+    "importance": 0.0208,
+    "mins_played": 1444
+  },
+  "232787": {
+    "name": "Conor Gallagher",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.07,
+    "importance": 0.0267,
+    "mins_played": 1190
+  },
+  "232826": {
+    "name": "Anthony Gordon",
+    "team": "Newcastle United FC",
+    "player_xg": 8.83,
+    "importance": 0.1546,
+    "mins_played": 1814
+  },
+  "232859": {
+    "name": "Djed Spence",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.9,
+    "importance": 0.0224,
+    "mins_played": 2056
+  },
+  "232892": {
+    "name": "Calvin Bassey",
+    "team": "Fulham FC",
+    "player_xg": 1.72,
+    "importance": 0.0356,
+    "mins_played": 2532
+  },
+  "232928": {
+    "name": "James Garner",
+    "team": "Everton FC",
+    "player_xg": 2.03,
+    "importance": 0.0435,
+    "mins_played": 3414
+  },
+  "233963": {
+    "name": "Konstantinos Mavropanos",
+    "team": "West Ham United FC",
+    "player_xg": 2.55,
+    "importance": 0.0553,
+    "mins_played": 2528
+  },
+  "235674": {
+    "name": "Manor Solomon",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "235826": {
+    "name": "Jo\u00ebl Piroe",
+    "team": "Leeds United FC",
+    "player_xg": 0.96,
+    "importance": 0.0177,
+    "mins_played": 246
+  },
+  "242880": {
+    "name": "Beno\u00eet Badiashile",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 471
+  },
+  "242882": {
+    "name": "Bafod\u00e9 Diakit\u00e9",
+    "team": "Bournemouth",
+    "player_xg": 0.02,
+    "importance": 0.0003,
+    "mins_played": 1275
+  },
+  "242898": {
+    "name": "Brennan Johnson",
+    "team": "Crystal Palace FC",
+    "player_xg": 2.43,
+    "importance": 0.0418,
+    "mins_played": 1722
+  },
+  "243016": {
+    "name": "Alexis Mac Allister",
+    "team": "Liverpool FC",
+    "player_xg": 3.89,
+    "importance": 0.0634,
+    "mins_played": 2662
+  },
+  "243298": {
+    "name": "Cody Gakpo",
+    "team": "Liverpool FC",
+    "player_xg": 8.46,
+    "importance": 0.1379,
+    "mins_played": 2747
+  },
+  "243526": {
+    "name": "Gabriel Gudmundsson",
+    "team": "Leeds United FC",
+    "player_xg": 1.1,
+    "importance": 0.0203,
+    "mins_played": 2637
+  },
+  "243571": {
+    "name": "Nathan Patterson",
+    "team": "Everton FC",
+    "player_xg": 0.03,
+    "importance": 0.0006,
+    "mins_played": 240
+  },
+  "244042": {
+    "name": "Rodrigo Muniz",
+    "team": "Fulham FC",
+    "player_xg": 3.34,
+    "importance": 0.0691,
+    "mins_played": 997
+  },
+  "244723": {
+    "name": "Tyrick Mitchell",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.61,
+    "importance": 0.0277,
+    "mins_played": 3253
+  },
+  "244850": {
+    "name": "Morgan Rogers",
+    "team": "Aston Villa FC",
+    "player_xg": 6.78,
+    "importance": 0.1407,
+    "mins_played": 3285
+  },
+  "244851": {
+    "name": "Cole Palmer",
+    "team": "Chelsea FC",
+    "player_xg": 10.56,
+    "importance": 0.1587,
+    "mins_played": 1965
+  },
+  "244858": {
+    "name": "F\u00e1bio Carvalho",
+    "team": "Brentford FC",
+    "player_xg": 0.7,
+    "importance": 0.0116,
+    "mins_played": 100
+  },
+  "244954": {
+    "name": "Pau Torres",
+    "team": "Aston Villa FC",
+    "player_xg": 1.27,
+    "importance": 0.0263,
+    "mins_played": 1676
+  },
+  "246301": {
+    "name": "Jorge Cuenca",
+    "team": "Fulham FC",
+    "player_xg": 0.05,
+    "importance": 0.001,
+    "mins_played": 938
+  },
+  "247348": {
+    "name": "Daniel Mu\u00f1oz",
+    "team": "Crystal Palace FC",
+    "player_xg": 2.44,
+    "importance": 0.0419,
+    "mins_played": 2403
+  },
+  "247412": {
+    "name": "J\u00f8rgen Strand Larsen",
+    "team": "Crystal Palace FC",
+    "player_xg": 5.32,
+    "importance": 0.0914,
+    "mins_played": 2316
+  },
+  "247632": {
+    "name": "Pedro Neto",
+    "team": "Chelsea FC",
+    "player_xg": 4.62,
+    "importance": 0.0694,
+    "mins_played": 2643
+  },
+  "247670": {
+    "name": "Valent\u00edn Castellanos",
+    "team": "West Ham United FC",
+    "player_xg": 5.8,
+    "importance": 0.1257,
+    "mins_played": 1395
+  },
+  "247693": {
+    "name": "Randal Kolo Muani",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 2.18,
+    "importance": 0.0544,
+    "mins_played": 1670
+  },
+  "247955": {
+    "name": "Lutsharel Geertruida",
+    "team": "Sunderland AFC",
+    "player_xg": 1.15,
+    "importance": 0.0296,
+    "mins_played": 1685
+  },
+  "248056": {
+    "name": "Ao Tanaka",
+    "team": "Leeds United FC",
+    "player_xg": 1.61,
+    "importance": 0.0297,
+    "mins_played": 1314
+  },
+  "248857": {
+    "name": "Noni Madueke",
+    "team": "Arsenal FC",
+    "player_xg": 1.22,
+    "importance": 0.0186,
+    "mins_played": 1217
+  },
+  "248875": {
+    "name": "J\u00e9r\u00e9my Doku",
+    "team": "Manchester City FC",
+    "player_xg": 2.73,
+    "importance": 0.0384,
+    "mins_played": 1784
+  },
+  "249231": {
+    "name": "Keane Lewis-Potter",
+    "team": "Brentford FC",
+    "player_xg": 3.04,
+    "importance": 0.0504,
+    "mins_played": 1968
+  },
+  "250199": {
+    "name": "Nicol\u00e1s Dom\u00ednguez",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.47,
+    "importance": 0.032,
+    "mins_played": 1175
+  },
+  "424044": {
+    "name": "Hamed Traor\u00e9",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 16
+  },
+  "424876": {
+    "name": "Dominik Szoboszlai",
+    "team": "Liverpool FC",
+    "player_xg": 4.85,
+    "importance": 0.0791,
+    "mins_played": 3233
+  },
+  "427623": {
+    "name": "Chris Richards",
+    "team": "Crystal Palace FC",
+    "player_xg": 2.36,
+    "importance": 0.0406,
+    "mins_played": 2826
+  },
+  "427637": {
+    "name": "Brenden Aaronson",
+    "team": "Leeds United FC",
+    "player_xg": 4.55,
+    "importance": 0.0839,
+    "mins_played": 2465
+  },
+  "428580": {
+    "name": "Frank Onyeka",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 88
+  },
+  "429414": {
+    "name": "Sasa Kalajdzic",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 14
+  },
+  "430871": {
+    "name": "Matheus Cunha",
+    "team": "Manchester United FC",
+    "player_xg": 7.06,
+    "importance": 0.1078,
+    "mins_played": 2503
+  },
+  "431248": {
+    "name": "Ladislav Krejc\u00ed",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.22,
+    "importance": 0.0625,
+    "mins_played": 2361
+  },
+  "431639": {
+    "name": "Zian Flemming",
+    "team": "Burnley FC",
+    "player_xg": 7.87,
+    "importance": 0.2421,
+    "mins_played": 1776
+  },
+  "432422": {
+    "name": "Sandro Tonali",
+    "team": "Newcastle United FC",
+    "player_xg": 1.74,
+    "importance": 0.0305,
+    "mins_played": 2543
+  },
+  "432714": {
+    "name": "James McAtee",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.17,
+    "importance": 0.0037,
+    "mins_played": 289
+  },
+  "432720": {
+    "name": "James Trafford",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "432830": {
+    "name": "Nathan Collins",
+    "team": "Brentford FC",
+    "player_xg": 2.28,
+    "importance": 0.0378,
+    "mins_played": 2972
+  },
+  "433036": {
+    "name": "Tijjani Reijnders",
+    "team": "Manchester City FC",
+    "player_xg": 4.45,
+    "importance": 0.0627,
+    "mins_played": 1636
+  },
+  "433154": {
+    "name": "Dwight McNeil",
+    "team": "Everton FC",
+    "player_xg": 1.39,
+    "importance": 0.0298,
+    "mins_played": 1168
+  },
+  "433312": {
+    "name": "Marshall Munetsi",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 1.61,
+    "importance": 0.0453,
+    "mins_played": 873
+  },
+  "433952": {
+    "name": "Largie Ramazani",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "434399": {
+    "name": "Reinildo Mandava",
+    "team": "Sunderland AFC",
+    "player_xg": 0.18,
+    "importance": 0.0046,
+    "mins_played": 1969
+  },
+  "434752": {
+    "name": "Jaka Bijol",
+    "team": "Leeds United FC",
+    "player_xg": 0.88,
+    "importance": 0.0162,
+    "mins_played": 1893
+  },
+  "435973": {
+    "name": "Lyle Foster",
+    "team": "Burnley FC",
+    "player_xg": 3.25,
+    "importance": 0.1,
+    "mins_played": 1372
+  },
+  "435997": {
+    "name": "Noah Okafor",
+    "team": "Leeds United FC",
+    "player_xg": 5.26,
+    "importance": 0.097,
+    "mins_played": 1568
+  },
+  "436893": {
+    "name": "Juli\u00e1n Araujo",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "437499": {
+    "name": "Maxence Lacroix",
+    "team": "Crystal Palace FC",
+    "player_xg": 2.38,
+    "importance": 0.0409,
+    "mins_played": 3087
+  },
+  "437505": {
+    "name": "Wilson Isidor",
+    "team": "Sunderland AFC",
+    "player_xg": 4.75,
+    "importance": 0.1221,
+    "mins_played": 1158
+  },
+  "437730": {
+    "name": "Antoine Semenyo",
+    "team": "Manchester City FC",
+    "player_xg": 11.09,
+    "importance": 0.1562,
+    "mins_played": 3200
+  },
+  "437738": {
+    "name": "Sebastiaan Bornauw",
+    "team": "Leeds United FC",
+    "player_xg": 0.2,
+    "importance": 0.0037,
+    "mins_played": 432
+  },
+  "437748": {
+    "name": "Mike Tr\u00e9sor",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 37
+  },
+  "438234": {
+    "name": "Omar Marmoush",
+    "team": "Manchester City FC",
+    "player_xg": 2.72,
+    "importance": 0.0383,
+    "mins_played": 699
+  },
+  "440089": {
+    "name": "Mikkel Damsgaard",
+    "team": "Brentford FC",
+    "player_xg": 2.62,
+    "importance": 0.0435,
+    "mins_played": 2057
+  },
+  "440323": {
+    "name": "Armando Broja",
+    "team": "Burnley FC",
+    "player_xg": 2.15,
+    "importance": 0.0661,
+    "mins_played": 849
+  },
+  "440854": {
+    "name": "Jakub Kiwior",
+    "team": "Arsenal FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "440993": {
+    "name": "Iliman Ndiaye",
+    "team": "Everton FC",
+    "player_xg": 6.71,
+    "importance": 0.1437,
+    "mins_played": 2786
+  },
+  "441164": {
+    "name": "Pedro Porro",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.05,
+    "importance": 0.0262,
+    "mins_played": 2798
+  },
+  "441191": {
+    "name": "Tino Livramento",
+    "team": "Newcastle United FC",
+    "player_xg": 0.14,
+    "importance": 0.0025,
+    "mins_played": 1328
+  },
+  "441240": {
+    "name": "Romain Faivre",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "441264": {
+    "name": "Brian Brobbey",
+    "team": "Sunderland AFC",
+    "player_xg": 5.94,
+    "importance": 0.1527,
+    "mins_played": 1931
+  },
+  "441266": {
+    "name": "Ryan Gravenberch",
+    "team": "Liverpool FC",
+    "player_xg": 1.9,
+    "importance": 0.031,
+    "mins_played": 2996
+  },
+  "441271": {
+    "name": "Ki-Jana Hoever",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.02,
+    "importance": 0.0006,
+    "mins_played": 428
+  },
+  "441302": {
+    "name": "Ian Maatsen",
+    "team": "Aston Villa FC",
+    "player_xg": 1.3,
+    "importance": 0.027,
+    "mins_played": 1599
+  },
+  "444102": {
+    "name": "Evanilson",
+    "team": "Bournemouth",
+    "player_xg": 10.59,
+    "importance": 0.1711,
+    "mins_played": 2759
+  },
+  "444145": {
+    "name": "Gabriel Martinelli",
+    "team": "Arsenal FC",
+    "player_xg": 3.99,
+    "importance": 0.0608,
+    "mins_played": 1073
+  },
+  "444180": {
+    "name": "Jaidon Anthony",
+    "team": "Burnley FC",
+    "player_xg": 5.13,
+    "importance": 0.1578,
+    "mins_played": 2735
+  },
+  "444463": {
+    "name": "Wesley Fofana",
+    "team": "Chelsea FC",
+    "player_xg": 0.72,
+    "importance": 0.0108,
+    "mins_played": 1726
+  },
+  "444765": {
+    "name": "Sepp van den Berg",
+    "team": "Brentford FC",
+    "player_xg": 3.13,
+    "importance": 0.0519,
+    "mins_played": 2761
+  },
+  "444884": {
+    "name": "Harvey Elliott",
+    "team": "Aston Villa FC",
+    "player_xg": 0.29,
+    "importance": 0.006,
+    "mins_played": 110
+  },
+  "445122": {
+    "name": "Jurri\u00ebn Timber",
+    "team": "Arsenal FC",
+    "player_xg": 4.77,
+    "importance": 0.0727,
+    "mins_played": 2457
+  },
+  "446008": {
+    "name": "Bryan Mbeumo",
+    "team": "Manchester United FC",
+    "player_xg": 12.19,
+    "importance": 0.1861,
+    "mins_played": 2621
+  },
+  "447715": {
+    "name": "Aaron Ramsey",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "448047": {
+    "name": "Enzo Fern\u00e1ndez",
+    "team": "Chelsea FC",
+    "player_xg": 11.29,
+    "importance": 0.1697,
+    "mins_played": 3121
+  },
+  "448089": {
+    "name": "Jo\u00e3o Gomes",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 1.28,
+    "importance": 0.036,
+    "mins_played": 2833
+  },
+  "448104": {
+    "name": "Piero Hincapi\u00e9",
+    "team": "Arsenal FC",
+    "player_xg": 0.36,
+    "importance": 0.0055,
+    "mins_played": 1792
+  },
+  "448514": {
+    "name": "Rayan A\u00eft-Nouri",
+    "team": "Manchester City FC",
+    "player_xg": 0.59,
+    "importance": 0.0083,
+    "mins_played": 976
+  },
+  "449027": {
+    "name": "Giorgi Mamardashvili",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "449434": {
+    "name": "Anthony Elanga",
+    "team": "Newcastle United FC",
+    "player_xg": 1.67,
+    "importance": 0.0292,
+    "mins_played": 1313
+  },
+  "449871": {
+    "name": "Amadou Onana",
+    "team": "Aston Villa FC",
+    "player_xg": 1.71,
+    "importance": 0.0355,
+    "mins_played": 1764
+  },
+  "450070": {
+    "name": "Crysencio Summerville",
+    "team": "West Ham United FC",
+    "player_xg": 5.17,
+    "importance": 0.1121,
+    "mins_played": 2480
+  },
+  "450539": {
+    "name": "Myles Peart-Harris",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "450542": {
+    "name": "Jesurun Rak-Sakyi",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "451302": {
+    "name": "Altay Bayindir",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "451340": {
+    "name": "Kaoru Mitoma",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 4.06,
+    "importance": 0.0701,
+    "mins_played": 1721
+  },
+  "456512": {
+    "name": "Dan Ndoye",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.06,
+    "importance": 0.023,
+    "mins_played": 1176
+  },
+  "457569": {
+    "name": "Djordje Petrovic",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "458249": {
+    "name": "Joshua Zirkzee",
+    "team": "Manchester United FC",
+    "player_xg": 2.95,
+    "importance": 0.045,
+    "mins_played": 608
+  },
+  "460028": {
+    "name": "Levi Colwill",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 225
+  },
+  "460842": {
+    "name": "Mohammed Kudus",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.93,
+    "importance": 0.0481,
+    "mins_played": 1545
+  },
+  "461188": {
+    "name": "Bashir Humphreys",
+    "team": "Burnley FC",
+    "player_xg": 0.42,
+    "importance": 0.0129,
+    "mins_played": 1578
+  },
+  "461195": {
+    "name": "Dennis Cirkin",
+    "team": "Sunderland AFC",
+    "player_xg": 0.08,
+    "importance": 0.0021,
+    "mins_played": 320
+  },
+  "461199": {
+    "name": "Romaine Mundle",
+    "team": "Sunderland AFC",
+    "player_xg": 0.86,
+    "importance": 0.0221,
+    "mins_played": 400
+  },
+  "461446": {
+    "name": "Tyler Onyango",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "462116": {
+    "name": "Jean-Clair Todibo",
+    "team": "West Ham United FC",
+    "player_xg": 0.24,
+    "importance": 0.0052,
+    "mins_played": 1817
+  },
+  "462424": {
+    "name": "William Saliba",
+    "team": "Arsenal FC",
+    "player_xg": 0.86,
+    "importance": 0.0131,
+    "mins_played": 2615
+  },
+  "463034": {
+    "name": "Liam Delap",
+    "team": "Chelsea FC",
+    "player_xg": 4.47,
+    "importance": 0.0672,
+    "mins_played": 1102
+  },
+  "463067": {
+    "name": "Georginio Rutter",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 3.02,
+    "importance": 0.0522,
+    "mins_played": 1790
+  },
+  "463936": {
+    "name": "Jamie Gittens",
+    "team": "Chelsea FC",
+    "player_xg": 0.82,
+    "importance": 0.0123,
+    "mins_played": 490
+  },
+  "463981": {
+    "name": "James Hill",
+    "team": "Bournemouth",
+    "player_xg": 0.89,
+    "importance": 0.0144,
+    "mins_played": 2104
+  },
+  "465247": {
+    "name": "Senne Lammens",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "465351": {
+    "name": "Matheus Nunes",
+    "team": "Manchester City FC",
+    "player_xg": 0.35,
+    "importance": 0.0049,
+    "mins_played": 2865
+  },
+  "465527": {
+    "name": "Hannibal Mejbri",
+    "team": "Burnley FC",
+    "player_xg": 0.89,
+    "importance": 0.0274,
+    "mins_played": 1231
+  },
+  "465642": {
+    "name": "Malick Thiaw",
+    "team": "Newcastle United FC",
+    "player_xg": 4.72,
+    "importance": 0.0826,
+    "mins_played": 2964
+  },
+  "465680": {
+    "name": "Arnaud Kalimuendo",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.44,
+    "importance": 0.0096,
+    "mins_played": 89
+  },
+  "465694": {
+    "name": "Nico Gonz\u00e1lez",
+    "team": "Manchester City FC",
+    "player_xg": 0.7,
+    "importance": 0.0099,
+    "mins_played": 1567
+  },
+  "465730": {
+    "name": "Maxim De Cuyper",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.82,
+    "importance": 0.0314,
+    "mins_played": 1414
+  },
+  "466052": {
+    "name": "Rayan Cherki",
+    "team": "Manchester City FC",
+    "player_xg": 4.13,
+    "importance": 0.0582,
+    "mins_played": 1786
+  },
+  "466075": {
+    "name": "Riccardo Calafiori",
+    "team": "Arsenal FC",
+    "player_xg": 3.34,
+    "importance": 0.0509,
+    "mins_played": 1707
+  },
+  "466525": {
+    "name": "Anton Stach",
+    "team": "Leeds United FC",
+    "player_xg": 2.92,
+    "importance": 0.0538,
+    "mins_played": 2378
+  },
+  "467189": {
+    "name": "Mads Hermansen",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "467779": {
+    "name": "Mats Wieffer",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.93,
+    "importance": 0.0333,
+    "mins_played": 1908
+  },
+  "469130": {
+    "name": "Lorenzo Lucca",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.79,
+    "importance": 0.0172,
+    "mins_played": 127
+  },
+  "469142": {
+    "name": "Jan Paul van Hecke",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 3.3,
+    "importance": 0.057,
+    "mins_played": 3211
+  },
+  "469247": {
+    "name": "Samuel Iling-Junior",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "469272": {
+    "name": "Loum Tchaouna",
+    "team": "Burnley FC",
+    "player_xg": 1.25,
+    "importance": 0.0384,
+    "mins_played": 1270
+  },
+  "470313": {
+    "name": "Nick Woltemade",
+    "team": "Newcastle United FC",
+    "player_xg": 6.59,
+    "importance": 0.1154,
+    "mins_played": 1912
+  },
+  "470315": {
+    "name": "Luca Netz",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 355
+  },
+  "472713": {
+    "name": "Aaron Hickey",
+    "team": "Brentford FC",
+    "player_xg": 0.45,
+    "importance": 0.0075,
+    "mins_played": 685
+  },
+  "472769": {
+    "name": "Nico O'Reilly",
+    "team": "Manchester City FC",
+    "player_xg": 6.03,
+    "importance": 0.0849,
+    "mins_played": 2648
+  },
+  "474907": {
+    "name": "Reece Welch",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "475168": {
+    "name": "Jo\u00e3o Pedro",
+    "team": "Chelsea FC",
+    "player_xg": 14.96,
+    "importance": 0.2249,
+    "mins_played": 2674
+  },
+  "476887": {
+    "name": "Dilane Bakwa",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.55,
+    "importance": 0.012,
+    "mins_played": 552
+  },
+  "477064": {
+    "name": "Rico Lewis",
+    "team": "Manchester City FC",
+    "player_xg": 0.19,
+    "importance": 0.0027,
+    "mins_played": 402
+  },
+  "477424": {
+    "name": "Josko Gvardiol",
+    "team": "Manchester City FC",
+    "player_xg": 2.4,
+    "importance": 0.0338,
+    "mins_played": 1374
+  },
+  "477547": {
+    "name": "Leo Hjelde",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "477555": {
+    "name": "Oscar Bobb",
+    "team": "Fulham FC",
+    "player_xg": 1.48,
+    "importance": 0.0306,
+    "mins_played": 1037
+  },
+  "477717": {
+    "name": "Maxime Est\u00e8ve",
+    "team": "Burnley FC",
+    "player_xg": 0.72,
+    "importance": 0.0221,
+    "mins_played": 2937
+  },
+  "478969": {
+    "name": "Hjalmar Ekdal",
+    "team": "Burnley FC",
+    "player_xg": 0.26,
+    "importance": 0.008,
+    "mins_played": 1539
+  },
+  "480455": {
+    "name": "Jarrad Branthwaite",
+    "team": "Everton FC",
+    "player_xg": 0.35,
+    "importance": 0.0075,
+    "mins_played": 681
+  },
+  "481655": {
+    "name": "Mart\u00edn Zubimendi",
+    "team": "Arsenal FC",
+    "player_xg": 2.85,
+    "importance": 0.0434,
+    "mins_played": 3001
+  },
+  "482442": {
+    "name": "Pape Matar Sarr",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.72,
+    "importance": 0.0429,
+    "mins_played": 1391
+  },
+  "482609": {
+    "name": "Malo Gusto",
+    "team": "Chelsea FC",
+    "player_xg": 1.56,
+    "importance": 0.0234,
+    "mins_played": 2267
+  },
+  "482973": {
+    "name": "Igor Jesus",
+    "team": "Nottingham Forest FC",
+    "player_xg": 6.64,
+    "importance": 0.1444,
+    "mins_played": 2314
+  },
+  "483081": {
+    "name": "Rodrigo Gomes",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.15,
+    "importance": 0.0605,
+    "mins_played": 960
+  },
+  "484420": {
+    "name": "Enzo Le F\u00e9e",
+    "team": "Sunderland AFC",
+    "player_xg": 5.15,
+    "importance": 0.1324,
+    "mins_played": 2934
+  },
+  "485047": {
+    "name": "Morato",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.32,
+    "importance": 0.0287,
+    "mins_played": 1342
+  },
+  "485055": {
+    "name": "Anton\u00edn Kinsky",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "485337": {
+    "name": "Evann Guessand",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.56,
+    "importance": 0.0268,
+    "mins_played": 916
+  },
+  "485711": {
+    "name": "Benjamin Sesko",
+    "team": "Manchester United FC",
+    "player_xg": 9.2,
+    "importance": 0.1405,
+    "mins_played": 1635
+  },
+  "486385": {
+    "name": "Beto",
+    "team": "Everton FC",
+    "player_xg": 8.91,
+    "importance": 0.1908,
+    "mins_played": 1565
+  },
+  "486520": {
+    "name": "Ilia Gruev",
+    "team": "Leeds United FC",
+    "player_xg": 0.47,
+    "importance": 0.0087,
+    "mins_played": 1322
+  },
+  "486672": {
+    "name": "Mois\u00e9s Caicedo",
+    "team": "Chelsea FC",
+    "player_xg": 1.44,
+    "importance": 0.0216,
+    "mins_played": 2802
+  },
+  "487053": {
+    "name": "Destiny Udogie",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.19,
+    "importance": 0.0047,
+    "mins_played": 1340
+  },
+  "487676": {
+    "name": "Trai Hume",
+    "team": "Sunderland AFC",
+    "player_xg": 2.15,
+    "importance": 0.0553,
+    "mins_played": 3037
+  },
+  "487838": {
+    "name": "Lewis Hall",
+    "team": "Newcastle United FC",
+    "player_xg": 1.01,
+    "importance": 0.0177,
+    "mins_played": 2179
+  },
+  "488024": {
+    "name": "Y\u00e9remy Pino",
+    "team": "Crystal Palace FC",
+    "player_xg": 4.51,
+    "importance": 0.0775,
+    "mins_played": 2091
+  },
+  "488213": {
+    "name": "Tolu Arokodare",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 5.46,
+    "importance": 0.1537,
+    "mins_played": 1407
+  },
+  "489580": {
+    "name": "Calvin Ramsay",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "489639": {
+    "name": "Bart Verbruggen",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "489706": {
+    "name": "Justin Devenny",
+    "team": "Crystal Palace FC",
+    "player_xg": 2.62,
+    "importance": 0.045,
+    "mins_played": 788
+  },
+  "489888": {
+    "name": "Amine Adli",
+    "team": "Bournemouth",
+    "player_xg": 2.6,
+    "importance": 0.042,
+    "mins_played": 1082
+  },
+  "490094": {
+    "name": "Tim Iroegbunam",
+    "team": "Everton FC",
+    "player_xg": 0.6,
+    "importance": 0.0128,
+    "mins_played": 1485
+  },
+  "490142": {
+    "name": "Freddie Potts",
+    "team": "West Ham United FC",
+    "player_xg": 0.21,
+    "importance": 0.0046,
+    "mins_played": 1167
+  },
+  "490145": {
+    "name": "Dane Scarlett",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 7
+  },
+  "490721": {
+    "name": "Hugo Bueno",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.86,
+    "importance": 0.0242,
+    "mins_played": 2364
+  },
+  "490885": {
+    "name": "George Earthy",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 8
+  },
+  "491007": {
+    "name": "D\u00e1rio Essugo",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 26
+  },
+  "491012": {
+    "name": "Youssef Chermiti",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "491279": {
+    "name": "Micky van de Ven",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 2.53,
+    "importance": 0.0631,
+    "mins_played": 3043
+  },
+  "491501": {
+    "name": "James McConnell",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "491745": {
+    "name": "Elijah Campbell",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "492777": {
+    "name": "Conor Bradley",
+    "team": "Liverpool FC",
+    "player_xg": 0.24,
+    "importance": 0.0039,
+    "mins_played": 932
+  },
+  "492831": {
+    "name": "Zeki Amdouni",
+    "team": "Burnley FC",
+    "player_xg": 0.24,
+    "importance": 0.0074,
+    "mins_played": 69
+  },
+  "492859": {
+    "name": "Wilfried Gnonto",
+    "team": "Leeds United FC",
+    "player_xg": 0.41,
+    "importance": 0.0076,
+    "mins_played": 524
+  },
+  "493105": {
+    "name": "Alejandro Garnacho",
+    "team": "Chelsea FC",
+    "player_xg": 3.45,
+    "importance": 0.0519,
+    "mins_played": 1268
+  },
+  "493125": {
+    "name": "Radu Dragusin",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.32,
+    "importance": 0.008,
+    "mins_played": 515
+  },
+  "493250": {
+    "name": "Amad Diallo",
+    "team": "Manchester United FC",
+    "player_xg": 5.57,
+    "importance": 0.0851,
+    "mins_played": 2344
+  },
+  "493362": {
+    "name": "Xavi Simons",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 3.08,
+    "importance": 0.0768,
+    "mins_played": 1757
+  },
+  "494307": {
+    "name": "Max Alleyne",
+    "team": "Manchester City FC",
+    "player_xg": 0.26,
+    "importance": 0.0037,
+    "mins_played": 135
+  },
+  "494521": {
+    "name": "Adrien Truffert",
+    "team": "Bournemouth",
+    "player_xg": 1.36,
+    "importance": 0.022,
+    "mins_played": 3380
+  },
+  "494556": {
+    "name": "Ollie Shield",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "494595": {
+    "name": "Florian Wirtz",
+    "team": "Liverpool FC",
+    "player_xg": 7.02,
+    "importance": 0.1144,
+    "mins_played": 2388
+  },
+  "494960": {
+    "name": "Quilindschy Hartman",
+    "team": "Burnley FC",
+    "player_xg": 0.34,
+    "importance": 0.0105,
+    "mins_played": 1830
+  },
+  "496208": {
+    "name": "Ben Gannon-Doak",
+    "team": "Bournemouth",
+    "player_xg": 0.26,
+    "importance": 0.0042,
+    "mins_played": 105
+  },
+  "496221": {
+    "name": "Adam Wharton",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.52,
+    "importance": 0.0261,
+    "mins_played": 2562
+  },
+  "496661": {
+    "name": "Tyler Dibling",
+    "team": "Everton FC",
+    "player_xg": 0.2,
+    "importance": 0.0043,
+    "mins_played": 350
+  },
+  "497606": {
+    "name": "Tawanda Chirewa",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 25
+  },
+  "497949": {
+    "name": "David M\u00f8ller Wolfe",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.12,
+    "importance": 0.0034,
+    "mins_played": 1049
+  },
+  "498016": {
+    "name": "Robin Roefs",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "499169": {
+    "name": "Myles Lewis-Skelly",
+    "team": "Arsenal FC",
+    "player_xg": 0.11,
+    "importance": 0.0017,
+    "mins_played": 698
+  },
+  "499175": {
+    "name": "Ethan Nwaneri",
+    "team": "Arsenal FC",
+    "player_xg": 0.23,
+    "importance": 0.0035,
+    "mins_played": 165
+  },
+  "499300": {
+    "name": "Adam Aznou",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "499309": {
+    "name": "Marc Guiu",
+    "team": "Chelsea FC",
+    "player_xg": 1.55,
+    "importance": 0.0233,
+    "mins_played": 266
+  },
+  "499604": {
+    "name": "Rayan",
+    "team": "Bournemouth",
+    "player_xg": 2.91,
+    "importance": 0.047,
+    "mins_played": 1119
+  },
+  "499716": {
+    "name": "James Rowswell",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "499726": {
+    "name": "Callum Olusesi",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 14
+  },
+  "500040": {
+    "name": "Cristhian Mosquera",
+    "team": "Arsenal FC",
+    "player_xg": 0.1,
+    "importance": 0.0015,
+    "mins_played": 989
+  },
+  "500151": {
+    "name": "Nicol\u00f2 Savona",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.34,
+    "importance": 0.0291,
+    "mins_played": 1026
+  },
+  "501837": {
+    "name": "Yerson Mosquera",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.52,
+    "importance": 0.0709,
+    "mins_played": 2142
+  },
+  "502500": {
+    "name": "Igor Thiago",
+    "team": "Brentford FC",
+    "player_xg": 20.58,
+    "importance": 0.3415,
+    "mins_played": 3284
+  },
+  "502697": {
+    "name": "Charly Alcaraz",
+    "team": "Everton FC",
+    "player_xg": 1.24,
+    "importance": 0.0266,
+    "mins_played": 685
+  },
+  "502988": {
+    "name": "Danny Imray",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "503139": {
+    "name": "Alex Scott",
+    "team": "Bournemouth",
+    "player_xg": 3.81,
+    "importance": 0.0616,
+    "mins_played": 2859
+  },
+  "503301": {
+    "name": "Omari Hutchinson",
+    "team": "Nottingham Forest FC",
+    "player_xg": 1.94,
+    "importance": 0.0422,
+    "mins_played": 1684
+  },
+  "503714": {
+    "name": "Lesley Ugochukwu",
+    "team": "Burnley FC",
+    "player_xg": 2.5,
+    "importance": 0.0769,
+    "mins_played": 2350
+  },
+  "507433": {
+    "name": "H\u00e1kon Valdimarsson",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "508395": {
+    "name": "Yehor Yarmoliuk",
+    "team": "Brentford FC",
+    "player_xg": 1.2,
+    "importance": 0.0199,
+    "mins_played": 2665
+  },
+  "508479": {
+    "name": "Filip J\u00f6rgensen",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "509291": {
+    "name": "Andr\u00e9",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.52,
+    "importance": 0.0146,
+    "mins_played": 2766
+  },
+  "509416": {
+    "name": "Yasin Ayari",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 2.71,
+    "importance": 0.0468,
+    "mins_played": 1924
+  },
+  "510281": {
+    "name": "Savinho",
+    "team": "Manchester City FC",
+    "player_xg": 2.33,
+    "importance": 0.0328,
+    "mins_played": 821
+  },
+  "510362": {
+    "name": "Toti Gomes",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.53,
+    "importance": 0.0149,
+    "mins_played": 1427
+  },
+  "510500": {
+    "name": "Jota Silva",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 11
+  },
+  "510663": {
+    "name": "Hugo Ekitik\u00e9",
+    "team": "Liverpool FC",
+    "player_xg": 9.87,
+    "importance": 0.1609,
+    "mins_played": 1810
+  },
+  "511499": {
+    "name": "Mathys Tel",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 2.44,
+    "importance": 0.0609,
+    "mins_played": 1342
+  },
+  "512462": {
+    "name": "Jake O'Brien",
+    "team": "Everton FC",
+    "player_xg": 1.74,
+    "importance": 0.0373,
+    "mins_played": 3124
+  },
+  "513418": {
+    "name": "Kevin Schade",
+    "team": "Brentford FC",
+    "player_xg": 12.18,
+    "importance": 0.2021,
+    "mins_played": 2757
+  },
+  "513433": {
+    "name": "Brajan Gruda",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 1.72,
+    "importance": 0.0297,
+    "mins_played": 715
+  },
+  "513466": {
+    "name": "Merlin R\u00f6hl",
+    "team": "Everton FC",
+    "player_xg": 0.78,
+    "importance": 0.0167,
+    "mins_played": 677
+  },
+  "514254": {
+    "name": "Diego G\u00f3mez",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 6.29,
+    "importance": 0.1086,
+    "mins_played": 2136
+  },
+  "514356": {
+    "name": "Rom\u00e9o Lavia",
+    "team": "Chelsea FC",
+    "player_xg": 0.2,
+    "importance": 0.003,
+    "mins_played": 377
+  },
+  "514362": {
+    "name": "Temple Ojinnaka",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "515046": {
+    "name": "Melker Ellborg",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "515597": {
+    "name": "Lamare Bogarde",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1047
+  },
+  "515621": {
+    "name": "Chadi Riad",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.33,
+    "importance": 0.0057,
+    "mins_played": 554
+  },
+  "516234": {
+    "name": "Charlie Gray",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "516895": {
+    "name": "Kobbie Mainoo",
+    "team": "Manchester United FC",
+    "player_xg": 0.48,
+    "importance": 0.0073,
+    "mins_played": 1653
+  },
+  "516939": {
+    "name": "Emmanuel Agbadou",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.56,
+    "importance": 0.0158,
+    "mins_played": 1101
+  },
+  "517179": {
+    "name": "Alfie Pond",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "518030": {
+    "name": "Max Weiss",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "519440": {
+    "name": "Wellity Lucky",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "519634": {
+    "name": "Jenson Seelt",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 134
+  },
+  "519895": {
+    "name": "Oliver Sonne",
+    "team": "Burnley FC",
+    "player_xg": 0.55,
+    "importance": 0.0169,
+    "mins_played": 165
+  },
+  "519913": {
+    "name": "Tyler Fletcher",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 17
+  },
+  "523705": {
+    "name": "Jackson Tchatchoua",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.33,
+    "importance": 0.0093,
+    "mins_played": 1837
+  },
+  "530318": {
+    "name": "Kaden Rodney",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 3
+  },
+  "530335": {
+    "name": "Pablo",
+    "team": "West Ham United FC",
+    "player_xg": 1.05,
+    "importance": 0.0228,
+    "mins_played": 826
+  },
+  "532529": {
+    "name": "Jack Hinshelwood",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 4.92,
+    "importance": 0.085,
+    "mins_played": 1750
+  },
+  "532605": {
+    "name": "Andrey Santos",
+    "team": "Chelsea FC",
+    "player_xg": 2.0,
+    "importance": 0.0301,
+    "mins_played": 1255
+  },
+  "533463": {
+    "name": "Dango Ouattara",
+    "team": "Brentford FC",
+    "player_xg": 7.72,
+    "importance": 0.1281,
+    "mins_played": 2279
+  },
+  "534836": {
+    "name": "Travis Patterson",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "535301": {
+    "name": "Carlos Baleba",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.75,
+    "importance": 0.013,
+    "mins_played": 1662
+  },
+  "535818": {
+    "name": "Simon Adingra",
+    "team": "Sunderland AFC",
+    "player_xg": 0.35,
+    "importance": 0.009,
+    "mins_played": 658
+  },
+  "536109": {
+    "name": "Ollie Scarles",
+    "team": "West Ham United FC",
+    "player_xg": 0.18,
+    "importance": 0.0039,
+    "mins_played": 659
+  },
+  "536134": {
+    "name": "Rio Kyerematen",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "536661": {
+    "name": "Nilson Angulo",
+    "team": "Sunderland AFC",
+    "player_xg": 0.78,
+    "importance": 0.0201,
+    "mins_played": 406
+  },
+  "536916": {
+    "name": "Facundo Buonanotte",
+    "team": "Leeds United FC",
+    "player_xg": 0.06,
+    "importance": 0.0011,
+    "mins_played": 81
+  },
+  "538207": {
+    "name": "William Osula",
+    "team": "Newcastle United FC",
+    "player_xg": 4.29,
+    "importance": 0.0751,
+    "mins_played": 811
+  },
+  "543295": {
+    "name": "Antoni Milambo",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 45
+  },
+  "544877": {
+    "name": "Milos Kerkez",
+    "team": "Liverpool FC",
+    "player_xg": 1.59,
+    "importance": 0.0259,
+    "mins_played": 2260
+  },
+  "545477": {
+    "name": "Alex Murphy",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 7
+  },
+  "547027": {
+    "name": "Habib Diarra",
+    "team": "Sunderland AFC",
+    "player_xg": 3.41,
+    "importance": 0.0877,
+    "mins_played": 1407
+  },
+  "547037": {
+    "name": "Jack Fletcher",
+    "team": "Manchester United FC",
+    "player_xg": 0.03,
+    "importance": 0.0005,
+    "mins_played": 107
+  },
+  "547410": {
+    "name": "Harrison Jones",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "547671": {
+    "name": "Riley Owen",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "547676": {
+    "name": "Tyler Fredricson",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 2
+  },
+  "547701": {
+    "name": "Archie Gray",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.48,
+    "importance": 0.0369,
+    "mins_played": 1479
+  },
+  "547719": {
+    "name": "Lewis Miley",
+    "team": "Newcastle United FC",
+    "player_xg": 1.34,
+    "importance": 0.0235,
+    "mins_played": 1493
+  },
+  "547720": {
+    "name": "Charlie Tasker",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "547801": {
+    "name": "Callum Bates",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "549067": {
+    "name": "Zach Abbott",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 165
+  },
+  "549074": {
+    "name": "Tom Watson",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.04,
+    "importance": 0.0007,
+    "mins_played": 57
+  },
+  "549329": {
+    "name": "Lucas Pires",
+    "team": "Burnley FC",
+    "player_xg": 0.58,
+    "importance": 0.0178,
+    "mins_played": 1406
+  },
+  "549912": {
+    "name": "Chemsdine Talbi",
+    "team": "Sunderland AFC",
+    "player_xg": 2.13,
+    "importance": 0.0548,
+    "mins_played": 1561
+  },
+  "550090": {
+    "name": "Diego Coppola",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 194
+  },
+  "550596": {
+    "name": "Dominic Sadi",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "550615": {
+    "name": "Tyrique George",
+    "team": "Everton FC",
+    "player_xg": 0.63,
+    "importance": 0.0135,
+    "mins_played": 353
+  },
+  "550839": {
+    "name": "Wilson Odobert",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.96,
+    "importance": 0.0489,
+    "mins_played": 980
+  },
+  "550864": {
+    "name": "Leny Yoro",
+    "team": "Manchester United FC",
+    "player_xg": 1.39,
+    "importance": 0.0212,
+    "mins_played": 1739
+  },
+  "551206": {
+    "name": "Jaydon Banel",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 9
+  },
+  "551210": {
+    "name": "Jorrel Hato",
+    "team": "Chelsea FC",
+    "player_xg": 0.31,
+    "importance": 0.0047,
+    "mins_played": 1142
+  },
+  "551226": {
+    "name": "Mateus Fernandes",
+    "team": "West Ham United FC",
+    "player_xg": 2.0,
+    "importance": 0.0433,
+    "mins_played": 3024
+  },
+  "551483": {
+    "name": "\u00c1lex Jim\u00e9nez",
+    "team": "Bournemouth",
+    "player_xg": 1.13,
+    "importance": 0.0183,
+    "mins_played": 2323
+  },
+  "553299": {
+    "name": "Kota Takai",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "553746": {
+    "name": "Leo Shahar",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "554197": {
+    "name": "Chris Rigg",
+    "team": "Sunderland AFC",
+    "player_xg": 0.84,
+    "importance": 0.0216,
+    "mins_played": 766
+  },
+  "556637": {
+    "name": "Nehemiah Oriola",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "559610": {
+    "name": "Luka Bentt",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "559684": {
+    "name": "Jack Moorhouse",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "559962": {
+    "name": "Jamaldeen Jimoh-Aloba",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 8
+  },
+  "560262": {
+    "name": "Junior Kroupi",
+    "team": "Bournemouth",
+    "player_xg": 8.35,
+    "importance": 0.1349,
+    "mins_played": 1683
+  },
+  "560552": {
+    "name": "Kevin",
+    "team": "Fulham FC",
+    "player_xg": 1.2,
+    "importance": 0.0248,
+    "mins_played": 1037
+  },
+  "564406": {
+    "name": "Eliezer Mayenda",
+    "team": "Sunderland AFC",
+    "player_xg": 2.14,
+    "importance": 0.055,
+    "mins_played": 756
+  },
+  "564940": {
+    "name": "Soungoutou Magassa",
+    "team": "West Ham United FC",
+    "player_xg": 0.44,
+    "importance": 0.0095,
+    "mins_played": 979
+  },
+  "565431": {
+    "name": "Callum Marshall",
+    "team": "West Ham United FC",
+    "player_xg": 0.13,
+    "importance": 0.0028,
+    "mins_played": 58
+  },
+  "565863": {
+    "name": "Sam Chambers",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "566213": {
+    "name": "Stephen Mfuni",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "567119": {
+    "name": "Shumaira Mheuka",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "567121": {
+    "name": "Joe Knight",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "568159": {
+    "name": "Archie Whitehall",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "569014": {
+    "name": "Eric da Silva Moreira",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "569577": {
+    "name": "Triston Rowe",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "570526": {
+    "name": "Lucas Bergvall",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 1.4,
+    "importance": 0.0349,
+    "mins_played": 966
+  },
+  "570929": {
+    "name": "Jack Whittaker",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "571087": {
+    "name": "Jaydon Jones",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "572702": {
+    "name": "Keiber Lamadrid",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "574458": {
+    "name": "Mamadou Sarr",
+    "team": "Chelsea FC",
+    "player_xg": 0.44,
+    "importance": 0.0066,
+    "mins_played": 100
+  },
+  "575458": {
+    "name": "Jair Cunha",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.29,
+    "importance": 0.0063,
+    "mins_played": 516
+  },
+  "575476": {
+    "name": "Murillo",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.74,
+    "importance": 0.0161,
+    "mins_played": 2133
+  },
+  "575901": {
+    "name": "Julio Soler",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 34
+  },
+  "576620": {
+    "name": "Bendito Mantato",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 15
+  },
+  "576628": {
+    "name": "Shea Lacey",
+    "team": "Manchester United FC",
+    "player_xg": 0.1,
+    "importance": 0.0015,
+    "mins_played": 40
+  },
+  "576634": {
+    "name": "Jim Thwaites",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "576637": {
+    "name": "Godwill Kukonki",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "576980": {
+    "name": "Zach Marsh",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "577016": {
+    "name": "Josh Acheampong",
+    "team": "Chelsea FC",
+    "player_xg": 0.63,
+    "importance": 0.0095,
+    "mins_played": 663
+  },
+  "577114": {
+    "name": "Luis Guilherme",
+    "team": "West Ham United FC",
+    "player_xg": 0.07,
+    "importance": 0.0015,
+    "mins_played": 121
+  },
+  "577285": {
+    "name": "George Hemmings",
+    "team": "Aston Villa FC",
+    "player_xg": 0.04,
+    "importance": 0.0008,
+    "mins_played": 25
+  },
+  "577669": {
+    "name": "Noah Sadiki",
+    "team": "Sunderland AFC",
+    "player_xg": 1.41,
+    "importance": 0.0363,
+    "mins_played": 2894
+  },
+  "577725": {
+    "name": "Josh King",
+    "team": "Fulham FC",
+    "player_xg": 2.47,
+    "importance": 0.0511,
+    "mins_played": 1304
+  },
+  "577731": {
+    "name": "Ben Broggio",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "577978": {
+    "name": "Rhys Chadwick",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "578153": {
+    "name": "Abdukodir Khusanov",
+    "team": "Manchester City FC",
+    "player_xg": 0.68,
+    "importance": 0.0096,
+    "mins_played": 1429
+  },
+  "578614": {
+    "name": "Enock Agyei",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "580921": {
+    "name": "Reigan Heskey",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "586309": {
+    "name": "Thierno Barry",
+    "team": "Everton FC",
+    "player_xg": 8.15,
+    "importance": 0.1745,
+    "mins_played": 1915
+  },
+  "587433": {
+    "name": "Conor McManus",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "589121": {
+    "name": "Ethan Sutherland",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "590014": {
+    "name": "Rio Cardines",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.02,
+    "importance": 0.0003,
+    "mins_played": 90
+  },
+  "590035": {
+    "name": "Yusuf Akhamrich",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "590039": {
+    "name": "Divine Mukasa",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 25
+  },
+  "590040": {
+    "name": "Jimmy Sinclair",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "591384": {
+    "name": "George King",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "591385": {
+    "name": "Sam Amissah",
+    "team": "Fulham FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "591386": {
+    "name": "Trey Nyoni",
+    "team": "Liverpool FC",
+    "player_xg": 0.37,
+    "importance": 0.006,
+    "mins_played": 21
+  },
+  "592031": {
+    "name": "Yankuba Minteh",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 3.8,
+    "importance": 0.0656,
+    "mins_played": 2398
+  },
+  "592740": {
+    "name": "Alfie Cresswell",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "593001": {
+    "name": "Enso Gonz\u00e1lez",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "593174": {
+    "name": "Kaye Furo",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "596042": {
+    "name": "Kieran Morrison",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "596047": {
+    "name": "Chido Obi",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "596054": {
+    "name": "Tom Edozie",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.23,
+    "importance": 0.0065,
+    "mins_played": 12
+  },
+  "596777": {
+    "name": "Patrick Dorgu",
+    "team": "Manchester United FC",
+    "player_xg": 2.35,
+    "importance": 0.0359,
+    "mins_played": 1445
+  },
+  "597320": {
+    "name": "Harry Howell",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 93
+  },
+  "599303": {
+    "name": "Sean Neave",
+    "team": "Newcastle United FC",
+    "player_xg": 0.03,
+    "importance": 0.0005,
+    "mins_played": 13
+  },
+  "600882": {
+    "name": "Harry Gray",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "601956": {
+    "name": "Saheed Olagunju",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "602903": {
+    "name": "Ezra Mayers",
+    "team": "West Ham United FC",
+    "player_xg": 0.12,
+    "importance": 0.0026,
+    "mins_played": 113
+  },
+  "604211": {
+    "name": "Tymur Tutierov",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "604988": {
+    "name": "Freddie Simmonds",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "605319": {
+    "name": "Luke Rawlings",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "606689": {
+    "name": "Romelle Donovan",
+    "team": "Brentford FC",
+    "player_xg": 0.1,
+    "importance": 0.0017,
+    "mins_played": 38
+  },
+  "606745": {
+    "name": "Ayden Heaven",
+    "team": "Manchester United FC",
+    "player_xg": 0.35,
+    "importance": 0.0053,
+    "mins_played": 923
+  },
+  "606774": {
+    "name": "Remy Rees-Dottin",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "606775": {
+    "name": "Ben Winterburn",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 6
+  },
+  "606798": {
+    "name": "Andr\u00e9s Garc\u00eda",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 83
+  },
+  "606921": {
+    "name": "Romain Esse",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 40
+  },
+  "607464": {
+    "name": "Michael Kayode",
+    "team": "Brentford FC",
+    "player_xg": 1.18,
+    "importance": 0.0196,
+    "mins_played": 3264
+  },
+  "608181": {
+    "name": "Stefanos Tzimas",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 0.46,
+    "importance": 0.0079,
+    "mins_played": 133
+  },
+  "609873": {
+    "name": "Harrison Armstrong",
+    "team": "Everton FC",
+    "player_xg": 0.79,
+    "importance": 0.0169,
+    "mins_played": 528
+  },
+  "610799": {
+    "name": "Luka Vuskovic",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "611912": {
+    "name": "Landon Emenalo",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "611917": {
+    "name": "Luc\u00e1 Williams-Barnett",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "611922": {
+    "name": "Rio Ngumoha",
+    "team": "Liverpool FC",
+    "player_xg": 1.31,
+    "importance": 0.0214,
+    "mins_played": 551
+  },
+  "611926": {
+    "name": "Amara Nallo",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "613232": {
+    "name": "James Wilson",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "613804": {
+    "name": "El Hadji Malick Diouf",
+    "team": "West Ham United FC",
+    "player_xg": 0.57,
+    "importance": 0.0124,
+    "mins_played": 2711
+  },
+  "614574": {
+    "name": "Alex T\u00f3th",
+    "team": "Bournemouth",
+    "player_xg": 0.11,
+    "importance": 0.0018,
+    "mins_played": 137
+  },
+  "616065": {
+    "name": "Marli Salmon",
+    "team": "Arsenal FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "616077": {
+    "name": "Max Dowman",
+    "team": "Arsenal FC",
+    "player_xg": 1.18,
+    "importance": 0.018,
+    "mins_played": 153
+  },
+  "616221": {
+    "name": "Souza",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.02,
+    "importance": 0.0005,
+    "mins_played": 144
+  },
+  "616286": {
+    "name": "Ryan Kavuma-McQueen",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "616288": {
+    "name": "Ryan McAidoo",
+    "team": "Manchester City FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "618027": {
+    "name": "TJ Carroll",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "619536": {
+    "name": "Seth Ridgeon",
+    "team": "Fulham FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "619734": {
+    "name": "Jesse Derry",
+    "team": "Chelsea FC",
+    "player_xg": 0.1,
+    "importance": 0.0015,
+    "mins_played": 44
+  },
+  "620487": {
+    "name": "Veljko Milosavljevic",
+    "team": "Bournemouth",
+    "player_xg": 0.15,
+    "importance": 0.0024,
+    "mins_played": 367
+  },
+  "622536": {
+    "name": "Benjamin Arthur",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "623110": {
+    "name": "Park Seung-Soo",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "624773": {
+    "name": "Est\u00eav\u00e3o",
+    "team": "Chelsea FC",
+    "player_xg": 2.92,
+    "importance": 0.0439,
+    "mins_played": 845
+  },
+  "626464": {
+    "name": "Gustavo Nunes",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "626844": {
+    "name": "Milan Aleksic",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "628204": {
+    "name": "Yunus Konak",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "629068": {
+    "name": "Braiden Graham",
+    "team": "Everton FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "630699": {
+    "name": "Mohamadou Kant\u00e9",
+    "team": "West Ham United FC",
+    "player_xg": 0.09,
+    "importance": 0.002,
+    "mins_played": 67
+  },
+  "631106": {
+    "name": "Ben Casey",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "631786": {
+    "name": "Jonah Kusi-Asare",
+    "team": "Fulham FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 49
+  },
+  "640419": {
+    "name": "Jun'ai Byfield",
+    "team": "Tottenham Hotspur FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 1
+  },
+  "641221": {
+    "name": "Pedro Lima",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.34,
+    "importance": 0.0096,
+    "mins_played": 259
+  },
+  "643135": {
+    "name": "Fer L\u00f3pez",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.16,
+    "importance": 0.0045,
+    "mins_played": 229
+  },
+  "643426": {
+    "name": "Dean Benamar",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "643473": {
+    "name": "Airidas Golambeckis",
+    "team": "West Ham United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "643970": {
+    "name": "Jayden Lienou",
+    "team": "Leeds United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "644593": {
+    "name": "Kian McMahon-Brown",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "645618": {
+    "name": "Bradley Burrowes",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 16
+  },
+  "646243": {
+    "name": "Andre Harriman-Annous",
+    "team": "Arsenal FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "647671": {
+    "name": "Mateus Man\u00e9",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 2.01,
+    "importance": 0.0566,
+    "mins_played": 1790
+  },
+  "647681": {
+    "name": "Giovanni Leoni",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "647850": {
+    "name": "Charalampos Kostoulas",
+    "team": "Brighton & Hove Albion FC",
+    "player_xg": 2.14,
+    "importance": 0.037,
+    "mins_played": 353
+  },
+  "647960": {
+    "name": "Oliver Pimlott",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "649240": {
+    "name": "Joshua Stephenson",
+    "team": "Brentford FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "651426": {
+    "name": "Jaydee Canvot",
+    "team": "Crystal Palace FC",
+    "player_xg": 1.48,
+    "importance": 0.0254,
+    "mins_played": 1334
+  },
+  "653481": {
+    "name": "Alysson Edward",
+    "team": "Aston Villa FC",
+    "player_xg": 0.05,
+    "importance": 0.001,
+    "mins_played": 47
+  },
+  "658013": {
+    "name": "Charlie Stevens",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "660392": {
+    "name": "Christantus Uche",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.49,
+    "importance": 0.0084,
+    "mins_played": 159
+  },
+  "661712": {
+    "name": "Diego Le\u00f3n",
+    "team": "Manchester United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "664015": {
+    "name": "Leon Routh",
+    "team": "Aston Villa FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "666607": {
+    "name": "Sam Alabi",
+    "team": "Newcastle United FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "671606": {
+    "name": "Mathis Ebou\u00e9",
+    "team": "Chelsea FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "672492": {
+    "name": "Jo\u00e9l Drakes-Thomas",
+    "team": "Crystal Palace FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 7
+  },
+  "677945": {
+    "name": "Will Wright",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "678552": {
+    "name": "Malcom DaCosta",
+    "team": "Bournemouth",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "685628": {
+    "name": "Jerome Abbey",
+    "team": "Wolverhampton Wanderers FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 16
+  },
+  "687076": {
+    "name": "Lamin Sillah",
+    "team": "Nottingham Forest FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "699989": {
+    "name": "Djiamgone Jocelin Ta Bi",
+    "team": "Sunderland AFC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 39
+  },
+  "704232": {
+    "name": "George Brierley",
+    "team": "Burnley FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  },
+  "718875": {
+    "name": "Talla Ndiaye",
+    "team": "Liverpool FC",
+    "player_xg": 0.0,
+    "importance": 0.0,
+    "mins_played": 0
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "Man United": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 4.63,
+    "foul_tendency": 1.6,
+    "set_piece_focus": 2.28,
+    "attacking_tempo": 7.2,
+    "defensive_line": 4.69,
+    "cards_modifier": -0.041,
+    "goals_modifier": 0.06,
+    "raw": {
+      "ppda": 12.0,
+      "xg_per_game": 1.72,
+      "xga_per_game": 1.28,
+      "fouls_per_game": 9.95,
+      "card_load": 1.789,
+      "goal_involvement": 3.0
+    }
+  },
+  "Leeds": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 2.76,
+    "foul_tendency": 1.92,
+    "set_piece_focus": 3.03,
+    "attacking_tempo": 4.82,
+    "defensive_line": 6.33,
+    "cards_modifier": -0.062,
+    "goals_modifier": 0.028,
+    "raw": {
+      "ppda": 12.9,
+      "xg_per_game": 1.43,
+      "xga_per_game": 1.47,
+      "fouls_per_game": 10.05,
+      "card_load": 1.684,
+      "goal_involvement": 2.89
+    }
+  },
+  "Arsenal": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 7.61,
+    "foul_tendency": 1.76,
+    "set_piece_focus": 3.14,
+    "attacking_tempo": 7.08,
+    "defensive_line": 9.18,
+    "cards_modifier": -0.132,
+    "goals_modifier": -0.093,
+    "raw": {
+      "ppda": 10.8,
+      "xg_per_game": 1.73,
+      "xga_per_game": 0.74,
+      "fouls_per_game": 10.0,
+      "card_load": 1.342,
+      "goal_involvement": 2.47
+    }
+  },
+  "Newcastle": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 6.04,
+    "foul_tendency": 0.32,
+    "set_piece_focus": 3.33,
+    "attacking_tempo": 7.48,
+    "defensive_line": 4.29,
+    "cards_modifier": -0.035,
+    "goals_modifier": 0.017,
+    "raw": {
+      "ppda": 11.4,
+      "xg_per_game": 1.5,
+      "xga_per_game": 1.35,
+      "fouls_per_game": 9.53,
+      "card_load": 1.816,
+      "goal_involvement": 2.85
+    }
+  },
+  "Tottenham": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 7.89,
+    "foul_tendency": 7.12,
+    "set_piece_focus": 3.69,
+    "attacking_tempo": 4.43,
+    "defensive_line": 4.08,
+    "cards_modifier": 0.15,
+    "goals_modifier": -0.1,
+    "raw": {
+      "ppda": 10.7,
+      "xg_per_game": 1.06,
+      "xga_per_game": 1.38,
+      "fouls_per_game": 11.76,
+      "card_load": 2.816,
+      "goal_involvement": 2.43
+    }
+  },
+  "Aston Villa": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 4.19,
+    "foul_tendency": 1.2,
+    "set_piece_focus": 3.07,
+    "attacking_tempo": 3.79,
+    "defensive_line": 0.82,
+    "cards_modifier": -0.084,
+    "goals_modifier": -0.031,
+    "raw": {
+      "ppda": 12.2,
+      "xg_per_game": 1.27,
+      "xga_per_game": 1.42,
+      "fouls_per_game": 9.82,
+      "card_load": 1.579,
+      "goal_involvement": 2.69
+    }
+  },
+  "Chelsea": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 7.07,
+    "foul_tendency": 4.08,
+    "set_piece_focus": 2.1,
+    "attacking_tempo": 3.96,
+    "defensive_line": 4.69,
+    "cards_modifier": 0.15,
+    "goals_modifier": 0.095,
+    "raw": {
+      "ppda": 11.0,
+      "xg_per_game": 1.75,
+      "xga_per_game": 1.38,
+      "fouls_per_game": 10.76,
+      "card_load": 2.789,
+      "goal_involvement": 3.13
+    }
+  },
+  "Everton": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 1.47,
+    "foul_tendency": 2.88,
+    "set_piece_focus": 3.26,
+    "attacking_tempo": 3.82,
+    "defensive_line": 6.12,
+    "cards_modifier": 0.024,
+    "goals_modifier": -0.023,
+    "raw": {
+      "ppda": 13.6,
+      "xg_per_game": 1.23,
+      "xga_per_game": 1.49,
+      "fouls_per_game": 10.37,
+      "card_load": 2.105,
+      "goal_involvement": 2.72
+    }
+  },
+  "Liverpool": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 5.8,
+    "foul_tendency": 1.12,
+    "set_piece_focus": 1.96,
+    "attacking_tempo": 7.91,
+    "defensive_line": 5.71,
+    "cards_modifier": -0.089,
+    "goals_modifier": 0.02,
+    "raw": {
+      "ppda": 11.5,
+      "xg_per_game": 1.61,
+      "xga_per_game": 1.25,
+      "fouls_per_game": 9.79,
+      "card_load": 1.553,
+      "goal_involvement": 2.86
+    }
+  },
+  "Nott'm Forest": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 0.63,
+    "foul_tendency": 2.32,
+    "set_piece_focus": 2.13,
+    "attacking_tempo": 4.69,
+    "defensive_line": 3.47,
+    "cards_modifier": -0.073,
+    "goals_modifier": -0.022,
+    "raw": {
+      "ppda": 14.1,
+      "xg_per_game": 1.21,
+      "xga_per_game": 1.51,
+      "fouls_per_game": 10.18,
+      "card_load": 1.632,
+      "goal_involvement": 2.72
+    }
+  },
+  "Crystal Palace": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 1.65,
+    "foul_tendency": 1.2,
+    "set_piece_focus": 2.94,
+    "attacking_tempo": 6.6,
+    "defensive_line": 3.06,
+    "cards_modifier": 0.013,
+    "goals_modifier": 0.029,
+    "raw": {
+      "ppda": 13.5,
+      "xg_per_game": 1.53,
+      "xga_per_game": 1.37,
+      "fouls_per_game": 9.82,
+      "card_load": 2.053,
+      "goal_involvement": 2.9
+    }
+  },
+  "Brighton": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 10.0,
+    "foul_tendency": 6.24,
+    "set_piece_focus": 2.1,
+    "attacking_tempo": 3.83,
+    "defensive_line": 8.98,
+    "cards_modifier": 0.056,
+    "goals_modifier": 0.006,
+    "raw": {
+      "ppda": 10.0,
+      "xg_per_game": 1.52,
+      "xga_per_game": 1.29,
+      "fouls_per_game": 11.47,
+      "card_load": 2.263,
+      "goal_involvement": 2.82
+    }
+  },
+  "Man City": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 5.08,
+    "foul_tendency": 0.0,
+    "set_piece_focus": 1.91,
+    "attacking_tempo": 1.82,
+    "defensive_line": 10.0,
+    "cards_modifier": -0.046,
+    "goals_modifier": 0.068,
+    "raw": {
+      "ppda": 11.8,
+      "xg_per_game": 1.87,
+      "xga_per_game": 1.16,
+      "fouls_per_game": 9.42,
+      "card_load": 1.763,
+      "goal_involvement": 3.03
+    }
+  },
+  "Fulham": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 1.47,
+    "foul_tendency": 3.2,
+    "set_piece_focus": 2.62,
+    "attacking_tempo": 2.71,
+    "defensive_line": 2.04,
+    "cards_modifier": 0.007,
+    "goals_modifier": -0.034,
+    "raw": {
+      "ppda": 13.6,
+      "xg_per_game": 1.27,
+      "xga_per_game": 1.4,
+      "fouls_per_game": 10.47,
+      "card_load": 2.026,
+      "goal_involvement": 2.68
+    }
+  },
+  "Sunderland": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 2.37,
+    "foul_tendency": 2.72,
+    "set_piece_focus": 3.01,
+    "attacking_tempo": 2.5,
+    "defensive_line": 2.24,
+    "cards_modifier": 0.066,
+    "goals_modifier": -0.097,
+    "raw": {
+      "ppda": 13.1,
+      "xg_per_game": 1.02,
+      "xga_per_game": 1.43,
+      "fouls_per_game": 10.32,
+      "card_load": 2.316,
+      "goal_involvement": 2.46
+    }
+  },
+  "Bournemouth": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 6.81,
+    "foul_tendency": 6.88,
+    "set_piece_focus": 2.56,
+    "attacking_tempo": 8.57,
+    "defensive_line": 5.71,
+    "cards_modifier": 0.088,
+    "goals_modifier": 0.095,
+    "raw": {
+      "ppda": 11.1,
+      "xg_per_game": 1.63,
+      "xga_per_game": 1.49,
+      "fouls_per_game": 11.68,
+      "card_load": 2.421,
+      "goal_involvement": 3.12
+    }
+  },
+  "Brentford": {
+    "games_played": 38,
+    "sample_trusted": true,
+    "pressing_intensity": 3.76,
+    "foul_tendency": 1.52,
+    "set_piece_focus": 3.15,
+    "attacking_tempo": 6.81,
+    "defensive_line": 2.86,
+    "cards_modifier": -0.025,
+    "goals_modifier": 0.062,
+    "raw": {
+      "ppda": 12.4,
+      "xg_per_game": 1.59,
+      "xga_per_game": 1.42,
+      "fouls_per_game": 9.92,
+      "card_load": 1.868,
+      "goal_involvement": 3.01
+    }
+  },
+  "Coventry City": {
+    "games_played": 46,
+    "sample_trusted": true,
+    "pressing_intensity": 5.08,
+    "foul_tendency": 0.0,
+    "set_piece_focus": 3.22,
+    "attacking_tempo": 7.1,
+    "defensive_line": 4.9,
+    "cards_modifier": -0.064,
+    "goals_modifier": -0.053,
+    "source": "championship_discounted",
+    "raw": {
+      "ppda": 11.8,
+      "xg_per_game_raw": 1.9,
+      "xg_per_game_discounted": 1.52,
+      "xga_per_game": 1.09,
+      "fouls_per_game": 9.39,
+      "discount_applied": 0.8,
+      "discount_applied_to": [
+        "xg_per_game"
+      ],
+      "discount_not_applied_to": [
+        "xga_per_game"
+      ]
+    }
+  },
+  "Hull City": {
+    "games_played": 49,
+    "sample_trusted": true,
+    "pressing_intensity": 4.19,
+    "foul_tendency": 4.68,
+    "set_piece_focus": 1.59,
+    "attacking_tempo": 6.56,
+    "defensive_line": 3.06,
+    "cards_modifier": 0.11,
+    "goals_modifier": -0.024,
+    "source": "championship_discounted",
+    "raw": {
+      "ppda": 12.2,
+      "xg_per_game_raw": 1.28,
+      "xg_per_game_discounted": 1.03,
+      "xga_per_game": 1.68,
+      "fouls_per_game": 10.96,
+      "discount_applied": 0.8,
+      "discount_applied_to": [
+        "xg_per_game"
+      ],
+      "discount_not_applied_to": [
+        "xga_per_game"
+      ]
+    }
+  },
+  "Ipswich": {
+    "games_played": 46,
+    "sample_trusted": true,
+    "pressing_intensity": 6.55,
+    "foul_tendency": 3.74,
+    "set_piece_focus": 2.46,
+    "attacking_tempo": 8.27,
+    "defensive_line": 4.9,
+    "cards_modifier": 0.015,
+    "goals_modifier": -0.1,
+    "source": "championship_discounted",
+    "raw": {
+      "ppda": 11.2,
+      "xg_per_game_raw": 1.72,
+      "xg_per_game_discounted": 1.38,
+      "xga_per_game": 1.01,
+      "fouls_per_game": 10.65,
+      "discount_applied": 0.8,
+      "discount_applied_to": [
+        "xg_per_game"
+      ],
+      "discount_not_applied_to": [
+        "xga_per_game"
+      ]
+    }
+  }
+}
