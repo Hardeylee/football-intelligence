@@ -1,0 +1,262 @@
+{
+  "home_win": [
+    {
+      "bucket": "0-10%",
+      "n": 2,
+      "avg_predicted_prob": 0.085,
+      "actual_hit_rate": 0.0,
+      "gap": -0.085,
+      "flag": "ok"
+    },
+    {
+      "bucket": "10-20%",
+      "n": 8,
+      "avg_predicted_prob": 0.175,
+      "actual_hit_rate": 0.125,
+      "gap": -0.05,
+      "flag": "ok"
+    },
+    {
+      "bucket": "20-30%",
+      "n": 23,
+      "avg_predicted_prob": 0.254,
+      "actual_hit_rate": 0.043,
+      "gap": -0.211,
+      "flag": "overconfident"
+    },
+    {
+      "bucket": "30-40%",
+      "n": 29,
+      "avg_predicted_prob": 0.356,
+      "actual_hit_rate": 0.241,
+      "gap": -0.115,
+      "flag": "overconfident"
+    },
+    {
+      "bucket": "40-50%",
+      "n": 46,
+      "avg_predicted_prob": 0.448,
+      "actual_hit_rate": 0.457,
+      "gap": 0.009,
+      "flag": "ok"
+    },
+    {
+      "bucket": "50-60%",
+      "n": 36,
+      "avg_predicted_prob": 0.556,
+      "actual_hit_rate": 0.5,
+      "gap": -0.056,
+      "flag": "ok"
+    },
+    {
+      "bucket": "60-70%",
+      "n": 32,
+      "avg_predicted_prob": 0.645,
+      "actual_hit_rate": 0.656,
+      "gap": 0.011,
+      "flag": "ok"
+    },
+    {
+      "bucket": "70-80%",
+      "n": 14,
+      "avg_predicted_prob": 0.725,
+      "actual_hit_rate": 0.714,
+      "gap": -0.011,
+      "flag": "ok"
+    }
+  ],
+  "draw": [
+    {
+      "bucket": "10-20%",
+      "n": 84,
+      "avg_predicted_prob": 0.161,
+      "actual_hit_rate": 0.226,
+      "gap": 0.065,
+      "flag": "ok"
+    },
+    {
+      "bucket": "20-30%",
+      "n": 106,
+      "avg_predicted_prob": 0.234,
+      "actual_hit_rate": 0.208,
+      "gap": -0.026,
+      "flag": "ok"
+    }
+  ],
+  "away_win": [
+    {
+      "bucket": "10-20%",
+      "n": 36,
+      "avg_predicted_prob": 0.163,
+      "actual_hit_rate": 0.167,
+      "gap": 0.004,
+      "flag": "ok"
+    },
+    {
+      "bucket": "20-30%",
+      "n": 57,
+      "avg_predicted_prob": 0.244,
+      "actual_hit_rate": 0.333,
+      "gap": 0.089,
+      "flag": "ok"
+    },
+    {
+      "bucket": "30-40%",
+      "n": 46,
+      "avg_predicted_prob": 0.343,
+      "actual_hit_rate": 0.37,
+      "gap": 0.027,
+      "flag": "ok"
+    },
+    {
+      "bucket": "40-50%",
+      "n": 24,
+      "avg_predicted_prob": 0.442,
+      "actual_hit_rate": 0.5,
+      "gap": 0.058,
+      "flag": "ok"
+    },
+    {
+      "bucket": "50-60%",
+      "n": 12,
+      "avg_predicted_prob": 0.539,
+      "actual_hit_rate": 0.583,
+      "gap": 0.044,
+      "flag": "ok"
+    },
+    {
+      "bucket": "60-70%",
+      "n": 12,
+      "avg_predicted_prob": 0.644,
+      "actual_hit_rate": 0.583,
+      "gap": -0.061,
+      "flag": "ok"
+    },
+    {
+      "bucket": "70-80%",
+      "n": 3,
+      "avg_predicted_prob": 0.748,
+      "actual_hit_rate": 0.667,
+      "gap": -0.081,
+      "flag": "ok"
+    }
+  ],
+  "over25": [
+    {
+      "bucket": "40-50%",
+      "n": 1,
+      "avg_predicted_prob": 0.458,
+      "actual_hit_rate": 1.0,
+      "gap": 0.542,
+      "flag": "underconfident"
+    },
+    {
+      "bucket": "50-60%",
+      "n": 65,
+      "avg_predicted_prob": 0.567,
+      "actual_hit_rate": 0.554,
+      "gap": -0.013,
+      "flag": "ok"
+    },
+    {
+      "bucket": "60-70%",
+      "n": 102,
+      "avg_predicted_prob": 0.644,
+      "actual_hit_rate": 0.529,
+      "gap": -0.115,
+      "flag": "overconfident"
+    },
+    {
+      "bucket": "70-80%",
+      "n": 22,
+      "avg_predicted_prob": 0.722,
+      "actual_hit_rate": 0.591,
+      "gap": -0.131,
+      "flag": "overconfident"
+    }
+  ],
+  "btts": [
+    {
+      "bucket": "40-50%",
+      "n": 6,
+      "avg_predicted_prob": 0.473,
+      "actual_hit_rate": 0.833,
+      "gap": 0.36,
+      "flag": "underconfident"
+    },
+    {
+      "bucket": "50-60%",
+      "n": 80,
+      "avg_predicted_prob": 0.559,
+      "actual_hit_rate": 0.562,
+      "gap": 0.003,
+      "flag": "ok"
+    },
+    {
+      "bucket": "60-70%",
+      "n": 99,
+      "avg_predicted_prob": 0.637,
+      "actual_hit_rate": 0.515,
+      "gap": -0.122,
+      "flag": "overconfident"
+    },
+    {
+      "bucket": "70-80%",
+      "n": 5,
+      "avg_predicted_prob": 0.712,
+      "actual_hit_rate": 0.4,
+      "gap": -0.312,
+      "flag": "overconfident"
+    }
+  ],
+  "over35_cards": [
+    {
+      "bucket": "30-40%",
+      "n": 13,
+      "avg_predicted_prob": 0.375,
+      "actual_hit_rate": 0.308,
+      "gap": -0.067,
+      "flag": "ok"
+    },
+    {
+      "bucket": "40-50%",
+      "n": 34,
+      "avg_predicted_prob": 0.456,
+      "actual_hit_rate": 0.382,
+      "gap": -0.074,
+      "flag": "ok"
+    },
+    {
+      "bucket": "50-60%",
+      "n": 83,
+      "avg_predicted_prob": 0.552,
+      "actual_hit_rate": 0.542,
+      "gap": -0.01,
+      "flag": "ok"
+    },
+    {
+      "bucket": "60-70%",
+      "n": 46,
+      "avg_predicted_prob": 0.645,
+      "actual_hit_rate": 0.674,
+      "gap": 0.029,
+      "flag": "ok"
+    },
+    {
+      "bucket": "70-80%",
+      "n": 13,
+      "avg_predicted_prob": 0.736,
+      "actual_hit_rate": 0.462,
+      "gap": -0.274,
+      "flag": "overconfident"
+    },
+    {
+      "bucket": "80-90%",
+      "n": 1,
+      "avg_predicted_prob": 0.832,
+      "actual_hit_rate": 1.0,
+      "gap": 0.168,
+      "flag": "underconfident"
+    }
+  ]
+}
