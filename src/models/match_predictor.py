@@ -6,16 +6,239 @@ Takes two team names, returns market probabilities for:
 - BTTS
 - Yellow Cards
 - Corners
+
+PATCH NOTE (backtest injection parameters):
+
+predict_match() used to read PROFILES_FILE/H2H_FILE/FORCE_PROMOTED
+directly from module globals with no override, and predict_goals()
+always applied the live player_availability adjustment unconditionally.
+This meant backtester_v4.py's snapshot-based approach (see
+build_snapshot_profiles.py / build_snapshot_elo.py) had no way to
+actually reach match_predictor.py -- every backtest call failed with
+"unexpected keyword argument" since these parameters didn't exist here
+yet, even though epl_elo.py had already been refactored the same way.
+
+Fix: predict_match() now accepts profiles_path, h2h_path, elo_path,
+apply_availability, and force_promoted as optional parameters. All
+default to None/True, which reproduces the exact previous behavior
+(live production files, FORCE_PROMOTED module constant, availability
+always applied) -- so every existing call site (telegram_bot.py's
+handle_epl_match/handle_gw_request, the __main__ block below) keeps
+working unchanged with zero code changes required there.
+
+SECOND BUG CAUGHT DURING THIS REFACTOR, not just a mechanical port:
+the missing-team fallback loop checked `if team in PROMOTED_TEAM_PROFILES`
+unconditionally, regardless of force_promoted. PROMOTED_TEAM_PROFILES is
+keyed for 2026/27's promoted teams (2025/26 Championship form). A team
+missing from a historical snapshot (e.g. Ipswich, correctly absent from
+team_profiles_asof_24-25.json since they weren't in the EPL in 22-23/
+23-24) would silently receive their 2025/26 form via this fallback even
+with force_promoted=set() passed in -- the exact same "borrowed future
+rating" leak build_snapshot_elo.py already diagnosed and fixed for Elo,
+just hiding in this file's fallback path instead. Fixed: the
+PROMOTED_TEAM_PROFILES check is now gated on `team in active_force_promoted`
+as well, so an empty force_promoted set actually means "never use these
+overrides," not "use them only when the module constant happens to
+already forbid it."
+
+PATCH NOTE (home_win compression correction, "Candidate C"):
+
+Session-long investigation (see diagnose_elo_only_calibration.py,
+diagnose_elo_vs_blend_matched.py, diagnose_team_dominance_check.py,
+diagnose_hist_form_vs_elo_full.py, diagnose_compression_fix_candidates.py,
+diagnose_candidate_c_out_of_sample.py) found predict_result()'s home_win
+was overconfident specifically in the 20-40% range, with two separate,
+independently-confirmed causes:
+
+  1. Elo itself (predict_result_elo(), unblended) is somewhat
+     overconfident around 30-40% -- an upstream issue in epl_elo.py,
+     NOT addressed by this patch. Tracked as a separate open item.
+
+  2. hist_home and form_home are structurally COMPRESSED relative to
+     elo_home across their ENTIRE range (Pearson correlation -0.869 /
+     -0.931 against elo_home, linear across all 10 deciles, not just
+     the extremes) -- they can't swing as far from 50% as Elo can, so
+     blending them in always pulls Elo's confident home_win predictions
+     back toward the middle. This helps away_win's high buckets (Elo
+     alone was overconfident there; already confirmed clean this
+     session) but actively hurts home_win's low buckets, where Elo
+     alone was already reasonably calibrated and the blend made it
+     worse (home_win 20-30%: Elo-only gap -4.5%/ok, full-pipeline gap
+     -21.0%/bad).
+
+This patch addresses #2 only. It rescales hist_home/form_home in logit
+space to match elo_home's spread (constants measured directly from two
+INDEPENDENT halves of the 2024/25 season and confirmed stable --
+stretch_hist 2.005x vs 2.035x, stretch_form 2.325x vs 2.329x -- so this
+is not fit to the same data it's being validated against), then tapers
+that correction off above elo_home~45% (a structural choice, not a
+measured statistic) since an earlier untapered version measurably
+damaged the already-well-calibrated 50-90% range.
+
+Only home_win's hist/form components are corrected -- away_win and
+draw's hist/form components, and the H2H stage, are all untouched.
+
+Validated via Brier score (lower = better), home_win only:
+  in-sample  (constants + grading both from final holdout): 0.2095 -> 0.2076
+  out-of-sample (constants from validation half, graded on final holdout,
+                 never used to derive the constants): 0.2095 -> 0.2076
+Zero cost to draw or away_win Brier scores in either run. home_win
+20-30% bucket gap improved from -21.1% to roughly -11.5% (real
+progress, not fully closed -- the remainder is cause #1 above, upstream
+in Elo, out of scope for this patch). 30-40% is largely untouched by
+design, since diagnose_hist_form_vs_elo_full.py's decile table showed
+compression's contribution there was already small before the taper.
+
+This patch does NOT change hist_away/form_away/hist_draw/form_draw, the
+H2H block, or any other market (goals/cards/corners). It only touches
+predict_result()'s home_win computation and adds the constants/helpers
+above it.
+
+PATCH NOTE (MatchContext cutover):
+
+predict_goals()/predict_result()/predict_cards()/predict_corners() used
+to each take their own subset of (home, away, profiles, h2h_data,
+elo_path, xg_path, apply_availability) and, in predict_goals()/
+predict_result(), independently re-derived things predict_match() had
+already resolved -- notably each of predict_goals() and predict_result()
+called get_h2h(home, away, h2h_data) separately (same lookup run twice
+per predict_match() call), and predict_goals() loaded xg_profiles and
+predict_result() loaded elo_ratings via their own module-level imports,
+duplicating work predict_match() could do once.
+
+Fix: predict_match() now builds a single MatchContext via
+resolve_match_context() (see match_context.py) and passes that to all
+four engines instead. resolve_match_context() also absorbs the
+missing-team profile fallback loop that used to live inline in
+predict_match() -- same logic, same force_promoted gating, just moved
+to one place instead of being duplicated across this file and any
+diagnostic scripts' own ensure_team_profiles()-style helpers.
+
+predict_match()'s own public signature is UNCHANGED -- every existing
+call site (telegram_bot.py, the __main__ block below, backtester_v4.py,
+snapshot_golden_predictions.py) keeps working with zero changes. Only
+predict_goals()/predict_result()/predict_cards()/predict_corners()'s
+signatures changed, since match_predictor.py is the only file that
+calls them directly (grepped for external callers before this change
+shipped -- see MatchContext design conversation for the check run).
+
+Manager/referee/availability data are deliberately NOT part of
+MatchContext -- see match_context.py's module docstring for why (their
+loaders don't support point-in-time snapshot paths yet). Those three
+are still fetched exactly as before: apply_manager_adjustments() and
+get_formation_adjustment() are still called from predict_match() after
+the four engines run, unchanged; get_xg_reduction() is still called
+from inside predict_goals(), unchanged, gated on apply_availability
+exactly as before.
 """
 
 import json
+import math
 import os
+import sys
 from datetime import datetime
+
+# PROJECT_ROOT-from-__file__ fix -- without this, running this file
+# directly (`python src\models\match_predictor.py`) fails with
+# ModuleNotFoundError: No module named 'src', because Python only puts
+# this file's own directory (src/models) on sys.path, not the project
+# root. Same fix already applied to backtester_v4.py and every
+# diagnose_*.py script in src/utils for the identical reason -- this
+# file just never needed it before because its first `from src....`
+# import used to happen deeper inside predict_goals()/predict_result(),
+# not at the top of predict_match() itself.
+PROJECT_ROOT = os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 PROFILES_FILE = "data/team_profiles.json"
 H2H_FILE = "data/h2h.json"
 
 HOME_ADVANTAGE = 0.06
+
+# Same 20% Championship-to-EPL step-up discount as
+# xg_scraper.PROMOTION_DISCOUNT (0.80), applied to PROMOTED_TEAM_PROFILES'
+# win rates below. Kept as a separate constant (not imported) since
+# PROMOTED_TEAM_PROFILES is a module-level dict built at import time and
+# xg_scraper is otherwise only imported locally inside functions in this
+# file. If xg_scraper.PROMOTION_DISCOUNT ever changes, update this to match.
+PROMOTED_WIN_RATE_DISCOUNT = 0.80
+
+# ── COMPRESSION CORRECTION CONSTANTS ("Candidate C") ────────────────
+# See PATCH NOTE above for the full investigation trail. Summary of
+# where each number comes from, so this isn't an unexplained magic
+# constant later:
+#
+# COMPRESSION_STRETCH_HIST / COMPRESSION_STRETCH_FORM: the ratio of
+# elo_home's logit-space standard deviation to hist_home's / form_home's,
+# i.e. "how much wider elo_home's spread is than hist_home's/form_home's".
+# Measured independently on two non-overlapping halves of the 2024/25
+# season and averaged, since both measurements agreed closely:
+#     stretch_hist: 2.005x (final holdout half) / 2.035x (validation half) -> avg 2.020
+#     stretch_form: 2.325x (final holdout half) / 2.329x (validation half) -> avg 2.327
+#
+# COMPRESSION_MEAN_HIST_LOGIT / COMPRESSION_MEAN_FORM_LOGIT: the average
+# logit-space value of hist_home / form_home, used as the center point
+# the rescale stretches around (preserves central tendency, only changes
+# spread). Taken from the validation half specifically -- the only half
+# with an explicitly recorded measurement -- but the close agreement of
+# the stretch factors across both halves suggests this isn't sensitive
+# to which half it came from.
+#
+# COMPRESSION_TAPER_THRESHOLD / COMPRESSION_TAPER_STEEPNESS: structural
+# design choices, NOT measured statistics. An earlier untapered version
+# of this correction (applied uniformly across the whole range) fixed
+# home_win 20-30% but measurably broke the already-well-calibrated
+# 50-90% range (home_win 60-70% gap went from +3.1%/ok to -13.0%/bad).
+# The taper fades the correction to ~0 above elo_home~45%, so it only
+# applies where the diagnosed problem (compression pulling weak-home
+# predictions up) actually lives.
+COMPRESSION_STRETCH_HIST = 2.020
+COMPRESSION_STRETCH_FORM = 2.327
+COMPRESSION_MEAN_HIST_LOGIT = -0.194
+COMPRESSION_MEAN_FORM_LOGIT = -0.525
+COMPRESSION_TAPER_THRESHOLD = 0.45
+COMPRESSION_TAPER_STEEPNESS = 14
+
+
+def _logit(p: float) -> float:
+    """Log-odds of p, clamped away from 0/1 to avoid math domain errors."""
+    p = min(max(p, 1e-6), 1 - 1e-6)
+    return math.log(p / (1 - p))
+
+
+def _sigmoid(x: float) -> float:
+    return 1 / (1 + math.exp(-x))
+
+
+def _compression_taper_weight(elo_home: float) -> float:
+    """
+    ~1.0 when elo_home is well below COMPRESSION_TAPER_THRESHOLD (the
+    correction applies at close to full strength), fading smoothly to
+    ~0.0 above it (correction effectively switched off). Smooth, not a
+    hard cutoff, to avoid a discontinuity in predicted probability as
+    elo_home crosses the threshold.
+    """
+    return _sigmoid(COMPRESSION_TAPER_STEEPNESS *
+                    (COMPRESSION_TAPER_THRESHOLD - elo_home))
+
+
+def _apply_compression_correction(value: float, elo_home: float,
+                                  mean_logit: float, stretch: float) -> float:
+    """
+    Rescales `value` (hist_home or form_home) in logit space to better
+    match elo_home's spread, centered on `mean_logit` so only spread
+    changes, not central tendency -- then blends that rescaled value
+    back toward the original using the taper weight, so the correction
+    only meaningfully applies where elo_home is low. See PATCH NOTE
+    above for the full derivation and validation of these constants.
+    """
+    value_logit = _logit(value)
+    rescaled = _sigmoid(mean_logit + (value_logit - mean_logit) * stretch)
+    tw = _compression_taper_weight(elo_home)
+    return tw * rescaled + (1 - tw) * value
+
 
 # Promoted teams forced to use Championship-based profiles
 # even if stale historical EPL data exists
@@ -51,107 +274,101 @@ FORCE_PROMOTED = {"Ipswich", "Coventry City", "Hull City"}
 #   read a red-card field at all -- only yellows feed the cards market.
 #   Not wired in; would need a logic change in predict_cards(), not just
 #   a value here, if red-card risk is ever wanted as a signal.
+#
+# IMPORTANT for backtesting: this dict is ONLY valid for 2026/27 live
+# production use. It must never be applied to a historical backtest for
+# a different season -- see predict_match()'s force_promoted parameter
+# and the PATCH NOTE above.
 PROMOTED_TEAM_PROFILES = {
     "Coventry City": {
-        # was 0.38 -- corrected, 27W-11D-7L (2025/26 champions)
-        "win_rate":        0.60,
+        "win_rate":        0.48,   # was 0.60 -- 0.60 * 0.80 discount
         "draw_rate":       0.24,
-        "loss_rate":       0.16,   # was 0.38
+        "loss_rate":       0.28,   # was 0.16 -- absorbs the 0.12 discounted off win_rate
         "btts_rate":       0.59,
         "over15_rate":     0.83,
         "over25_rate":     0.54,
         "clean_sheet_rate": 0.21,
-        "home_win_rate":   0.74,   # was 0.52 -- derived, see note above
+        "home_win_rate":   0.592,  # was 0.74 -- 0.74 * 0.80 discount
         "home_avg_goals_scored":   1.83,
         "home_avg_goals_conceded": 1.27,
-        "away_win_rate":   0.46,   # was 0.24 -- derived, see note above
+        "away_win_rate":   0.368,  # was 0.46 -- 0.46 * 0.80 discount
         "away_avg_goals_scored":   1.46,
         "away_avg_goals_conceded": 1.65,
-        # was 1.65 -- corrected via Sofascore end-of-season data
         "avg_yellow_cards":    1.5,
-        # was 4.8 -- corrected via SoccerStats.com Championship split (exact, not derived)
         "avg_corners_for":     5.30,
-        # was 4.9 -- corrected via SoccerStats.com Championship split (exact, not derived)
         "avg_corners_against": 4.20,
-        # was 1.45 -- derived from corrected overall + original home/away skew
         "home_avg_yellow_cards":   1.3,
-        "away_avg_yellow_cards":   1.7,    # was 1.85
-        "home_avg_corners_for":    5.91,   # was 5.2 -- exact SoccerStats home split
-        "home_avg_corners_against": 3.48,  # was 4.5 -- exact SoccerStats home split
-        "away_avg_corners_for":    4.70,   # was 4.4 -- exact SoccerStats away split
-        "away_avg_corners_against": 4.91,  # was 5.3 -- exact SoccerStats away split
+        "away_avg_yellow_cards":   1.7,
+        "home_avg_corners_for":    5.91,
+        "home_avg_corners_against": 3.48,
+        "away_avg_corners_for":    4.70,
+        "away_avg_corners_against": 4.91,
         "form_score":      0.44,  # NOT re-verified in this pass
     },
     "Hull City": {
-        "win_rate":        0.47,   # was 0.35 -- corrected, 23W-11D-15L
+        "win_rate":        0.376,  # was 0.47 -- 0.47 * 0.80 discount
         "draw_rate":       0.22,
-        "loss_rate":       0.31,   # was 0.43
+        "loss_rate":       0.404,  # was 0.31 -- absorbs the 0.094 discounted off win_rate
         "btts_rate":       0.50,
         "over15_rate":     0.78,
         "over25_rate":     0.46,
         "clean_sheet_rate": 0.26,
-        "home_win_rate":   0.60,   # was 0.48 -- derived, see note above
+        "home_win_rate":   0.48,   # was 0.60 -- 0.60 * 0.80 discount
         "home_avg_goals_scored":   1.52,
         "home_avg_goals_conceded": 1.21,
-        "away_win_rate":   0.34,   # was 0.22 -- derived, see note above
+        "away_win_rate":   0.272,  # was 0.34 -- 0.34 * 0.80 discount
         "away_avg_goals_scored":   1.18,
         "away_avg_goals_conceded": 1.58,
-        # was 1.72 -- corrected via Sofascore end-of-season data
         "avg_yellow_cards":    2.5,
-        # was 4.5 -- confirmed via SoccerStats.com Championship split (exact, not derived)
         "avg_corners_for":     4.50,
-        # was 4.7 -- corrected via SoccerStats.com Championship split (exact, not derived)
         "avg_corners_against": 5.98,
-        # was 1.55 -- derived from corrected overall + original home/away skew
         "home_avg_yellow_cards":   2.33,
-        "away_avg_yellow_cards":   2.67,   # was 1.90
-        "home_avg_corners_for":    4.52,   # was 4.9 -- exact SoccerStats home split
-        "home_avg_corners_against": 4.57,  # was 4.3 -- exact SoccerStats home split
-        "away_avg_corners_for":    4.48,   # was 4.1 -- exact SoccerStats away split
-        # was 5.1 -- exact SoccerStats away split. Notably weak: Hull concede far more corners away than at home (7.39 vs 4.57), consistent with their already-known weaker away form.
+        "away_avg_yellow_cards":   2.67,
+        "home_avg_corners_for":    4.52,
+        "home_avg_corners_against": 4.57,
+        "away_avg_corners_for":    4.48,
         "away_avg_corners_against": 7.39,
         "form_score":      0.40,  # NOT re-verified in this pass
     },
     "Ipswich": {
-        # was 0.26 -- corrected, 22W-15D-8L (2025/26 runners-up)
-        "win_rate":        0.49,
-        "draw_rate":       0.33,   # was 0.21
-        "loss_rate":       0.18,   # was 0.53
+        "win_rate":        0.392,  # was 0.49 -- 0.49 * 0.80 discount
+        "draw_rate":       0.33,
+        "loss_rate":       0.278,  # was 0.18 -- absorbs the 0.098 discounted off win_rate
         "btts_rate":       0.50,
         "over15_rate":     0.74,
         "over25_rate":     0.45,
         "clean_sheet_rate": 0.18,
-        "home_win_rate":   0.59,   # was 0.37 -- derived, see note above
+        "home_win_rate":   0.472,  # was 0.59 -- 0.59 * 0.80 discount
         "home_avg_goals_scored":   1.26,
         "home_avg_goals_conceded": 1.42,
-        "away_win_rate":   0.38,   # was 0.16 -- derived, see note above
+        "away_win_rate":   0.304,  # was 0.38 -- 0.38 * 0.80 discount
         "away_avg_goals_scored":   0.95,
         "away_avg_goals_conceded": 1.89,
-        # was 1.58 -- corrected via Sofascore end-of-season data
         "avg_yellow_cards":    2.0,
-        # was 4.2 -- confirmed via SoccerStats.com Championship split (exact, not derived), matches Sofascore's 5.7 independently
         "avg_corners_for":     5.70,
-        # was 5.1 -- corrected via SoccerStats.com Championship split (exact, not derived)
         "avg_corners_against": 3.93,
-        # was 1.40 -- derived from corrected overall + original home/away skew
         "home_avg_yellow_cards":   1.82,
-        "away_avg_yellow_cards":   2.18,   # was 1.76
-        "home_avg_corners_for":    6.17,   # was 4.6 -- exact SoccerStats home split
-        "home_avg_corners_against": 3.83,  # was 4.7 -- exact SoccerStats home split
-        "away_avg_corners_for":    5.22,   # was 3.8 -- exact SoccerStats away split
-        "away_avg_corners_against": 4.04,  # was 5.5 -- exact SoccerStats away split
+        "away_avg_yellow_cards":   2.18,
+        "home_avg_corners_for":    6.17,
+        "home_avg_corners_against": 3.83,
+        "away_avg_corners_for":    5.22,
+        "away_avg_corners_against": 4.04,
         "form_score":      0.32,  # NOT re-verified in this pass
     },
 }
 
 
-def load_profiles() -> dict:
-    with open(PROFILES_FILE) as f:
+def load_profiles(path: str = None) -> dict:
+    """Pass a different path to load a point-in-time snapshot instead
+    of the live production file."""
+    with open(path or PROFILES_FILE) as f:
         return json.load(f)["teams"]
 
 
-def load_h2h() -> dict:
-    with open(H2H_FILE) as f:
+def load_h2h(path: str = None) -> dict:
+    """Pass a different path to load a point-in-time snapshot instead
+    of the live production file."""
+    with open(path or H2H_FILE) as f:
         return json.load(f)["h2h"]
 
 
@@ -192,19 +409,28 @@ def _build_league_average(profiles: dict) -> dict:
     return avg
 
 
-def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
+def predict_goals(ctx, apply_availability: bool = True) -> dict:
     """
     Predict goals using xG data (primary) blended with
     historical rates (secondary) and H2H (tertiary).
-    """
-    hp = profiles[home]
-    ap = profiles[away]
 
-    # Load xG profiles
-    from src.collectors.xg_scraper import load_xg_profiles
-    xg_profiles = load_xg_profiles()
-    home_xg_data = xg_profiles.get(home, {})
-    away_xg_data = xg_profiles.get(away, {})
+    ctx: a MatchContext (see match_context.py), built once by
+    predict_match() via resolve_match_context(). Supplies home/away
+    profiles, the resolved h2h pair, and the two teams' xG profile
+    entries -- all previously loaded independently inside this
+    function.
+
+    apply_availability: when False (backtesting), skips the player
+    availability adjustment entirely. Kept as a separate parameter
+    rather than folded into MatchContext, since availability isn't
+    point-in-time snapshot-safe yet -- see match_context.py's module
+    docstring.
+    """
+    hp = ctx.home_profile
+    ap = ctx.away_profile
+
+    home_xg_data = ctx.xg_profiles["home"]
+    away_xg_data = ctx.xg_profiles["away"]
 
     if home_xg_data and away_xg_data:
         home_xg = (home_xg_data["avg_xg_for"] +
@@ -245,7 +471,7 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
         data_source = "historical"
 
     # H2H adjustment
-    h2h = get_h2h(home, away, h2h_data)
+    h2h = ctx.h2h
     if h2h and h2h["matches"] >= 3:
         h2h_avg = h2h["avg_goals"]
         home_xg = (home_xg * 0.80) + (h2h_avg * 0.5 * 0.20)
@@ -261,9 +487,13 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     # regardless of which upstream data path produced the base numbers.
     # See src/models/player_availability.py -- reduction only triggers
     # for logged-unavailable players whose Opta importance > 0.20.
-    from src.models.player_availability import get_xg_reduction
-    home_avail = get_xg_reduction(home)
-    away_avail = get_xg_reduction(away)
+    if apply_availability:
+        from src.models.player_availability import get_xg_reduction
+        home_avail = get_xg_reduction(ctx.home_team)
+        away_avail = get_xg_reduction(ctx.away_team)
+    else:
+        home_avail = {"factor": 1.0, "players": []}
+        away_avail = {"factor": 1.0, "players": []}
 
     home_xg = round(home_xg * home_avail["factor"], 2)
     away_xg = round(away_xg * away_avail["factor"], 2)
@@ -304,41 +534,73 @@ def predict_goals(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
     }
 
 
-def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict:
+def predict_result(ctx) -> dict:
     """
     Predict match result blending:
     - Elo ratings (50%) — current team strength
     - Historical home/away rates (30%) — venue form
     - Recent form score (20%) — momentum
+
+    ctx: a MatchContext (see match_context.py). Supplies home/away
+    profiles, the resolved h2h pair, and the Elo ratings dict --
+    previously loaded independently inside this function via
+    epl_elo.load_ratings(elo_path).
+
+    NOTE: hist_home/form_home have a compression correction applied
+    (see module-level PATCH NOTE and the COMPRESSION_* constants above)
+    before entering the blend. hist_away/form_away/hist_draw/form_draw
+    are unaffected.
     """
-    hp = profiles[home]
-    ap = profiles[away]
+    hp = ctx.home_profile
+    ap = ctx.away_profile
 
     # Elo prediction (50%)
-    from src.models.epl_elo import load_ratings, predict_result_elo
-    elo_ratings = load_ratings()
-    elo_pred = predict_result_elo(home, away, elo_ratings)
+    from src.models.epl_elo import predict_result_elo
+    elo_pred = predict_result_elo(
+        ctx.home_team, ctx.away_team, ctx.elo_ratings)
     elo_home = elo_pred["home_win"]
     elo_draw = elo_pred["draw"]
     elo_away = elo_pred["away_win"]
 
     # Historical rates (30%)
+    # HOME_ADVANTAGE removed from here -- home_win_rate is already
+    # measured from home matches only, so it already reflects whatever
+    # home-advantage this team actually gets. Adding HOME_ADVANTAGE on
+    # top double-counted it, confirmed via diagnose_stacking.py: every
+    # weak-home-vs-strong-away backtest-snapshot fixture showed a
+    # consistent unconditional +0.04 to +0.10 pull toward home_win the
+    # moment this stage ran, present in ALL 190 backtest matches --
+    # which is why it, not the promoted-team or H2H fixes, is the
+    # mechanism behind the untouched home_win/away_win calibration
+    # buckets. Elo's own home advantage (100 rating points, in
+    # predict_result_elo) is kept as the single legitimate application.
     home_win_rate = hp.get("home_win_rate", hp.get("win_rate", 0.45))
     away_win_rate = ap.get("away_win_rate", ap.get("win_rate", 0.30))
     draw_base = (hp.get("draw_rate", 0.25) + ap.get("draw_rate", 0.25)) / 2
 
-    hist_total = home_win_rate + HOME_ADVANTAGE + away_win_rate + draw_base
-    hist_home = (home_win_rate + HOME_ADVANTAGE) / hist_total
+    hist_total = home_win_rate + away_win_rate + draw_base
+    hist_home = home_win_rate / hist_total
     hist_away = away_win_rate / hist_total
     hist_draw = draw_base / hist_total
 
-    # Form score (20%)
+    # Form score (20%) -- same reasoning, HOME_ADVANTAGE*0.5 removed.
     home_form = hp.get("form_score", 0.5)
     away_form = ap.get("form_score", 0.5)
     total_form = home_form + away_form + 0.25
-    form_home = (home_form + HOME_ADVANTAGE * 0.5) / total_form
+    form_home = home_form / total_form
     form_away = away_form / total_form
     form_draw = 0.25 / total_form
+
+    # ── COMPRESSION CORRECTION (home component only) ────────────────
+    # hist_home/form_home are structurally compressed relative to
+    # elo_home -- see module-level PATCH NOTE for the full investigation
+    # and validation. Only the home-side components are corrected;
+    # hist_away/form_away/hist_draw/form_draw are left exactly as
+    # computed above.
+    hist_home = _apply_compression_correction(
+        hist_home, elo_home, COMPRESSION_MEAN_HIST_LOGIT, COMPRESSION_STRETCH_HIST)
+    form_home = _apply_compression_correction(
+        form_home, elo_home, COMPRESSION_MEAN_FORM_LOGIT, COMPRESSION_STRETCH_FORM)
 
     # Blend
     home_win = (elo_home * 0.50) + (hist_home * 0.30) + (form_home * 0.20)
@@ -346,12 +608,21 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
     draw = (elo_draw * 0.50) + (hist_draw * 0.30) + (form_draw * 0.20)
 
     # H2H adjustment
-    h2h = get_h2h(home, away, h2h_data)
+    h2h = ctx.h2h
     if h2h and h2h["matches"] >= 3:
         h2h_home = h2h["home_wins"] / h2h["matches"]
         h2h_away = h2h["away_wins"] / h2h["matches"]
+        # was missing entirely -- home_win and away_win were both being
+        # corrected against real h2h history, draw wasn't, despite
+        # h2h["draws"] being available (format_prediction() already
+        # reads it directly). This asymmetry is a likely contributor to
+        # the ~4.5-point draw underprediction confirmed via
+        # check_draw_rate.py (24.1% actual vs ~19.5% predicted on the
+        # diagnose_stacking.py sample).
+        h2h_draw = h2h["draws"] / h2h["matches"]
         home_win = (home_win * 0.80) + (h2h_home * 0.20)
         away_win = (away_win * 0.80) + (h2h_away * 0.20)
+        draw = (draw * 0.80) + (h2h_draw * 0.20)
 
     # Normalize
     total = home_win + away_win + draw
@@ -370,13 +641,17 @@ def predict_result(home: str, away: str, profiles: dict, h2h_data: dict) -> dict
     }
 
 
-def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> dict:
+def predict_cards(ctx) -> dict:
     """
     Predict yellow cards using home/away split card rates,
     referee tendency, derby factor and manager pressing intensity.
+
+    ctx: a MatchContext. Supplies home/away profiles and the referee
+    name -- previously separate (profiles, referee) parameters.
     """
-    hp = profiles[home]
-    ap = profiles[away]
+    hp = ctx.home_profile
+    ap = ctx.away_profile
+    home, away = ctx.home_team, ctx.away_team
 
     home_cards_rate = hp.get("home_avg_yellow_cards",
                              hp.get("avg_yellow_cards", 1.5))
@@ -395,13 +670,35 @@ def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> di
     if is_derby:
         avg_cards *= 1.2
 
-    base_over35 = 1.0 if avg_cards > 3.5 else 0.65 if avg_cards > 2.8 else 0.40
-    base_over45 = 1.0 if avg_cards > 4.5 else 0.45 if avg_cards > 3.5 else 0.25
+    def cards_prob(line: float, expected: float) -> float:
+        """
+        Poisson-based replacement for the old hard-capped step function.
+        Card counts are discrete and non-negative, which Poisson models
+        naturally -- same approach already used for the BTTS fix in
+        xg_scraper.derive_market_rates(). The old step function hit its
+        1.0 ceiling for 5/7 sample fixtures (diagnose_stacking.py) and
+        drove the calibration report's cards overconfidence finding
+        (predicted ~84%, actual ~58% on the real n=85 avg_cards>3.5
+        bucket). This curve was validated against that same real bucket
+        before being wired in: Poisson(4.3) over35 = 0.623, close to the
+        actual 0.58 -- a much tighter fit than the old flat 1.0.
+        """
+        k = int(line) + 1  # 3.5 -> need P(X >= 4)
+        cdf = 0.0
+        term = math.exp(-expected)
+        cdf += term
+        for i in range(1, k):
+            term *= expected / i
+            cdf += term
+        return round(min(max(1 - cdf, 0.05), 0.95), 3)
+
+    base_over35 = cards_prob(3.5, avg_cards)
+    base_over45 = cards_prob(4.5, avg_cards)
 
     from src.models.referee_profiler import load_referee_profiles, adjust_cards_for_referee
     ref_profiles = load_referee_profiles()
     ref_adjustment = adjust_cards_for_referee(
-        base_over35, base_over45, referee, ref_profiles)
+        base_over35, base_over45, ctx.referee, ref_profiles)
 
     return {
         "avg_total_cards":   round(avg_cards, 2),
@@ -417,13 +714,15 @@ def predict_cards(home: str, away: str, profiles: dict, referee: str = "") -> di
     }
 
 
-def predict_corners(home: str, away: str, profiles: dict) -> dict:
+def predict_corners(ctx) -> dict:
     """
     Predict corners using home/away split rates.
     Uses continuous probability function calibrated to EPL actuals.
+
+    ctx: a MatchContext. Supplies home/away profiles.
     """
-    hp = profiles[home]
-    ap = profiles[away]
+    hp = ctx.home_profile
+    ap = ctx.away_profile
 
     home_corners_for = hp.get("home_avg_corners_for",
                               hp.get("avg_corners_for", 5.0))
@@ -459,37 +758,55 @@ def predict_corners(home: str, away: str, profiles: dict) -> dict:
     }
 
 
-def predict_match(home_team: str, away_team: str, referee: str = "") -> dict:
+def predict_match(
+    home_team: str,
+    away_team: str,
+    referee: str = "",
+    profiles_path: str = None,
+    h2h_path: str = None,
+    elo_path: str = None,
+    xg_path: str = None,
+    apply_availability: bool = True,
+    force_promoted: set = None,
+) -> dict:
     """
     Master function — runs all engines, returns full prediction.
+
+    profiles_path / h2h_path / elo_path / xg_path: pass point-in-time
+    snapshot files to backtest a historical season honestly. Default to
+    None, which uses the live production files — existing call sites
+    unaffected.
+
+    Signature UNCHANGED from before the MatchContext cutover -- builds
+    a MatchContext internally via resolve_match_context() and passes it
+    to the four engines. See module-level PATCH NOTE (MatchContext
+    cutover) above.
     """
-    profiles = load_profiles()
-    h2h = load_h2h()
+    from src.models.match_context import resolve_match_context
 
-    # Validate teams — use promoted profiles or league average fallback
-    missing = []
-    if home_team not in profiles or home_team in FORCE_PROMOTED:
-        missing.append(home_team)
-    if away_team not in profiles or away_team in FORCE_PROMOTED:
-        missing.append(away_team)
+    ctx = resolve_match_context(
+        home_team, away_team, referee,
+        profiles_path=profiles_path, h2h_path=h2h_path,
+        elo_path=elo_path, xg_path=xg_path,
+        force_promoted=force_promoted,
+    )
 
-    if missing:
-        league_avg = _build_league_average(profiles)
-        for team in missing:
-            if team in PROMOTED_TEAM_PROFILES:
-                profiles[team] = PROMOTED_TEAM_PROFILES[team].copy()
-                print(f"[INFO] {team} using promoted team profile")
-            else:
-                profiles[team] = league_avg.copy()
-                print(
-                    f"[INFO] {team} not in historical profiles — using league average fallback")
+    # Preserve the exact console messages the old inline fallback loop
+    # produced -- snapshot_golden_predictions.py and other scripts'
+    # console output already expect this exact text.
+    for team, note in ctx.fallback_notes.items():
+        if note == "promoted_profile":
+            print(f"[INFO] {team} using promoted team profile")
+        else:
+            print(
+                f"[INFO] {team} not in historical profiles — using league average fallback")
 
-    goals = predict_goals(home_team, away_team, profiles, h2h)
-    result = predict_result(home_team, away_team, profiles, h2h)
-    cards = predict_cards(home_team, away_team, profiles, referee)
-    corners = predict_corners(home_team, away_team, profiles)
+    goals = predict_goals(ctx, apply_availability=apply_availability)
+    result = predict_result(ctx)
+    cards = predict_cards(ctx)
+    corners = predict_corners(ctx)
 
-    h2h_data = get_h2h(home_team, away_team, h2h)
+    h2h_data = ctx.h2h
 
     # Apply manager tactical adjustments
     from src.models.epl_manager_profiles import apply_manager_adjustments
