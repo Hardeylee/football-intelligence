@@ -10,6 +10,7 @@ Promoted teams use Championship xG data with a 20% EPL adjustment.
 
 import csv
 import json
+import math
 import os
 from datetime import datetime
 from collections import defaultdict
@@ -17,7 +18,6 @@ from collections import defaultdict
 RAW_XG_DIR = "data/raw/xg"
 OUTPUT_FILE = "data/xg_profiles.json"
 
-# Map Understat team names → football-data.co.uk canonical names
 TEAM_NAME_MAP = {
     "Manchester City":           "Man City",
     "Manchester United":         "Man United",
@@ -47,35 +47,11 @@ TEAM_NAME_MAP = {
     "Leeds United":              "Leeds",
 }
 
-# EPL adjustment factor for promoted teams (Championship → EPL step up).
-# Applied ONLY to attacking output (raw_xg) -- see add_promoted_teams()
-# below. Previously this was also applied to raw_xga, which implied a
-# promoted team's defense gets BETTER stepping up to a tougher league.
-# That was backwards and has been corrected: raw_xga is now used as-is,
-# undiscounted. There's no established factor in this codebase for how
-# much MORE a promoted side should be expected to concede against EPL-
-# level attacks, so rather than invent one, the raw Championship xGA rate
-# is used directly -- flagged as a likely understatement of real
-# defensive risk for these teams, not a solved problem.
 PROMOTION_DISCOUNT = 0.80
 
-# Promoted teams xG data from FootyStats Championship stats.
-# raw_xg and raw_xga below were verified against live footystats.org team
-# pages during this session (Coventry, Ipswich confirmed directly;
-# Ipswich's xGA additionally cross-checked against a second independent
-# source, OddAlerts, which had them at 1.03/90 -- consistent). Hull's
-# xGA was checked and reported as 1.64 but not independently re-verified
-# by a second source in this session -- worth a spot-check if precision
-# matters here. The previous hardcoded values were stale/wrong with no
-# consistent direction of error (some too high, some too low), which is
-# why this whole block is a manual-entry risk -- see the automation note
-# in add_promoted_teams() docstring.
 PROMOTED_TEAM_XG = {
-    # 2025/26 promoted teams (from Championship 2025/26 season)
     "Coventry City": {
-        # was 1.83 -- stale, verified via OddAlerts (2.04/90)
         "raw_xg":            2.04,
-        # was 1.65 -- stale, verified via footystats.org/clubs/coventry-city-fc-239
         "raw_xga":           1.27,
         "matches":           46,
         "avg_goals_for":     2.11,
@@ -83,9 +59,7 @@ PROMOTED_TEAM_XG = {
         "championship_season": "2025/26",
     },
     "Hull City": {
-        # unchanged -- no clean single-source figure found to verify against this session
         "raw_xg":            1.67,
-        # was 1.21 -- flagged as stale/wrong, updated per live FootyStats check
         "raw_xga":           1.64,
         "matches":           46,
         "avg_goals_for":     1.52,
@@ -100,11 +74,8 @@ PROMOTED_TEAM_XG = {
         "avg_goals_against": 1.04,
         "championship_season": "2024/25",
     },
-    # Ipswich were in EPL 2024/25 so they have EPL history already
-    # but keeping Championship backup in case they're not in profiles
     "Ipswich": {
-        "raw_xg":            1.45,   # was 1.30 -- stale, verified via footystats.org H2H data
-        # was 1.90 -- stale, verified via footystats.org AND OddAlerts (1.03/90, tightest defense in Championship)
+        "raw_xg":            1.45,
         "raw_xga":           1.20,
         "matches":           46,
         "avg_goals_for":     1.40,
@@ -115,7 +86,6 @@ PROMOTED_TEAM_XG = {
 
 
 def load_xg_csv(filepath: str) -> list:
-    """Load one season's xG CSV. Returns list of team dicts."""
     rows = []
     with open(filepath, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f, delimiter=";")
@@ -145,37 +115,37 @@ def load_xg_csv(filepath: str) -> list:
 
 
 def derive_market_rates(avg_xg: float, avg_xga: float) -> dict:
-    """
-    Derive over/under and BTTS market probability rates from xG values.
-    Uses Poisson-inspired approximations.
-    """
     total_xg = avg_xg + avg_xga
+
+    # BTTS: Poisson-grounded replacement for the old (avg_xg * avg_xga) / 2.0
+    # formula, which had no statistical basis and pinned 26/27 EPL teams at
+    # its 0.90 cap (mean 0.892, stdev 0.039 — see diagnose_btts_ceiling.py).
+    # P(team scores >=1) and P(team concedes >=1) under independent Poisson
+    # assumptions, multiplied together. This saturates below 1.0 on its own
+    # as avg_xg/avg_xga grow, so no artificial cap is needed — but a 0.95
+    # safety ceiling is kept for consistency with the other two rates below
+    # and to guard against pathological input data.
+    p_scores = 1 - math.exp(-avg_xg)
+    p_concedes = 1 - math.exp(-avg_xga)
+    btts_rate = p_scores * p_concedes
+
     return {
         "xg_over15_rate": round(min(total_xg / 3.0, 0.97), 3),
         "xg_over25_rate": round(min(total_xg / 5.0, 0.95), 3),
-        "xg_btts_rate":   round(min((avg_xg * avg_xga) / 2.0, 0.90), 3),
+        "xg_btts_rate":   round(min(btts_rate, 0.95), 3),
     }
 
 
-# Teams where we override EPL data with adjusted estimate
 FORCE_OVERRIDE = ["Ipswich"]
 
 
 def add_promoted_teams(profiles: dict) -> dict:
-    """
-    Add promoted teams not already in EPL xG profiles.
-    Uses Championship xG data. PROMOTION_DISCOUNT is applied ONLY to
-    raw_xg (attacking output) -- raw_xga is used undiscounted. See the
-    PROMOTION_DISCOUNT comment above for why the two aren't symmetric.
-    Only adds a team if it's not already in profiles from EPL data,
-    except for FORCE_OVERRIDE teams which always use this estimate.
-    """
     for team, data in PROMOTED_TEAM_XG.items():
         if team in profiles and team not in FORCE_OVERRIDE:
             continue
 
         avg_xg = round(data["raw_xg"] * PROMOTION_DISCOUNT, 3)
-        avg_xga = round(data["raw_xga"], 3)  # undiscounted, intentionally
+        avg_xga = round(data["raw_xga"], 3)
         rates = derive_market_rates(avg_xg, avg_xga)
 
         profiles[team] = {
@@ -203,25 +173,44 @@ def add_promoted_teams(profiles: dict) -> dict:
     return profiles
 
 
-def build_xg_profiles() -> dict:
+def build_xg_profiles(csv_files_with_weights: list = None,
+                      include_promoted: bool = True) -> dict:
     """
-    Load all EPL xG CSV files and build per-team profiles.
-    Averages xG across all available seasons.
-    Then adds promoted teams with Championship adjustment.
+    csv_files_with_weights: optional list of (filename, weight) tuples,
+    relative to RAW_XG_DIR. None (default) reproduces live behavior:
+    scan RAW_XG_DIR, weight via XG_WEIGHTS (fallback 0.25).
+
+    include_promoted: default True (live). False skips add_promoted_teams()
+    entirely — needed for historical backtests since PROMOTED_TEAM_XG
+    contains 2025/26 Championship data (Ipswich is a key in it).
     """
     if not os.path.exists(RAW_XG_DIR):
         print(f"[ERROR] Directory not found: {RAW_XG_DIR}")
         return {}
 
-    csv_files = sorted([
-        f for f in os.listdir(RAW_XG_DIR) if f.endswith(".csv")
-    ])
+    XG_WEIGHTS = {
+        "xg 22-23.csv": 0.10,
+        "xg 23-24.csv": 0.20,
+        "xg 24-25.csv": 0.30,
+        "xg 25-26.csv": 0.40,
+    }
 
-    if not csv_files:
-        print(f"[ERROR] No CSV files in {RAW_XG_DIR}")
-        return {}
+    if csv_files_with_weights is not None:
+        files_and_weights = list(csv_files_with_weights)
+        missing = [f for f, _ in files_and_weights
+                   if not os.path.exists(os.path.join(RAW_XG_DIR, f))]
+        if missing:
+            print(f"[ERROR] Missing CSV file(s) in {RAW_XG_DIR}: {missing}")
+            return {}
+    else:
+        csv_files = sorted([
+            f for f in os.listdir(RAW_XG_DIR) if f.endswith(".csv")
+        ])
+        if not csv_files:
+            print(f"[ERROR] No CSV files in {RAW_XG_DIR}")
+            return {}
+        files_and_weights = [(f, XG_WEIGHTS.get(f, 0.25)) for f in csv_files]
 
-    # Accumulate stats per team across seasons
     team_stats = defaultdict(lambda: {
         "seasons":       0,
         "total_matches": 0,
@@ -231,18 +220,9 @@ def build_xg_profiles() -> dict:
         "total_ga":      0,
     })
 
-    # Recency weights for xG seasons
-    XG_WEIGHTS = {
-        "xg 22-23.csv": 0.10,
-        "xg 23-24.csv": 0.20,
-        "xg 24-25.csv": 0.30,
-        "xg 25-26.csv": 0.40,
-    }
-
-    for filename in csv_files:
+    for filename, weight in files_and_weights:
         filepath = os.path.join(RAW_XG_DIR, filename)
         rows = load_xg_csv(filepath)
-        weight = XG_WEIGHTS.get(filename, 0.25)
         print(f"  {filename}: {len(rows)} teams (weight: {weight})")
 
         for r in rows:
@@ -254,7 +234,6 @@ def build_xg_profiles() -> dict:
             s["total_goals"] += r["goals"] * weight
             s["total_ga"] += r["ga"] * weight
 
-    # Build final profiles with averages
     profiles = {}
     for team, s in team_stats.items():
         n = s["total_matches"]
@@ -278,28 +257,31 @@ def build_xg_profiles() -> dict:
             "source":            "Understat EPL CSV",
         }
 
-    # Add promoted teams not already in EPL data
-    print("\nAdding promoted teams with Championship adjustment...")
-    profiles = add_promoted_teams(profiles)
+    if include_promoted:
+        print("\nAdding promoted teams with Championship adjustment...")
+        profiles = add_promoted_teams(profiles)
 
     return profiles
 
 
-def save_xg_profiles(profiles: dict):
-    os.makedirs("data", exist_ok=True)
-    with open(OUTPUT_FILE, "w") as f:
+def save_xg_profiles(profiles: dict, path: str = None):
+    target = path or OUTPUT_FILE
+    out_dir = os.path.dirname(target) or "data"
+    os.makedirs(out_dir, exist_ok=True)
+    with open(target, "w") as f:
         json.dump({
             "updated_at": datetime.now().isoformat(),
             "source":     "Understat EPL CSV + Championship adjustments",
             "teams":      profiles
         }, f, indent=2)
-    print(f"\nSaved {len(profiles)} xG profiles → {OUTPUT_FILE}")
+    print(f"\nSaved {len(profiles)} xG profiles → {target}")
 
 
-def load_xg_profiles() -> dict:
-    if not os.path.exists(OUTPUT_FILE):
+def load_xg_profiles(path: str = None) -> dict:
+    target = path or OUTPUT_FILE
+    if not os.path.exists(target):
         return {}
-    with open(OUTPUT_FILE) as f:
+    with open(target) as f:
         return json.load(f)["teams"]
 
 

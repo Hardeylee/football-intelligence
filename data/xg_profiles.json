@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T01:09:58.894323",
+  "updated_at": "2026-07-19T11:55:13.419383",
   "source": "Understat EPL CSV + Championship adjustments",
   "teams": {
     "Man City": {
@@ -11,7 +11,7 @@
       "avg_goals_against": 0.982,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.66,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.612,
       "source": "Understat EPL CSV"
     },
     "Arsenal": {
@@ -23,7 +23,7 @@
       "avg_goals_against": 0.818,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.598,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.534,
       "source": "Understat EPL CSV"
     },
     "Man United": {
@@ -35,7 +35,7 @@
       "avg_goals_against": 1.371,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.65,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.643,
       "source": "Understat EPL CSV"
     },
     "Newcastle": {
@@ -47,7 +47,7 @@
       "avg_goals_against": 1.363,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.664,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.649,
       "source": "Understat EPL CSV"
     },
     "Liverpool": {
@@ -59,7 +59,7 @@
       "avg_goals_against": 1.221,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.691,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.643,
       "source": "Understat EPL CSV"
     },
     "Brighton": {
@@ -71,7 +71,7 @@
       "avg_goals_against": 1.416,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.629,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.627,
       "source": "Understat EPL CSV"
     },
     "Aston Villa": {
@@ -83,7 +83,7 @@
       "avg_goals_against": 1.361,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.624,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.623,
       "source": "Understat EPL CSV"
     },
     "Tottenham": {
@@ -95,7 +95,7 @@
       "avg_goals_against": 1.6,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.633,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.631,
       "source": "Understat EPL CSV"
     },
     "Brentford": {
@@ -107,7 +107,7 @@
       "avg_goals_against": 1.461,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.655,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.648,
       "source": "Understat EPL CSV"
     },
     "Fulham": {
@@ -119,7 +119,7 @@
       "avg_goals_against": 1.424,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.591,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.593,
       "source": "Understat EPL CSV"
     },
     "Crystal Palace": {
@@ -131,7 +131,7 @@
       "avg_goals_against": 1.374,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.624,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.624,
       "source": "Understat EPL CSV"
     },
     "Chelsea": {
@@ -143,7 +143,7 @@
       "avg_goals_against": 1.342,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.682,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.663,
       "source": "Understat EPL CSV"
     },
     "Wolves": {
@@ -155,7 +155,7 @@
       "avg_goals_against": 1.755,
       "xg_over15_rate": 0.964,
       "xg_over25_rate": 0.578,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.56,
       "source": "Understat EPL CSV"
     },
     "West Ham": {
@@ -167,7 +167,7 @@
       "avg_goals_against": 1.708,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.631,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.618,
       "source": "Understat EPL CSV"
     },
     "Bournemouth": {
@@ -179,7 +179,7 @@
       "avg_goals_against": 1.471,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.653,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.646,
       "source": "Understat EPL CSV"
     },
     "Nott'm Forest": {
@@ -191,7 +191,7 @@
       "avg_goals_against": 1.432,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.582,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.583,
       "source": "Understat EPL CSV"
     },
     "Everton": {
@@ -203,7 +203,7 @@
       "avg_goals_against": 1.292,
       "xg_over15_rate": 0.965,
       "xg_over25_rate": 0.579,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.582,
       "source": "Understat EPL CSV"
     },
     "Leicester": {
@@ -215,7 +215,7 @@
       "avg_goals_against": 2.026,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.632,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.577,
       "source": "Understat EPL CSV"
     },
     "Leeds": {
@@ -227,7 +227,7 @@
       "avg_goals_against": 1.589,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.612,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.614,
       "source": "Understat EPL CSV"
     },
     "Southampton": {
@@ -239,7 +239,7 @@
       "avg_goals_against": 2.178,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.675,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.579,
       "source": "Understat EPL CSV"
     },
     "Luton": {
@@ -251,7 +251,7 @@
       "avg_goals_against": 2.237,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.745,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.665,
       "source": "Understat EPL CSV"
     },
     "Burnley": {
@@ -263,7 +263,7 @@
       "avg_goals_against": 2.0,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.628,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.565,
       "source": "Understat EPL CSV"
     },
     "Sheffield United": {
@@ -275,7 +275,7 @@
       "avg_goals_against": 2.737,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.669,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.593,
       "source": "Understat EPL CSV"
     },
     "Ipswich": {
@@ -287,7 +287,7 @@
       "avg_goals_against": 1.6,
       "xg_over15_rate": 0.787,
       "xg_over25_rate": 0.472,
-      "xg_btts_rate": 0.696,
+      "xg_btts_rate": 0.48,
       "source": "Championship 2024/25 EPL (relegated) + discount + 19% EPL attack adjustment (xGA undiscounted)"
     },
     "Sunderland": {
@@ -299,7 +299,7 @@
       "avg_goals_against": 1.263,
       "xg_over15_rate": 0.908,
       "xg_over25_rate": 0.545,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.54,
       "source": "Understat EPL CSV"
     },
     "Coventry City": {
@@ -311,7 +311,7 @@
       "avg_goals_against": 0.98,
       "xg_over15_rate": 0.967,
       "xg_over25_rate": 0.58,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.579,
       "source": "Championship 2025/26 + 19% EPL attack adjustment (xGA undiscounted)"
     },
     "Hull City": {
@@ -323,7 +323,7 @@
       "avg_goals_against": 0.96,
       "xg_over15_rate": 0.97,
       "xg_over25_rate": 0.595,
-      "xg_btts_rate": 0.9,
+      "xg_btts_rate": 0.594,
       "source": "Championship 2024/25 + 19% EPL attack adjustment (xGA undiscounted)"
     }
   }

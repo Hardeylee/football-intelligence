@@ -33,23 +33,40 @@ real run -- if "xG" almost never appears, that's the symptom.
 import json
 import os
 import csv
+import sys
 from collections import defaultdict
 from datetime import datetime
 
-from src.models.match_predictor import predict_match
+# PROJECT_ROOT-from-__file__ pattern (cwd-safe). This script never had a
+# path-fix at all before now -- that's why `python src\utils\backtester_v4.py`
+# failed with ModuleNotFoundError: No module named 'src'. match_predictor is
+# imported INSIDE predict_fixture() below, not here at module level, so no
+# formatter/import-sorter can hoist it above this sys.path.insert and
+# silently re-break it -- same fix already applied to diagnose_btts_ceiling.py
+# and diagnose_stacking.py this session, for the same reason.
+PROJECT_ROOT = os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 TEST_SEASON_FILE = "data/raw/24-25.csv"
 
 SNAPSHOT_PROFILES = "data/team_profiles_asof_24-25.json"
 SNAPSHOT_H2H = "data/h2h_asof_24-25.json"
 SNAPSHOT_ELO = "data/epl_elo_ratings_asof_24-25.json"
+SNAPSHOT_XG = "data/xg_profiles_asof_24-25.json"
 
 BACKTEST_OUTPUT = "data/backtest_results_v4.json"
 
 VALIDATION_FRACTION = 0.5
 
 RESULT_EDGE_GRID = [0.10, 0.12, 0.15, 0.18, 0.20]
-GOALS_EDGE_GRID = [0.05, 0.08, 0.10, 0.12, 0.15]
+# Widened downward -- last two backtest runs both tuned to 0.08 or 0.1,
+# the lowest values then available in the grid, suggesting the true
+# optimum may sit below what was previously offered. Adding 0.0 and 0.02
+# lets the grid search actually find a lower optimum if one exists,
+# instead of being artificially floored at 0.05.
+GOALS_EDGE_GRID = [0.0, 0.02, 0.05, 0.08, 0.10, 0.12, 0.15]
 
 REQUIRED_COLS = [
     "Date", "HomeTeam", "AwayTeam",
@@ -126,11 +143,14 @@ def predict_fixture(home: str, away: str, referee: str) -> dict:
     skipped-count stays meaningful the way it did in v3.
     """
     try:
+        # local import, see note at top of file
+        from src.models.match_predictor import predict_match
         pred = predict_match(
             home, away, referee,
             profiles_path=SNAPSHOT_PROFILES,
             h2h_path=SNAPSHOT_H2H,
             elo_path=SNAPSHOT_ELO,
+            xg_path=SNAPSHOT_XG,
             apply_availability=False,
             force_promoted=set(),
         )
@@ -315,10 +335,11 @@ def run_backtest() -> dict:
     print("  BACKTESTER v4 — real match_predictor.py pipeline")
     print("=" * 60)
 
-    for path in (SNAPSHOT_PROFILES, SNAPSHOT_H2H, SNAPSHOT_ELO):
+    for path in (SNAPSHOT_PROFILES, SNAPSHOT_H2H, SNAPSHOT_ELO, SNAPSHOT_XG):
         if not os.path.exists(path):
             print(f"[ERROR] Missing snapshot file: {path}")
-            print("  Run build_snapshot_profiles.py and build_snapshot_elo.py first.")
+            print("  Run build_snapshot_profiles.py, build_snapshot_elo.py, "
+                  "and build_snapshot_xg.py first.")
             return {}
 
     print("\nLoading 2024/25 test season...")
